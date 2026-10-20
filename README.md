@@ -40,12 +40,32 @@ Python tools that read, validate and scale the paper's published inventory witho
 
 <a href="https://github.com/malleshkomal/ptl-lci-explorer"><img src="https://raw.githubusercontent.com/malleshkomal/ptl-lci-explorer/main/results/charts/02_electricity_by_step.png" alt="Electricity per kg of PtL fuel and liquid hydrogen, by process step" width="720"></a>
 
+### [Circular Design Advisor](https://github.com/malleshkomal/circular-design-advisor)
+An animated decision dashboard for the end of life of a modular aluminium exhibition-booth panel: reuse, repair, reprocessing, recycling or disposal.
+- Per-use LCA, circularity KPIs and cost for five strategies, with literature sources tracked for every input
+- 2,538-scenario simulation, 1,500-draw Monte Carlo, Pareto optimisation and a Random Forest surrogate (R² 0.99)
+- Reuse beats recycling from two planned uses: **5.7 vs 21.1 kg CO₂e per use** (illustrative baseline)
+- Streamlit dashboard with animated Plotly charts and a chatbot that explains the calculated results
+- `Python` `Streamlit` `Plotly` `scikit-learn` `pandas` `pytest`
+
+<a href="https://github.com/malleshkomal/circular-design-advisor"><img src="https://raw.githubusercontent.com/malleshkomal/circular-design-advisor/main/docs/screenshots/01_overview.png" alt="Circular Design Advisor dashboard overview" width="720"></a>
+
 ### [Circular-booth-KPI](https://github.com/malleshkomal/Circular-booth-KPI)
 Compares single-use and reusable exhibition booth designs on carbon footprint per use, cost and circularity.
 - Shows reuse cutting GWP per booth use by **88–91%** (illustrative data)
 - Reuse-cycle simulation and a transparent, explainable multi-criteria ranking
 - A guard against double-counting recycling benefits
 - `Python` `pandas` `matplotlib` `pytest`
+
+### [Garment LCA Pipeline](https://github.com/malleshkomal/Simple-T-shirt-example)
+An end-to-end LCA data pipeline for a T-shirt, jeans and sneakers, from raw supplier data to animated charts.
+- Collects four sources (bill of materials, factory meters, shipments, use and end-of-life assumptions)
+- Validates, converts units and loads results into a SQLite star schema
+- Footprints of **4.68 to 10.91 kg CO₂e per unit**, with raw materials the largest source (simulated data)
+- Animated matplotlib GIFs and an interactive page with hover values
+- `Python` `pandas` `SQLite` `matplotlib` `JavaScript`
+
+<a href="https://github.com/malleshkomal/Simple-T-shirt-example"><img src="https://raw.githubusercontent.com/malleshkomal/Simple-T-shirt-example/main/output/1_stacked_build.gif" alt="Animated stacked bar chart of carbon footprint per garment by life cycle stage" width="720"></a>
 
 ---
 
@@ -57,8 +77,8 @@ Compares single-use and reusable exhibition booth designs on carbon footprint pe
 | **Process modelling** | Aspen Plus (RYield, RGibbs, RadFrac, Fortran calculators), mass and energy balances, hydrothermal liquefaction |
 | **Circular economy** | Circularity KPIs, reuse and end-of-life scenarios, recycled content |
 | **Energy systems** | Power-to-X, hydrogen, sustainable aviation fuels, prospective energy scenarios |
-| **Data & analysis** | Python, pandas, NumPy, Jupyter, data validation |
-| **Visualisation** | matplotlib, d3.js, interactive dashboards |
+| **Data & analysis** | Python, pandas, NumPy, SQLite, scikit-learn, Jupyter, data pipelines and validation |
+| **Visualisation** | matplotlib, Plotly, d3.js, Streamlit, animated and interactive dashboards |
 | **Decision support** | Transparent multi-criteria comparison of design options |
 
 ---
