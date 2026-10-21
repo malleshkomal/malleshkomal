@@ -35,10 +35,10 @@ The paper proposes a common structure for publishing LCI data so it can be found
 Python tools that read, validate and scale the paper's published inventory without needing the original LCA software.
 - Scales the supply chain to **1 kg of jet fuel** (25.6 kWh, 3.16 kg CO₂ from air) and **1 kg of liquid hydrogen** (65.2 kWh)
 - Six automatic quality checks on the published files
-- Seven charts and an interactive web page explaining the results
+- Seven charts, an interactive findings page and an [animated flow diagram](https://malleshkomal.github.io/ptl-lci-explorer/flow.html) of the supply chain
 - `Python` `pandas` `NumPy` `matplotlib` `d3.js` `pytest`
 
-<a href="https://github.com/malleshkomal/ptl-lci-explorer"><img src="https://raw.githubusercontent.com/malleshkomal/ptl-lci-explorer/main/results/charts/02_electricity_by_step.png" alt="Electricity per kg of PtL fuel and liquid hydrogen, by process step" width="720"></a>
+<a href="https://malleshkomal.github.io/ptl-lci-explorer/flow.html"><img src="https://raw.githubusercontent.com/malleshkomal/ptl-lci-explorer/main/results/charts/08_flow_animated.svg" alt="Animated flow diagram: wind power, water and CO₂ from air become 1 kg of PtL jet fuel" width="720"></a>
 
 ### [Circular Design Advisor](https://github.com/malleshkomal/circular-design-advisor)
 An animated decision dashboard for the end of life of a modular aluminium exhibition-booth panel: reuse, repair, reprocessing, recycling or disposal.
