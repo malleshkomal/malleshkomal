@@ -35,6 +35,7 @@ The paper proposes a common structure for publishing LCI data so it can be found
 Python tools that read, validate and scale the paper's published inventory without needing the original LCA software.
 - Scales the supply chain to **1 kg of jet fuel** (25.6 kWh, 3.16 kg CO₂ from air) and **1 kg of liquid hydrogen** (65.2 kWh)
 - Six automatic quality checks on the published files
+- Links circularity KPIs (carbon loop, end-of-life coverage, Material Circularity Indicator) to a screening carbon footprint through shared scenario parameters: the most circular scenario is also the lowest-carbon one, and electricity sets **85%** of the footprint ([methods](https://github.com/malleshkomal/ptl-lci-explorer/blob/main/METHODS.md))
 - Seven charts, an interactive findings page and an [animated flow diagram](https://malleshkomal.github.io/ptl-lci-explorer/flow.html) of the supply chain
 - `Python` `pandas` `NumPy` `matplotlib` `d3.js` `pytest`
 
