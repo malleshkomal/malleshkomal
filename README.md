@@ -38,7 +38,7 @@ Built on the pond LCA of the EU INTEGRATE project (Interreg Atlantic Area): semi
 
 <a href="https://github.com/malleshkomal/Life-cycle-assessment-of-Integrated-Multi-Trophical-Aquaculture-/raw/main/excel/IMTA_KPI_decision_tool.xlsx"><img src="https://raw.githubusercontent.com/malleshkomal/Life-cycle-assessment-of-Integrated-Multi-Trophical-Aquaculture-/main/excel/excel_kpi_framework.png" alt="Excel KPI decision tool: 13 KPIs for three pond aquaculture systems with targets and pass/fail" width="720"></a>
 
-<a href="https://github.com/malleshkomal/Life-cycle-assessment-of-Integrated-Multi-Trophical-Aquaculture-"><img src="https://raw.githubusercontent.com/malleshkomal/Life-cycle-assessment-of-Integrated-Multi-Trophical-Aquaculture-/main/results/charts/06_flow_si_imta.svg" alt="Animated flow diagram: how fish waste is used in a pond IMTA" width="720"></a>
+<a href="https://github.com/malleshkomal/Life-cycle-assessment-of-Integrated-Multi-Trophical-Aquaculture-"><img src="https://raw.githubusercontent.com/malleshkomal/Life-cycle-assessment-of-Integrated-Multi-Trophical-Aquaculture-/main/results/charts/06_flow_si_imta.svg" alt="Flow diagram: how fish waste is used in a pond IMTA" width="720"></a>
 
 ### 🎓 [Master thesis: biocrude from livestock manure via hydrothermal liquefaction](https://github.com/malleshkomal/htl-manure-lca) · [interactive findings](https://malleshkomal.github.io/htl-manure-lca/)
 *Life cycle assessment of biocrude production from livestock manure in Germany via hydrothermal liquefaction*, MSc, TU Bergakademie Freiberg, 2022.
