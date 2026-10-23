@@ -34,14 +34,19 @@ Built on the pond LCA of the EU INTEGRATE project (Interreg Atlantic Area): semi
 - 39 cross-checks between the report's tables, with two inconsistencies documented
 - `LCA` `Piscentool` `Excel` `Python` `pandas` `matplotlib` `pytest`
 
+<a href="https://github.com/malleshkomal/Life-cycle-assessment-of-Integrated-Multi-Trophical-Aquaculture-#key-findings"><img src="https://raw.githubusercontent.com/malleshkomal/Life-cycle-assessment-of-Integrated-Multi-Trophical-Aquaculture-/main/results/charts/00_key_numbers.png" alt="Key numbers: eutrophication -57 %, 47 % of feed nitrogen kept, global warming -56 %, 55-66 % of greenhouse gases from feed, more land for IMTA" width="720"></a>
+
 <table><tr>
 <td width="50%"><a href="https://github.com/malleshkomal/Life-cycle-assessment-of-Integrated-Multi-Trophical-Aquaculture-#key-findings"><img src="https://raw.githubusercontent.com/malleshkomal/Life-cycle-assessment-of-Integrated-Multi-Trophical-Aquaculture-/main/results/charts/02_global_warming_by_process.png" alt="Feed is the largest source of greenhouse gases: global warming by process for three pond aquaculture systems"></a></td>
 <td width="50%"><a href="https://github.com/malleshkomal/Life-cycle-assessment-of-Integrated-Multi-Trophical-Aquaculture-#key-findings"><img src="https://raw.githubusercontent.com/malleshkomal/Life-cycle-assessment-of-Integrated-Multi-Trophical-Aquaculture-/main/results/charts/06_environmental_profile.png" alt="Environmental profile: seven impacts of the two IMTA systems as % of the fish-only pond"></a></td>
 </tr></table>
 
-**Excel KPI decision tool** ([preview in the browser](https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fraw.githubusercontent.com%2Fmalleshkomal%2FLife-cycle-assessment-of-Integrated-Multi-Trophical-Aquaculture-%2Fmain%2Fexcel%2FIMTA_KPI_decision_tool.xlsx) · [download](https://github.com/malleshkomal/Life-cycle-assessment-of-Integrated-Multi-Trophical-Aquaculture-/raw/main/excel/IMTA_KPI_decision_tool.xlsx)): live formulas from inventory to nutrient balance, impacts and KPIs. Change a yellow input and every target check updates.
+<table><tr>
+<td width="50%"><a href="https://github.com/malleshkomal/Life-cycle-assessment-of-Integrated-Multi-Trophical-Aquaculture-#key-findings"><img src="https://raw.githubusercontent.com/malleshkomal/Life-cycle-assessment-of-Integrated-Multi-Trophical-Aquaculture-/main/results/charts/03_nitrogen_fate.png" alt="Where the nitrogen in the feed goes in the three pond systems"></a></td>
+<td width="50%"><a href="https://github.com/malleshkomal/Life-cycle-assessment-of-Integrated-Multi-Trophical-Aquaculture-#kpi-framework"><img src="https://raw.githubusercontent.com/malleshkomal/Life-cycle-assessment-of-Integrated-Multi-Trophical-Aquaculture-/main/results/charts/08_kpi_distance_to_target.png" alt="How far each system is from its KPI targets"></a></td>
+</tr></table>
 
-<a href="https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fraw.githubusercontent.com%2Fmalleshkomal%2FLife-cycle-assessment-of-Integrated-Multi-Trophical-Aquaculture-%2Fmain%2Fexcel%2FIMTA_KPI_decision_tool.xlsx"><img src="https://raw.githubusercontent.com/malleshkomal/Life-cycle-assessment-of-Integrated-Multi-Trophical-Aquaculture-/main/excel/excel_kpi_framework.png" alt="Excel KPI decision tool: 13 KPIs for three pond aquaculture systems with targets and pass/fail" width="720"></a>
+**Excel KPI decision tool** ([preview in the browser](https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fraw.githubusercontent.com%2Fmalleshkomal%2FLife-cycle-assessment-of-Integrated-Multi-Trophical-Aquaculture-%2Fmain%2Fexcel%2FIMTA_KPI_decision_tool.xlsx) · [download](https://github.com/malleshkomal/Life-cycle-assessment-of-Integrated-Multi-Trophical-Aquaculture-/raw/main/excel/IMTA_KPI_decision_tool.xlsx)): live formulas from inventory to nutrient balance, impacts and KPIs. Change a yellow input and every target check updates.
 
 
 ### 🎓 [Master thesis: biocrude from livestock manure via hydrothermal liquefaction](https://github.com/malleshkomal/htl-manure-lca) · [interactive findings](https://malleshkomal.github.io/htl-manure-lca/)
