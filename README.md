@@ -34,8 +34,6 @@ Built on the pond LCA of the EU INTEGRATE project (Interreg Atlantic Area): semi
 - 39 cross-checks between the report's tables, with two inconsistencies documented
 - `LCA` `Piscentool` `Excel` `Python` `pandas` `matplotlib` `pytest`
 
-<a href="https://github.com/malleshkomal/Life-cycle-assessment-of-Integrated-Multi-Trophical-Aquaculture-#key-findings"><img src="https://raw.githubusercontent.com/malleshkomal/Life-cycle-assessment-of-Integrated-Multi-Trophical-Aquaculture-/main/results/charts/00_key_numbers.png" alt="Key numbers: eutrophication -57 %, 47 % of feed nitrogen kept, global warming -56 %, 55-66 % of greenhouse gases from feed, more land for IMTA" width="720"></a>
-
 <table><tr>
 <td width="50%"><a href="https://github.com/malleshkomal/Life-cycle-assessment-of-Integrated-Multi-Trophical-Aquaculture-#key-findings"><img src="https://raw.githubusercontent.com/malleshkomal/Life-cycle-assessment-of-Integrated-Multi-Trophical-Aquaculture-/main/results/charts/02_global_warming_by_process.png" alt="Feed is the largest source of greenhouse gases: global warming by process for three pond aquaculture systems"></a></td>
 <td width="50%"><a href="https://github.com/malleshkomal/Life-cycle-assessment-of-Integrated-Multi-Trophical-Aquaculture-#key-findings"><img src="https://raw.githubusercontent.com/malleshkomal/Life-cycle-assessment-of-Integrated-Multi-Trophical-Aquaculture-/main/results/charts/06_environmental_profile.png" alt="Environmental profile: seven impacts of the two IMTA systems as % of the fish-only pond"></a></td>
