@@ -46,7 +46,7 @@ Compares a sea bream monoculture with IMTA (fish + seaweed + mussels), where sea
 
 <a href="https://github.com/malleshkomal/htl-manure-lca"><img src="https://raw.githubusercontent.com/malleshkomal/htl-manure-lca/main/results/charts/06_gwp_by_contributor.png" alt="Global warming potential per kg of bio-oil by contributor, six scenarios" width="720"></a>
 
-### [ptl-lci-explorer](https://github.com/malleshkomal/ptl-lci-explorer) · [live findings page](https://malleshkomal.github.io/ptl-lci-explorer/)
+### [Life cycle assessment of sustainable aviation fuel : Structured LCI schema for Transparency and reusability ](https://github.com/malleshkomal/ptl-lci-explorer) · [live findings page](https://malleshkomal.github.io/ptl-lci-explorer/)
 Python tools that read, validate and scale the paper's published inventory without needing the original LCA software.
 - Scales the supply chain to **1 kg of jet fuel** (25.6 kWh, 3.16 kg CO₂ from air) and **1 kg of liquid hydrogen** (65.2 kWh)
 - Six automatic quality checks on the published files
