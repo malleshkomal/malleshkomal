@@ -26,15 +26,15 @@ The review looks at how LCA is applied to integrated multi-trophic aquaculture (
 
 ## 🚀 Featured projects
 
-### 🐟 [LCA of fish monoculture and IMTA aquaculture: circular KPI decision tool](https://github.com/malleshkomal/Life-cycle-assessment-of-Integrated-Multi-Trophical-Aquaculture-)
-Compares a sea bream monoculture with IMTA (fish + seaweed + mussels), where seaweed residues are composted and mussel shells reused as lime.
-- LCI in the LCIS2024 structure from my paper, LCA in openLCA (ecoinvent 3.7, EF 3.1), nitrogen and phosphorus mass balance
-- **12 KPIs** on environment, circularity and economy with targets, available as an **offline Excel tool** and as Python with tests
-- IMTA lowers the footprint per kg of fish (**2.90 → 2.12 kg CO₂ eq**) and recovers **18%** of the fish's nitrogen, but the farm as a whole emits about 9% more (illustrative factors)
-- Open about its limits: the assumptions, model checks and known issues are all documented
-- `openLCA` `ecoinvent` `Excel` `Python` `pandas` `matplotlib` `pytest`
+### 🐟 [LCA of fish monoculture and IMTA aquaculture: KPI decision tool](https://github.com/malleshkomal/Life-cycle-assessment-of-Integrated-Multi-Trophical-Aquaculture-)
+Built on the pond LCA of the EU INTEGRATE project (Interreg Atlantic Area): semi-intensive and semi-extensive pond IMTA (fish + oysters + macroalgae) against a conventional fish-only pond, per tonne of fish + oyster.
+- Inventory, nitrogen and phosphorus balance and impact results per process transcribed and shared in the LCIS2024 structure from my paper
+- **13 KPIs** on environment and circularity with targets, as an **offline Excel tool** and as Python with 35 tests
+- Semi-intensive IMTA keeps **47%** of the feed nitrogen in products (fish pond: 20%) and cuts eutrophication by **57%**; the semi-extensive IMTA cuts global warming by **56%**. Both need more land
+- 39 cross-checks between the report's tables, with two inconsistencies documented
+- `LCA` `Piscentool` `Excel` `Python` `pandas` `matplotlib` `pytest`
 
-<a href="https://github.com/malleshkomal/Life-cycle-assessment-of-Integrated-Multi-Trophical-Aquaculture-"><img src="https://raw.githubusercontent.com/malleshkomal/Life-cycle-assessment-of-Integrated-Multi-Trophical-Aquaculture-/main/results/charts/06_waste_flow_animated.svg" alt="Animated flow diagram: how waste is used in the IMTA farm" width="720"></a>
+<a href="https://github.com/malleshkomal/Life-cycle-assessment-of-Integrated-Multi-Trophical-Aquaculture-"><img src="https://raw.githubusercontent.com/malleshkomal/Life-cycle-assessment-of-Integrated-Multi-Trophical-Aquaculture-/main/results/charts/06_flow_si_imta.svg" alt="Animated flow diagram: how fish waste is used in a pond IMTA" width="720"></a>
 
 ### 🎓 [Master thesis: biocrude from livestock manure via hydrothermal liquefaction](https://github.com/malleshkomal/htl-manure-lca) · [interactive findings](https://malleshkomal.github.io/htl-manure-lca/)
 *Life cycle assessment of biocrude production from livestock manure in Germany via hydrothermal liquefaction*, MSc, TU Bergakademie Freiberg, 2022.
