@@ -46,6 +46,8 @@ Built on the pond LCA of the EU INTEGRATE project (Interreg Atlantic Area): semi
 <td width="50%"><a href="https://github.com/malleshkomal/Life-cycle-assessment-of-Integrated-Multi-Trophical-Aquaculture-#kpi-framework"><img src="https://raw.githubusercontent.com/malleshkomal/Life-cycle-assessment-of-Integrated-Multi-Trophical-Aquaculture-/main/results/charts/08_kpi_distance_to_target.png" alt="How far each system is from its KPI targets"></a></td>
 </tr></table>
 
+<a href="https://github.com/malleshkomal/Life-cycle-assessment-of-Integrated-Multi-Trophical-Aquaculture-/blob/main/docs/flow.html"><img src="https://raw.githubusercontent.com/malleshkomal/Life-cycle-assessment-of-Integrated-Multi-Trophical-Aquaculture-/main/results/charts/06_flow_si_imta.svg" alt="Flow diagram: how the fish waste is used in the semi-intensive pond IMTA – feed, fish, oysters, macroalgae and nitrogen released" width="720"></a>
+
 **Excel KPI decision tool** ([preview in the browser](https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fraw.githubusercontent.com%2Fmalleshkomal%2FLife-cycle-assessment-of-Integrated-Multi-Trophical-Aquaculture-%2Fmain%2Fexcel%2FIMTA_KPI_decision_tool.xlsx) · [download](https://github.com/malleshkomal/Life-cycle-assessment-of-Integrated-Multi-Trophical-Aquaculture-/raw/main/excel/IMTA_KPI_decision_tool.xlsx)): live formulas from inventory to nutrient balance, impacts and KPIs. Change a yellow input and every target check updates.
 
 
