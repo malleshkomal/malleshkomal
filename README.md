@@ -34,7 +34,7 @@ Compares a sea bream monoculture with IMTA (fish + seaweed + mussels), where sea
 - Open about its limits: the assumptions, model checks and known issues are all documented
 - `openLCA` `ecoinvent` `Excel` `Python` `pandas` `matplotlib` `pytest`
 
-<a href="https://github.com/malleshkomal/Life-cycle-assessment-of-Integrated-Multi-Trophical-Aquaculture-"><img src="https://raw.githubusercontent.com/malleshkomal/Life-cycle-assessment-of-Integrated-Multi-Trophical-Aquaculture-/main/results/charts/01_nitrogen_balance.png" alt="Nitrogen balance of fish monoculture vs IMTA" width="720"></a>
+<a href="https://github.com/malleshkomal/Life-cycle-assessment-of-Integrated-Multi-Trophical-Aquaculture-"><img src="https://raw.githubusercontent.com/malleshkomal/Life-cycle-assessment-of-Integrated-Multi-Trophical-Aquaculture-/main/results/charts/06_waste_flow_animated.svg" alt="Animated flow diagram: how waste is used in the IMTA farm" width="720"></a>
 
 ### 🎓 [Master thesis: biocrude from livestock manure via hydrothermal liquefaction](https://github.com/malleshkomal/htl-manure-lca) · [interactive findings](https://malleshkomal.github.io/htl-manure-lca/)
 *Life cycle assessment of biocrude production from livestock manure in Germany via hydrothermal liquefaction*, MSc, TU Bergakademie Freiberg, 2022.
