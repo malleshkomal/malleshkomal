@@ -17,9 +17,24 @@ R. R. Nair, **K. M. Chougule**, J. C. Gomez Trillos, U. Brand-Daniels · *Journa
 
 The paper proposes a common structure for publishing LCI data so it can be found, checked and reused. It's demonstrated on a power-to-liquid jet fuel supply chain: wind power, electrolysis, direct air capture and Fischer-Tropsch synthesis.
 
+**Life cycle assessment of integrated multi-trophic aquaculture: A review on methodology and challenges for its sustainability evaluation**
+A. F. Hala, **K. Chougule**, M. E. Cunha, M. Caria Mendes, I. Oliveira, T. Bradley, J. Forbes, L. Galileu Speranza · *Aquaculture* 590, 741035 (2024)
+
+The review looks at how LCA is applied to integrated multi-trophic aquaculture (IMTA) and why defining the functional unit and choosing the method are hard for multi-product systems.
+
 ---
 
 ## 🚀 Featured projects
+
+### 🐟 [LCA of fish monoculture and IMTA aquaculture: circular KPI decision tool](https://github.com/malleshkomal/Life-cycle-assessment-of-Integrated-Multi-Trophical-Aquaculture-)
+Compares a sea bream monoculture with IMTA (fish + seaweed + mussels), where seaweed residues are composted and mussel shells reused as lime.
+- LCI in the LCIS2024 structure from my paper, LCA in openLCA (ecoinvent 3.7, EF 3.1), nitrogen and phosphorus mass balance
+- **12 KPIs** on environment, circularity and economy with targets, available as an **offline Excel tool** and as Python with tests
+- IMTA lowers the footprint per kg of fish (**2.90 → 2.12 kg CO₂ eq**) and recovers **18%** of the fish's nitrogen, but the farm as a whole emits about 9% more (illustrative factors)
+- Open about its limits: the assumptions, model checks and known issues are all documented
+- `openLCA` `ecoinvent` `Excel` `Python` `pandas` `matplotlib` `pytest`
+
+<a href="https://github.com/malleshkomal/Life-cycle-assessment-of-Integrated-Multi-Trophical-Aquaculture-"><img src="https://raw.githubusercontent.com/malleshkomal/Life-cycle-assessment-of-Integrated-Multi-Trophical-Aquaculture-/main/results/charts/01_nitrogen_balance.png" alt="Nitrogen balance of fish monoculture vs IMTA" width="720"></a>
 
 ### 🎓 [Master thesis: biocrude from livestock manure via hydrothermal liquefaction](https://github.com/malleshkomal/htl-manure-lca) · [interactive findings](https://malleshkomal.github.io/htl-manure-lca/)
 *Life cycle assessment of biocrude production from livestock manure in Germany via hydrothermal liquefaction*, MSc, TU Bergakademie Freiberg, 2022.
@@ -74,9 +89,9 @@ An end-to-end LCA data pipeline for a T-shirt, jeans and sneakers, from raw supp
 
 | Area | Skills and tools |
 |---|---|
-| **Life cycle assessment** | LCA modelling, carbon footprint (GWP), life cycle inventories, GaBi, Brightway, ecoinvent, CML 2001 |
+| **Life cycle assessment** | LCA modelling (ISO 14040/44), carbon footprint (GWP), life cycle inventories, openLCA, GaBi, Brightway, ecoinvent, EF 3.1, CML 2001 |
 | **Process modelling** | Aspen Plus (RYield, RGibbs, RadFrac, Fortran calculators), mass and energy balances, hydrothermal liquefaction |
-| **Circular economy** | Circularity KPIs, reuse and end-of-life scenarios, recycled content |
+| **Circular economy** | Circularity KPIs, KPI frameworks, nutrient recovery (IMTA), reuse and end-of-life scenarios, recycled content |
 | **Energy systems** | Power-to-X, hydrogen, sustainable aviation fuels, prospective energy scenarios |
 | **Data & analysis** | Python, pandas, NumPy, SQLite, scikit-learn, Jupyter, data pipelines and validation |
 | **Visualisation** | matplotlib, Plotly, d3.js, Streamlit, animated and interactive dashboards |
