@@ -2,7 +2,7 @@
 
 **Life cycle assessment & sustainability data analyst** · Berlin, Germany · **Open to new opportunities**
 
-I turn material, product, energy and end-of-life data into numbers people can act on: carbon footprints, circularity indicators and clear comparisons between design options. Co-author of a peer-reviewed paper on publishing life cycle inventories so others can reuse them.
+I love to work with messy data, collecting LCI inventory, organise the LCI in well structured manner for reuseability and transperancy. Co-author of a peer-reviewed paper on publishing life cycle inventories so others can reuse them.
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Komal%20Chougule-0A66C2?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/komal-mallesh-chougule-72b63a150/)
 ![Location](https://img.shields.io/badge/Based%20in-Berlin-555555)
