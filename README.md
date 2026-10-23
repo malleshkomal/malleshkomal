@@ -34,7 +34,10 @@ Built on the pond LCA of the EU INTEGRATE project (Interreg Atlantic Area): semi
 - 39 cross-checks between the report's tables, with two inconsistencies documented
 - `LCA` `Piscentool` `Excel` `Python` `pandas` `matplotlib` `pytest`
 
-<a href="https://github.com/malleshkomal/Life-cycle-assessment-of-Integrated-Multi-Trophical-Aquaculture-#key-findings"><img src="https://raw.githubusercontent.com/malleshkomal/Life-cycle-assessment-of-Integrated-Multi-Trophical-Aquaculture-/main/results/charts/02_global_warming_by_process.png" alt="Feed is the largest source of greenhouse gases: global warming by process for three pond aquaculture systems" width="720"></a>
+<table><tr>
+<td width="50%"><a href="https://github.com/malleshkomal/Life-cycle-assessment-of-Integrated-Multi-Trophical-Aquaculture-#key-findings"><img src="https://raw.githubusercontent.com/malleshkomal/Life-cycle-assessment-of-Integrated-Multi-Trophical-Aquaculture-/main/results/charts/02_global_warming_by_process.png" alt="Feed is the largest source of greenhouse gases: global warming by process for three pond aquaculture systems"></a></td>
+<td width="50%"><a href="https://github.com/malleshkomal/Life-cycle-assessment-of-Integrated-Multi-Trophical-Aquaculture-#key-findings"><img src="https://raw.githubusercontent.com/malleshkomal/Life-cycle-assessment-of-Integrated-Multi-Trophical-Aquaculture-/main/results/charts/06_environmental_profile.png" alt="Environmental profile: seven impacts of the two IMTA systems as % of the fish-only pond"></a></td>
+</tr></table>
 
 **Excel KPI decision tool** ([preview in the browser](https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fraw.githubusercontent.com%2Fmalleshkomal%2FLife-cycle-assessment-of-Integrated-Multi-Trophical-Aquaculture-%2Fmain%2Fexcel%2FIMTA_KPI_decision_tool.xlsx) · [download](https://github.com/malleshkomal/Life-cycle-assessment-of-Integrated-Multi-Trophical-Aquaculture-/raw/main/excel/IMTA_KPI_decision_tool.xlsx)): live formulas from inventory to nutrient balance, impacts and KPIs. Change a yellow input and every target check updates.
 
