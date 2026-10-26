@@ -32,7 +32,7 @@ Built on the pond LCA of the EU INTEGRATE project (Interreg Atlantic Area): semi
 - **13 KPIs** on environment and circularity with targets, as an **offline Excel tool** and as Python with 35 tests
 - Semi-intensive IMTA keeps **47%** of the feed nitrogen in products (fish pond: 20%) and cuts eutrophication by **57%**; the semi-extensive IMTA cuts global warming by **56%**. Both need more land
 - 39 cross-checks between the report's tables, with two inconsistencies documented
-- `LCA` `Piscentool` `Excel` `Python` `pandas` `matplotlib` `pytest`
+- `LCA` `openlca` `Excel` `Python` `pandas` `matplotlib` `pytest`
 
 <table><tr>
 <td width="50%"><a href="https://github.com/malleshkomal/Life-cycle-assessment-of-Integrated-Multi-Trophical-Aquaculture-#key-findings"><img src="https://raw.githubusercontent.com/malleshkomal/Life-cycle-assessment-of-Integrated-Multi-Trophical-Aquaculture-/main/results/charts/02_global_warming_by_process.png" alt="Feed is the largest source of greenhouse gases: global warming by process for three pond aquaculture systems"></a></td>
