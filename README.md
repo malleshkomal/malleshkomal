@@ -83,7 +83,7 @@ A decision dashboard for the end of life of a modular aluminium exhibition-booth
 
 **LCI workbook** ([preview in the browser](https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fraw.githubusercontent.com%2Fmalleshkomal%2Fcircular-design-advisor%2Fmain%2Foutputs%2FLCI_inventory.xlsx) · [download](https://github.com/malleshkomal/circular-design-advisor/raw/main/outputs/LCI_inventory.xlsx)): change the design, business model, distances or credit method on the Context sheet and the whole inventory updates.
 
-**Offline dashboard** ([download](https://github.com/malleshkomal/circular-design-advisor/raw/main/outputs/dashboard_offline.html)) and **workbook viewer** ([download](https://github.com/malleshkomal/circular-design-advisor/raw/main/outputs/lci_workbook.html)): double-click to open, no internet or Python needed.
+**Offline dashboard and workbook viewer** ([download the offline pack, zip](https://github.com/malleshkomal/circular-design-advisor/raw/main/outputs/circular-design-advisor-offline.zip)): unzip and double-click `dashboard_offline.html` or `lci_workbook.html`. No internet or Python needed.
 
 ### [Circular-booth-KPI](https://github.com/malleshkomal/Circular-booth-KPI)
 Compares single-use and reusable exhibition booth designs on carbon footprint per use, cost and circularity.
