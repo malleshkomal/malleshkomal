@@ -69,15 +69,21 @@ Python tools that read, validate and scale the paper's published inventory witho
 
 <a href="https://malleshkomal.github.io/ptl-lci-explorer/flow.html"><img src="https://raw.githubusercontent.com/malleshkomal/ptl-lci-explorer/main/results/charts/08_flow_animated.svg" alt="Animated flow diagram: wind power, water and CO₂ from air become 1 kg of PtL jet fuel" width="720"></a>
 
-### [Circular Design Advisor](https://github.com/malleshkomal/circular-design-advisor)
-An animated decision dashboard for the end of life of a modular aluminium exhibition-booth panel: reuse, repair, reprocessing, recycling or disposal.
+### ♻️ [Circular Design Advisor](https://github.com/malleshkomal/circular-design-advisor)
+A decision dashboard for the end of life of a modular aluminium exhibition-booth panel: reuse, repair, reprocessing, recycling or disposal.
 - Per-use LCA, circularity KPIs and cost for five strategies, with literature sources tracked for every input
 - 2,538-scenario simulation, 1,500-draw Monte Carlo, Pareto optimisation and a Random Forest surrogate (R² 0.99)
 - Reuse beats recycling from two planned uses: **5.7 vs 21.1 kg CO₂e per use** (illustrative baseline)
+- **Offline interactive dashboard**: a single HTML file with the model ported to JavaScript, so sliders recalculate the KPIs, scenarios, Monte Carlo, optimiser and inventory in the browser. Tests check it reproduces the Python results exactly
+- **Formula-driven LCI workbook** in Excel: every foreground flow per panel life and per use, GWP by life-cycle stage, cost and KPIs, with a validation sheet against the Python model (40/40 checks)
 - Streamlit dashboard with animated Plotly charts and a chatbot that explains the calculated results
-- `Python` `Streamlit` `Plotly` `scikit-learn` `pandas` `pytest`
+- `LCA` `Excel` `Python` `JavaScript` `Streamlit` `Plotly` `scikit-learn` `pandas` `pytest`
 
 <a href="https://github.com/malleshkomal/circular-design-advisor"><img src="https://raw.githubusercontent.com/malleshkomal/circular-design-advisor/main/docs/screenshots/01_overview.png" alt="Circular Design Advisor dashboard overview" width="720"></a>
+
+**LCI workbook** ([preview in the browser](https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fraw.githubusercontent.com%2Fmalleshkomal%2Fcircular-design-advisor%2Fmain%2Foutputs%2FLCI_inventory.xlsx) · [download](https://github.com/malleshkomal/circular-design-advisor/raw/main/outputs/LCI_inventory.xlsx)): change the design, business model, distances or credit method on the Context sheet and the whole inventory updates.
+
+**Offline dashboard** ([download](https://github.com/malleshkomal/circular-design-advisor/raw/main/outputs/dashboard_offline.html)) and **workbook viewer** ([download](https://github.com/malleshkomal/circular-design-advisor/raw/main/outputs/lci_workbook.html)): double-click to open, no internet or Python needed.
 
 ### [Circular-booth-KPI](https://github.com/malleshkomal/Circular-booth-KPI)
 Compares single-use and reusable exhibition booth designs on carbon footprint per use, cost and circularity.
@@ -106,8 +112,8 @@ An end-to-end LCA data pipeline for a T-shirt, jeans and sneakers, from raw supp
 | **Process modelling** | Aspen Plus (RYield, RGibbs, RadFrac, Fortran calculators), mass and energy balances, hydrothermal liquefaction |
 | **Circular economy** | Circularity KPIs, KPI frameworks, nutrient recovery (IMTA), reuse and end-of-life scenarios, recycled content |
 | **Energy systems** | Power-to-X, hydrogen, sustainable aviation fuels, prospective energy scenarios |
-| **Data & analysis** | Python, pandas, NumPy, SQLite, scikit-learn, Jupyter, data pipelines and validation |
-| **Visualisation** | matplotlib, Plotly, d3.js, Streamlit, animated and interactive dashboards |
+| **Data & analysis** | Python, pandas, NumPy, SQLite, scikit-learn, Jupyter, JavaScript, Excel (formula-driven LCI and KPI tools), data pipelines and validation |
+| **Visualisation** | matplotlib, Plotly, d3.js, Streamlit, animated and interactive dashboards, offline single-file HTML dashboards |
 | **Decision support** | Transparent multi-criteria comparison of design options |
 
 ---
