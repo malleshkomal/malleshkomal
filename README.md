@@ -79,11 +79,16 @@ A decision dashboard for the end of life of a modular aluminium exhibition-booth
 - Streamlit dashboard with animated Plotly charts and a chatbot that explains the calculated results
 - `LCA` `Excel` `Python` `JavaScript` `Streamlit` `Plotly` `scikit-learn` `pandas` `pytest`
 
-<a href="https://github.com/malleshkomal/circular-design-advisor"><img src="https://raw.githubusercontent.com/malleshkomal/circular-design-advisor/main/docs/screenshots/01_overview.png" alt="Circular Design Advisor dashboard overview" width="720"></a>
+<a href="https://github.com/malleshkomal/circular-design-advisor#offline-dashboard"><img src="https://raw.githubusercontent.com/malleshkomal/circular-design-advisor/main/docs/screenshots/offline_01_overview.png" alt="Offline Circular Design Advisor dashboard: inputs, KPIs, recommendation and charts" width="720"></a>
+
+<table><tr>
+<td width="50%"><a href="https://github.com/malleshkomal/circular-design-advisor#offline-dashboard"><img src="https://raw.githubusercontent.com/malleshkomal/circular-design-advisor/main/docs/screenshots/offline_04_lci_workbook.png" alt="LCI workbook tab: every sheet of the Excel inventory with its formulas"></a></td>
+<td width="50%"><a href="https://github.com/malleshkomal/circular-design-advisor#offline-dashboard"><img src="https://raw.githubusercontent.com/malleshkomal/circular-design-advisor/main/docs/screenshots/offline_02_scenario.png" alt="Heatmap: where reuse beats recycling by planned uses and distance"></a></td>
+</tr></table>
 
 **LCI workbook** ([preview in the browser](https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fraw.githubusercontent.com%2Fmalleshkomal%2Fcircular-design-advisor%2Fmain%2Foutputs%2FLCI_inventory.xlsx) · [download](https://github.com/malleshkomal/circular-design-advisor/raw/main/outputs/LCI_inventory.xlsx)): change the design, business model, distances or credit method on the Context sheet and the whole inventory updates.
 
-**Offline dashboard and workbook viewer** ([download the offline pack, zip](https://github.com/malleshkomal/circular-design-advisor/raw/main/outputs/circular-design-advisor-offline.zip)): unzip and double-click `dashboard_offline.html` or `lci_workbook.html`. No internet or Python needed.
+**Offline dashboard** ([download, zip](https://github.com/malleshkomal/circular-design-advisor/raw/main/outputs/circular-design-advisor-offline.zip)): unzip and double-click `dashboard_offline.html`. One file holds the interactive model and the whole LCI workbook (every sheet, formulas, .xlsx download). No internet or Python needed.
 
 ### [Circular-booth-KPI](https://github.com/malleshkomal/Circular-booth-KPI)
 Compares single-use and reusable exhibition booth designs on carbon footprint per use, cost and circularity.
