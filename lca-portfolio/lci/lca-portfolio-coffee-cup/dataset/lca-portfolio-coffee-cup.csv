@@ -1,0 +1,108 @@
+Database,lca-portfolio-coffee-cup
+format,Excel spreadsheet
+
+Activity,"paper cup production, PE-lined, printed"
+code,1f138901720b5440aaece455fed76d7e
+comment,11 g cupstock board with 0.6 g PE extrusion coating.
+location,RER
+production amount,1
+reference product,"paper cup, 350 ml"
+unit,unit
+worksheet name,lca-portfolio-coffee-cup
+Exchanges
+name,amount,database,location,unit,categories,type,Comment,reference product
+"paper cup production, PE-lined, printed",1,lca-portfolio-coffee-cup,RER,unit,,production,Portfolio case 10 (illustrative); UNEP 2021; Sinkko et al. 2024 (JRC),"paper cup, 350 ml"
+"market for electricity, medium voltage",0.003,ecoinvent-3.10-cutoff,RER,kilowatt hour,,technosphere,Portfolio case 10 (illustrative); UNEP 2021; Sinkko et al. 2024 (JRC),"electricity, medium voltage"
+market for liquid packaging board,0.011,ecoinvent-3.10-cutoff,GLO,kilogram,,technosphere,food-contact virgin board proxy,liquid packaging board
+"market for polyethylene, low density, granulate",0.0006,ecoinvent-3.10-cutoff,GLO,kilogram,,technosphere,Portfolio case 10 (illustrative); UNEP 2021; Sinkko et al. 2024 (JRC),"polyethylene, low density, granulate"
+"market for transport, freight, lorry 16-32 metric ton, EURO6",0.0088,ecoinvent-3.10-cutoff,RER,ton kilometer,,technosphere,"board to converter, 800 km","transport, freight, lorry 16-32 metric ton, EURO6"
+
+Activity,polystyrene lid production
+code,0b0165fa55965818b33003bde34a8f88
+comment,3 g thermoformed PS lid.
+location,RER
+production amount,1
+reference product,polystyrene cup lid
+unit,unit
+worksheet name,lca-portfolio-coffee-cup
+Exchanges
+name,amount,database,location,unit,categories,type,Comment,reference product
+polystyrene lid production,1,lca-portfolio-coffee-cup,RER,unit,,production,Portfolio case 10 (illustrative); UNEP 2021; Sinkko et al. 2024 (JRC),polystyrene cup lid
+"market for polystyrene, high impact",0.003,ecoinvent-3.10-cutoff,GLO,kilogram,,technosphere,Portfolio case 10 (illustrative); UNEP 2021; Sinkko et al. 2024 (JRC),"polystyrene, high impact"
+"market for thermoforming, with calendering",0.003,ecoinvent-3.10-cutoff,GLO,kilogram,,technosphere,Portfolio case 10 (illustrative); UNEP 2021; Sinkko et al. 2024 (JRC),"thermoforming, with calendering"
+
+Activity,distribution of cups and lids to cafes
+code,92724c9d11a45e0a8d610f61ef14562c
+comment,600 km.
+location,DE
+production amount,1
+reference product,"single-use cup and lid, at cafe"
+unit,unit
+worksheet name,lca-portfolio-coffee-cup
+Exchanges
+name,amount,database,location,unit,categories,type,Comment,reference product
+distribution of cups and lids to cafes,1,lca-portfolio-coffee-cup,DE,unit,,production,Portfolio case 10 (illustrative); UNEP 2021; Sinkko et al. 2024 (JRC),"single-use cup and lid, at cafe"
+"market for transport, freight, lorry 16-32 metric ton, EURO6",0.009,ecoinvent-3.10-cutoff,RER,ton kilometer,,technosphere,Portfolio case 10 (illustrative); UNEP 2021; Sinkko et al. 2024 (JRC),"transport, freight, lorry 16-32 metric ton, EURO6"
+"paper cup production, PE-lined, printed",1.0,lca-portfolio-coffee-cup,RER,unit,,technosphere,Portfolio case 10 (illustrative); UNEP 2021; Sinkko et al. 2024 (JRC),"paper cup, 350 ml"
+polystyrene lid production,1.0,lca-portfolio-coffee-cup,RER,unit,,technosphere,Portfolio case 10 (illustrative); UNEP 2021; Sinkko et al. 2024 (JRC),polystyrene cup lid
+
+Activity,hot drink served in single-use paper cup
+code,f0a73d43be345337b62bbed0cf6bd9ae
+comment,"Functional unit 1. Cup and lid 65% incinerated, 30% landfilled, 5% specialist recycling (not modelled)."
+location,DE
+production amount,1
+reference product,hot drink served in single-use paper cup (functional unit)
+unit,unit
+worksheet name,lca-portfolio-coffee-cup
+Exchanges
+name,amount,database,location,unit,categories,type,Comment,reference product
+hot drink served in single-use paper cup,1,lca-portfolio-coffee-cup,DE,unit,,production,Portfolio case 10 (illustrative); UNEP 2021; Sinkko et al. 2024 (JRC),hot drink served in single-use paper cup (functional unit)
+distribution of cups and lids to cafes,1.0,lca-portfolio-coffee-cup,DE,unit,,technosphere,Portfolio case 10 (illustrative); UNEP 2021; Sinkko et al. 2024 (JRC),"single-use cup and lid, at cafe"
+market for municipal solid waste,0.0095,ecoinvent-3.10-cutoff,DE,kilogram,,technosphere,"incinerated share | waste-treatment input entered as a positive amount, as in the LCIS2024 PtL example; ecoinvent treats waste as negative - flip the sign when linking",municipal solid waste
+market for waste paperboard,0.004,ecoinvent-3.10-cutoff,DE,kilogram,,technosphere,"landfilled share (proxy route) | waste-treatment input entered as a positive amount, as in the LCIS2024 PtL example; ecoinvent treats waste as negative - flip the sign when linking",waste paperboard
+
+Activity,reusable polypropylene cup production
+code,bb342c4401f95f5a802066cfafeab38c
+comment,"100 g PP cup, injection moulded."
+location,RER
+production amount,1
+reference product,reusable PP cup with silicone lid
+unit,unit
+worksheet name,lca-portfolio-coffee-cup
+Exchanges
+name,amount,database,location,unit,categories,type,Comment,reference product
+reusable polypropylene cup production,1,lca-portfolio-coffee-cup,RER,unit,,production,Portfolio case 10 (illustrative); UNEP 2021; Sinkko et al. 2024 (JRC),reusable PP cup with silicone lid
+market for injection moulding,0.09,ecoinvent-3.10-cutoff,GLO,kilogram,,technosphere,Portfolio case 10 (illustrative); UNEP 2021; Sinkko et al. 2024 (JRC),injection moulding
+"market for polypropylene, granulate",0.09,ecoinvent-3.10-cutoff,GLO,kilogram,,technosphere,Portfolio case 10 (illustrative); UNEP 2021; Sinkko et al. 2024 (JRC),"polypropylene, granulate"
+market for silicone product,0.01,ecoinvent-3.10-cutoff,RER,kilogram,,technosphere,lid,silicone product
+"market for transport, freight, lorry 16-32 metric ton, EURO6",0.06,ecoinvent-3.10-cutoff,RER,ton kilometer,,technosphere,600 km,"transport, freight, lorry 16-32 metric ton, EURO6"
+
+Activity,"dishwashing of reusable cup, per use"
+code,db47721d89405377b2a3e6d3fd29705d
+comment,"Home dishwasher, shared load."
+location,DE
+production amount,1
+reference product,reusable cup washed once
+unit,unit
+worksheet name,lca-portfolio-coffee-cup
+Exchanges
+name,amount,database,location,unit,categories,type,Comment,reference product
+"dishwashing of reusable cup, per use",1,lca-portfolio-coffee-cup,DE,unit,,production,Portfolio case 10 (illustrative); UNEP 2021; Sinkko et al. 2024 (JRC),reusable cup washed once
+"market for electricity, low voltage",0.04,ecoinvent-3.10-cutoff,DE,kilowatt hour,,technosphere,incl. water heating,"electricity, low voltage"
+market for soap,0.001,ecoinvent-3.10-cutoff,GLO,kilogram,,technosphere,detergent proxy,soap
+market for tap water,0.3,ecoinvent-3.10-cutoff,Europe without Switzerland,kilogram,,technosphere,Portfolio case 10 (illustrative); UNEP 2021; Sinkko et al. 2024 (JRC),tap water
+
+Activity,"hot drink served in reusable PP cup, 50 uses"
+code,ea06277acbdf54a39a999edc982db113
+comment,Functional unit 2. One fiftieth of the cup and its end-of-life plus one wash.
+location,DE
+production amount,1
+reference product,"hot drink served in reusable PP cup, 50 uses (functional unit)"
+unit,unit
+worksheet name,lca-portfolio-coffee-cup
+Exchanges
+name,amount,database,location,unit,categories,type,Comment,reference product
+"hot drink served in reusable PP cup, 50 uses",1,lca-portfolio-coffee-cup,DE,unit,,production,Portfolio case 10 (illustrative); UNEP 2021; Sinkko et al. 2024 (JRC),"hot drink served in reusable PP cup, 50 uses (functional unit)"
+"dishwashing of reusable cup, per use",1.0,lca-portfolio-coffee-cup,DE,unit,,technosphere,Portfolio case 10 (illustrative); UNEP 2021; Sinkko et al. 2024 (JRC),reusable cup washed once
+market for municipal solid waste,0.002,ecoinvent-3.10-cutoff,DE,kilogram,,technosphere,"100 g cup / 50 uses | waste-treatment input entered as a positive amount, as in the LCIS2024 PtL example; ecoinvent treats waste as negative - flip the sign when linking",municipal solid waste
+reusable polypropylene cup production,0.02,lca-portfolio-coffee-cup,RER,unit,,technosphere,Portfolio case 10 (illustrative); UNEP 2021; Sinkko et al. 2024 (JRC),reusable PP cup with silicone lid

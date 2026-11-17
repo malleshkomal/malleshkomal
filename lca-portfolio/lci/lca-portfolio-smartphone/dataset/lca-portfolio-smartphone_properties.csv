@@ -1,0 +1,16 @@
+Property,Value
+Dataset Name,lca-portfolio-smartphone
+Schema Version,LCIS2024
+Dataset Version,1.0.0
+Software,Python 3.11 export script (Brightway2 CSV/Excel layout); not exported from Brightway
+Export Time,20261115-193000
+Unique Dataset Identifier,fcc87fed56285f9f865ba6c8c38c2f86
+Total Project Parameters,0
+Total Database Parameters,0
+Total Activity Parameters,0
+Total Activities,7
+Total Exchanges,30
+Total Biosphere flows,0
+Total Technosphere flows,23
+Total Reference products,7
+Dataset dependencies,"lca-portfolio-smartphone, biosphere3, ecoinvent-3.10-cutoff"

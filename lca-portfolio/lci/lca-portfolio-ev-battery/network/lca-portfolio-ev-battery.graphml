@@ -1,0 +1,401 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d6" for="edge" attr.name="arrows" attr.type="boolean"/>
+<key id="d5" for="edge" attr.name="unit" attr.type="string"/>
+<key id="d4" for="edge" attr.name="amount" attr.type="double"/>
+<key id="d3" for="edge" attr.name="line_type" attr.type="string"/>
+<key id="d2" for="edge" attr.name="color" attr.type="string"/>
+<key id="d1" for="node" attr.name="width" attr.type="long"/>
+<key id="d0" for="node" attr.name="color" attr.type="string"/>
+<graph edgedefault="directed"><node id="Activity - NMC811 cathode active material production">
+  <data key="d0">blue</data>
+  <data key="d1">26</data>
+</node>
+<node id="cathode active material, NMC811"/>
+<node id="ammonia, anhydrous, liquid"/>
+<node id="cobalt sulfate"/>
+<node id="electricity, medium voltage"/>
+<node id="heat, district or industrial, natural gas"/>
+<node id="lithium hydroxide, battery grade"/>
+<node id="manganese sulfate"/>
+<node id="nickel sulfate"/>
+<node id="sodium hydroxide, without water, in 50% solution state"/>
+<node id="Activity - graphite anode material production">
+  <data key="d0">blue</data>
+  <data key="d1">26</data>
+</node>
+<node id="anode active material, graphite"/>
+<node id="graphite, battery grade"/>
+<node id="Activity - lithium-ion cell manufacturing, NMC811">
+  <data key="d0">blue</data>
+  <data key="d1">26</data>
+</node>
+<node id="lithium-ion cell, NMC811"/>
+<node id="N-methyl-2-pyrrolidone"/>
+<node id="aluminium, wrought alloy"/>
+<node id="copper, cathode"/>
+<node id="ethylene carbonate"/>
+<node id="extrusion, plastic film"/>
+<node id="lithium hexafluorophosphate"/>
+<node id="polyethylene, high density, granulate"/>
+<node id="Activity - battery pack assembly, 60 kWh">
+  <data key="d0">blue</data>
+  <data key="d1">26</data>
+</node>
+<node id="battery pack, NMC811, 60 kWh"/>
+<node id="electronics, for control units"/>
+<node id="steel, low-alloyed"/>
+<node id="Activity - shipping of battery pack to Europe">
+  <data key="d0">blue</data>
+  <data key="d1">26</data>
+</node>
+<node id="battery pack, NMC811, 60 kWh, at vehicle plant"/>
+<node id="transport, freight, lorry 16-32 metric ton, EURO6"/>
+<node id="transport, freight, sea, container ship"/>
+<node id="Activity - battery-attributable charging losses, 200,000 km">
+  <data key="d0">blue</data>
+  <data key="d1">26</data>
+</node>
+<node id="battery charging losses, first vehicle life"/>
+<node id="electricity, low voltage"/>
+<node id="Activity - battery pack collection and hydrometallurgical recycling">
+  <data key="d0">blue</data>
+  <data key="d1">26</data>
+</node>
+<node id="spent battery pack recycling service"/>
+<node id="hydrogen peroxide, without water, in 50% solution state"/>
+<node id="sulfuric acid"/>
+<node id="Activity - traction battery pack, life cycle">
+  <data key="d0">blue</data>
+  <data key="d1">26</data>
+</node>
+<node id="traction battery pack, 60 kWh, life cycle (functional unit)"/>
+<edge source="Activity - NMC811 cathode active material production" target="cathode active material, NMC811">
+  <data key="d2">black</data>
+  <data key="d3">Dash</data>
+  <data key="d4">1.0</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="cathode active material, NMC811" target="Activity - lithium-ion cell manufacturing, NMC811">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">0.423077</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="ammonia, anhydrous, liquid" target="Activity - NMC811 cathode active material production">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">0.0363636</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="cobalt sulfate" target="Activity - NMC811 cathode active material production">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">0.245455</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="electricity, medium voltage" target="Activity - NMC811 cathode active material production">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">10.9091</data>
+  <data key="d5">kilowatt hour</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="electricity, medium voltage" target="Activity - graphite anode material production">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">2.85714</data>
+  <data key="d5">kilowatt hour</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="electricity, medium voltage" target="Activity - lithium-ion cell manufacturing, NMC811">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">5.76923</data>
+  <data key="d5">kilowatt hour</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="electricity, medium voltage" target="Activity - battery pack assembly, 60 kWh">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">80.0</data>
+  <data key="d5">kilowatt hour</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="electricity, medium voltage" target="Activity - battery pack collection and hydrometallurgical recycling">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">300.0</data>
+  <data key="d5">kilowatt hour</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="heat, district or industrial, natural gas" target="Activity - NMC811 cathode active material production">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">54.5455</data>
+  <data key="d5">megajoule</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="heat, district or industrial, natural gas" target="Activity - lithium-ion cell manufacturing, NMC811">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">3.84615</data>
+  <data key="d5">megajoule</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="heat, district or industrial, natural gas" target="Activity - battery pack collection and hydrometallurgical recycling">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">500.0</data>
+  <data key="d5">megajoule</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="lithium hydroxide, battery grade" target="Activity - NMC811 cathode active material production">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">0.427273</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="manganese sulfate" target="Activity - NMC811 cathode active material production">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">0.145455</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="nickel sulfate" target="Activity - NMC811 cathode active material production">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">1.83636</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="sodium hydroxide, without water, in 50% solution state" target="Activity - NMC811 cathode active material production">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">0.727273</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="Activity - graphite anode material production" target="anode active material, graphite">
+  <data key="d2">black</data>
+  <data key="d3">Dash</data>
+  <data key="d4">1.0</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="anode active material, graphite" target="Activity - lithium-ion cell manufacturing, NMC811">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">0.269231</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="graphite, battery grade" target="Activity - graphite anode material production">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">1.1</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="Activity - lithium-ion cell manufacturing, NMC811" target="lithium-ion cell, NMC811">
+  <data key="d2">black</data>
+  <data key="d3">Dash</data>
+  <data key="d4">1.0</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="lithium-ion cell, NMC811" target="Activity - battery pack assembly, 60 kWh">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">260.0</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="N-methyl-2-pyrrolidone" target="Activity - lithium-ion cell manufacturing, NMC811">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">0.0115385</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="aluminium, wrought alloy" target="Activity - lithium-ion cell manufacturing, NMC811">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">0.0576923</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="aluminium, wrought alloy" target="Activity - battery pack assembly, 60 kWh">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">80.0</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="copper, cathode" target="Activity - lithium-ion cell manufacturing, NMC811">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">0.0769231</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="copper, cathode" target="Activity - battery pack assembly, 60 kWh">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">10.0</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="ethylene carbonate" target="Activity - lithium-ion cell manufacturing, NMC811">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">0.1</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="extrusion, plastic film" target="Activity - lithium-ion cell manufacturing, NMC811">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">0.0230769</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="lithium hexafluorophosphate" target="Activity - lithium-ion cell manufacturing, NMC811">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">0.0153846</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="polyethylene, high density, granulate" target="Activity - lithium-ion cell manufacturing, NMC811">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">0.0230769</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="Activity - battery pack assembly, 60 kWh" target="battery pack, NMC811, 60 kWh">
+  <data key="d2">black</data>
+  <data key="d3">Dash</data>
+  <data key="d4">1.0</data>
+  <data key="d5">unit</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="battery pack, NMC811, 60 kWh" target="Activity - shipping of battery pack to Europe">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">1.0</data>
+  <data key="d5">unit</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="electronics, for control units" target="Activity - battery pack assembly, 60 kWh">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">2.0</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="steel, low-alloyed" target="Activity - battery pack assembly, 60 kWh">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">30.0</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="Activity - shipping of battery pack to Europe" target="battery pack, NMC811, 60 kWh, at vehicle plant">
+  <data key="d2">black</data>
+  <data key="d3">Dash</data>
+  <data key="d4">1.0</data>
+  <data key="d5">unit</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="battery pack, NMC811, 60 kWh, at vehicle plant" target="Activity - traction battery pack, life cycle">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">1.0</data>
+  <data key="d5">unit</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="transport, freight, lorry 16-32 metric ton, EURO6" target="Activity - shipping of battery pack to Europe">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">200.0</data>
+  <data key="d5">ton kilometer</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="transport, freight, lorry 16-32 metric ton, EURO6" target="Activity - battery pack collection and hydrometallurgical recycling">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">200.0</data>
+  <data key="d5">ton kilometer</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="transport, freight, sea, container ship" target="Activity - shipping of battery pack to Europe">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">8000.0</data>
+  <data key="d5">ton kilometer</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="Activity - battery-attributable charging losses, 200,000 km" target="battery charging losses, first vehicle life">
+  <data key="d2">black</data>
+  <data key="d3">Dash</data>
+  <data key="d4">1.0</data>
+  <data key="d5">unit</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="battery charging losses, first vehicle life" target="Activity - traction battery pack, life cycle">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">1.0</data>
+  <data key="d5">unit</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="electricity, low voltage" target="Activity - battery-attributable charging losses, 200,000 km">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">3400.0</data>
+  <data key="d5">kilowatt hour</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="Activity - battery pack collection and hydrometallurgical recycling" target="spent battery pack recycling service">
+  <data key="d2">black</data>
+  <data key="d3">Dash</data>
+  <data key="d4">1.0</data>
+  <data key="d5">unit</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="spent battery pack recycling service" target="Activity - traction battery pack, life cycle">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">1.0</data>
+  <data key="d5">unit</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="hydrogen peroxide, without water, in 50% solution state" target="Activity - battery pack collection and hydrometallurgical recycling">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">25.0</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="sulfuric acid" target="Activity - battery pack collection and hydrometallurgical recycling">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">120.0</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="Activity - traction battery pack, life cycle" target="traction battery pack, 60 kWh, life cycle (functional unit)">
+  <data key="d2">black</data>
+  <data key="d3">Dash</data>
+  <data key="d4">1.0</data>
+  <data key="d5">unit</data>
+  <data key="d6">True</data>
+</edge>
+</graph></graphml>

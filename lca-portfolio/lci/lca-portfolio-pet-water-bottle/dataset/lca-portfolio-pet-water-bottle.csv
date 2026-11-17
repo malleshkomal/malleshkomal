@@ -1,0 +1,95 @@
+Database,lca-portfolio-pet-water-bottle
+format,Excel spreadsheet
+
+Activity,"PET bottle production, injection stretch blow moulding"
+code,d860ea06bc5f55dca584acff097a742a
+comment,14 g virgin bottle-grade PET (reference case; EU SUPD requires 25% recycled content from 2025).
+location,DE
+production amount,1
+reference product,"PET bottle, 500 ml, empty"
+unit,unit
+worksheet name,lca-portfolio-pet-water-bottle
+Exchanges
+name,amount,database,location,unit,categories,type,Comment,reference product
+"PET bottle production, injection stretch blow moulding",1,lca-portfolio-pet-water-bottle,DE,unit,,production,Portfolio case 3 (illustrative); PlasticsEurope eco-profiles; ecoinvent,"PET bottle, 500 ml, empty"
+"market for electricity, medium voltage",0.055,ecoinvent-3.10-cutoff,DE,kilowatt hour,,technosphere,preform and blow moulding,"electricity, medium voltage"
+"market for polyethylene terephthalate, granulate, bottle grade",0.014,ecoinvent-3.10-cutoff,GLO,kilogram,,technosphere,Portfolio case 3 (illustrative); PlasticsEurope eco-profiles; ecoinvent,"polyethylene terephthalate, granulate, bottle grade"
+"market for transport, freight, lorry 16-32 metric ton, EURO6",0.007,ecoinvent-3.10-cutoff,RER,ton kilometer,,technosphere,"resin, 500 km","transport, freight, lorry 16-32 metric ton, EURO6"
+
+Activity,closure and label production
+code,66bb9027f1d655f18bd4f389cb3e13b8
+comment,"2 g HDPE cap, 0.5 g PP label."
+location,DE
+production amount,1
+reference product,HDPE tethered cap and PP label
+unit,unit
+worksheet name,lca-portfolio-pet-water-bottle
+Exchanges
+name,amount,database,location,unit,categories,type,Comment,reference product
+closure and label production,1,lca-portfolio-pet-water-bottle,DE,unit,,production,Portfolio case 3 (illustrative); PlasticsEurope eco-profiles; ecoinvent,HDPE tethered cap and PP label
+market for injection moulding,0.002,ecoinvent-3.10-cutoff,GLO,kilogram,,technosphere,Portfolio case 3 (illustrative); PlasticsEurope eco-profiles; ecoinvent,injection moulding
+"market for polyethylene, high density, granulate",0.002,ecoinvent-3.10-cutoff,GLO,kilogram,,technosphere,Portfolio case 3 (illustrative); PlasticsEurope eco-profiles; ecoinvent,"polyethylene, high density, granulate"
+"market for polypropylene, granulate",0.0005,ecoinvent-3.10-cutoff,GLO,kilogram,,technosphere,Portfolio case 3 (illustrative); PlasticsEurope eco-profiles; ecoinvent,"polypropylene, granulate"
+"market for transport, freight, lorry 16-32 metric ton, EURO6",0.00075,ecoinvent-3.10-cutoff,RER,ton kilometer,,technosphere,300 km,"transport, freight, lorry 16-32 metric ton, EURO6"
+
+Activity,mineral water treatment and bottling
+code,0af6477d78a359a8b7b13323f01e78f3
+comment,"Filtration, filling, capping, labelling, shrink-wrapping."
+location,DE
+production amount,1
+reference product,"mineral water, 500 ml, bottled"
+unit,unit
+worksheet name,lca-portfolio-pet-water-bottle
+Exchanges
+name,amount,database,location,unit,categories,type,Comment,reference product
+"Water, well, in ground",0.00075,biosphere3,,cubic meter,natural resource::in water,biosphere,0.5 L product + 0.25 L process water,
+mineral water treatment and bottling,1,lca-portfolio-pet-water-bottle,DE,unit,,production,Portfolio case 3 (illustrative); PlasticsEurope eco-profiles; ecoinvent,"mineral water, 500 ml, bottled"
+"PET bottle production, injection stretch blow moulding",1.0,lca-portfolio-pet-water-bottle,DE,unit,,technosphere,Portfolio case 3 (illustrative); PlasticsEurope eco-profiles; ecoinvent,"PET bottle, 500 ml, empty"
+closure and label production,1.0,lca-portfolio-pet-water-bottle,DE,unit,,technosphere,Portfolio case 3 (illustrative); PlasticsEurope eco-profiles; ecoinvent,HDPE tethered cap and PP label
+"market for electricity, medium voltage",0.01,ecoinvent-3.10-cutoff,DE,kilowatt hour,,technosphere,Portfolio case 3 (illustrative); PlasticsEurope eco-profiles; ecoinvent,"electricity, medium voltage"
+"market for packaging film, low density polyethylene",0.0004,ecoinvent-3.10-cutoff,GLO,kilogram,,technosphere,shrink film share,"packaging film, low density polyethylene"
+
+Activity,distribution of bottled water to retail
+code,fc22cf8543c653879eb3757f5c63acfc
+comment,"300 km one way, full truck loads."
+location,DE
+production amount,1
+reference product,"bottled water, 500 ml, at retail"
+unit,unit
+worksheet name,lca-portfolio-pet-water-bottle
+Exchanges
+name,amount,database,location,unit,categories,type,Comment,reference product
+distribution of bottled water to retail,1,lca-portfolio-pet-water-bottle,DE,unit,,production,Portfolio case 3 (illustrative); PlasticsEurope eco-profiles; ecoinvent,"bottled water, 500 ml, at retail"
+"market for transport, freight, lorry 16-32 metric ton, EURO6",0.16,ecoinvent-3.10-cutoff,RER,ton kilometer,,technosphere,300 km x 0.53 kg incl. secondary packaging,"transport, freight, lorry 16-32 metric ton, EURO6"
+mineral water treatment and bottling,1.0,lca-portfolio-pet-water-bottle,DE,unit,,technosphere,Portfolio case 3 (illustrative); PlasticsEurope eco-profiles; ecoinvent,"mineral water, 500 ml, bottled"
+
+Activity,retail chilling of bottled water
+code,48d7a42d58ce5db1886feaa0447b1c06
+comment,50% of bottles chilled for 2 days.
+location,DE
+production amount,1
+reference product,"bottled water, 500 ml, chilled, at retail"
+unit,unit
+worksheet name,lca-portfolio-pet-water-bottle
+Exchanges
+name,amount,database,location,unit,categories,type,Comment,reference product
+"Ethane, 1,1,1,2-tetrafluoro-, HFC-134a",1e-06,biosphere3,,kilogram,air,biosphere,"refrigerant leakage, illustrative",
+retail chilling of bottled water,1,lca-portfolio-pet-water-bottle,DE,unit,,production,Portfolio case 3 (illustrative); PlasticsEurope eco-profiles; ecoinvent,"bottled water, 500 ml, chilled, at retail"
+distribution of bottled water to retail,1.0,lca-portfolio-pet-water-bottle,DE,unit,,technosphere,Portfolio case 3 (illustrative); PlasticsEurope eco-profiles; ecoinvent,"bottled water, 500 ml, at retail"
+"market for electricity, low voltage",0.02,ecoinvent-3.10-cutoff,DE,kilowatt hour,,technosphere,Portfolio case 3 (illustrative); PlasticsEurope eco-profiles; ecoinvent,"electricity, low voltage"
+
+Activity,"bottled water, consumption and end-of-life"
+code,022c8342805b5228befc5e479cd1b533
+comment,"Functional unit. 60% collected for recycling (cut-off), 25% incinerated, 15% landfilled or littered (litter not modelled as a flow)."
+location,DE
+production amount,1
+reference product,"bottled mineral water, 500 ml, consumed (functional unit)"
+unit,unit
+worksheet name,lca-portfolio-pet-water-bottle
+Exchanges
+name,amount,database,location,unit,categories,type,Comment,reference product
+"bottled water, consumption and end-of-life",1,lca-portfolio-pet-water-bottle,DE,unit,,production,Portfolio case 3 (illustrative); PlasticsEurope eco-profiles; ecoinvent,"bottled mineral water, 500 ml, consumed (functional unit)"
+market for municipal solid waste,0.0041,ecoinvent-3.10-cutoff,DE,kilogram,,technosphere,"incinerated share | waste-treatment input entered as a positive amount, as in the LCIS2024 PtL example; ecoinvent treats waste as negative - flip the sign when linking",municipal solid waste
+"market for waste plastic, mixture",0.0025,ecoinvent-3.10-cutoff,RoW,kilogram,,technosphere,"landfill share | waste-treatment input entered as a positive amount, as in the LCIS2024 PtL example; ecoinvent treats waste as negative - flip the sign when linking","waste plastic, mixture"
+"market for waste polyethylene terephthalate, for recycling, sorted",0.0099,ecoinvent-3.10-cutoff,GLO,kilogram,,technosphere,"60% collected | waste-treatment input entered as a positive amount, as in the LCIS2024 PtL example; ecoinvent treats waste as negative - flip the sign when linking","waste polyethylene terephthalate, for recycling, sorted"
+retail chilling of bottled water,1.0,lca-portfolio-pet-water-bottle,DE,unit,,technosphere,Portfolio case 3 (illustrative); PlasticsEurope eco-profiles; ecoinvent,"bottled water, 500 ml, chilled, at retail"

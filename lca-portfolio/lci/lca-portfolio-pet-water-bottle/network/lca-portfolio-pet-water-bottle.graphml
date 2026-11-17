@@ -1,0 +1,241 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d6" for="edge" attr.name="arrows" attr.type="boolean"/>
+<key id="d5" for="edge" attr.name="unit" attr.type="string"/>
+<key id="d4" for="edge" attr.name="amount" attr.type="double"/>
+<key id="d3" for="edge" attr.name="line_type" attr.type="string"/>
+<key id="d2" for="edge" attr.name="color" attr.type="string"/>
+<key id="d1" for="node" attr.name="width" attr.type="long"/>
+<key id="d0" for="node" attr.name="color" attr.type="string"/>
+<graph edgedefault="directed"><node id="Activity - PET bottle production, injection stretch blow moulding">
+  <data key="d0">blue</data>
+  <data key="d1">26</data>
+</node>
+<node id="PET bottle, 500 ml, empty"/>
+<node id="electricity, medium voltage"/>
+<node id="polyethylene terephthalate, granulate, bottle grade"/>
+<node id="transport, freight, lorry 16-32 metric ton, EURO6"/>
+<node id="Activity - closure and label production">
+  <data key="d0">blue</data>
+  <data key="d1">26</data>
+</node>
+<node id="HDPE tethered cap and PP label"/>
+<node id="injection moulding"/>
+<node id="polyethylene, high density, granulate"/>
+<node id="polypropylene, granulate"/>
+<node id="Activity - mineral water treatment and bottling">
+  <data key="d0">blue</data>
+  <data key="d1">26</data>
+</node>
+<node id="Water, well, in ground"/>
+<node id="mineral water, 500 ml, bottled"/>
+<node id="packaging film, low density polyethylene"/>
+<node id="Activity - distribution of bottled water to retail">
+  <data key="d0">blue</data>
+  <data key="d1">26</data>
+</node>
+<node id="bottled water, 500 ml, at retail"/>
+<node id="Activity - retail chilling of bottled water">
+  <data key="d0">blue</data>
+  <data key="d1">26</data>
+</node>
+<node id="Ethane, 1,1,1,2-tetrafluoro-, HFC-134a"/>
+<node id="bottled water, 500 ml, chilled, at retail"/>
+<node id="electricity, low voltage"/>
+<node id="Activity - bottled water, consumption and end-of-life">
+  <data key="d0">blue</data>
+  <data key="d1">26</data>
+</node>
+<node id="bottled mineral water, 500 ml, consumed (functional unit)"/>
+<node id="municipal solid waste"/>
+<node id="waste plastic, mixture"/>
+<node id="waste polyethylene terephthalate, for recycling, sorted"/>
+<edge source="Activity - PET bottle production, injection stretch blow moulding" target="PET bottle, 500 ml, empty">
+  <data key="d2">black</data>
+  <data key="d3">Dash</data>
+  <data key="d4">1.0</data>
+  <data key="d5">unit</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="PET bottle, 500 ml, empty" target="Activity - mineral water treatment and bottling">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">1.0</data>
+  <data key="d5">unit</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="electricity, medium voltage" target="Activity - PET bottle production, injection stretch blow moulding">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">0.055</data>
+  <data key="d5">kilowatt hour</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="electricity, medium voltage" target="Activity - mineral water treatment and bottling">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">0.01</data>
+  <data key="d5">kilowatt hour</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="polyethylene terephthalate, granulate, bottle grade" target="Activity - PET bottle production, injection stretch blow moulding">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">0.014</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="transport, freight, lorry 16-32 metric ton, EURO6" target="Activity - PET bottle production, injection stretch blow moulding">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">0.007</data>
+  <data key="d5">ton kilometer</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="transport, freight, lorry 16-32 metric ton, EURO6" target="Activity - closure and label production">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">0.00075</data>
+  <data key="d5">ton kilometer</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="transport, freight, lorry 16-32 metric ton, EURO6" target="Activity - distribution of bottled water to retail">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">0.16</data>
+  <data key="d5">ton kilometer</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="Activity - closure and label production" target="HDPE tethered cap and PP label">
+  <data key="d2">black</data>
+  <data key="d3">Dash</data>
+  <data key="d4">1.0</data>
+  <data key="d5">unit</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="HDPE tethered cap and PP label" target="Activity - mineral water treatment and bottling">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">1.0</data>
+  <data key="d5">unit</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="injection moulding" target="Activity - closure and label production">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">0.002</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="polyethylene, high density, granulate" target="Activity - closure and label production">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">0.002</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="polypropylene, granulate" target="Activity - closure and label production">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">0.0005</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="Activity - mineral water treatment and bottling" target="Water, well, in ground">
+  <data key="d2">green</data>
+  <data key="d3">Dots</data>
+  <data key="d4">0.00075</data>
+  <data key="d5">cubic meter</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="Activity - mineral water treatment and bottling" target="mineral water, 500 ml, bottled">
+  <data key="d2">black</data>
+  <data key="d3">Dash</data>
+  <data key="d4">1.0</data>
+  <data key="d5">unit</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="mineral water, 500 ml, bottled" target="Activity - distribution of bottled water to retail">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">1.0</data>
+  <data key="d5">unit</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="packaging film, low density polyethylene" target="Activity - mineral water treatment and bottling">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">0.0004</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="Activity - distribution of bottled water to retail" target="bottled water, 500 ml, at retail">
+  <data key="d2">black</data>
+  <data key="d3">Dash</data>
+  <data key="d4">1.0</data>
+  <data key="d5">unit</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="bottled water, 500 ml, at retail" target="Activity - retail chilling of bottled water">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">1.0</data>
+  <data key="d5">unit</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="Activity - retail chilling of bottled water" target="Ethane, 1,1,1,2-tetrafluoro-, HFC-134a">
+  <data key="d2">green</data>
+  <data key="d3">Dots</data>
+  <data key="d4">1e-06</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="Activity - retail chilling of bottled water" target="bottled water, 500 ml, chilled, at retail">
+  <data key="d2">black</data>
+  <data key="d3">Dash</data>
+  <data key="d4">1.0</data>
+  <data key="d5">unit</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="bottled water, 500 ml, chilled, at retail" target="Activity - bottled water, consumption and end-of-life">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">1.0</data>
+  <data key="d5">unit</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="electricity, low voltage" target="Activity - retail chilling of bottled water">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">0.02</data>
+  <data key="d5">kilowatt hour</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="Activity - bottled water, consumption and end-of-life" target="bottled mineral water, 500 ml, consumed (functional unit)">
+  <data key="d2">black</data>
+  <data key="d3">Dash</data>
+  <data key="d4">1.0</data>
+  <data key="d5">unit</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="municipal solid waste" target="Activity - bottled water, consumption and end-of-life">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">0.0041</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="waste plastic, mixture" target="Activity - bottled water, consumption and end-of-life">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">0.0025</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="waste polyethylene terephthalate, for recycling, sorted" target="Activity - bottled water, consumption and end-of-life">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">0.0099</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+</graph></graphml>

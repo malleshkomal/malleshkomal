@@ -1,0 +1,80 @@
+Database,lca-portfolio-plastic-recycling-system
+format,Excel spreadsheet
+
+Activity,kerbside collection of plastic packaging waste
+code,c40b459005fd5fcb80879389a4899d9b
+comment,"Separate collection, about 13 L diesel per tonne."
+location,DE
+production amount,1
+reference product,"plastic packaging waste, collected"
+unit,kilogram
+worksheet name,lca-portfolio-plastic-recycling
+Exchanges
+name,amount,database,location,unit,categories,type,Comment,reference product
+kerbside collection of plastic packaging waste,1,lca-portfolio-plastic-recycling-system,DE,kilogram,,production,Portfolio case 9 (illustrative); PlasticsEurope; Eurostat; waste-management LCAs,"plastic packaging waste, collected"
+"market for transport, municipal waste collection, lorry 21 metric ton",0.03,ecoinvent-3.10-cutoff,RoW,ton kilometer,,technosphere,per tonne collected (note per functional unit; exchange normalised to 1 kilogram of product),"transport, municipal waste collection, lorry 21 metric ton"
+
+Activity,sorting of plastic packaging waste at MRF
+code,c896b5d11c8a58fd93df4e3471e25a3f
+comment,"NIR and ballistic sorting; 75% to polymer streams, 25% residues incinerated."
+location,DE
+production amount,1
+reference product,sorted plastic bales
+unit,kilogram
+worksheet name,lca-portfolio-plastic-recycling
+Exchanges
+name,amount,database,location,unit,categories,type,Comment,reference product
+sorting of plastic packaging waste at MRF,1,lca-portfolio-plastic-recycling-system,DE,kilogram,,production,Portfolio case 9 (illustrative); PlasticsEurope; Eurostat; waste-management LCAs,sorted plastic bales
+kerbside collection of plastic packaging waste,1.33333,lca-portfolio-plastic-recycling-system,DE,kilogram,,technosphere,Portfolio case 9 (illustrative); PlasticsEurope; Eurostat; waste-management LCAs,"plastic packaging waste, collected"
+"market for electricity, medium voltage",0.08,ecoinvent-3.10-cutoff,DE,kilowatt hour,,technosphere,Portfolio case 9 (illustrative); PlasticsEurope; Eurostat; waste-management LCAs,"electricity, medium voltage"
+"market for steel, low-alloyed",0.000666667,ecoinvent-3.10-cutoff,GLO,kilogram,,technosphere,baling wire (note per functional unit; exchange normalised to 1 kilogram of product),"steel, low-alloyed"
+"market for waste plastic, mixture",0.333333,ecoinvent-3.10-cutoff,DE,kilogram,,technosphere,"sorting residues to incineration | waste-treatment input entered as a positive amount, as in the LCIS2024 PtL example; ecoinvent treats waste as negative - flip the sign when linking (note per functional unit; exchange normalised to 1 kilogram of product)","waste plastic, mixture"
+
+Activity,transport of plastic bales to reprocessor
+code,6bf42721bc9a51bb90e4dff9bac86ed3
+comment,300 km.
+location,DE
+production amount,1
+reference product,"sorted plastic bales, at reprocessor"
+unit,kilogram
+worksheet name,lca-portfolio-plastic-recycling
+Exchanges
+name,amount,database,location,unit,categories,type,Comment,reference product
+transport of plastic bales to reprocessor,1,lca-portfolio-plastic-recycling-system,DE,kilogram,,production,Portfolio case 9 (illustrative); PlasticsEurope; Eurostat; waste-management LCAs,"sorted plastic bales, at reprocessor"
+"market for transport, freight, lorry 16-32 metric ton, EURO6",0.3,ecoinvent-3.10-cutoff,RER,ton kilometer,,technosphere,Portfolio case 9 (illustrative); PlasticsEurope; Eurostat; waste-management LCAs,"transport, freight, lorry 16-32 metric ton, EURO6"
+sorting of plastic packaging waste at MRF,1.0,lca-portfolio-plastic-recycling-system,DE,kilogram,,technosphere,Portfolio case 9 (illustrative); PlasticsEurope; Eurostat; waste-management LCAs,sorted plastic bales
+
+Activity,mechanical recycling of plastic bales
+code,072c54f3a064523ebaaadb3932ac1547
+comment,"Shredding, washing, flotation, extrusion; 75% yield; residues incinerated."
+location,DE
+production amount,1
+reference product,"plastic recyclate, pellets"
+unit,kilogram
+worksheet name,lca-portfolio-plastic-recycling
+Exchanges
+name,amount,database,location,unit,categories,type,Comment,reference product
+mechanical recycling of plastic bales,1,lca-portfolio-plastic-recycling-system,DE,kilogram,,production,Portfolio case 9 (illustrative); PlasticsEurope; Eurostat; waste-management LCAs,"plastic recyclate, pellets"
+"market for electricity, medium voltage",1.07143,ecoinvent-3.10-cutoff,DE,kilowatt hour,,technosphere,Portfolio case 9 (illustrative); PlasticsEurope; Eurostat; waste-management LCAs,"electricity, medium voltage"
+"market for heat, district or industrial, natural gas",4.17857,ecoinvent-3.10-cutoff,Europe without Switzerland,megajoule,,technosphere,Portfolio case 9 (illustrative); PlasticsEurope; Eurostat; waste-management LCAs,"heat, district or industrial, natural gas"
+"market for sodium hydroxide, without water, in 50% solution state",0.00892857,ecoinvent-3.10-cutoff,GLO,kilogram,,technosphere,Portfolio case 9 (illustrative); PlasticsEurope; Eurostat; waste-management LCAs,"sodium hydroxide, without water, in 50% solution state"
+market for tap water,6.25,ecoinvent-3.10-cutoff,Europe without Switzerland,kilogram,,technosphere,washing (note per functional unit; exchange normalised to 1 kilogram of product),tap water
+"market for waste plastic, mixture",0.339286,ecoinvent-3.10-cutoff,DE,kilogram,,technosphere,"reprocessing losses to incineration | waste-treatment input entered as a positive amount, as in the LCIS2024 PtL example; ecoinvent treats waste as negative - flip the sign when linking (note per functional unit; exchange normalised to 1 kilogram of product)","waste plastic, mixture"
+"market for wastewater, average",0.00625,ecoinvent-3.10-cutoff,Europe without Switzerland,cubic meter,,technosphere,"waste-treatment input entered as a positive amount, as in the LCIS2024 PtL example; ecoinvent treats waste as negative - flip the sign when linking (note per functional unit; exchange normalised to 1 kilogram of product)","wastewater, average"
+transport of plastic bales to reprocessor,1.33929,lca-portfolio-plastic-recycling-system,DE,kilogram,,technosphere,Portfolio case 9 (illustrative); PlasticsEurope; Eurostat; waste-management LCAs,"sorted plastic bales, at reprocessor"
+
+Activity,"plastic packaging waste management, 1 t"
+code,2da3b7071e1b522999bce92279a336a3
+comment,Functional unit. System expansion: 560 kg recyclate credited as avoided virgin polymer (substitution factor 0.8) and incineration energy credited as avoided grid electricity and heat. Negative amounts are credits.
+location,DE
+production amount,1
+reference product,"household plastic packaging waste, 1 t, managed (functional unit)"
+unit,unit
+worksheet name,lca-portfolio-plastic-recycling
+Exchanges
+name,amount,database,location,unit,categories,type,Comment,reference product
+"plastic packaging waste management, 1 t",1,lca-portfolio-plastic-recycling-system,DE,unit,,production,Portfolio case 9 (illustrative); PlasticsEurope; Eurostat; waste-management LCAs,"household plastic packaging waste, 1 t, managed (functional unit)"
+"market for electricity, medium voltage",-400.0,ecoinvent-3.10-cutoff,DE,kilowatt hour,,technosphere,avoided grid electricity from incinerating 440 kg residues,"electricity, medium voltage"
+"market for heat, district or industrial, natural gas",-2700.0,ecoinvent-3.10-cutoff,Europe without Switzerland,megajoule,,technosphere,avoided heat from incineration,"heat, district or industrial, natural gas"
+"market for polyethylene, high density, granulate",-448.0,ecoinvent-3.10-cutoff,GLO,kilogram,,technosphere,avoided virgin polymer: 560 kg x 0.8; proxy for the PE/PP/PET mix,"polyethylene, high density, granulate"
+mechanical recycling of plastic bales,560.0,lca-portfolio-plastic-recycling-system,DE,kilogram,,technosphere,Portfolio case 9 (illustrative); PlasticsEurope; Eurostat; waste-management LCAs,"plastic recyclate, pellets"

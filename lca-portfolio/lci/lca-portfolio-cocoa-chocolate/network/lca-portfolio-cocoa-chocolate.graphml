@@ -1,0 +1,345 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d6" for="edge" attr.name="arrows" attr.type="boolean"/>
+<key id="d5" for="edge" attr.name="unit" attr.type="string"/>
+<key id="d4" for="edge" attr.name="amount" attr.type="double"/>
+<key id="d3" for="edge" attr.name="line_type" attr.type="string"/>
+<key id="d2" for="edge" attr.name="color" attr.type="string"/>
+<key id="d1" for="node" attr.name="width" attr.type="long"/>
+<key id="d0" for="node" attr.name="color" attr.type="string"/>
+<graph edgedefault="directed"><node id="Activity - cocoa bean production, dried, West Africa">
+  <data key="d0">blue</data>
+  <data key="d1">26</data>
+</node>
+<node id="Carbon dioxide, from soil or biomass stock"/>
+<node id="Dinitrogen monoxide"/>
+<node id="Occupation, permanent crop"/>
+<node id="Transformation, from tropical rain forest"/>
+<node id="Transformation, to permanent crop"/>
+<node id="cocoa beans, dried"/>
+<node id="irrigation"/>
+<node id="nitrogen fertiliser, as N"/>
+<node id="pesticide, unspecified"/>
+<node id="phosphate fertiliser, as P2O5"/>
+<node id="transport, freight, lorry 3.5-7.5 metric ton, EURO3"/>
+<node id="Activity - cocoa bean fermentation, drying and export to Europe">
+  <data key="d0">blue</data>
+  <data key="d1">26</data>
+</node>
+<node id="cocoa beans, dried, at port of Amsterdam"/>
+<node id="transport, freight, lorry 16-32 metric ton, EURO4"/>
+<node id="transport, freight, sea, container ship"/>
+<node id="Activity - milk chocolate production">
+  <data key="d0">blue</data>
+  <data key="d1">26</data>
+</node>
+<node id="milk chocolate, moulded"/>
+<node id="electricity, medium voltage"/>
+<node id="heat, district or industrial, natural gas"/>
+<node id="milk powder, whole"/>
+<node id="sugar, from sugar beet"/>
+<node id="tap water"/>
+<node id="transport, freight, lorry 16-32 metric ton, EURO6"/>
+<node id="Activity - chocolate bar packaging production">
+  <data key="d0">blue</data>
+  <data key="d1">26</data>
+</node>
+<node id="chocolate bar packaging set (paper sleeve + Al-PE foil)"/>
+<node id="aluminium, wrought alloy"/>
+<node id="folding boxboard carton"/>
+<node id="packaging film, low density polyethylene"/>
+<node id="sheet rolling, aluminium"/>
+<node id="Activity - distribution and retail of chocolate bars">
+  <data key="d0">blue</data>
+  <data key="d1">26</data>
+</node>
+<node id="milk chocolate, packed, sold at retail"/>
+<node id="biowaste"/>
+<node id="electricity, low voltage"/>
+<node id="Activity - milk chocolate bar, consumption and end-of-life">
+  <data key="d0">blue</data>
+  <data key="d1">26</data>
+</node>
+<node id="milk chocolate bar, 100 g, eaten (functional unit)"/>
+<node id="municipal solid waste"/>
+<node id="waste paperboard"/>
+<edge source="Activity - cocoa bean production, dried, West Africa" target="Carbon dioxide, from soil or biomass stock">
+  <data key="d2">green</data>
+  <data key="d3">Dots</data>
+  <data key="d4">10.5556</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="Activity - cocoa bean production, dried, West Africa" target="Dinitrogen monoxide">
+  <data key="d2">green</data>
+  <data key="d3">Dots</data>
+  <data key="d4">0.000555556</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="Activity - cocoa bean production, dried, West Africa" target="Occupation, permanent crop">
+  <data key="d2">green</data>
+  <data key="d3">Dots</data>
+  <data key="d4">20.0</data>
+  <data key="d5">square meter-year</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="Activity - cocoa bean production, dried, West Africa" target="Transformation, from tropical rain forest">
+  <data key="d2">green</data>
+  <data key="d3">Dots</data>
+  <data key="d4">0.1</data>
+  <data key="d5">square meter</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="Activity - cocoa bean production, dried, West Africa" target="Transformation, to permanent crop">
+  <data key="d2">green</data>
+  <data key="d3">Dots</data>
+  <data key="d4">0.1</data>
+  <data key="d5">square meter</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="Activity - cocoa bean production, dried, West Africa" target="cocoa beans, dried">
+  <data key="d2">black</data>
+  <data key="d3">Dash</data>
+  <data key="d4">1.0</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="cocoa beans, dried" target="Activity - cocoa bean fermentation, drying and export to Europe">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">1.0</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="irrigation" target="Activity - cocoa bean production, dried, West Africa">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">0.5</data>
+  <data key="d5">cubic meter</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="nitrogen fertiliser, as N" target="Activity - cocoa bean production, dried, West Africa">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">0.0305556</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="pesticide, unspecified" target="Activity - cocoa bean production, dried, West Africa">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">0.00111111</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="phosphate fertiliser, as P2O5" target="Activity - cocoa bean production, dried, West Africa">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">0.0111111</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="transport, freight, lorry 3.5-7.5 metric ton, EURO3" target="Activity - cocoa bean production, dried, West Africa">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">0.05</data>
+  <data key="d5">ton kilometer</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="Activity - cocoa bean fermentation, drying and export to Europe" target="cocoa beans, dried, at port of Amsterdam">
+  <data key="d2">black</data>
+  <data key="d3">Dash</data>
+  <data key="d4">1.0</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="cocoa beans, dried, at port of Amsterdam" target="Activity - milk chocolate production">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">0.342857</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="transport, freight, lorry 16-32 metric ton, EURO4" target="Activity - cocoa bean fermentation, drying and export to Europe">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">0.3</data>
+  <data key="d5">ton kilometer</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="transport, freight, sea, container ship" target="Activity - cocoa bean fermentation, drying and export to Europe">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">7.0</data>
+  <data key="d5">ton kilometer</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="Activity - milk chocolate production" target="milk chocolate, moulded">
+  <data key="d2">black</data>
+  <data key="d3">Dash</data>
+  <data key="d4">1.0</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="milk chocolate, moulded" target="Activity - distribution and retail of chocolate bars">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">1.01942</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="electricity, medium voltage" target="Activity - milk chocolate production">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">3.33333</data>
+  <data key="d5">kilowatt hour</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="heat, district or industrial, natural gas" target="Activity - milk chocolate production">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">5.71429</data>
+  <data key="d5">megajoule</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="milk powder, whole" target="Activity - milk chocolate production">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">0.266667</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="sugar, from sugar beet" target="Activity - milk chocolate production">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">0.438095</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="tap water" target="Activity - milk chocolate production">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">11.4286</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="transport, freight, lorry 16-32 metric ton, EURO6" target="Activity - milk chocolate production">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">0.352381</data>
+  <data key="d5">ton kilometer</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="transport, freight, lorry 16-32 metric ton, EURO6" target="Activity - chocolate bar packaging production">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">0.0018</data>
+  <data key="d5">ton kilometer</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="transport, freight, lorry 16-32 metric ton, EURO6" target="Activity - distribution and retail of chocolate bars">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">0.679612</data>
+  <data key="d5">ton kilometer</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="Activity - chocolate bar packaging production" target="chocolate bar packaging set (paper sleeve + Al-PE foil)">
+  <data key="d2">black</data>
+  <data key="d3">Dash</data>
+  <data key="d4">1.0</data>
+  <data key="d5">unit</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="chocolate bar packaging set (paper sleeve + Al-PE foil)" target="Activity - distribution and retail of chocolate bars">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">9.70874</data>
+  <data key="d5">unit</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="aluminium, wrought alloy" target="Activity - chocolate bar packaging production">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">0.0013</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="folding boxboard carton" target="Activity - chocolate bar packaging production">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">0.004</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="packaging film, low density polyethylene" target="Activity - chocolate bar packaging production">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">0.0007</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="sheet rolling, aluminium" target="Activity - chocolate bar packaging production">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">0.0013</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="Activity - distribution and retail of chocolate bars" target="milk chocolate, packed, sold at retail">
+  <data key="d2">black</data>
+  <data key="d3">Dash</data>
+  <data key="d4">1.0</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="milk chocolate, packed, sold at retail" target="Activity - milk chocolate bar, consumption and end-of-life">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">0.103</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="biowaste" target="Activity - distribution and retail of chocolate bars">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">0.0194175</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="biowaste" target="Activity - milk chocolate bar, consumption and end-of-life">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">0.003</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="electricity, low voltage" target="Activity - distribution and retail of chocolate bars">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">0.194175</data>
+  <data key="d5">kilowatt hour</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="Activity - milk chocolate bar, consumption and end-of-life" target="milk chocolate bar, 100 g, eaten (functional unit)">
+  <data key="d2">black</data>
+  <data key="d3">Dash</data>
+  <data key="d4">1.0</data>
+  <data key="d5">unit</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="municipal solid waste" target="Activity - milk chocolate bar, consumption and end-of-life">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">0.0033</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="waste paperboard" target="Activity - milk chocolate bar, consumption and end-of-life">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">0.0027</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+</graph></graphml>

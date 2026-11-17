@@ -1,0 +1,261 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d6" for="edge" attr.name="arrows" attr.type="boolean"/>
+<key id="d5" for="edge" attr.name="unit" attr.type="string"/>
+<key id="d4" for="edge" attr.name="amount" attr.type="double"/>
+<key id="d3" for="edge" attr.name="line_type" attr.type="string"/>
+<key id="d2" for="edge" attr.name="color" attr.type="string"/>
+<key id="d1" for="node" attr.name="width" attr.type="long"/>
+<key id="d0" for="node" attr.name="color" attr.type="string"/>
+<graph edgedefault="directed"><node id="Activity - paper cup production, PE-lined, printed">
+  <data key="d0">blue</data>
+  <data key="d1">26</data>
+</node>
+<node id="paper cup, 350 ml"/>
+<node id="electricity, medium voltage"/>
+<node id="liquid packaging board"/>
+<node id="polyethylene, low density, granulate"/>
+<node id="transport, freight, lorry 16-32 metric ton, EURO6"/>
+<node id="Activity - polystyrene lid production">
+  <data key="d0">blue</data>
+  <data key="d1">26</data>
+</node>
+<node id="polystyrene cup lid"/>
+<node id="polystyrene, high impact"/>
+<node id="thermoforming, with calendering"/>
+<node id="Activity - distribution of cups and lids to cafes">
+  <data key="d0">blue</data>
+  <data key="d1">26</data>
+</node>
+<node id="single-use cup and lid, at cafe"/>
+<node id="Activity - hot drink served in single-use paper cup">
+  <data key="d0">blue</data>
+  <data key="d1">26</data>
+</node>
+<node id="hot drink served in single-use paper cup (functional unit)"/>
+<node id="municipal solid waste"/>
+<node id="waste paperboard"/>
+<node id="Activity - reusable polypropylene cup production">
+  <data key="d0">blue</data>
+  <data key="d1">26</data>
+</node>
+<node id="reusable PP cup with silicone lid"/>
+<node id="injection moulding"/>
+<node id="polypropylene, granulate"/>
+<node id="silicone product"/>
+<node id="Activity - dishwashing of reusable cup, per use">
+  <data key="d0">blue</data>
+  <data key="d1">26</data>
+</node>
+<node id="reusable cup washed once"/>
+<node id="electricity, low voltage"/>
+<node id="soap"/>
+<node id="tap water"/>
+<node id="Activity - hot drink served in reusable PP cup, 50 uses">
+  <data key="d0">blue</data>
+  <data key="d1">26</data>
+</node>
+<node id="hot drink served in reusable PP cup, 50 uses (functional unit)"/>
+<edge source="Activity - paper cup production, PE-lined, printed" target="paper cup, 350 ml">
+  <data key="d2">black</data>
+  <data key="d3">Dash</data>
+  <data key="d4">1.0</data>
+  <data key="d5">unit</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="paper cup, 350 ml" target="Activity - distribution of cups and lids to cafes">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">1.0</data>
+  <data key="d5">unit</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="electricity, medium voltage" target="Activity - paper cup production, PE-lined, printed">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">0.003</data>
+  <data key="d5">kilowatt hour</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="liquid packaging board" target="Activity - paper cup production, PE-lined, printed">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">0.011</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="polyethylene, low density, granulate" target="Activity - paper cup production, PE-lined, printed">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">0.0006</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="transport, freight, lorry 16-32 metric ton, EURO6" target="Activity - paper cup production, PE-lined, printed">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">0.0088</data>
+  <data key="d5">ton kilometer</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="transport, freight, lorry 16-32 metric ton, EURO6" target="Activity - distribution of cups and lids to cafes">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">0.009</data>
+  <data key="d5">ton kilometer</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="transport, freight, lorry 16-32 metric ton, EURO6" target="Activity - reusable polypropylene cup production">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">0.06</data>
+  <data key="d5">ton kilometer</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="Activity - polystyrene lid production" target="polystyrene cup lid">
+  <data key="d2">black</data>
+  <data key="d3">Dash</data>
+  <data key="d4">1.0</data>
+  <data key="d5">unit</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="polystyrene cup lid" target="Activity - distribution of cups and lids to cafes">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">1.0</data>
+  <data key="d5">unit</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="polystyrene, high impact" target="Activity - polystyrene lid production">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">0.003</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="thermoforming, with calendering" target="Activity - polystyrene lid production">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">0.003</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="Activity - distribution of cups and lids to cafes" target="single-use cup and lid, at cafe">
+  <data key="d2">black</data>
+  <data key="d3">Dash</data>
+  <data key="d4">1.0</data>
+  <data key="d5">unit</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="single-use cup and lid, at cafe" target="Activity - hot drink served in single-use paper cup">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">1.0</data>
+  <data key="d5">unit</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="Activity - hot drink served in single-use paper cup" target="hot drink served in single-use paper cup (functional unit)">
+  <data key="d2">black</data>
+  <data key="d3">Dash</data>
+  <data key="d4">1.0</data>
+  <data key="d5">unit</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="municipal solid waste" target="Activity - hot drink served in single-use paper cup">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">0.0095</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="municipal solid waste" target="Activity - hot drink served in reusable PP cup, 50 uses">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">0.002</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="waste paperboard" target="Activity - hot drink served in single-use paper cup">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">0.004</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="Activity - reusable polypropylene cup production" target="reusable PP cup with silicone lid">
+  <data key="d2">black</data>
+  <data key="d3">Dash</data>
+  <data key="d4">1.0</data>
+  <data key="d5">unit</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="reusable PP cup with silicone lid" target="Activity - hot drink served in reusable PP cup, 50 uses">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">0.02</data>
+  <data key="d5">unit</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="injection moulding" target="Activity - reusable polypropylene cup production">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">0.09</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="polypropylene, granulate" target="Activity - reusable polypropylene cup production">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">0.09</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="silicone product" target="Activity - reusable polypropylene cup production">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">0.01</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="Activity - dishwashing of reusable cup, per use" target="reusable cup washed once">
+  <data key="d2">black</data>
+  <data key="d3">Dash</data>
+  <data key="d4">1.0</data>
+  <data key="d5">unit</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="reusable cup washed once" target="Activity - hot drink served in reusable PP cup, 50 uses">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">1.0</data>
+  <data key="d5">unit</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="electricity, low voltage" target="Activity - dishwashing of reusable cup, per use">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">0.04</data>
+  <data key="d5">kilowatt hour</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="soap" target="Activity - dishwashing of reusable cup, per use">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">0.001</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="tap water" target="Activity - dishwashing of reusable cup, per use">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">0.3</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="Activity - hot drink served in reusable PP cup, 50 uses" target="hot drink served in reusable PP cup, 50 uses (functional unit)">
+  <data key="d2">black</data>
+  <data key="d3">Dash</data>
+  <data key="d4">1.0</data>
+  <data key="d5">unit</data>
+  <data key="d6">True</data>
+</edge>
+</graph></graphml>

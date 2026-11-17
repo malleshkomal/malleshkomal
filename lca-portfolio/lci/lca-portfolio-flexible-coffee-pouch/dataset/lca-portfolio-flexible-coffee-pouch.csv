@@ -1,0 +1,96 @@
+Database,lca-portfolio-flexible-coffee-pouch
+format,Excel spreadsheet
+
+Activity,"multilayer laminate production, PET/Al/PE"
+code,dfcae087782457c7b688fbaf62f4e8ff
+comment,"Reverse-printed PET, 9 micrometre aluminium foil and LDPE sealant, solvent-based lamination; includes 8% converting waste."
+location,RER
+production amount,1
+reference product,printed multilayer laminate
+unit,kilogram
+worksheet name,lca-portfolio-flexible-coffee-p
+Exchanges
+name,amount,database,location,unit,categories,type,Comment,reference product
+"multilayer laminate production, PET/Al/PE",1,lca-portfolio-flexible-coffee-pouch,RER,kilogram,,production,Portfolio case 6 (illustrative); PlasticsEurope; CEFLEX D4ACE,printed multilayer laminate
+"market for aluminium, wrought alloy",0.183333,ecoinvent-3.10-cutoff,GLO,kilogram,,technosphere,Portfolio case 6 (illustrative); PlasticsEurope; CEFLEX D4ACE,"aluminium, wrought alloy"
+"market for chemical, organic",0.0416667,ecoinvent-3.10-cutoff,GLO,kilogram,,technosphere,proxy for inks and adhesives (note per functional unit; exchange normalised to 1 kilogram of product),"chemical, organic"
+"market for electricity, medium voltage",1.0,ecoinvent-3.10-cutoff,DE,kilowatt hour,,technosphere,Portfolio case 6 (illustrative); PlasticsEurope; CEFLEX D4ACE,"electricity, medium voltage"
+"market for extrusion, plastic film",0.275,ecoinvent-3.10-cutoff,GLO,kilogram,,technosphere,PET film (note per functional unit; exchange normalised to 1 kilogram of product),"extrusion, plastic film"
+"market for heat, district or industrial, natural gas",1.66667,ecoinvent-3.10-cutoff,Europe without Switzerland,megajoule,,technosphere,drying and curing (note per functional unit; exchange normalised to 1 kilogram of product),"heat, district or industrial, natural gas"
+"market for packaging film, low density polyethylene",0.5,ecoinvent-3.10-cutoff,GLO,kilogram,,technosphere,Portfolio case 6 (illustrative); PlasticsEurope; CEFLEX D4ACE,"packaging film, low density polyethylene"
+"market for polyethylene terephthalate, granulate, amorphous",0.275,ecoinvent-3.10-cutoff,GLO,kilogram,,technosphere,Portfolio case 6 (illustrative); PlasticsEurope; CEFLEX D4ACE,"polyethylene terephthalate, granulate, amorphous"
+"market for sheet rolling, aluminium",0.183333,ecoinvent-3.10-cutoff,GLO,kilogram,,technosphere,foil rolling (note per functional unit; exchange normalised to 1 kilogram of product),"sheet rolling, aluminium"
+
+Activity,stand-up pouch making with degassing valve
+code,0d6cacc0129955bba1d82d7de8019c0e
+comment,11 g pouch; 1 g converting waste.
+location,DE
+production amount,1
+reference product,"coffee pouch, 250 g, empty"
+unit,unit
+worksheet name,lca-portfolio-flexible-coffee-p
+Exchanges
+name,amount,database,location,unit,categories,type,Comment,reference product
+stand-up pouch making with degassing valve,1,lca-portfolio-flexible-coffee-pouch,DE,unit,,production,Portfolio case 6 (illustrative); PlasticsEurope; CEFLEX D4ACE,"coffee pouch, 250 g, empty"
+"market for electricity, medium voltage",0.003,ecoinvent-3.10-cutoff,DE,kilowatt hour,,technosphere,Portfolio case 6 (illustrative); PlasticsEurope; CEFLEX D4ACE,"electricity, medium voltage"
+"market for polyethylene, low density, granulate",0.0005,ecoinvent-3.10-cutoff,GLO,kilogram,,technosphere,valve,"polyethylene, low density, granulate"
+"market for waste plastic, mixture",0.001,ecoinvent-3.10-cutoff,RoW,kilogram,,technosphere,"converting waste | waste-treatment input entered as a positive amount, as in the LCIS2024 PtL example; ecoinvent treats waste as negative - flip the sign when linking","waste plastic, mixture"
+"multilayer laminate production, PET/Al/PE",0.012,lca-portfolio-flexible-coffee-pouch,RER,kilogram,,technosphere,Portfolio case 6 (illustrative); PlasticsEurope; CEFLEX D4ACE,printed multilayer laminate
+
+Activity,coffee filling and sealing under nitrogen
+code,58127fec739954898c0e97cbf4a4df5f
+comment,Coffee production outside the boundary (only the share lost is included downstream).
+location,DE
+production amount,1
+reference product,"ground coffee, 250 g, packed"
+unit,unit
+worksheet name,lca-portfolio-flexible-coffee-p
+Exchanges
+name,amount,database,location,unit,categories,type,Comment,reference product
+coffee filling and sealing under nitrogen,1,lca-portfolio-flexible-coffee-pouch,DE,unit,,production,Portfolio case 6 (illustrative); PlasticsEurope; CEFLEX D4ACE,"ground coffee, 250 g, packed"
+"market for electricity, medium voltage",0.005,ecoinvent-3.10-cutoff,DE,kilowatt hour,,technosphere,Portfolio case 6 (illustrative); PlasticsEurope; CEFLEX D4ACE,"electricity, medium voltage"
+"market for nitrogen, liquid",0.0015,ecoinvent-3.10-cutoff,RER,kilogram,,technosphere,Portfolio case 6 (illustrative); PlasticsEurope; CEFLEX D4ACE,"nitrogen, liquid"
+stand-up pouch making with degassing valve,1.0,lca-portfolio-flexible-coffee-pouch,DE,unit,,technosphere,Portfolio case 6 (illustrative); PlasticsEurope; CEFLEX D4ACE,"coffee pouch, 250 g, empty"
+
+Activity,distribution of packed coffee
+code,a31fafd53d195939a336c574078625c3
+comment,400 km truck.
+location,DE
+production amount,1
+reference product,"ground coffee, 250 g, packed, at retail"
+unit,unit
+worksheet name,lca-portfolio-flexible-coffee-p
+Exchanges
+name,amount,database,location,unit,categories,type,Comment,reference product
+distribution of packed coffee,1,lca-portfolio-flexible-coffee-pouch,DE,unit,,production,Portfolio case 6 (illustrative); PlasticsEurope; CEFLEX D4ACE,"ground coffee, 250 g, packed, at retail"
+coffee filling and sealing under nitrogen,1.0,lca-portfolio-flexible-coffee-pouch,DE,unit,,technosphere,Portfolio case 6 (illustrative); PlasticsEurope; CEFLEX D4ACE,"ground coffee, 250 g, packed"
+"market for transport, freight, lorry 16-32 metric ton, EURO6",0.108,ecoinvent-3.10-cutoff,RER,ton kilometer,,technosphere,400 km x 0.27 kg,"transport, freight, lorry 16-32 metric ton, EURO6"
+
+Activity,coffee lost through packaging performance
+code,e0dbeb1b97ea5fd095f633f5351bbc87
+comment,1% of 250 g roasted coffee lost through barrier or seal failure (illustrative).
+location,DE
+production amount,1
+reference product,"coffee loss attributable to packaging, per pack"
+unit,unit
+worksheet name,lca-portfolio-flexible-coffee-p
+Exchanges
+name,amount,database,location,unit,categories,type,Comment,reference product
+coffee lost through packaging performance,1,lca-portfolio-flexible-coffee-pouch,DE,unit,,production,Portfolio case 6 (illustrative); PlasticsEurope; CEFLEX D4ACE,"coffee loss attributable to packaging, per pack"
+market for biowaste,0.0025,ecoinvent-3.10-cutoff,RoW,kilogram,,technosphere,"waste-treatment input entered as a positive amount, as in the LCIS2024 PtL example; ecoinvent treats waste as negative - flip the sign when linking",biowaste
+"market for coffee, green bean",0.003,ecoinvent-3.10-cutoff,GLO,kilogram,,technosphere,2.5 g roasted coffee = about 3 g green bean; roasting excluded,"coffee, green bean"
+
+Activity,"coffee pack, use and end-of-life"
+code,d340c49502865812a0489d480fbdd9d5
+comment,Functional unit. Multilayer pouch not recyclable in practice: incinerated with residual waste.
+location,DE
+production amount,1
+reference product,"ground coffee, 250 g, packed, delivered and pack disposed (functional unit)"
+unit,unit
+worksheet name,lca-portfolio-flexible-coffee-p
+Exchanges
+name,amount,database,location,unit,categories,type,Comment,reference product
+"coffee pack, use and end-of-life",1,lca-portfolio-flexible-coffee-pouch,DE,unit,,production,Portfolio case 6 (illustrative); PlasticsEurope; CEFLEX D4ACE,"ground coffee, 250 g, packed, delivered and pack disposed (functional unit)"
+coffee lost through packaging performance,1.0,lca-portfolio-flexible-coffee-pouch,DE,unit,,technosphere,Portfolio case 6 (illustrative); PlasticsEurope; CEFLEX D4ACE,"coffee loss attributable to packaging, per pack"
+distribution of packed coffee,1.0,lca-portfolio-flexible-coffee-pouch,DE,unit,,technosphere,Portfolio case 6 (illustrative); PlasticsEurope; CEFLEX D4ACE,"ground coffee, 250 g, packed, at retail"
+market for municipal solid waste,0.011,ecoinvent-3.10-cutoff,DE,kilogram,,technosphere,"waste-treatment input entered as a positive amount, as in the LCIS2024 PtL example; ecoinvent treats waste as negative - flip the sign when linking",municipal solid waste

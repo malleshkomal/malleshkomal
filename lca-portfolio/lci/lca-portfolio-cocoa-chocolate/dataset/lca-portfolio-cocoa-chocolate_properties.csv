@@ -1,0 +1,16 @@
+Property,Value
+Dataset Name,lca-portfolio-cocoa-chocolate
+Schema Version,LCIS2024
+Dataset Version,1.0.0
+Software,Python 3.11 export script (Brightway2 CSV/Excel layout); not exported from Brightway
+Export Time,20261115-193000
+Unique Dataset Identifier,7357fe740ce953bf8f46860a0a27859c
+Total Project Parameters,0
+Total Database Parameters,0
+Total Activity Parameters,0
+Total Activities,6
+Total Exchanges,40
+Total Biosphere flows,5
+Total Technosphere flows,29
+Total Reference products,6
+Dataset dependencies,"lca-portfolio-cocoa-chocolate, biosphere3, ecoinvent-3.10-cutoff"

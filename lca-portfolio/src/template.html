@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Life Cycle Assessment Portfolio — Product Sustainability, Circular Economy, CSRD &amp; ESRS</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,600&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#13304d;--navy2:#1d4468;--teal:#137c7a;--teal2:#0f6664;--green:#2f7d4f;--mint:#e7f3f0;--mint2:#d3ebe5;
+  --ink:#16222e;--ink2:#46525e;--muted:#6b7782;--line:#dde4e8;--bg:#f6f8f8;--white:#fff;--warn:#8a5a00;--warnbg:#fff6e0;
+  --s1:#2a78d6;--s2:#eb6834;--s3:#1baf7a;--s4:#eda100;--s5:#e87ba4;--s6:#008300;--s7:#6250d6;--s8:#e34948;
+  --grid:#e1e0d9;--axis:#c3c2b7;--r:10px;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:"Public Sans",system-ui,sans-serif;color:var(--ink);background:var(--bg);font-size:16px;line-height:1.6}
+h1,h2,h3{font-family:"Newsreader",Georgia,serif;font-weight:600;color:var(--navy);line-height:1.2;margin:0 0 .5em}
+h1{font-size:clamp(2rem,4.2vw,3.1rem);letter-spacing:-.01em}
+h2{font-size:clamp(1.5rem,2.6vw,2rem);margin-top:0}
+h3{font-size:1.25rem}
+h4{font-size:.95rem;margin:1em 0 .3em;color:var(--navy2);text-transform:uppercase;letter-spacing:.04em}
+p{margin:0 0 1em}
+a{color:var(--teal2)}
+small,.small{font-size:.85rem;color:var(--muted)}
+.wrap{max-width:1180px;margin:0 auto;padding:0 20px}
+/* header */
+header.top{position:sticky;top:0;z-index:50;background:var(--navy);color:#fff;box-shadow:0 1px 0 rgba(0,0,0,.2)}
+.top .wrap{display:flex;align-items:center;gap:16px;min-height:60px}
+.brand{display:flex;align-items:center;gap:10px;color:#fff;text-decoration:none;font-weight:700;letter-spacing:.01em;white-space:nowrap}
+.brand svg{width:30px;height:30px}
+.brand span{font-size:.95rem}
+nav.main{display:flex;gap:2px;margin-left:auto;flex-wrap:wrap}
+nav.main a{color:#d6e4ee;text-decoration:none;font-size:.86rem;padding:8px 10px;border-radius:6px;font-weight:500}
+nav.main a:hover,nav.main a.on{background:rgba(255,255,255,.12);color:#fff}
+.menubtn{display:none;margin-left:auto;background:none;border:1px solid rgba(255,255,255,.4);color:#fff;border-radius:6px;padding:6px 10px;font:inherit;cursor:pointer}
+@media(max-width:1400px){.menubtn{display:block}nav.main{display:none;position:absolute;top:60px;left:0;right:0;background:var(--navy);flex-direction:column;padding:8px 20px 16px}nav.main.open{display:flex}}
+/* disclaimer */
+.disc{background:var(--warnbg);border:1px solid #f0d9a0;color:#5b4200;border-radius:var(--r);padding:12px 16px;font-size:.9rem;display:flex;gap:10px;align-items:flex-start}
+.disc svg{flex:0 0 20px;margin-top:2px}
+.disc b{color:#4a3600}
+/* sections */
+main{min-height:70vh}
+section.band{padding:48px 0}
+section.band.alt{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.hero{background:linear-gradient(135deg,var(--navy) 0%,#17496a 55%,var(--teal2) 100%);color:#fff;padding:64px 0 56px;position:relative;overflow:hidden}
+.hero h1{color:#fff;max-width:880px}
+.hero p.lead{font-size:1.15rem;color:#d9e8ef;max-width:760px}
+.hero .eyebrow{color:#9fd8cf}
+.eyebrow{text-transform:uppercase;letter-spacing:.12em;font-size:.75rem;font-weight:700;color:var(--teal);margin-bottom:10px}
+.btn{display:inline-flex;align-items:center;gap:8px;background:var(--teal);color:#fff;text-decoration:none;border:0;border-radius:8px;padding:11px 18px;font:600 .95rem "Public Sans",sans-serif;cursor:pointer}
+.btn:hover{background:var(--teal2)}
+.btn.ghost{background:transparent;border:1px solid rgba(255,255,255,.55)}
+.btn.line{background:#fff;color:var(--navy);border:1px solid var(--line)}
+.btn.line:hover{border-color:var(--teal);color:var(--teal2)}
+.btn.sm{padding:7px 12px;font-size:.85rem}
+.grid{display:grid;gap:18px}
+.g2{grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr))}
+.g3{grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr))}
+.g4{grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr))}
+.card{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:20px}
+.card h3{margin-bottom:.4em}
+.casecard{display:flex;flex-direction:column;gap:8px;text-decoration:none;color:inherit;transition:transform .15s,box-shadow .15s;position:relative}
+.casecard:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(19,48,77,.09);border-color:#b9d6d2}
+.casecard .num{font:600 .75rem "Public Sans";color:var(--muted);letter-spacing:.08em}
+.casecard .ic{width:44px;height:44px;border-radius:10px;background:var(--mint);color:var(--teal2);display:grid;place-items:center}
+.casecard .ic svg{width:26px;height:26px}
+.casecard h3{font-size:1.1rem}
+.casecard .meta{font-size:.82rem;color:var(--muted);margin-top:auto;border-top:1px dashed var(--line);padding-top:8px}
+.pill{display:inline-block;font-size:.72rem;font-weight:600;padding:2px 8px;border-radius:99px;background:var(--mint);color:var(--teal2);margin:0 4px 4px 0;white-space:nowrap}
+.pill.g{background:#e5f2e8;color:#1f6b3d}.pill.y{background:#fff1d6;color:#7a5200}.pill.r{background:#fde7e4;color:#9b2c1f}.pill.n{background:#e9eef3;color:#2c4964}
+/* case page */
+.casehead{background:#fff;border-bottom:1px solid var(--line);padding:36px 0 26px}
+.crumb{font-size:.85rem;color:var(--muted);margin-bottom:10px}.crumb a{color:var(--muted)}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,250px),1fr));gap:10px;margin-top:18px}
+.fact{background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:.88rem}
+.fact b{display:block;font-size:.72rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin-bottom:2px}
+.layout{display:grid;grid-template-columns:220px minmax(0,1fr);gap:32px;padding:28px 0 60px}
+@media(max-width:900px){.layout{grid-template-columns:minmax(0,1fr)}.toc{display:none}}
+.toc{position:sticky;top:76px;align-self:start;font-size:.85rem;max-height:calc(100vh - 90px);overflow:auto}
+.toc button{display:block;width:100%;text-align:left;background:none;border:0;border-left:2px solid var(--line);padding:5px 10px;color:var(--ink2);font:inherit;cursor:pointer}
+.toc button:hover{border-color:var(--teal);color:var(--teal2)}
+.sec{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:24px;margin-bottom:22px;scroll-margin-top:80px}
+.sec>h2{font-size:1.45rem;display:flex;gap:10px;align-items:baseline}
+.sec>h2 .no{font:700 .8rem "Public Sans";color:var(--teal);background:var(--mint);border-radius:6px;padding:2px 7px}
+.kv{display:grid;grid-template-columns:200px 1fr;gap:0;border-top:1px solid var(--line)}
+.kv>div{padding:9px 10px;border-bottom:1px solid var(--line);font-size:.92rem}
+.kv>div:nth-child(odd){font-weight:600;color:var(--navy2);background:#fafcfc}
+@media(max-width:640px){.kv{grid-template-columns:1fr}.kv>div:nth-child(odd){border-bottom:0;padding-bottom:0}}
+.box{border-radius:var(--r);padding:16px 18px;margin:14px 0;border:1px solid}
+.box h4{margin-top:0;display:flex;gap:8px;align-items:center}
+.box.take{background:var(--mint);border-color:#b9ddd5}.box.take h4{color:var(--teal2)}
+.box.biz{background:#eaf1f8;border-color:#c7d8ea}.box.biz h4{color:var(--navy2)}
+.box.asm{background:#f5f5f2;border-color:#deded6}.box.asm h4{color:#5b5b4f}
+.box p:last-child{margin-bottom:0}
+table{border-collapse:collapse;width:100%;font-size:.86rem}
+.tw{overflow-x:auto;border:1px solid var(--line);border-radius:8px;margin:10px 0}
+th,td{padding:8px 10px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+th{background:#f2f6f7;color:var(--navy);font-weight:600;font-size:.8rem;position:sticky;top:0}
+tr:last-child td{border-bottom:0}
+td.num,th.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+.up{color:#9b2c1f}.down{color:#1f6b3d}
+/* figures */
+figure.fig{margin:18px 0;border:1px solid var(--line);border-radius:var(--r);padding:16px;background:#fff}
+figure.fig h3{font-family:"Public Sans";font-size:1rem;font-weight:700;color:var(--navy);margin:0 0 2px}
+figure.fig .sub{font-size:.82rem;color:var(--muted);margin-bottom:8px}
+figure.fig svg.chart{width:100%;height:auto;display:block;overflow:visible}
+figure.fig figcaption{font-size:.8rem;color:var(--muted);border-top:1px solid var(--line);margin-top:8px;padding-top:8px}
+figure.fig figcaption b{color:var(--ink2)}
+figure.fig .interp{font-size:.9rem;color:var(--ink);background:#f7faf9;border-left:3px solid var(--teal);padding:8px 12px;margin-top:8px;border-radius:0 6px 6px 0}
+.legend{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:.8rem;color:var(--ink2);margin:4px 0 6px}
+.legend i{display:inline-block;width:11px;height:11px;border-radius:3px;margin-right:5px;vertical-align:-1px}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:8px;overflow:hidden;margin:6px 0}
+.seg button{border:0;background:#fff;padding:6px 12px;font:500 .82rem "Public Sans";cursor:pointer;color:var(--ink2);border-right:1px solid var(--line)}
+.seg button:last-child{border-right:0}
+.seg button.on{background:var(--navy);color:#fff}
+#tip{position:fixed;pointer-events:none;background:#13202c;color:#fff;font-size:.8rem;padding:6px 9px;border-radius:6px;z-index:99;opacity:0;transition:opacity .1s;max-width:260px;line-height:1.35}
+/* lifecycle diagram */
+.lc{position:relative;padding:8px 0 4px}
+.lc-row{display:flex;align-items:stretch;gap:0;flex-wrap:wrap;justify-content:center;row-gap:18px}
+.lc-node{flex:1 1 0;min-width:84px;max-width:130px;display:flex;flex-direction:column;align-items:center;text-align:center;cursor:pointer;opacity:0;transform:translateY(12px);background:none;border:0;font:inherit;color:inherit;padding:0}
+.lc-node .c{width:62px;height:62px;border-radius:50%;background:#fff;border:2px solid var(--teal);display:grid;place-items:center;color:var(--teal2);transition:background .2s,transform .2s}
+.lc-node .c svg{width:30px;height:30px}
+.lc-node:hover .c,.lc-node.sel .c{background:var(--teal);color:#fff;transform:scale(1.06)}
+.lc-node:focus-visible{outline:2px solid var(--navy);outline-offset:4px;border-radius:8px}
+.lc-node .l{font-size:.78rem;font-weight:600;color:var(--navy);margin-top:6px;line-height:1.25;padding:0 4px}
+.lc-node .v{font-size:.72rem;color:var(--muted)}
+.lc-arrow{flex:0 0 18px;width:18px;display:flex;align-items:flex-start;padding-top:22px;opacity:0;color:var(--axis)}
+.lc-arrow svg{width:18px;height:14px}
+@media(min-width:901px){.lc-row{flex-wrap:nowrap}}
+.lc.play .lc-node,.lc.play .lc-arrow{animation:pop .45s ease forwards}
+.lc-loop{display:flex;align-items:center;justify-content:center;gap:8px;color:var(--green);font-size:.82rem;font-weight:600;margin-top:12px;opacity:0}
+.lc.play .lc-loop{animation:pop .5s ease forwards}
+.lc-loop svg{width:22px;height:22px}
+.lc.play .lc-loop svg{animation:spin 6s linear infinite}
+@keyframes pop{to{opacity:1;transform:none}}
+@keyframes spin{to{transform:rotate(360deg)}}
+.lc-detail{margin-top:16px;background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:14px 16px;font-size:.9rem;min-height:60px}
+@media (prefers-reduced-motion:reduce){.lc .lc-node,.lc .lc-arrow,.lc .lc-loop{opacity:1;transform:none;animation:none!important}}
+/* stage list */
+details.stage{border:1px solid var(--line);border-radius:8px;margin:8px 0;background:#fff}
+details.stage summary{cursor:pointer;padding:10px 14px;font-weight:600;color:var(--navy);display:flex;align-items:center;gap:10px;list-style:none}
+details.stage summary::-webkit-details-marker{display:none}
+details.stage summary svg{width:20px;height:20px;color:var(--teal)}
+details.stage summary .chev{margin-left:auto;color:var(--muted);transition:transform .2s}
+details.stage[open] summary .chev{transform:rotate(90deg)}
+details.stage .body{padding:0 14px 12px}
+.hot{display:grid;grid-template-columns:34px 1fr;gap:12px;padding:12px 0;border-bottom:1px solid var(--line)}
+.hot:last-child{border-bottom:0}
+.hot .rk{width:34px;height:34px;border-radius:50%;background:var(--navy);color:#fff;display:grid;place-items:center;font-weight:700}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0 14px}
+.chip{border:1px solid var(--line);background:#fff;border-radius:99px;padding:6px 12px;font:500 .84rem "Public Sans";cursor:pointer;color:var(--ink2)}
+.chip.on{background:var(--teal);border-color:var(--teal);color:#fff}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,160px),1fr));gap:10px;margin:12px 0}
+.kpi{background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:12px}
+.kpi .v{font:600 1.5rem "Newsreader",serif;color:var(--navy)}
+.kpi .u{font-size:.78rem;color:var(--muted)}
+.kpi .t{font-size:.78rem;font-weight:600;color:var(--ink2);text-transform:uppercase;letter-spacing:.04em}
+footer{background:var(--navy);color:#c6d6e2;padding:32px 0;font-size:.85rem;margin-top:40px}
+footer a{color:#fff}
+.fw{display:flex;flex-wrap:wrap;gap:24px;justify-content:space-between}
+.gl dt{font-weight:700;color:var(--navy);margin-top:14px}
+.gl dd{margin:2px 0 0;color:var(--ink2)}
+.phase-svg text{font-family:"Public Sans",sans-serif}
+.summary-page{max-width:900px;margin:24px auto;background:#fff;border:1px solid var(--line);border-radius:8px;padding:32px 36px}
+.summary-page h1{font-size:1.7rem}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+@media(max-width:700px){.two{grid-template-columns:1fr}.summary-page{padding:20px}}
+.note{font-size:.82rem;color:var(--muted)}
+.status{border-left:4px solid var(--navy2);background:#eef3f8;padding:14px 16px;border-radius:0 8px 8px 0;font-size:.9rem;margin:16px 0}
+input[type=range]{width:100%;accent-color:var(--teal)}
+select{max-width:100%;font:inherit;padding:7px 10px;border:1px solid var(--line);border-radius:8px;background:#fff}
+.srow td:first-child{font-weight:600;color:var(--navy2)}
+@media print{header.top,footer,.noprint,.toc{display:none!important}body{background:#fff}.summary-page{border:0;margin:0;padding:0}.sec{break-inside:avoid}}
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#home" aria-label="Home">
+      <svg viewBox="0 0 32 32" fill="none" aria-hidden="true"><circle cx="16" cy="16" r="13" stroke="#5cc3b4" stroke-width="2.5"/><path d="M16 5a11 11 0 0 1 10.6 8" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/><path d="M10 19c0-5 3-8 10-9-1 7-4 10-9 10" fill="#5cc3b4"/></svg>
+      <span>LCA Portfolio</span>
+    </a>
+    <button class="menubtn" id="menubtn" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav class="main" id="nav" aria-label="Main">
+      <a href="#home">Home</a><a href="#about">About</a><a href="#methodology">Methodology</a><a href="#cases">Case studies</a><a href="#esrs">CSRD &amp; ESRS</a><a href="#compare">Comparison</a><a href="#circular">Circular economy</a><a href="#limitations">Limitations</a><a href="#glossary">Glossary</a><a href="#sources">Sources</a><a href="#downloads">Downloads</a><a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+<main id="app" tabindex="-1"></main>
+<footer>
+  <div class="wrap fw">
+    <div style="max-width:620px"><b style="color:#fff">Life Cycle Assessment Portfolio</b><br>This is an illustrative LCA portfolio. Results are based on public literature, representative industry data, and stated assumptions. They are not a certified LCA, EPD, or company-specific CSRD disclosure. Cases 1–10 use demonstration values; case 11 re-uses published farm data from the INTEGRATE project. No company-specific data has been used.</div>
+    <div><a href="#methodology">Methodology</a> · <a href="#limitations">Assumptions &amp; limitations</a> · <a href="#glossary">Glossary</a> · <a href="#sources">Sources</a> · <a href="#contact">Contact</a></div>
+  </div>
+</footer>
+<div id="tip" role="tooltip"></div>
+<script>
+const CASES = /*DATA*/;
+const LCIDATA = /*LCIDATA*/;
+const HOSTED = /*HOSTED*/false;
+</script>
+<script>
+"use strict";
+/* ---------- utilities ---------- */
+const $ = (s, r=document) => r.querySelector(s);
+const esc = s => String(s==null?'':s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const PAL = ['#2a78d6','#eb6834','#1baf7a','#eda100','#e87ba4','#008300','#6250d6','#e34948'];
+const SEQ = ['#eef6f5','#b7e0da','#62b9ae','#1f8a80','#0b5752'];
+const sum = a => a.reduce((x,y)=>x+(+y||0),0);
+function fmt(v){ if(v==null||v==='') return '–'; if(typeof v==='string') return v; if(v===0) return '0'; const a=Math.abs(v); if(a<0.001){ const [m,e]=v.toExponential(1).split('e'); const sup={'-':'⁻','0':'⁰','1':'¹','2':'²','3':'³','4':'⁴','5':'⁵','6':'⁶','7':'⁷','8':'⁸','9':'⁹','+':''}; return m+' × 10'+e.split('').map(ch=>sup[ch]).join(''); } return a>=1000 ? v.toLocaleString('en-GB',{maximumFractionDigits:0}) : v.toLocaleString('en-GB',{maximumSignificantDigits:3}); }
+function pct(v,b){ if(!b) return '–'; const p=(v-b)/Math.abs(b)*100; const s=(p>0?'+':'')+p.toFixed(0)+'%'; return `<span class="${p>0.5?'up':p<-0.5?'down':''}">${s}</span>`; }
+const byId = id => CASES.find(c=>c.id===id);
+const ALT = (t) => `role="img" aria-label="${esc(t)}"`;
+let UID=0; const uid=()=> 'u'+(++UID);
+
+const ICON = {
+ farm:'<path d="M5 21c0-8 5-14 15-16-1 10-6 15-14 15"/><path d="M5 21l8-8"/>',
+ leaf:'<path d="M5 21c0-8 5-14 15-16-1 10-6 15-14 15"/><path d="M5 21l8-8"/>',
+ tree:'<path d="M12 2l6 9h-3l4 6H5l4-6H6z"/><path d="M12 17v5"/>',
+ factory:'<path d="M3 21V10l6 4V10l6 4V6h3l1 15z"/><path d="M3 21h18"/>',
+ truck:'<path d="M2 6h11v10H2zM13 9h4l4 4v3h-8"/><circle cx="6" cy="18" r="2"/><circle cx="17" cy="18" r="2"/>',
+ ship:'<path d="M3 16l2 5h14l2-5z"/><path d="M5 16v-5h14v5"/><path d="M12 11V4M9 7h6"/>',
+ plane:'<path d="M10.5 3.5l1.5-1.5 1.5 1.5V9l8 5v2l-8-2.5V19l2.5 2v1L12 21l-4 1v-1l2.5-2v-5.5L2 16v-2l8.5-5z"/>',
+ consumer:'<circle cx="12" cy="7" r="4"/><path d="M4 21c0-4 4-7 8-7s8 3 8 7"/>',
+ bin:'<path d="M4 7h16M9 7V4h6v3M6 7l1 14h10l1-14"/><path d="M10 11v6M14 11v6"/>',
+ landfill:'<path d="M2 20h20M4 20l5-8 4 5 3-4 4 7"/>',
+ energy:'<path d="M13 2L4 14h7l-1 8 9-12h-7z"/>',
+ water:'<path d="M12 3s7 7.5 7 12a7 7 0 0 1-14 0c0-4.5 7-12 7-12z"/>',
+ co2:'<path d="M7 18h10a4 4 0 0 0 .5-8A6 6 0 0 0 6 9a4.5 4.5 0 0 0 1 9z"/>',
+ waste:'<path d="M6 9h12l-1 12H7z"/><path d="M9 9c0-3 6-3 6 0"/>',
+ loop:'<path d="M21 12a9 9 0 1 1-3-6.7"/><path d="M21 3v6h-6"/>',
+ box:'<path d="M3 7l9-4 9 4v10l-9 4-9-4z"/><path d="M3 7l9 4 9-4M12 11v10"/>',
+ mine:'<path d="M4 20l8-8"/><path d="M6 9c3-4 9-5 14-3-3 0-6 1-8 4"/><path d="M12 10c-1 2-1 5 0 8"/>',
+ chip:'<rect x="6" y="6" width="12" height="12" rx="1"/><path d="M9 2v4M15 2v4M9 18v4M15 18v4M2 9h4M2 15h4M18 9h4M18 15h4"/>',
+ store:'<path d="M3 9l2-5h14l2 5M4 9v11h16V9M3 9h18"/><path d="M9 20v-6h6v6"/>',
+ fire:'<path d="M12 22c4 0 7-3 7-7 0-5-5-7-5-12-3 2-5 5-5 8-1-1-2-2-2-4-2 2-2 5-2 8 0 4 3 7 7 7z"/>',
+ battery:'<rect x="3" y="7" width="16" height="10" rx="2"/><path d="M21 11v2M7 10v4M11 10v4"/>',
+ phone:'<rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 18h2"/>',
+ cup:'<path d="M5 8h12l-1.5 13h-9z"/><path d="M4 5h14v3H4z"/>',
+ shirt:'<path d="M8 3L3 6l2 5 3-1v11h8V10l3 1 2-5-5-3c-1 2-2 3-4 3S9 5 8 3z"/>',
+ bottle:'<path d="M10 2h4v3l2 3v13H8V8l2-3z"/><path d="M8 12h8"/>',
+ can:'<rect x="7" y="3" width="10" height="18" rx="2"/><path d="M7 7h10M7 17h10"/>',
+ repair:'<path d="M14 7a4 4 0 0 0 5 5l-9 9-3-3 9-9a4 4 0 0 1-2-2z"/>',
+ cocoa:'<ellipse cx="12" cy="12" rx="5" ry="9"/><path d="M12 3v18M8.5 6.5c1 3 1 8 0 11M15.5 6.5c-1 3-1 8 0 11"/>',
+ pouch:'<path d="M6 3h12v4l-1 14H7L6 7z"/><path d="M6 7h12M10 11h4"/>',
+ recycle:'<path d="M7 19H4l3-5M17 19h3l-3-5M9 5l3-3 3 3M7 14l-2-3 4-7M17 14l2-3-4-7M8 19h8"/>',
+ wash:'<rect x="4" y="3" width="16" height="18" rx="2"/><circle cx="12" cy="13" r="4.5"/><path d="M7 6h2"/>',
+ doc:'<path d="M6 2h9l5 5v15H6z"/><path d="M14 2v6h6M9 13h8M9 17h6"/>',
+ alert:'<path d="M12 3l10 18H2z"/><path d="M12 10v5M12 18v.01"/>',
+ check:'<path d="M4 12l5 5L20 6"/>',
+ chev:'<path d="M9 6l6 6-6 6"/>',
+ arrow:'<path d="M2 9h20M16 3l6 6-6 6"/>'
+};
+const ic = (n, s=24) => `<svg viewBox="0 0 24 24" width="${s}" height="${s}" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${ICON[n]||ICON.box}</svg>`;
+const DISC = `<div class="disc" role="note">${ic('alert',20)}<div><b>Illustrative portfolio.</b> This is an illustrative LCA portfolio. Results are based on public literature, representative industry data, and stated assumptions. They are not a certified LCA, EPD, or company-specific CSRD disclosure. All numbers are demonstration values unless a real dataset is provided.</div></div>`;
+
+/* ---------- tooltip ---------- */
+const TIP = $('#tip');
+document.addEventListener('mousemove', e => {
+  const t = e.target.closest && e.target.closest('[data-tip]');
+  if(!t){ TIP.style.opacity=0; return; }
+  TIP.innerHTML = t.getAttribute('data-tip'); TIP.style.opacity=1;
+  const x = Math.min(e.clientX+14, innerWidth - TIP.offsetWidth - 8), y = Math.min(e.clientY+14, innerHeight - TIP.offsetHeight - 8);
+  TIP.style.left = x+'px'; TIP.style.top = y+'px';
+});
+
+/* ---------- figure wrapper ---------- */
+function fig({title, sub='', body, legend='', source='', note='', interp='', controls='', id=''}){
+  return `<figure class="fig" ${id?`id="${id}"`:''}><h3>${esc(title)}</h3>${sub?`<div class="sub">${sub}</div>`:''}${controls}${legend}<div class="figbody">${body}</div>
+  <figcaption><b>Data source:</b> ${source} &nbsp;·&nbsp; <b>Assumption note:</b> ${note}</figcaption>${interp?`<div class="interp"><b>Interpretation.</b> ${interp}</div>`:''}</figure>`;
+}
+const legendHTML = (names, cols) => `<div class="legend">${names.map((n,i)=>`<span><i style="background:${cols?cols[i]:PAL[i%8]}"></i>${esc(n)}</span>`).join('')}</div>`;
+
+/* ---------- scales ---------- */
+function niceTicks(min, max, n=5){
+  if(min===max){ max=min+1; }
+  const span=max-min, step0=span/n, mag=Math.pow(10,Math.floor(Math.log10(step0))), r=step0/mag;
+  const step=(r<1.5?1:r<3?2:r<7?5:10)*mag; const lo=Math.floor(min/step)*step, hi=Math.ceil(max/step)*step;
+  const t=[]; for(let v=lo; v<=hi+step*1e-9; v+=step) t.push(+v.toPrecision(12)); return t;
+}
+
+/* ---------- horizontal bar ---------- */
+function hbar(labels, values, unit, {colors, alt, highlight=true}={}){
+  const W=720, rowH=34, padL=210, padR=80, top=10, H=top+labels.length*rowH+40;
+  const mn=Math.min(0,...values), mx=Math.max(0,...values); const ticks=niceTicks(mn,mx,5);
+  const t0=ticks[0], t1=ticks[ticks.length-1]; const X=v=> padL + (v-t0)/(t1-t0)*(W-padL-padR);
+  const max=Math.max(...values.map(Math.abs)); const tot=sum(values);
+  let s=`<svg class="chart" viewBox="0 0 ${W} ${H}" ${ALT(alt||'Bar chart')}>`;
+  ticks.forEach(t=>{ s+=`<line x1="${X(t)}" x2="${X(t)}" y1="${top}" y2="${H-30}" stroke="${t===0?'#c3c2b7':'#e1e0d9'}" stroke-width="1"/><text x="${X(t)}" y="${H-14}" font-size="11" text-anchor="middle" fill="#6b7782">${fmt(t)}</text>`; });
+  labels.forEach((l,i)=>{ const v=values[i], y=top+i*rowH+7, h=rowH-14; const x0=X(Math.min(0,v)), w=Math.max(1,Math.abs(X(v)-X(0)));
+    const col = colors? colors[i] : (highlight && Math.abs(v)===max ? '#eb6834' : '#2a78d6');
+    const share = tot? (v/tot*100).toFixed(0)+'%':'';
+    s+=`<text x="${padL-10}" y="${y+h/2+4}" font-size="12" text-anchor="end" fill="#16222e">${esc(l.length>30?l.slice(0,29)+'…':l)}</text>`;
+    s+=`<rect x="${x0}" y="${y}" width="${w}" height="${h}" rx="4" fill="${col}" data-tip="<b>${esc(l)}</b><br>${fmt(v)} ${esc(unit)}${share?` (${share} of net total)`:''}"/>`;
+    s+=`<text x="${v>=0?X(v)+6:X(v)-6}" y="${y+h/2+4}" font-size="11.5" fill="#46525e" text-anchor="${v>=0?'start':'end'}">${fmt(v)}</text>`; });
+  s+=`<text x="${(padL+W-padR)/2}" y="${H-1}" font-size="11.5" text-anchor="middle" fill="#46525e">${esc(unit)}</text></svg>`;
+  return s;
+}
+
+/* ---------- donut ---------- */
+function donut(labels, values, unit, {alt}={}){
+  const pos = values.map(v=>Math.max(0,v)); const tot=sum(pos); const W=720,H=260,cx=130,cy=130,R=110,r=66;
+  let a=-Math.PI/2, s=`<svg class="chart" viewBox="0 0 ${W} ${H}" ${ALT(alt||'Donut chart')}>`;
+  pos.forEach((v,i)=>{ if(!v) return; const a2=a+v/tot*Math.PI*2; const large=(a2-a)>Math.PI?1:0;
+    const p=(ang,rad)=>[cx+rad*Math.cos(ang), cy+rad*Math.sin(ang)];
+    const [x1,y1]=p(a,R),[x2,y2]=p(a2,R),[x3,y3]=p(a2,r),[x4,y4]=p(a,r);
+    s+=`<path d="M${x1},${y1}A${R},${R} 0 ${large} 1 ${x2},${y2}L${x3},${y3}A${r},${r} 0 ${large} 0 ${x4},${y4}Z" fill="${PAL[i%8]}" stroke="#fff" stroke-width="2" data-tip="<b>${esc(labels[i])}</b><br>${fmt(values[i])} ${esc(unit)} · ${(v/tot*100).toFixed(1)}%"/>`; a=a2; });
+  s+=`<text x="${cx}" y="${cy-4}" text-anchor="middle" font-size="20" font-family="Newsreader,serif" fill="#13304d">${fmt(tot)}</text><text x="${cx}" y="${cy+16}" text-anchor="middle" font-size="11" fill="#6b7782">${esc(unit)}</text>`;
+  labels.forEach((l,i)=>{ const y=24+i*28; const share=tot?(pos[i]/tot*100):0;
+    s+=`<rect x="290" y="${y-10}" width="12" height="12" rx="3" fill="${PAL[i%8]}"/><text x="310" y="${y}" font-size="12.5" fill="#16222e">${esc(l)}</text><text x="${W-10}" y="${y}" font-size="12.5" text-anchor="end" fill="#46525e">${share.toFixed(1)}%</text>`;
+    s+=`<rect x="310" y="${y+5}" width="${(W-330)*share/100}" height="3" rx="1.5" fill="${PAL[i%8]}" opacity=".5"/>`; });
+  return s+'</svg>';
+}
+
+/* ---------- stacked scenario bars (vertical, supports negatives) ---------- */
+function stacked(names, stageLabels, M, unit, {alt, base=0}={}){
+  const W=720, padL=64, padR=16, top=20, bot=70, H=340; const n=names.length;
+  let mn=0,mx=0; M.forEach(r=>{ let p=0,q=0; r.forEach(v=>{ if(v>0)p+=v; else q+=v;}); mx=Math.max(mx,p); mn=Math.min(mn,q); });
+  const ticks=niceTicks(mn,mx,5), t0=ticks[0], t1=ticks[ticks.length-1]; const Y=v=> top+(t1-v)/(t1-t0)*(H-top-bot);
+  const bw=Math.min(78,(W-padL-padR)/n*0.5); const step=(W-padL-padR)/n;
+  let s=`<svg class="chart" viewBox="0 0 ${W} ${H}" ${ALT(alt||'Stacked bar chart')}>`;
+  ticks.forEach(t=>{ s+=`<line x1="${padL}" x2="${W-padR}" y1="${Y(t)}" y2="${Y(t)}" stroke="${t===0?'#c3c2b7':'#e1e0d9'}"/><text x="${padL-8}" y="${Y(t)+4}" font-size="11" text-anchor="end" fill="#6b7782">${fmt(t)}</text>`; });
+  s+=`<text transform="translate(14,${(top+H-bot)/2}) rotate(-90)" font-size="11.5" text-anchor="middle" fill="#46525e">${esc(unit)}</text>`;
+  M.forEach((r,i)=>{ const cx=padL+step*i+step/2; let p=0,q=0; const tot=sum(r);
+    r.forEach((v,j)=>{ if(!v) return; let y1,y2; if(v>0){ y1=Y(p+v); y2=Y(p); p+=v; } else { y1=Y(q); y2=Y(q+v); q+=v; }
+      s+=`<rect x="${cx-bw/2}" y="${y1+1}" width="${bw}" height="${Math.max(0.5,y2-y1-2)}" rx="2" fill="${PAL[j%8]}" data-tip="<b>${esc(names[i])}</b><br>${esc(stageLabels[j])}: ${fmt(v)} ${esc(unit)}"/>`; });
+    s+=`<path d="M${cx-6},${Y(tot)} l6,-6 6,6 -6,6z" fill="#13304d" stroke="#fff" stroke-width="1.5" data-tip="<b>${esc(names[i])}</b><br>Net total: ${fmt(tot)} ${esc(unit)}"/>`;
+    s+=`<text x="${cx}" y="${Math.max(12,Y(p)-10)}" font-size="12" font-weight="600" text-anchor="middle" fill="#13304d">${fmt(tot)}</text>`;
+    const words=names[i].split(' '); let lines=[''], k=0; words.forEach(w=>{ if((lines[k]+' '+w).trim().length>16){ lines.push(w); k++; } else lines[k]=(lines[k]+' '+w).trim(); });
+    lines.slice(0,3).forEach((ln,li)=> s+=`<text x="${cx}" y="${H-bot+18+li*14}" font-size="11.5" text-anchor="middle" fill="${i===base?'#13304d':'#46525e'}" font-weight="${i===base?700:400}">${esc(ln)}</text>`); });
+  return s+'</svg>';
+}
+
+/* ---------- radar ---------- */
+function radar(axes, names, V, {alt}={}){
+  const W=720,H=360,cx=250,cy=180,R=140,n=axes.length;
+  const P=(i,v)=>{ const a=-Math.PI/2+i*2*Math.PI/n; return [cx+R*v/100*Math.cos(a), cy+R*v/100*Math.sin(a)]; };
+  let s=`<svg class="chart" viewBox="0 0 ${W} ${H}" ${ALT(alt||'Radar chart')}>`;
+  [25,50,75,100].forEach(g=>{ s+=`<polygon points="${axes.map((_,i)=>P(i,g).join(',')).join(' ')}" fill="none" stroke="#e1e0d9"/>`; s+=`<text x="${cx+3}" y="${cy-R*g/100+11}" font-size="9.5" fill="#6b7782">${g}</text>`; });
+  axes.forEach((a,i)=>{ const [x,y]=P(i,100),[lx,ly]=P(i,118); s+=`<line x1="${cx}" y1="${cy}" x2="${x}" y2="${y}" stroke="#e1e0d9"/><text x="${lx}" y="${ly+4}" font-size="11.5" text-anchor="${Math.abs(lx-cx)<10?'middle':lx>cx?'start':'end'}" fill="#16222e">${esc(a)}</text>`; });
+  V.forEach((vals,k)=>{ const pts=vals.map((v,i)=>P(i,Math.max(0,Math.min(100,v||0))).join(',')).join(' ');
+    s+=`<polygon points="${pts}" fill="${PAL[k%8]}" fill-opacity=".08" stroke="${PAL[k%8]}" stroke-width="2"/>`;
+    vals.forEach((v,i)=>{ const [x,y]=P(i,Math.max(0,Math.min(100,v||0))); s+=`<circle cx="${x}" cy="${y}" r="4.5" fill="${PAL[k%8]}" stroke="#fff" stroke-width="1.5" data-tip="<b>${esc(names[k])}</b><br>${esc(axes[i])}: ${Math.round(v)} (index)"/>`; }); });
+  names.forEach((nm,k)=>{ const y=40+k*26; s+=`<rect x="470" y="${y-10}" width="12" height="12" rx="3" fill="${PAL[k%8]}"/><text x="490" y="${y}" font-size="12.5" fill="#16222e">${esc(nm)}</text>`; });
+  s+=`<text x="470" y="${40+names.length*26+14}" font-size="11" fill="#6b7782">Index: highest scenario on each axis = 100</text><text x="470" y="${40+names.length*26+30}" font-size="11" fill="#6b7782">Smaller area = lower impact</text>`;
+  return s+'</svg>';
+}
+
+/* ---------- line chart ---------- */
+function line(xs, series, xl, yl, {refs=[], alt}={}){
+  const W=720,H=320,padL=70,padR=150,top=16,bot=50;
+  const ys=series.flatMap(s=>s.y).concat(refs.map(r=>r[1])); const mn=Math.min(0,...ys), mx=Math.max(...ys);
+  const ty=niceTicks(mn,mx,5), y0=ty[0], y1=ty[ty.length-1]; const x0=Math.min(...xs), x1=Math.max(...xs);
+  const d=xs.slice(1).map((v,i)=>v-xs[i]); const logx = xs.every(v=>v>0) && Math.max(...d)/Math.min(...d)>3 && x1/x0>=10;
+  if(logx) xl = xl+' (logarithmic scale)';
+  const X=v=> logx ? padL+(Math.log10(v)-Math.log10(x0))/(Math.log10(x1)-Math.log10(x0))*(W-padL-padR) : padL+(v-x0)/(x1-x0||1)*(W-padL-padR), Y=v=>top+(y1-v)/(y1-y0)*(H-top-bot);
+  let s=`<svg class="chart" viewBox="0 0 ${W} ${H}" ${ALT(alt||'Line chart')}>`;
+  ty.forEach(t=>{ s+=`<line x1="${padL}" x2="${W-padR}" y1="${Y(t)}" y2="${Y(t)}" stroke="${t===0?'#c3c2b7':'#e1e0d9'}"/><text x="${padL-8}" y="${Y(t)+4}" font-size="11" text-anchor="end" fill="#6b7782">${fmt(t)}</text>`; });
+  xs.forEach(x=>{ s+=`<text x="${X(x)}" y="${H-bot+18}" font-size="11" text-anchor="middle" fill="#6b7782">${fmt(x)}</text>`; });
+  s+=`<text x="${(padL+W-padR)/2}" y="${H-8}" font-size="11.5" text-anchor="middle" fill="#46525e">${esc(xl)}</text><text transform="translate(14,${(top+H-bot)/2}) rotate(-90)" font-size="11.5" text-anchor="middle" fill="#46525e">${esc(yl)}</text>`;
+  refs.forEach(r=>{ s+=`<line x1="${padL}" x2="${W-padR}" y1="${Y(r[1])}" y2="${Y(r[1])}" stroke="#46525e" stroke-dasharray="5 4"/><text x="${W-padR+6}" y="${Y(r[1])+4}" font-size="11" fill="#46525e">${esc(r[0])} (${fmt(r[1])})</text>`; });
+  series.forEach((sr,k)=>{ const c=PAL[k%8]; s+=`<polyline points="${sr.y.map((v,i)=>X(xs[i])+','+Y(v)).join(' ')}" fill="none" stroke="${c}" stroke-width="2.2"/>`;
+    sr.y.forEach((v,i)=>{ s+=`<circle cx="${X(xs[i])}" cy="${Y(v)}" r="4.5" fill="${c}" stroke="#fff" stroke-width="1.5" data-tip="<b>${esc(sr.n)}</b><br>${esc(xl)}: ${fmt(xs[i])}<br>${fmt(v)} ${esc(yl)}"/>`; });
+    const lv=sr.y[sr.y.length-1]; if(!refs.length) s+=`<text x="${X(x1)+8}" y="${Y(lv)+4+(k?12:0)}" font-size="11" fill="#16222e">${esc(sr.n.length>20?sr.n.slice(0,19)+'…':sr.n)}</text>`; });
+  return s+'</svg>';
+}
+
+/* ---------- heatmap ---------- */
+const HEATCOLS=['Climate','Energy','Water','Land & biodiversity','Eutrophication & acidification','Toxicity & resources'];
+const HEATLBL=['Low','Moderate','High','Very high'];
+function heatmap(rows, M, {alt}={}){
+  const W=720, padL=200, top=58, ch=34, cw=(W-padL)/HEATCOLS.length, H=top+rows.length*ch+10;
+  let s=`<svg class="chart" viewBox="0 0 ${W} ${H}" ${ALT(alt||'Hotspot heatmap')}>`;
+  HEATCOLS.forEach((c,j)=>{ const words=c.split(' '); const x=padL+cw*j+cw/2; const l1=words.length>2?words.slice(0,1).join(' '):words.slice(0,Math.ceil(words.length/2)).join(' '); const l2=c.slice(l1.length).trim();
+    s+=`<text x="${x}" y="${l2?28:42}" font-size="11.5" text-anchor="middle" fill="#13304d" font-weight="600">${esc(l1)}</text>${l2?`<text x="${x}" y="43" font-size="11.5" text-anchor="middle" fill="#13304d" font-weight="600">${esc(l2)}</text>`:''}`; });
+  rows.forEach((r,i)=>{ const y=top+i*ch; s+=`<text x="${padL-10}" y="${y+ch/2+4}" font-size="12" text-anchor="end" fill="#16222e">${esc(r.length>28?r.slice(0,27)+'…':r)}</text>`;
+    M[i].forEach((v,j)=>{ const x=padL+cw*j; s+=`<rect x="${x+1}" y="${y+1}" width="${cw-2}" height="${ch-2}" rx="3" fill="${SEQ[v+1]||SEQ[0]}" data-tip="<b>${esc(r)}</b><br>${esc(HEATCOLS[j])}: ${HEATLBL[v]}"/><text x="${x+cw/2}" y="${y+ch/2+4}" font-size="10.5" text-anchor="middle" fill="${v>=2?'#fff':'#16222e'}">${HEATLBL[v]}</text>`; }); });
+  return s+'</svg>';
+}
+
+/* ---------- waterfall ---------- */
+function waterfall(steps, unit, {alt, end='Improved pathway'}={}){
+  const W=720,H=330,padL=64,padR=10,top=20,bot=78; let run=steps[0][1]; const bars=[{l:steps[0][0],a:0,b:run,t:'base'}];
+  steps.slice(1).forEach(([l,d])=>{ bars.push({l,a:run,b:run+d,t:d<0?'down':'up',d}); run+=d; }); bars.push({l:end,a:0,b:run,t:'end'});
+  const vals=bars.flatMap(b=>[b.a,b.b]); const ticks=niceTicks(Math.min(0,...vals),Math.max(...vals),5), t0=ticks[0], t1=ticks[ticks.length-1];
+  const Y=v=>top+(t1-v)/(t1-t0)*(H-top-bot); const step=(W-padL-padR)/bars.length, bw=Math.min(60,step*0.62);
+  let s=`<svg class="chart" viewBox="0 0 ${W} ${H}" ${ALT(alt||'Waterfall chart')}>`;
+  ticks.forEach(t=>{ s+=`<line x1="${padL}" x2="${W-padR}" y1="${Y(t)}" y2="${Y(t)}" stroke="${t===0?'#c3c2b7':'#e1e0d9'}"/><text x="${padL-8}" y="${Y(t)+4}" font-size="11" text-anchor="end" fill="#6b7782">${fmt(t)}</text>`; });
+  s+=`<text transform="translate(14,${(top+H-bot)/2}) rotate(-90)" font-size="11.5" text-anchor="middle" fill="#46525e">${esc(unit)}</text>`;
+  bars.forEach((b,i)=>{ const cx=padL+step*i+step/2, y1=Y(Math.max(b.a,b.b)), y2=Y(Math.min(b.a,b.b)); const col=b.t==='base'?'#13304d':b.t==='end'?'#1f8a80':b.t==='down'?'#1baf7a':'#e34948';
+    s+=`<rect x="${cx-bw/2}" y="${y1}" width="${bw}" height="${Math.max(1,y2-y1)}" rx="3" fill="${col}" data-tip="<b>${esc(b.l)}</b><br>${b.d!=null?(b.d>0?'+':'')+fmt(b.d):fmt(b.b)} ${esc(unit)}"/>`;
+    if(i<bars.length-1) s+=`<line x1="${cx+bw/2}" x2="${cx+step-bw/2}" y1="${Y(b.b)}" y2="${Y(b.b)}" stroke="#6b7782" stroke-dasharray="3 3"/>`;
+    s+=`<text x="${cx}" y="${y1-5}" font-size="11" text-anchor="middle" fill="#16222e" font-weight="600">${b.d!=null?(b.d>0?'+':'')+fmt(b.d):fmt(b.b)}</text>`;
+    const words=b.l.split(' '); let lines=[''],k=0; words.forEach(w=>{ if((lines[k]+' '+w).trim().length>13){ lines.push(w); k++; } else lines[k]=(lines[k]+' '+w).trim(); });
+    lines.slice(0,4).forEach((ln,li)=> s+=`<text x="${cx}" y="${H-bot+16+li*13}" font-size="10.5" text-anchor="middle" fill="#46525e">${esc(ln)}</text>`); });
+  return s+'</svg>';
+}
+
+/* ---------- sankey ---------- */
+function sankey(nodes, links, unit, {alt}={}){
+  const W=720,H=360,nw=14,padT=10,padB=10, cols=Math.max(...nodes.map(n=>n[1]))+1;
+  const inV=nodes.map(()=>0), outV=nodes.map(()=>0); links.forEach(([a,b,v])=>{ outV[a]+=v; inV[b]+=v; });
+  const val=nodes.map((_,i)=>Math.max(inV[i],outV[i]));
+  const colTot=[]; for(let c=0;c<cols;c++) colTot[c]=sum(nodes.map((n,i)=>n[1]===c?val[i]:0));
+  const counts=[]; for(let c=0;c<cols;c++) counts[c]=nodes.filter(n=>n[1]===c).length;
+  const gap=24; const k=Math.min(...colTot.map((t,c)=>(H-padT-padB-gap*(counts[c]-1))/t));
+  const pos=[]; const colX=c=> 150 + c*((W-300)/(cols-1||1));
+  for(let c=0;c<cols;c++){ const used=colTot[c]*k+gap*(counts[c]-1); let y=padT+(H-padT-padB-used)/2; nodes.forEach((n,i)=>{ if(n[1]===c){ pos[i]={x:colX(c),y,h:Math.max(2,val[i]*k)}; y+=val[i]*k+gap; } }); }
+  const oOff=nodes.map(()=>0), iOff=nodes.map(()=>0);
+  let s=`<svg class="chart" viewBox="0 0 ${W} ${H}" ${ALT(alt||'Sankey diagram')}>`;
+  links.forEach(([a,b,v],li)=>{ const h=v*k, A=pos[a], B=pos[b]; const y0=A.y+oOff[a]+h/2, y1=B.y+iOff[b]+h/2; oOff[a]+=h; iOff[b]+=h;
+    const x0=A.x+nw, x1=B.x, mx=(x0+x1)/2; const col=PAL[nodes[a][1]===0?(a%8):(b%8)];
+    s+=`<path d="M${x0},${y0}C${mx},${y0} ${mx},${y1} ${x1},${y1}" fill="none" stroke="${col}" stroke-opacity=".32" stroke-width="${Math.max(1.2,h)}" data-tip="<b>${esc(nodes[a][0])} → ${esc(nodes[b][0])}</b><br>${fmt(v)} ${esc(unit)}"/>`; });
+  nodes.forEach((n,i)=>{ const p=pos[i]; const last=n[1]===cols-1, first=n[1]===0;
+    s+=`<rect x="${p.x}" y="${p.y}" width="${nw}" height="${p.h}" rx="2" fill="#13304d" data-tip="<b>${esc(n[0])}</b><br>${fmt(val[i])} ${esc(unit)}"/>`;
+    const tx= last? p.x+nw+6 : first? p.x-6 : p.x+nw+6; const anchor= first?'end':'start';
+    s+=`<text x="${tx}" y="${p.y+p.h/2+4}" font-size="11.5" text-anchor="${anchor}" fill="#16222e" stroke="#fff" stroke-width="3" paint-order="stroke">${esc(n[0])} <tspan fill="#6b7782">${fmt(val[i])} ${esc(unit)}</tspan></text>`; });
+  return s+'</svg>';
+}
+
+/* ---------- life-cycle diagram ---------- */
+function lifecycle(c){
+  const id=uid(); const g=c.scen.g[c.scen.base];
+  let h=`<div class="lc" id="${id}" data-lc><div class="lc-row">`;
+  c.stages.forEach((st,i)=>{ const d=i*0.32;
+    h+=`<button class="lc-node" style="animation-delay:${d}s" data-i="${i}" aria-label="Stage ${i+1}: ${esc(st.k)}"><span class="c">${ic(st.ic,30)}</span><span class="l">${esc(st.k)}</span><span class="v">${fmt(g[i])} kg CO₂e</span></button>`;
+    if(i<c.stages.length-1) h+=`<span class="lc-arrow" style="animation-delay:${d+0.16}s" aria-hidden="true"><svg viewBox="0 0 26 18" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 9h22M17 3l6 6-6 6"/></svg></span>`; });
+  h+=`</div><div class="lc-loop" style="animation-delay:${c.stages.length*0.32}s">${ic('loop',22)}<span>${esc(c.loop||'Circular loop: reuse, repair or recycling returns material to earlier stages')}</span></div>
+  <div class="lc-detail" aria-live="polite"><span class="small">Select a stage to see what happens, its main inputs and outputs, and its share of the climate result.</span></div>
+  <div style="margin-top:8px" class="noprint"><button class="btn line sm" data-replay="${id}">↻ Replay animation</button></div></div>`;
+  return h;
+}
+function wireLifecycle(root, c){
+  root.querySelectorAll('[data-lc]').forEach(lc=>{
+    const io=new IntersectionObserver(es=>{ es.forEach(e=>{ if(e.isIntersecting){ lc.classList.add('play'); io.disconnect(); } }); },{threshold:.25}); io.observe(lc);
+    const g=c.scen.g[c.scen.base], tot=sum(g);
+    lc.querySelectorAll('.lc-node').forEach(b=> b.addEventListener('click',()=>{ lc.querySelectorAll('.lc-node').forEach(x=>x.classList.remove('sel')); b.classList.add('sel'); const st=c.stages[+b.dataset.i];
+      lc.querySelector('.lc-detail').innerHTML=`<b style="color:var(--navy)">${esc(st.k)}</b> — ${esc(st.what)}<br><span class="small"><b>Inputs:</b> ${esc(st.in)} · <b>Outputs:</b> ${esc(st.out)} · <b>Climate share:</b> ${(g[+b.dataset.i]/tot*100).toFixed(0)}% of net baseline</span>`; }));
+  });
+  root.querySelectorAll('[data-replay]').forEach(b=> b.addEventListener('click',()=>{ const lc=document.getElementById(b.dataset.replay); lc.classList.remove('play'); void lc.offsetWidth; lc.classList.add('play'); }));
+}
+
+/* ---------- ISO framework visual ---------- */
+function isoVisual(){
+  return `<svg class="chart phase-svg" viewBox="0 0 720 330" ${ALT('ISO 14040/14044 framework: Goal and scope, Inventory analysis and Impact assessment in sequence, each linked in both directions to Interpretation, which leads to applications such as product design, procurement and reporting.')}>
+  <style>.iso-b{opacity:0;animation:pop .5s ease forwards}</style>
+  <rect x="10" y="10" width="470" height="310" rx="14" fill="#f2f8f7" stroke="#b9ddd5"/>
+  <text x="24" y="34" font-size="12" fill="#137c7a" font-weight="700" letter-spacing="1">LIFE CYCLE ASSESSMENT FRAMEWORK (ISO 14040/44)</text>
+  ${[['1','Goal & scope definition','Functional unit · boundary · audience',60],['2','Inventory analysis (LCI)','Inputs & outputs per stage',150],['3','Impact assessment (LCIA)','Classification · characterisation',240]].map((b,i)=>`
+  <g class="iso-b" style="animation-delay:${i*.35}s"><rect x="30" y="${b[3]}" width="250" height="64" rx="10" fill="#fff" stroke="#137c7a" stroke-width="1.5"/><circle cx="56" cy="${b[3]+32}" r="14" fill="#13304d"/><text x="56" y="${b[3]+37}" text-anchor="middle" font-size="13" fill="#fff" font-weight="700">${b[0]}</text><text x="78" y="${b[3]+28}" font-size="13.5" fill="#13304d" font-weight="700">${b[1]}</text><text x="78" y="${b[3]+46}" font-size="11.5" fill="#46525e">${b[2]}</text></g>
+  ${i<2?`<path class="iso-b" style="animation-delay:${i*.35+.2}s" d="M155 ${b[3]+66}v20" stroke="#6b7782" stroke-width="2" marker-end="url(#ah)"/>`:''}`).join('')}
+  <defs><marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0l10 5-10 5z" fill="#6b7782"/></marker></defs>
+  <g class="iso-b" style="animation-delay:1.2s"><rect x="330" y="60" width="130" height="244" rx="10" fill="#13304d"/><circle cx="395" cy="104" r="14" fill="#5cc3b4"/><text x="395" y="109" text-anchor="middle" font-size="13" fill="#13304d" font-weight="700">4</text><text x="395" y="150" text-anchor="middle" font-size="14" fill="#fff" font-weight="700">Interpretation</text>
+  <text x="395" y="176" text-anchor="middle" font-size="11" fill="#c6d6e2">Hotspots</text><text x="395" y="194" text-anchor="middle" font-size="11" fill="#c6d6e2">Sensitivity</text><text x="395" y="212" text-anchor="middle" font-size="11" fill="#c6d6e2">Uncertainty</text><text x="395" y="230" text-anchor="middle" font-size="11" fill="#c6d6e2">Completeness</text><text x="395" y="248" text-anchor="middle" font-size="11" fill="#c6d6e2">Conclusions</text></g>
+  ${[92,182,272].map((y,i)=>`<path class="iso-b" style="animation-delay:${1.4+i*.15}s" d="M284 ${y}H326" stroke="#137c7a" stroke-width="2" marker-end="url(#ah)" marker-start="url(#ah)"/>`).join('')}
+  <g class="iso-b" style="animation-delay:1.9s"><path d="M484 182H520" stroke="#137c7a" stroke-width="2.5" marker-end="url(#ah)"/>
+  <rect x="526" y="40" width="184" height="280" rx="12" fill="#fff" stroke="#dde4e8"/><text x="618" y="66" text-anchor="middle" font-size="12" fill="#137c7a" font-weight="700" letter-spacing="1">APPLICATIONS</text>
+  ${['Product design & ecodesign','Procurement & sourcing','Circular-economy strategy','Supply-chain decarbonisation','CSRD / ESRS evidence','Policy analysis'].map((t,i)=>`<rect x="542" y="${82+i*38}" width="152" height="28" rx="6" fill="#e7f3f0"/><text x="618" y="${100+i*38}" text-anchor="middle" font-size="11.5" fill="#13304d">${t}</text>`).join('')}</g>
+  </svg>`;
+}
+
+/* ---------- double materiality visual ---------- */
+function dmVisual(){
+  return `<svg class="chart" viewBox="0 0 720 300" ${ALT('Double materiality: impact materiality (company impacts on people and environment, outward) and financial materiality (sustainability risks and opportunities affecting the company, inward). LCA mainly informs impact materiality and also helps quantify transition risks and opportunities.')}>
+  <rect x="250" y="95" width="220" height="110" rx="14" fill="#13304d"/><text x="360" y="140" text-anchor="middle" font-size="16" fill="#fff" font-weight="700">Company &amp;</text><text x="360" y="162" text-anchor="middle" font-size="16" fill="#fff" font-weight="700">value chain</text>
+  <rect x="510" y="70" width="200" height="160" rx="12" fill="#e7f3f0" stroke="#b9ddd5"/><text x="610" y="100" text-anchor="middle" font-size="13" fill="#0f6664" font-weight="700">People &amp; environment</text>
+  <text x="610" y="124" text-anchor="middle" font-size="11.5" fill="#16222e">Climate, pollution, water,</text><text x="610" y="140" text-anchor="middle" font-size="11.5" fill="#16222e">biodiversity, resources,</text><text x="610" y="156" text-anchor="middle" font-size="11.5" fill="#16222e">workers &amp; communities</text>
+  <text x="610" y="206" text-anchor="middle" font-size="11" fill="#0f6664" font-weight="600">LCA evidence is strongest here</text>
+  <rect x="10" y="70" width="200" height="160" rx="12" fill="#eaf1f8" stroke="#c7d8ea"/><text x="110" y="100" text-anchor="middle" font-size="13" fill="#1d4468" font-weight="700">Financial effects</text>
+  <text x="110" y="124" text-anchor="middle" font-size="11.5" fill="#16222e">Carbon prices, regulation,</text><text x="110" y="140" text-anchor="middle" font-size="11.5" fill="#16222e">material scarcity, customer</text><text x="110" y="156" text-anchor="middle" font-size="11.5" fill="#16222e">demand, physical climate risk</text>
+  <text x="110" y="206" text-anchor="middle" font-size="11" fill="#1d4468" font-weight="600">LCA helps size exposure</text>
+  <defs><marker id="dm" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0l10 5-10 5z" fill="#137c7a"/></marker><marker id="dm2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0l10 5-10 5z" fill="#1d4468"/></marker></defs>
+  <path d="M474 130H504" stroke="#137c7a" stroke-width="3" marker-end="url(#dm)"/><text x="490" y="60" text-anchor="middle" font-size="12" fill="#0f6664" font-weight="700">IMPACT MATERIALITY</text><text x="490" y="76" text-anchor="middle" font-size="10.5" fill="#46525e">inside-out</text>
+  <path d="M216 170H246" stroke="#1d4468" stroke-width="3" marker-end="url(#dm2)"/><text x="230" y="260" text-anchor="middle" font-size="12" fill="#1d4468" font-weight="700">FINANCIAL MATERIALITY</text><text x="230" y="276" text-anchor="middle" font-size="10.5" fill="#46525e">outside-in</text>
+  </svg>`;
+}
+
+/* ---------- case study page ---------- */
+const SECS=['Executive summary','Product system overview','Goal & audience','Functional unit & scope','System boundary diagram','Life-cycle stages','Life Cycle Inventory','Impact assessment','Hotspot analysis','Scenario analysis','Sensitivity analysis','Interpretation','Recommendations','CSRD, ESG & ESRS','LCA-to-ESRS mapping','Data sources & limitations'];
+function caseTotals(c){ const s=c.scen; return s.g.map(sum); }
+function casePage(c){
+  const s=c.scen, b=s.base, g=s.g[b], tot=sum(g), T=caseTotals(c), labels=c.stages.map(x=>x.k), src=c.srcShort;
+  const secId=i=>`s-${c.id}-${i}`;
+  const H2=(i)=>`<h2><span class="no">${String(i+1).padStart(2,'0')}</span>${SECS[i]}</h2>`;
+  const ind = [['Climate change (GWP100)','kg CO₂e',tot],[c.el||'Cumulative energy demand','MJ',sum(c.ced)],[c.wl||'Water consumption',c.wu||'litres',sum(c.water)]].concat(c.ind);
+  const radarData = c.rad ? c.rad : (()=>{ const ax=['Climate','Energy','Water','Waste','Land use','Eutrophication']; const ms=[T,s.e,s.w,s.x,s.l,s.u]; const V=s.names.map((_,k)=> ms.map(m=>{ const mx=Math.max(...m.map(Math.abs)); return mx? m[k]/mx*100:0; })); return {axes:ax,s:V}; })();
+  let h=`<div class="casehead"><div class="wrap"><div class="crumb"><a href="#home">Home</a> / <a href="#cases">Case studies</a> / Case ${c.n}</div>
+  <div class="eyebrow">Case study ${c.n} of ${CASES.length} · ${esc(c.cat)}${c.real?' · published project data':''}</div><h1>${esc(c.title)}</h1><p style="max-width:820px;color:var(--ink2)">${esc(c.sub)}</p>
+  <div class="facts"><div class="fact"><b>Functional unit</b>${esc(c.fu)}</div><div class="fact"><b>System boundary</b>${esc(c.boundary)}</div><div class="fact"><b>Baseline climate result</b>${fmt(tot)} kg CO₂e ${esc(c.fuShort)}</div><div class="fact"><b>Main hotspot</b>${esc(c.cmp.hot)}</div></div>
+  <div style="margin-top:16px;display:flex;gap:10px;flex-wrap:wrap" class="noprint"><a class="btn sm" href="#summary-${c.id}">One-page summary</a><a class="btn line sm" href="#case-${CASES[c.n%CASES.length].id}">Next case →</a></div>
+  <div style="margin-top:16px">${c.disc?`<div class="disc" role="note">${ic('alert',20)}<div>${c.disc}${c.repo?` <a href="${esc(c.repo)}" target="_blank" rel="noopener">Open the repository</a>.`:''}</div></div>`:DISC}</div></div></div>
+  <div class="wrap layout"><nav class="toc" aria-label="Sections">${SECS.map((t,i)=>`<button data-go="${secId(i)}">${t}</button>`).join('')}</nav><div>`;
+  // 1 exec
+  h+=`<section class="sec" id="${secId(0)}">${H2(0)}${c.exec.split('\n').map(p=>`<p>${esc(p)}</p>`).join('')}
+  <div class="kpis">${ind.slice(0,3).map(k=>`<div class="kpi"><div class="t">${esc(k[0])}</div><div class="v">${fmt(k[2])}</div><div class="u">${esc(k[1])} ${esc(c.fuShort)}</div></div>`).join('')}<div class="kpi"><div class="t">Best scenario tested</div><div class="v">${pct(Math.min(...T),T[b]).replace(/<[^>]+>/g,'')}</div><div class="u">climate change vs baseline</div></div></div>
+  <div class="box take"><h4>${ic('check',18)} Key takeaway</h4><p>${esc(c.take)}</p></div></section>`;
+  // 2 overview
+  h+=`<section class="sec" id="${secId(1)}">${H2(1)}${c.overview.split('\n').map(p=>`<p>${esc(p)}</p>`).join('')}</section>`;
+  // 3 goal
+  h+=`<section class="sec" id="${secId(2)}">${H2(2)}<p>${esc(c.goal)}</p><h4>Intended applications</h4><div>${['Product design','Procurement decisions','ESG reporting support','Circular-economy strategy','Consumer communication','Policy analysis','Supply-chain decarbonisation'].map(a=>`<span class="pill ${c.aud.includes(a)?'':'n'}" style="${c.aud.includes(a)?'':'opacity:.55'}">${c.aud.includes(a)?'✓ ':''}${a}</span>`).join('')}</div><p class="small" style="margin-top:8px">Highlighted applications are in scope. Consumer communication would require a critical review under ISO 14044 before any comparative public claim.</p></section>`;
+  // 4 FU & scope
+  h+=`<section class="sec" id="${secId(3)}">${H2(3)}<div class="kv">
+  ${[['Functional unit',c.fu],['Reference flow',c.ref],['System boundary',c.boundary],['Geographic scope',c.geo],['Time horizon',c.time],['Impact assessment method',c.method],['Allocation approach',c.alloc],['Cut-off rules',c.cutoff],['Data sources & quality',c.dq]].map(([k,v])=>`<div>${k}</div><div>${esc(v)}</div>`).join('')}</div></section>`;
+  // 5 boundary diagram
+  h+=`<section class="sec" id="${secId(4)}">${H2(4)}<p class="small">Animated diagram of the product system. Stages appear in life-cycle order; select any stage for details. Values show baseline climate change per functional unit.</p>${lifecycle(c)}
+  ${fig({title:c.sankey.t||`Material flows: ${c.short}`, sub:c.sankey.sub||`Sankey diagram, mass flows per functional unit (${esc(c.sankey.u)})`, body:sankey(c.sankey.nodes,c.sankey.links,c.sankey.u,{alt:`Sankey diagram of material flows for ${c.short}. `+c.sankey.links.map(l=>`${c.sankey.nodes[l[0]][0]} to ${c.sankey.nodes[l[1]][0]}: ${l[2]} ${c.sankey.u}`).join('; ')}), source:src, note:'Mass balances are simplified and rounded; minor auxiliary materials omitted. Band width is proportional to mass.', interp:c.ci.sankey})}</section>`;
+  // 6 stages
+  h+=`<section class="sec" id="${secId(5)}">${H2(5)}${c.stages.map((st,i)=>`<details class="stage" ${i===0?'open':''}><summary>${ic(st.ic,20)} ${i+1}. ${esc(st.k)}<span class="small" style="margin-left:8px;font-weight:400">${fmt(g[i])} kg CO₂e</span><span class="chev">${ic('chev',16)}</span></summary><div class="body"><div class="kv">
+  ${[['What happens',st.what],['Main inputs',st.in],['Main outputs',st.out],['Energy & water',st.ew],['Emissions',st.em],['Waste',st.wa],['Transport',st.tr],['Social & supply-chain risks',st.so],['Data assumptions',st.as]].map(([k,v])=>`<div>${k}</div><div>${esc(v)}</div>`).join('')}</div></div></details>`).join('')}</section>`;
+  // 7 LCI
+  h+=`<section class="sec" id="${secId(6)}">${H2(6)}<p>${c.lciNote||`Inventory per functional unit (${esc(c.fuShort)}). <span class="pill n">Data type</span> L = literature-based estimate · I = illustrative assumption · P = primary data (none used).`} Data-quality rating follows a simplified pedigree approach (High / Medium / Low). The full foreground inventory in LCIS2024 format is listed on the <a href="#downloads">Downloads page</a>.</p>
+  <div class="tw"><table><thead><tr><th>Life-cycle stage</th><th>Input or output</th><th>Unit</th><th class="num">Assumed quantity</th><th>Data source or assumption</th><th>Type</th><th>Data quality</th></tr></thead><tbody>
+  ${c.lci.map(r=>`<tr><td>${esc(r[0])}</td><td>${esc(r[1])}</td><td>${esc(r[2])}</td><td class="num">${esc(r[3])}</td><td>${esc(r[4])}</td><td>${esc(r[5])}</td><td><span class="pill ${r[6]==='High'?'g':r[6]==='Medium'?'y':'r'}">${esc(r[6])}</span></td></tr>`).join('')}</tbody></table></div></section>`;
+  // 8 LCIA
+  const segId=uid();
+  h+=`<section class="sec" id="${secId(7)}">${H2(7)}<p>Characterised results for the baseline scenario, ${esc(c.fuShort)}. Method: ${esc(c.method)}</p>
+  <div class="tw"><table><thead><tr><th>Impact category / indicator</th><th>Unit</th><th class="num">Baseline result</th></tr></thead><tbody>${ind.map(r=>`<tr><td>${esc(r[0])}</td><td>${esc(r[1])}</td><td class="num">${fmt(r[2])}</td></tr>`).join('')}</tbody></table></div>
+  <div id="${segId}" data-stagechart="${c.id}">${stageFigs(c,'g')}</div></section>`;
+  // 9 hotspots
+  h+=`<section class="sec" id="${secId(8)}">${H2(8)}${c.hot.map((x,i)=>`<div class="hot"><div class="rk">${i+1}</div><div><b style="color:var(--navy)">${esc(x.t)}</b> <span class="pill">${esc(x.s)}</span><br>${esc(x.why)}</div></div>`).join('')}
+  ${fig({title:`Hotspot heatmap: ${c.short}`, sub:'Relative contribution of each life-cycle stage to each impact area (qualitative rating based on characterised results)', body:heatmap(labels,c.heat,{alt:`Hotspot heatmap for ${c.short}. `+labels.map((l,i)=>l+': '+c.heat[i].map((v,j)=>HEATCOLS[j]+' '+HEATLBL[v]).join(', ')).join('. ')}), source:src, note:'Ratings group stage shares: Low <5%, Moderate 5–15%, High 15–40%, Very high >40% of the category total, adjusted by expert judgement where categories are not quantified.', interp:c.ci.heat})}</section>`;
+  // 10 scenarios
+  h+=`<section class="sec" id="${secId(9)}">${H2(9)}<div class="tw"><table><thead><tr><th>Scenario</th><th>Description</th><th class="num">Climate (kg CO₂e)</th><th class="num">Δ climate</th><th class="num">Δ energy</th><th class="num">Δ water</th><th class="num">${esc(s.xl||'Δ waste')}</th></tr></thead><tbody>
+  ${s.names.map((n,i)=>`<tr ${i===b?'style="background:#f2f8f7"':''}><td><b>${esc(n)}</b>${i===b?' <span class="pill">baseline</span>':''}</td><td>${esc(s.desc[i])}</td><td class="num">${fmt(T[i])}</td><td class="num">${i===b?'–':pct(T[i],T[b])}</td><td class="num">${i===b?'–':pct(s.e[i],s.e[b])}</td><td class="num">${i===b?'–':pct(s.w[i],s.w[b])}</td><td class="num">${i===b?'–':pct(s.x[i],s.x[b])}</td></tr>`).join('')}</tbody></table></div>
+  <p class="small">Δ = percentage change versus baseline for climate change, ${esc((c.el||'cumulative energy demand').toLowerCase())}, ${esc((c.wl||'water consumption').toLowerCase())} and ${esc(s.xl?s.xl.replace('Δ ',''):'waste generated')}. ${c.id==='msw'?'For this system, negative values are net avoided burdens; percentage changes are calculated against the absolute baseline value.':''}</p>
+  ${fig({title:`Scenario comparison: climate change by life-cycle stage`, sub:`Stacked bars, kg CO₂e ${esc(c.fuShort)}; ◆ = net total`, legend:legendHTML(labels), body:stacked(s.names,labels,s.g,'kg CO₂e '+c.fuShort,{base:b,alt:`Stacked bar chart comparing climate change of ${s.names.length} scenarios: `+s.names.map((n,i)=>n+' '+fmt(T[i])+' kg CO2e').join('; ')}), source:src, note:c.ci.scenNote||'Scenario parameters are described in the table above; all other parameters held at baseline values.', interp:c.ci.scen})}
+  ${fig({title:'Multi-indicator profile of scenarios', sub:'Radar chart; each axis indexed so the highest-impact scenario = 100', body:radar(radarData.axes,s.names,radarData.s,{alt:'Radar chart comparing scenarios across '+radarData.axes.join(', ')}), source:src, note:c.radNote||(c.rad?'Semi-quantitative index combining modelled results and expert ratings for indicators that cannot be netted.':'Indexing hides absolute magnitudes; use the indicator table for absolute values.'), interp:c.ci.radar})}
+  ${fig({title:'Reduction potential: from baseline to an improved pathway', sub:`Waterfall chart, kg CO₂e ${esc(c.fuShort)}${c.wfEnd?' (process differences between the two systems)':''}`, body:waterfall(c.wf,'kg CO₂e '+c.fuShort,{end:c.wfEnd||'Improved pathway',alt:'Waterfall chart: '+c.wf.map(w=>w[0]+' '+w[1]).join('; ')}), source:src, note:'Measures applied in sequence; interaction effects mean the order changes individual step sizes. Values rounded.', interp:c.ci.wf})}</section>`;
+  // 11 sensitivity
+  h+=`<section class="sec" id="${secId(10)}">${H2(10)}<p>${esc(c.sens.note)}</p>${fig({title:c.sens.t, sub:'Line chart, one-at-a-time sensitivity', legend:legendHTML(c.sens.s.map(x=>x.n)), body:line(c.sens.x,c.sens.s,c.sens.xl,c.sens.yl,{refs:c.sens.refs||[],alt:c.sens.t+': '+c.sens.s.map(sr=>sr.n+' '+sr.y.map(fmt).join(', ')).join('; ')}), source:src, note:'All other parameters held at baseline values. Dashed lines show reference results.', interp:c.sens.interp})}</section>`;
+  // 12 interpretation
+  const I=c.interp;
+  h+=`<section class="sec" id="${secId(11)}">${H2(11)}<div class="kv">${[['What the results mean',I.m],['Assumptions that matter most',I.a],['Where uncertainty exists',I.u],['Conclusions that can be drawn',I.can],['Conclusions that cannot be drawn',I.cannot],['Decisions the results could support',I.d]].map(([k,v])=>`<div>${k}</div><div>${esc(v)}</div>`).join('')}</div>
+  <div class="box asm"><h4>${ic('alert',18)} Assumptions and limitations</h4><p>${esc(c.assume)}</p></div></section>`;
+  // 13 recs
+  h+=`<section class="sec" id="${secId(12)}">${H2(12)}<div class="box biz"><h4>${ic('arrow',18)} Business recommendation</h4><p>${esc(c.biz)}</p></div><div class="grid g3">${c.recs.map(([a,t])=>`<div class="card"><h4 style="margin-top:0">${esc(a)}</h4><p style="margin:0;font-size:.92rem">${esc(t)}</p></div>`).join('')}</div></section>`;
+  // 14 CSRD
+  h+=`<section class="sec" id="${secId(13)}">${H2(13)}<p>How this LCA could support sustainability reporting. An LCA is not itself a CSRD disclosure; it provides evidence that can inform the double materiality assessment, metrics and targets <em>where the topic is assessed as material</em>.</p><div class="kv">${c.csrd.map(([k,v])=>`<div>${esc(k)}</div><div>${esc(v)}</div>`).join('')}</div>
+  <p class="small" style="margin-top:10px">Disclosure references use ESRS Set 1 (2023) numbering for orientation. The revised ESRS adopted in 2026 reduce and renumber some datapoints; check the applicable text before use.</p></section>`;
+  // 15 ESRS mapping
+  h+=`<section class="sec" id="${secId(14)}">${H2(14)}${esrsTable(c)}</section>`;
+  // 16 data
+  h+=`<section class="sec" id="${secId(15)}">${H2(15)}<h4>Sources consulted (public)</h4><ul>${c.src.map(x=>`<li>${esc(x)}</li>`).join('')}</ul><p class="small">Links to all references are on the <a href="#sources">Sources page</a>.</p><div class="kv">${c.lim.map(([k,v])=>`<div>${esc(k)}</div><div>${esc(v)}</div>`).join('')}</div>
+  <div style="margin-top:16px;display:flex;gap:10px;flex-wrap:wrap" class="noprint"><a class="btn sm" href="#summary-${c.id}">View one-page summary</a>${c.n>1?`<a class="btn line sm" href="#case-${CASES[c.n-2].id}">← Previous case</a>`:''}${c.n<CASES.length?`<a class="btn line sm" href="#case-${CASES[c.n].id}">Next case →</a>`:''}</div></section>`;
+  h+=`</div></div>`;
+  return h;
+}
+function stageFigs(c, key){
+  const s=c.scen, g=s.g[s.base], labels=c.stages.map(x=>x.k);
+  const map={g:[g,'kg CO₂e','Climate change'],e:[c.ced,'MJ',c.el||'Cumulative energy demand'],w:[c.water,c.wu||'litres',c.wl||'Water consumption']}; const [vals,unit,name]=map[key];
+  const ctr=`<div class="seg noprint" role="group" aria-label="Indicator">${Object.entries(map).map(([k,v])=>`<button data-ind="${k}" class="${k===key?'on':''}">${v[2]}</button>`).join('')}</div>`;
+  const neg = vals.some(v=>v<0);
+  return fig({title:`${name} by life-cycle stage`, sub:`Horizontal bar chart, ${unit} ${esc(c.fuShort)} (largest stage highlighted)`, controls:ctr, body:hbar(labels,vals,unit+' '+c.fuShort,{alt:`${name} by stage for ${c.short}: `+labels.map((l,i)=>l+' '+fmt(vals[i])).join(', ')}), source:c.srcShort, note:'Baseline scenario. '+(neg?'Negative values are avoided burdens credited through system expansion.':'Stage boundaries as defined in the system-boundary diagram.'), interp:c.ci['stage_'+key]||c.ci.stage})
+   + fig({title:`Contribution by stage: ${name.toLowerCase()}`, sub:`Donut chart, share of ${neg?'gross burdens (credits excluded)':'total'}`, legend:'', body:donut(labels,vals,unit,{alt:`Donut chart of ${name} shares: `+labels.map((l,i)=>l+' '+fmt(vals[i])).join(', ')}), source:c.srcShort, note:neg?'Shares are of gross burdens; avoided burdens are shown in the bar chart.':'Shares may not sum to 100% due to rounding.', interp:c.ci.donut});
+}
+function esrsTable(c){
+  return `<p class="small">LCA-to-ESRS mapping. Materiality questions are prompts for the double materiality assessment, not conclusions.</p><div class="tw"><table><thead><tr><th>LCA finding</th><th>Environmental or social issue</th><th>ESRS topic</th><th>Possible CSRD disclosure link</th><th>Materiality question</th><th>Data needed</th><th>Management action</th></tr></thead><tbody>${c.esrs.map(r=>`<tr>${r.map((x,i)=>`<td>${i===2?`<span class="pill n">${esc(x)}</span>`:esc(x)}</td>`).join('')}</tr>`).join('')}</tbody></table></div>`;
+}
+function wireCase(root,c){
+  wireLifecycle(root,c);
+  root.querySelectorAll('[data-go]').forEach(b=>b.addEventListener('click',()=>document.getElementById(b.dataset.go).scrollIntoView({behavior:'smooth'})));
+  const sc=root.querySelector('[data-stagechart]'); if(sc) sc.addEventListener('click',e=>{ const b=e.target.closest('[data-ind]'); if(!b) return; sc.innerHTML=stageFigs(c,b.dataset.ind); });
+}
+
+/* ---------- summary page ---------- */
+function summaryText(c){
+  const s=c.scen,T=caseTotals(c),b=s.base;
+  return `${c.title}\n\n${c.exec}\n\nFunctional unit: ${c.fu}\nSystem boundary: ${c.boundary}\nBaseline: ${fmt(T[b])} kg CO2e; ${fmt(sum(c.ced))} MJ; ${fmt(sum(c.water))} L water\n\nHotspots:\n${c.hot.slice(0,3).map((h,i)=>`${i+1}. ${h.t} (${h.s})`).join('\n')}\n\nScenarios (climate change vs baseline):\n${s.names.map((n,i)=>`- ${n}: ${fmt(T[i])} kg CO2e`).join('\n')}\n\nBusiness recommendation: ${c.biz}\nMain ESRS relevance: ${c.cmp.esrs}\n\nIllustrative LCA portfolio – not a certified LCA, EPD or CSRD disclosure.`;
+}
+function summaryPage(c){
+  const s=c.scen,T=caseTotals(c),b=s.base,labels=c.stages.map(x=>x.k);
+  return `<div class="wrap"><div class="crumb noprint" style="margin-top:18px"><a href="#case-${c.id}">← Back to full case study</a> · <a href="#downloads">All downloads</a></div>
+  <article class="summary-page"><div class="eyebrow">One-page executive summary · Case ${c.n}</div><h1>${esc(c.title)}</h1>
+  <div class="note" style="margin-bottom:12px">${c.real?'Based on published project data (INTEGRATE PI05#3, IPMA &amp; CTAQUA 2020) re-used in the author\'s open repository; not a certified LCA or CSRD disclosure.':'Illustrative LCA portfolio. Demonstration values based on public literature and stated assumptions; not a certified LCA, EPD or CSRD disclosure.'}</div>
+  <div class="two"><div><h4>Scope</h4><p style="font-size:.9rem"><b>Functional unit:</b> ${esc(c.fu)}<br><b>Boundary:</b> ${esc(c.boundary)}<br><b>Geography:</b> ${esc(c.geo)}<br><b>Method:</b> ${esc(c.method)}</p></div>
+  <div><h4>Baseline results ${esc(c.fuShort)}</h4><div class="kpis" style="margin:0">${[['Climate',fmt(T[b]),'kg CO₂e'],['Energy',fmt(sum(c.ced)),'MJ'],[c.wl||'Water',fmt(sum(c.water)),c.wu||'litres']].map(k=>`<div class="kpi"><div class="t">${k[0]}</div><div class="v">${k[1]}</div><div class="u">${k[2]}</div></div>`).join('')}</div></div></div>
+  <h4>Climate change by stage</h4>${hbar(labels,s.g[b],'kg CO₂e '+c.fuShort,{alt:'Climate change by stage'})}
+  <div class="two"><div><h4>Top hotspots</h4><ol style="font-size:.9rem;padding-left:18px">${c.hot.slice(0,3).map(h=>`<li><b>${esc(h.t)}</b> — ${esc(h.s)}</li>`).join('')}</ol>
+  <h4>Business recommendation</h4><p style="font-size:.9rem">${esc(c.biz)}</p></div>
+  <div><h4>Scenarios</h4><table><thead><tr><th>Scenario</th><th class="num">kg CO₂e</th><th class="num">vs baseline</th></tr></thead><tbody>${s.names.map((n,i)=>`<tr><td>${esc(n)}</td><td class="num">${fmt(T[i])}</td><td class="num">${i===b?'baseline':pct(T[i],T[b])}</td></tr>`).join('')}</tbody></table>
+  <h4>CSRD / ESRS relevance</h4><p style="font-size:.9rem">${esc(c.cmp.esrs)}. ${esc(c.cmp.gap?('Main data gap: '+c.cmp.gap+'.'):'')}</p></div></div>
+  <div class="box take"><h4>Key takeaway</h4><p>${esc(c.take)}</p></div>
+  <div class="noprint" style="display:flex;gap:10px;flex-wrap:wrap;margin-top:12px">${window.LCA_HOSTED?`<button class="btn sm" onclick="window.print()">Print / save as PDF</button><a class="btn line sm" href="downloads/LCA_Portfolio_Executive_Summaries.pdf" download>All summaries (PDF)</a>`:''}<button class="btn ${window.LCA_HOSTED?'line ':''}sm" data-copy="${c.id}">Copy summary text</button><span class="note" id="copymsg"></span></div>
+  <p class="note" style="margin-top:10px">${HOSTED?'<a href="files/LCA_Portfolio_Executive_Summaries.pdf" download>Download all summaries as PDF</a>':'A print-ready PDF of all summaries accompanies this portfolio (see Downloads).'}</p></article></div>`;
+}
+
+/* ---------- pages ---------- */
+function home(){
+  return `<section class="hero"><div class="wrap"><div class="eyebrow">Portfolio · Sustainability consulting &amp; ESG reporting</div>
+  <h1>Life Cycle Assessment Portfolio — Product Sustainability, Circular Economy, CSRD &amp; ESRS</h1>
+  <p class="lead">Eleven product and system LCAs built on ISO 14040 and ISO 14044, showing how life-cycle evidence can inform product design, procurement, circular-economy strategy, and double materiality assessments under the CSRD.</p>
+  <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:22px"><a class="btn" href="#cases">Explore the case studies →</a><a class="btn ghost" href="#esrs">From LCA to CSRD &amp; ESRS</a></div></div></section>
+  <div class="wrap" style="margin-top:-20px;position:relative">${DISC}</div>
+  <section class="band"><div class="wrap grid g2" style="align-items:center"><div><div class="eyebrow">What is LCA?</div><h2>Measuring impacts across the whole life cycle</h2>
+  <p>Life Cycle Assessment (LCA) quantifies the environmental impacts of a product or service from raw-material extraction through production, use and end-of-life. It turns a supply chain into a model of inputs (materials, energy, water) and outputs (emissions, waste), and then translates those flows into impacts such as climate change, water scarcity or resource depletion.</p>
+  <p>Its value lies less in a single number than in what it reveals: <b>where</b> impacts concentrate, <b>which</b> assumptions drive results, and <b>what</b> changes would make a measurable difference. It also guards against burden shifting, where a fix in one stage or impact category creates a problem elsewhere.</p>
+  <a class="btn line" href="#methodology">Read the methodology</a></div>
+  <div class="card">${isoVisual()}</div></div></section>
+  <section class="band alt"><div class="wrap"><div class="eyebrow">Eleven case studies</div><h2>Products and systems assessed</h2><p style="max-width:760px">Each case follows the same structure: goal and scope, inventory, impact assessment, interpretation, scenarios, recommendations and an LCA-to-ESRS mapping.</p>
+  <div class="grid g4" style="margin-top:20px">${CASES.map(caseCard).join('')}</div></div></section>
+  <section class="band"><div class="wrap grid g2"><div><div class="eyebrow">Why it matters for reporting</div><h2>LCA, CSRD and ESRS</h2>
+  <p>The Corporate Sustainability Reporting Directive (CSRD) requires companies in scope to report on material sustainability impacts, risks and opportunities using the European Sustainability Reporting Standards (ESRS). Most of a product company's impacts sit in its value chain, which is exactly where LCA provides structured evidence.</p>
+  <p>LCA can inform the double materiality assessment, Scope 3 emissions estimates, circular-economy metrics and target setting. It does not replace the reporting itself, and it needs governance and data controls to be used credibly.</p><a class="btn line" href="#esrs">See the ESRS connection</a></div>
+  <div class="grid g2" style="gap:12px">${[['E1','Climate change','GHG emissions, transition plans, climate risks'],['E2–E3','Pollution & water','Air, water and soil emissions; water consumption'],['E4','Biodiversity','Land use, land-use change and ecosystem pressure'],['E5','Circular economy','Resource inflows, outflows, recycled content'],['S1–S4','Social','Workers in the value chain, communities, consumers'],['G1','Business conduct','Supplier relationships and responsible practices']].map(x=>`<div class="card" style="padding:14px"><span class="pill n">${x[0]}</span><h3 style="font-size:1.05rem;margin:.3em 0 .2em">${x[1]}</h3><div class="small">${x[2]}</div></div>`).join('')}</div></div></section>
+  <section class="band alt"><div class="wrap" style="text-align:center"><h2>Explore the case studies</h2><p>Start with cocoa and chocolate, or jump to the cross-product comparison dashboard.</p><a class="btn" href="#case-cocoa">Start with Case 1 →</a> <a class="btn line" href="#compare">Open the comparison dashboard</a></div></section>`;
+}
+function caseCard(c){ const T=caseTotals(c); return `<a class="card casecard" href="#case-${c.id}"><div style="display:flex;justify-content:space-between;align-items:center"><div class="ic">${ic(c.icon,26)}</div><span class="num">CASE ${String(c.n).padStart(2,'0')}</span></div><h3>${esc(c.short)}</h3>${c.real?'<span class="pill g" style="align-self:flex-start">Published project data</span>':''}<div class="small">${esc(c.fu)}</div><div class="meta"><b style="color:var(--navy)">${fmt(T[c.scen.base])} kg CO₂e</b> ${esc(c.fuShort)} · Hotspot: ${esc(c.cmp.hot)}</div></a>`; }
+
+function about(){
+  return `<section class="band"><div class="wrap" style="max-width:900px"><div class="eyebrow">About the portfolio</div><h1>Purpose and approach</h1>${DISC}
+  <p style="margin-top:18px">This portfolio demonstrates the ability to <b>conduct, explain, visualise and translate</b> Life Cycle Assessment results into business decisions and sustainability reporting insights. It is designed for roles in sustainability consulting, ESG reporting, CSRD/ESRS implementation, corporate sustainability, circular economy, product stewardship and supply-chain decarbonisation.</p>
+  <h3>What it demonstrates</h3><ul><li>Scoping LCAs consistently with ISO 14040/14044: functional units, system boundaries, allocation and cut-off rules.</li><li>Building transparent inventories with explicit data types and data-quality ratings.</li><li>Interpreting results through hotspot, scenario and sensitivity analysis, including uncertainty and limits of the conclusions.</li><li>Translating product-level evidence into double materiality questions, ESRS topics and management actions.</li><li>Communicating results visually and in plain language for non-specialist decision-makers.</li></ul>
+  <h3>How to read the numbers</h3><p>Three types of information are kept apart throughout:</p>
+  <div class="grid g3"><div class="card"><span class="pill y">L · Literature-based estimate</span><p class="small" style="margin-top:8px">Values within ranges reported in peer-reviewed studies, LCA databases or industry reports, adapted to the functional unit.</p></div><div class="card"><span class="pill r">I · Illustrative assumption</span><p class="small" style="margin-top:8px">Parameters set by the author to make the model complete (for example shares, distances, lifetimes). Stated explicitly and tested in sensitivity analysis.</p></div><div class="card"><span class="pill g">P · Primary data</span><p class="small" style="margin-top:8px">Measured farm, company or supplier data. Used only in case 11, which re-uses published farm records from the INTEGRATE project. A commissioned LCA would replace key L and I values with primary data.</p></div></div>
+  <h3 style="margin-top:24px">Modelling note</h3><p>Results were calculated in a transparent, stage-based model so that every number can be traced to the inventory tables. A commissioned study would use dedicated LCA software (for example openLCA or SimaPro) with licensed background databases such as ecoinvent, and would undergo critical review before any comparative public claim.</p>
+  <h3>Related published work</h3><ul>
+  <li>Nair, R. R., Chougule, K. M., Gomez Trillos, J. C. &amp; Brand-Daniels, U. (2025). A generalized schema to publish and share life cycle inventories (LCI): exemplary case of an aviation fuel supply chain. <i>Journal of Cleaner Production</i> 520, 146120. <a href="https://doi.org/10.1016/j.jclepro.2025.146120" target="_blank" rel="noopener">doi.org/10.1016/j.jclepro.2025.146120</a>. All inventories in this portfolio are published in this LCIS2024 schema (see <a href="#downloads">Downloads</a>).</li>
+  <li>Hala, A. F., Chougule, K., et al. (2024). Life cycle assessment of integrated multi-trophic aquaculture: a review on methodology and challenges for its sustainability evaluation. <i>Aquaculture</i> 590, 741035. <a href="https://doi.org/10.1016/j.aquaculture.2024.741035" target="_blank" rel="noopener">doi.org/10.1016/j.aquaculture.2024.741035</a></li>
+  <li>Open repositories: <a href="https://github.com/malleshkomal/ptl-lci-explorer" target="_blank" rel="noopener">ptl-lci-explorer</a> (tools to read, validate and scale LCIS2024 inventories) and <a href="https://github.com/malleshkomal/Life-cycle-assessment-of-Integrated-Multi-Trophical-Aquaculture-" target="_blank" rel="noopener">IMTA LCA and KPI tool</a> (basis of case 11).</li></ul>
+  <h3>Regulatory context</h3><p>The CSRD and ESRS have been revised through the EU's 2025–2026 Omnibus simplification. The portfolio reflects the position as at November 2026; see <a href="#esrs">CSRD, ESG and ESRS</a> for the current status and sources.</p></div></section>`;
+}
+
+function methodology(){
+  const cats=[['Climate change','kg CO₂e','IPCC AR6 GWP100 (as used in EF 3.1)','Core metric for ESRS E1 and Scope 3 screening; biogenic and land-use change emissions reported separately where relevant.'],['Cumulative energy demand','MJ','CED (fossil, nuclear, renewable)','Energy hotspot identification and transition-risk exposure.'],['Water consumption','litres','Inventory-level blue water consumed','Direct input to water management; ESRS E3 context.'],['Water scarcity footprint','m³ world eq','AWARE (EF 3.1)','Weights water use by regional scarcity; key for agricultural and mining supply chains.'],['Acidification','mol H⁺ eq','Accumulated exceedance (EF 3.1)','SO₂, NOₓ, NH₃ pressures; ESRS E2 relevance.'],['Eutrophication (freshwater)','g P eq','EUTREND (EF 3.1)','Fertiliser and wastewater pressure; ESRS E2/E3.'],['Particulate matter','disease incidence','PM method (EF 3.1)','Human-health damage from fine particles; combustion-heavy processes.'],['Land use','m²a crop eq','Land occupation (ReCiPe 2016 midpoint, for readability)','Biodiversity pressure proxy; ESRS E4. EF 3.1 soil-quality index used for cross-checking.'],['Resource use, minerals & metals','mg Sb eq','ADP ultimate reserves (EF 3.1)','Critical raw materials; ESRS E5.'],['Resource use, fossils','MJ','ADP fossil (EF 3.1)','Fossil dependence; ESRS E1/E5.'],['Waste generated','g or kg','Inventory (non-recovered waste)','ESRS E5 resource outflows.'],['Recycled content, recycling rate, circularity','%, index 0–1','Mass-based; Material Circularity Indicator (Ellen MacArthur Foundation) where relevant','Circular-economy metrics for ESRS E5 and product policy.']];
+  return `<section class="band"><div class="wrap" style="max-width:1000px"><div class="eyebrow">Methodology</div><h1>An ISO 14040/14044-based approach</h1>${DISC}
+  <p style="margin-top:18px">Every case study follows the four phases defined in ISO 14040:2006 (principles and framework) and ISO 14044:2006 (requirements and guidelines), including their amendments (ISO 14040:2006/Amd 1:2020; ISO 14044:2006/Amd 1:2017 and Amd 2:2020). The phases are iterative: findings in interpretation regularly send the analyst back to refine scope or inventory.</p>
+  <div class="card">${isoVisual()}</div>
+  <div class="grid g2" style="margin-top:22px">
+  <div class="card"><h3>1. Goal and scope definition</h3><ul><li><b>Goal:</b> intended application, reasons, audience, and whether comparative assertions will be disclosed publicly.</li><li><b>Functional unit:</b> the quantified service delivered, so alternatives are compared on equal terms.</li><li><b>Reference flow:</b> the amount of product needed to deliver the functional unit.</li><li><b>System boundary:</b> cradle-to-grave by default; cradle-to-gate or simplified end-of-life clearly labelled where data are lacking.</li><li><b>Cut-off criteria:</b> flows below 1% of mass and energy excluded, provided the sum of exclusions stays below 5% and no environmentally significant flow is omitted.</li></ul></div>
+  <div class="card"><h3>2. Life Cycle Inventory (LCI)</h3><ul><li>Inputs (materials, energy, water, chemicals, transport) and outputs (products, emissions, waste) per stage, scaled to the reference flow.</li><li><b>Allocation hierarchy (ISO 14044 §4.3.4):</b> avoid allocation by subdivision or system expansion; otherwise allocate by physical relationships; otherwise by economic value.</li><li><b>Recycling:</b> cut-off (recycled-content) approach by default; avoided-burden (system expansion) used for the waste-system case and tested in sensitivity analysis.</li><li><b>Data quality:</b> simplified pedigree assessment (reliability, completeness, temporal, geographic and technological correlation) rated High / Medium / Low.</li></ul></div>
+  <div class="card"><h3>3. Life Cycle Impact Assessment (LCIA)</h3><p>Mandatory elements: selection of impact categories, classification and characterisation. Optional normalisation and weighting are <b>not</b> applied, because weighting is value-based and not permitted for public comparative assertions under ISO 14044.</p><p>Primary method: Environmental Footprint (EF) 3.1 characterisation factors, consistent with the EU Product Environmental Footprint (PEF) approach.</p></div>
+  <div class="card"><h3>4. Interpretation</h3><ul><li><b>Hotspot analysis:</b> stages and flows with the largest contributions.</li><li><b>Sensitivity analysis:</b> one-at-a-time variation of the most influential assumptions.</li><li><b>Uncertainty:</b> qualitative, using data-quality ratings and scenario ranges (a commissioned study would add Monte Carlo analysis).</li><li><b>Completeness and consistency checks</b>, then conclusions, limitations and recommendations.</li></ul></div></div>
+  <h2 style="margin-top:32px">Impact categories used</h2><div class="tw"><table><thead><tr><th>Indicator</th><th>Unit</th><th>Method</th><th>Why it is included</th></tr></thead><tbody>${cats.map(r=>`<tr>${r.map(x=>`<td>${esc(x)}</td>`).join('')}</tr>`).join('')}</tbody></table></div>
+  <h2 style="margin-top:32px">Related standards and frameworks</h2><div class="grid g3">${[['ISO 14067:2018','Carbon footprint of products; requirements for quantification and communication of product GHG results.'],['GHG Protocol Product Standard & Scope 3 Standard','Product-level GHG inventories and corporate value-chain (Scope 3) accounting.'],['EU PEF / EF 3.1','Harmonised EU method and category rules for product environmental footprints.'],['EN 15804 / ISO 14025','Rules for Environmental Product Declarations (EPDs), mainly for construction products.'],['ESRS (CSRD)','Corporate sustainability reporting; uses LCA evidence indirectly through materiality, metrics and targets.'],['ISO 14044 critical review','Required for comparative assertions disclosed to the public; not performed for this portfolio.']].map(x=>`<div class="card"><h3 style="font-size:1.02rem">${x[0]}</h3><p class="small" style="margin:0">${x[1]}</p></div>`).join('')}</div>
+  <div class="status"><b>What this portfolio is not.</b> It is not a critically reviewed LCA, an EPD, a PEF study or a verified carbon footprint. Comparative statements between scenarios are internal, illustrative findings and should not be used in marketing claims. Under the EU's rules on environmental claims (Directive (EU) 2024/825 on empowering consumers for the green transition), generic environmental claims require recognised excellent environmental performance to be demonstrated.</div></div></section>`;
+}
+
+function casesIndex(){ return `<section class="band"><div class="wrap"><div class="eyebrow">Case studies</div><h1>Eleven LCA case studies</h1><p style="max-width:780px">Cases 1–10 use illustrative demonstration values; case 11 (IMTA aquaculture) re-uses published farm data from the INTEGRATE project. Each case study is distinct in its supply chain, environmental challenges and policy relevance. Functional units differ, so results should not be compared across cases without care (see the <a href="#compare">comparison dashboard</a>).</p>${DISC}<div class="grid g3" style="margin-top:22px">${CASES.map(caseCard).join('')}</div></div></section>`; }
+
+function esrsPage(){
+  const themes=[['ESRS 1','General requirements','Sets the rules: double materiality, value-chain coverage, time horizons and how to treat estimates.','LCA defines the value-chain boundary and highlights where impacts sit upstream or downstream, which helps decide what to assess.'],
+  ['ESRS 2','General disclosures','Governance, strategy, the materiality assessment process (impacts, risks and opportunities) and how IROs are managed.','LCA hotspots provide evidence for identifying and prioritising impacts in the materiality process, and are documented as an input to it.'],
+  ['ESRS E1','Climate change','GHG emissions (Scopes 1, 2, 3), transition plan, targets, climate-related risks and energy.','Product carbon footprints support Scope 3 estimates for purchased goods and sold products, and quantify reduction levers for transition plans.'],
+  ['ESRS E2','Pollution','Emissions to air, water and soil, substances of concern, microplastics.','LCA indicators (acidification, eutrophication, particulates, toxicity) flag where pollution occurs in the value chain.'],
+  ['ESRS E3','Water and marine resources','Water consumption, especially in areas at water risk, and marine resources.','Water consumption and AWARE scarcity footprints show whether water use falls in stressed basins.'],
+  ['ESRS E4','Biodiversity and ecosystems','Impacts on land-use change, species and ecosystems; dependencies on ecosystem services.','Land-use and land-use-change results identify sourcing regions with biodiversity pressure; LCA must be complemented by site-specific assessment.'],
+  ['ESRS E5','Resource use and circular economy','Resource inflows and outflows, recycled content, product durability, waste.','Mass flows, recycled content, recycling rates and circularity indicators come directly from the LCA model.'],
+  ['ESRS S1–S4','Own workforce, value-chain workers, communities, consumers','Working conditions and human rights in own operations and the value chain; impacts on communities and end-users.','Social LCA is outside ISO 14040/44, but the supply-chain map built for an LCA locates where social risks (for example in mining or farming) need due diligence.'],
+  ['ESRS G1','Business conduct','Corporate culture, supplier relationships, anti-corruption, payment practices.','Credible use of LCA data requires governance: documented methods, internal controls, supplier engagement and review.']];
+  return `<section class="band"><div class="wrap" style="max-width:1100px"><div class="eyebrow">Reporting connection</div><h1>From LCA to CSRD, ESG and ESRS</h1>${DISC}
+  <div class="grid g2" style="margin-top:22px"><div>
+  <h3>How the pieces fit together</h3><ul>
+  <li><b>LCA</b> measures environmental impacts across a product's life cycle.</li>
+  <li><b>ESG</b> is the broader framework covering environmental, social and governance performance, used by investors, lenders and rating agencies.</li>
+  <li><b>CSRD</b> (Directive (EU) 2022/2464, as amended) requires companies in scope to prepare sustainability statements under the European Sustainability Reporting Standards, with limited assurance.</li>
+  <li><b>ESRS</b> define what companies disclose about their material impacts, risks and opportunities (IROs).</li>
+  <li><b>Double materiality</b> means considering both (1) the company's impacts on people and the environment and (2) sustainability-related risks and opportunities that affect the company.</li>
+  <li><b>LCA provides product-level and value-chain evidence</b> that can support double materiality assessments, impact measurement, target setting and disclosure preparation.</li></ul></div>
+  <div class="card">${dmVisual()}</div></div>
+  <div class="status"><b>Regulatory status (as at November 2026).</b> The Omnibus I Directive (EU) 2026/470 amending the CSRD was published in the Official Journal on 26 February 2026. Under the revised scope, the CSRD applies to companies with more than 1,000 employees and net turnover above EUR 450 million. The Commission adopted revised, simplified ESRS by delegated act on 3 July 2026; they were published in the Official Journal on 21 September 2026 and are mandatory for financial years beginning on or after 1 January 2027, with voluntary early application for 2026. The revised standards keep double materiality while sharply reducing the number of datapoints. Separate standards for voluntary use (VESRS) were published for companies outside scope. Check the applicable texts before preparing a disclosure.<br><span class="small">Sources: KPMG, Deloitte, Generation Impact, HLC and King &amp; Spalding (2026); links on the <a href="#sources">Sources page</a>.</span></div>
+  <h2 style="margin-top:30px">ESRS themes in plain language</h2><div class="tw"><table><thead><tr><th>Standard</th><th>Topic</th><th>What it covers</th><th>How LCA connects</th></tr></thead><tbody>${themes.map(r=>`<tr><td><span class="pill n">${r[0]}</span></td><td><b>${r[1]}</b></td><td>${r[2]}</td><td>${r[3]}</td></tr>`).join('')}</tbody></table></div>
+  <div class="box biz"><h4>LCA is not automatically a CSRD disclosure</h4><p>An LCA is a supporting method. It can provide evidence, metrics and insights for sustainability reporting <b>when the topic is material</b>. ESRS metrics are organisational (company and value chain over a reporting year), while LCA results are product-based (per functional unit). Converting one into the other requires sales volumes, consistent boundaries and a documented method. LCA results also do not by themselves establish materiality, which also depends on severity, likelihood, stakeholder input and financial effects.</p></div>
+  <h3>Using LCA data credibly in reporting</h3><div class="grid g3">${[['Governance','Assign ownership for LCA models; approve methods and changes through a sustainability or reporting committee.'],['Documentation','Keep a method statement, data inventory and version history so results can be traced and assured.'],['Internal controls','Apply checks on data inputs, calculations and emission factors equivalent to financial reporting controls.'],['Data hierarchy','Prioritise primary supplier data for hotspots; label secondary and estimated data, and disclose estimation methods.'],['Consistency','Align LCA boundaries, emission factors and time periods with the GHG inventory and ESRS E1 accounting.'],['Review & assurance','Plan for limited assurance: independent review of key models, sensitivity testing and evidence files.']].map(x=>`<div class="card"><h3 style="font-size:1.02rem">${x[0]}</h3><p class="small" style="margin:0">${x[1]}</p></div>`).join('')}</div>
+  <h2 style="margin-top:30px">LCA-to-ESRS mapping for each case study</h2><div class="chips" id="esrschips">${CASES.map((c,i)=>`<button class="chip ${i===0?'on':''}" data-c="${c.id}">${c.n}. ${esc(c.short)}</button>`).join('')}</div><div id="esrsout"><h3>LCA-to-ESRS mapping: ${esc(CASES[0].short)}</h3>${esrsTable(CASES[0])}</div></div></section>`;
+}
+function wireEsrs(root){ root.querySelector('#esrschips').addEventListener('click',e=>{ const b=e.target.closest('[data-c]'); if(!b) return; root.querySelectorAll('#esrschips .chip').forEach(x=>x.classList.toggle('on',x===b)); const c=byId(b.dataset.c); root.querySelector('#esrsout').innerHTML=`<h3>LCA-to-ESRS mapping: ${esc(c.short)}</h3>${esrsTable(c)}`; }); }
+
+/* ---------- comparison ---------- */
+const CATS=['All','Food & textiles','Packaging','Electronics & batteries','Waste systems'];
+function phaseShares(c){ const g=c.scen.g[c.scen.base]; const o={P:0,D:0,U:0,E:0}; g.forEach((v,i)=>o[c.ph[i]]+=Math.max(0,v)); const t=sum(Object.values(o)); return ['P','D','U','E'].map(k=>o[k]/t*100); }
+function comparePage(){
+  return `<section class="band"><div class="wrap"><div class="eyebrow">Cross-product comparison</div><h1>Portfolio insights dashboard</h1>${DISC}
+  <div class="status"><b>Read with care.</b> Products cannot be compared directly unless their functional units are comparable. A 60 kWh battery pack and a coffee cup deliver entirely different services. The dashboard compares <em>patterns</em> (where impacts arise, how much they can be reduced, what drives them), not which product is "better". All comparisons are illustrative and context-dependent.</div>
+  <div class="chips" id="catchips">${CATS.map((c,i)=>`<button class="chip ${i===0?'on':''}" data-cat="${c}">${c}</button>`).join('')}</div>
+  <div id="cmpout"></div></div></section>`;
+}
+function compareContent(cat){
+  const L=CASES.filter(c=>cat==='All'||c.cat===cat);
+  const rows=L.map(c=>{ const T=caseTotals(c), b=c.scen.base; return {c, g:T[b], e:sum(c.ced), w:sum(c.water), best:Math.min(...T), red:(Math.min(...T)-T[b])/Math.abs(T[b])*100}; });
+  const tbl=`<div class="tw"><table id="cmptable" style="min-width:1500px"><thead><tr><th data-k="n">Product / system</th><th>Unit basis</th><th class="num" data-k="g">Climate (kg CO₂e)</th><th class="num" data-k="e">Energy (MJ)</th><th class="num" data-k="w">Water</th><th>Waste generated</th><th>Recyclability</th><th>Recycled content</th><th>Main hotspot</th><th>Main circular-economy opportunity</th><th>Main ESRS relevance</th><th>Main data gap</th></tr></thead><tbody>
+  ${rows.map(r=>{ const c=r.c; const wasteInd=c.ind.find(x=>/waste/i.test(x[0])); return `<tr><td><a href="#case-${c.id}"><b>${esc(c.short)}</b></a></td><td class="small" title="${esc(c.fu)}">${esc(c.fuShort)}</td><td class="num">${fmt(r.g)}</td><td class="num">${fmt(r.e)}</td><td class="num">${fmt(r.w)} ${c.wu?esc(c.wu):'L'}</td><td>${wasteInd?fmt(wasteInd[2])+' '+esc(wasteInd[1]):'–'}</td><td>${esc(c.cmp.recyc)}</td><td>${esc(c.cmp.rc)}</td><td>${esc(c.cmp.hot)}</td><td>${esc(c.cmp.ce)}</td><td>${esc(c.cmp.esrs)}</td><td>${esc(c.cmp.gap)}</td></tr>`; }).join('')}</tbody></table></div><p class="small">Select column headers marked with values to sort. Units are per each case's own functional unit. The IMTA case uses Piscentool categories (water = water dependence in m³), so its values are not comparable with the EF 3.1 results of cases 1–10.</p>`;
+  const prod=rows.filter(r=>r.c.id!=='msw');
+  const lg=prod.map(r=>r.g); const lmin=Math.floor(Math.log10(Math.min(...lg))), lmax=Math.ceil(Math.log10(Math.max(...lg)));
+  const W=720,rowH=30,padL=200,padR=90,H=20+prod.length*rowH+40; const X=v=>padL+(Math.log10(v)-lmin)/(lmax-lmin)*(W-padL-padR);
+  let logsvg=`<svg class="chart" viewBox="0 0 ${W} ${H}" ${ALT('Baseline climate result per functional unit on a logarithmic scale: '+prod.map(r=>r.c.short+' '+fmt(r.g)).join(', '))}>`;
+  for(let p=lmin;p<=lmax;p++){ logsvg+=`<line x1="${X(10**p)}" x2="${X(10**p)}" y1="12" y2="${H-30}" stroke="#e1e0d9"/><text x="${X(10**p)}" y="${H-14}" font-size="11" text-anchor="middle" fill="#6b7782">${fmt(10**p)}</text>`; }
+  prod.forEach((r,i)=>{ const y=16+i*rowH; logsvg+=`<text x="${padL-10}" y="${y+14}" font-size="12" text-anchor="end" fill="#16222e">${esc(r.c.short)}</text><line x1="${padL}" x2="${X(r.g)}" y1="${y+10}" y2="${y+10}" stroke="#2a78d6" stroke-width="2"/><circle cx="${X(r.g)}" cy="${y+10}" r="6" fill="#2a78d6" stroke="#fff" stroke-width="1.5" data-tip="<b>${esc(r.c.short)}</b><br>${fmt(r.g)} kg CO₂e ${esc(r.c.fuShort)}"/><text x="${X(r.g)+10}" y="${y+14}" font-size="11" fill="#46525e">${fmt(r.g)}</text>`; });
+  logsvg+=`<text x="${(padL+W-padR)/2}" y="${H-1}" font-size="11.5" text-anchor="middle" fill="#46525e">kg CO₂e per functional unit — logarithmic scale (each gridline = ×10)</text></svg>`;
+  const rp=rows.filter(r=>r.c.id!=='msw'); const red=hbar(rp.map(r=>r.c.short),rp.map(r=>+r.red.toFixed(0)),'% change in climate impact, best tested scenario vs baseline',{colors:rp.map(()=>'#1baf7a'),alt:'Reduction potential by case: '+rp.map(r=>r.c.short+' '+r.red.toFixed(0)+'%').join(', ')});
+  const ph=prod.map(r=>phaseShares(r.c)); const PH=['Production','Distribution','Use','End-of-life'];
+  const W2=720,padL2=200,rh=30,H2=20+prod.length*rh+30; let phs=`<svg class="chart" viewBox="0 0 ${W2} ${H2}" ${ALT('Life-cycle phase profile, share of gross climate burdens: '+prod.map((r,i)=>r.c.short+': '+PH.map((p,k)=>p+' '+ph[i][k].toFixed(0)+'%').join(', ')).join('; '))}>`;
+  [0,25,50,75,100].forEach(t=>{ const x=padL2+t/100*(W2-padL2-20); phs+=`<line x1="${x}" x2="${x}" y1="12" y2="${H2-24}" stroke="#e1e0d9"/><text x="${x}" y="${H2-8}" font-size="11" text-anchor="middle" fill="#6b7782">${t}%</text>`; });
+  prod.forEach((r,i)=>{ const y=16+i*rh; let x=padL2; phs+=`<text x="${padL2-10}" y="${y+14}" font-size="12" text-anchor="end" fill="#16222e">${esc(r.c.short)}</text>`; ph[i].forEach((v,k)=>{ const w=v/100*(W2-padL2-20); if(w>0) phs+=`<rect x="${x+1}" y="${y+2}" width="${Math.max(0,w-2)}" height="${rh-10}" rx="2" fill="${PAL[k]}" data-tip="<b>${esc(r.c.short)}</b><br>${PH[k]}: ${v.toFixed(0)}%"/>`; if(w>30) phs+=`<text x="${x+w/2}" y="${y+16}" font-size="10.5" text-anchor="middle" fill="#fff">${v.toFixed(0)}%</text>`; x+=w; }); });
+  phs+='</svg>';
+  const src='Baseline scenarios of the ten case studies in this portfolio (illustrative values).';
+  return tbl + `<div>` +
+   fig({title:'Baseline climate result per functional unit', sub:'Dot plot on a logarithmic axis (excludes the waste-management system, which is per tonne treated and net of credits)', body:logsvg, source:src, note:'Logarithmic scale used because values span five orders of magnitude; equal distances mean equal ratios, not equal differences.', interp:'Absolute values mainly reflect the size of the functional unit. A battery pack and a beverage container are not substitutes, so this chart shows scale, not preference.'}) +
+   fig({title:'Reduction potential of the best tested scenario', sub:'% change in climate impact versus each case\'s own baseline (excludes the waste-management system, whose net baseline is close to zero, so percentages are not meaningful; its best scenario changes the result from +165 to −988 kg CO₂e per tonne)', body:red, source:src, note:'Best scenario differs by case (recycled content, reuse, lifetime extension, sourcing). Percentages are comparable as relative changes only.', interp:'Lifetime extension, reuse at high rotation and sourcing changes (deforestation-free cocoa, recycled aluminium) deliver the largest relative reductions. Material substitution alone tends to deliver less than expected.'}) + `</div>` +
+   fig({title:'Where impacts arise: life-cycle phase profile', sub:'100% stacked bars, share of gross climate burdens by phase', legend:legendHTML(PH), body:phs, source:src, note:'Stages mapped to four phases; credits excluded. Waste-management system excluded because it has no product use phase.', interp:'For most products, production dominates, so procurement and design have the biggest lever. Use-phase energy matters for textiles (washing) and the EV battery (charging losses); delivery logistics dominate e-commerce packaging.'});
+}
+function wireCompare(root){
+  const out=root.querySelector('#cmpout'); let cat='All', sortK=null, dir=1;
+  const render=()=>{ out.innerHTML=compareContent(cat); const t=out.querySelector('#cmptable'); t.querySelectorAll('th[data-k]').forEach(th=>{ th.style.cursor='pointer'; th.title='Sort'; th.addEventListener('click',()=>{ const k=th.dataset.k; dir = sortK===k? -dir: 1; sortK=k; const idx=[...th.parentNode.children].indexOf(th); const rows=[...t.tBodies[0].rows]; rows.sort((a,b)=>{ const A=a.cells[idx].innerText.replace(/,/g,''), B=b.cells[idx].innerText.replace(/,/g,''); const na=parseFloat(A), nb=parseFloat(B); return (isNaN(na)||isNaN(nb)? A.localeCompare(B): na-nb)*dir; }); rows.forEach(r=>t.tBodies[0].appendChild(r)); }); }); };
+  root.querySelector('#catchips').addEventListener('click',e=>{ const b=e.target.closest('[data-cat]'); if(!b) return; cat=b.dataset.cat; root.querySelectorAll('#catchips .chip').forEach(x=>x.classList.toggle('on',x===b)); render(); });
+  render();
+}
+
+/* ---------- circular economy ---------- */
+const RLAD=[['R0','Refuse','Make the product redundant or deliver the function differently'],['R1','Rethink','Use products more intensively (sharing, multi-function)'],['R2','Reduce','Use fewer materials and less energy (lightweighting, right-sizing)'],['R3','Reuse','Use again for the same purpose (refill, reusable packaging)'],['R4','Repair','Fix to extend lifetime'],['R5','Refurbish','Restore and upgrade for a new user'],['R6','Remanufacture','Use parts in a new product with the same function'],['R7','Repurpose','Use in a new function (second-life batteries)'],['R8','Recycle','Recover materials (closed or open loop)'],['R9','Recover','Incinerate with energy recovery']];
+const RMAP={cocoa:['R2'],tshirt:['R2','R3','R4','R8'],pet:['R2','R3','R8'],can:['R2','R8'],box:['R0','R2','R3','R8'],flex:['R2','R8','R9'],ev:['R5','R7','R8'],phone:['R3','R4','R5','R8'],msw:['R8','R9'],cup:['R0','R1','R3','R9'],imta:['R1','R2','R8']};
+const BE={cup:{n:'Reusable PP cup vs single-use paper cup',life:0.43,per:0.020,ref:0.050,refn:'Single-use paper cup',u:'uses',unit:'kg CO₂e per drink'},glass:{n:'Refillable glass bottle vs 100% rPET bottle',life:0.315,per:0.061,ref:0.063,refn:'100% rPET bottle',ref2:0.090,ref2n:'Virgin PET bottle',u:'trips',unit:'kg CO₂e per 500 ml'},box:{n:'Reusable shipping packaging vs right-sized recycled box',life:1.0,per:0.276,ref:0.354,refn:'Right-sized recycled box',u:'cycles',unit:'kg CO₂e per order'}};
+function circularPage(){
+  return `<section class="band"><div class="wrap" style="max-width:1100px"><div class="eyebrow">Circular economy insights</div><h1>What the eleven LCAs say about circularity</h1>${DISC}
+  <p style="margin-top:18px">Circular strategies are often assumed to be beneficial by default. The case studies show that their value depends on the system boundary, the rate of reuse or return, recyclate quality and what the circular option actually replaces.</p>
+  <h2>The R-ladder: strategies tested across the portfolio</h2><div class="tw"><table><thead><tr><th>Strategy</th><th>Meaning</th>${CASES.map(c=>`<th title="${esc(c.short)}" style="text-align:center">${ic(c.icon,18)}<br><span style="font-size:.7rem">${c.n}</span></th>`).join('')}</tr></thead><tbody>${RLAD.map(r=>`<tr><td><b>${r[0]} ${r[1]}</b></td><td class="small">${r[2]}</td>${CASES.map(c=>`<td style="text-align:center">${RMAP[c.id].includes(r[0])?`<span aria-label="tested" style="color:#008300;font-weight:700">●</span>`:'<span style="color:#ccc">·</span>'}</td>`).join('')}</tr>`).join('')}</tbody></table></div>
+  <p class="small">Columns: 1 cocoa, 2 T-shirt, 3 PET bottle, 4 aluminium can, 5 cardboard box, 6 flexible packaging, 7 EV battery, 8 smartphone, 9 plastic recycling system, 10 coffee cup, 11 IMTA aquaculture (nutrients from fish recycled into oysters and macroalgae). ● = strategy assessed in that case study's scenarios.</p>
+  <h2 style="margin-top:28px">Six cross-cutting insights</h2><div class="grid g3">${[['Lifetime extension beats material swaps','For the smartphone and T-shirt, keeping a product in use longer cuts impacts per year or per wear more than any material change tested.'],['Reuse only wins above a break-even rate','Reusable cups, refillable bottles and reusable shipping packaging all start with a carbon "debt" that must be repaid through enough uses and efficient washing or return logistics.'],['Recycled content is not automatically better','Recycled aluminium cuts climate impact by more than 90% per kg, but recycled containerboard saves little, and recycled cotton mainly saves water, not carbon. Scrap availability also limits how far recycled content can scale.'],['Packaging protects products','For coffee, food waste caused by weaker barrier packaging can outweigh the packaging savings of a "greener-looking" material.'],['Collection quality drives system results','Deposit-return systems deliver clean, high-value streams; mixed-waste sorting and export deliver low-quality recyclate and higher leakage risk.'],['Design-for-recycling unlocks the loop','Mono-material pouches, liner-free cups and repairable phones turn theoretical recyclability into actual recovery.']].map(x=>`<div class="card"><h3 style="font-size:1.05rem">${x[0]}</h3><p class="small" style="margin:0">${x[1]}</p></div>`).join('')}</div>
+  <h2 style="margin-top:28px">Interactive: reuse break-even explorer</h2>
+  <div class="card"><div style="display:flex;gap:12px;flex-wrap:wrap;align-items:center"><label for="besel"><b>System</b></label><select id="besel">${Object.entries(BE).map(([k,v])=>`<option value="${k}">${v.n}</option>`).join('')}</select></div>
+  <div style="margin-top:14px"><label for="berng"><b>Number of <span id="beu">uses</span>:</b> <span id="ben">50</span></label><input type="range" id="berng" min="1" max="200" value="50"></div><div id="beout"></div></div></div></section>`;
+}
+function wireCircular(root){
+  const sel=root.querySelector('#besel'), rng=root.querySelector('#berng');
+  const draw=()=>{ const p=BE[sel.value], n=+rng.value; root.querySelector('#ben').textContent=n; root.querySelector('#beu').textContent=p.u;
+    const per=p.life/n+p.per, be=p.life/(p.ref-p.per); const xs=[1,2,5,10,20,50,100,200]; const ys=xs.map(x=>+(p.life/x+p.per).toFixed(4));
+    const refs=[[p.refn,p.ref]].concat(p.ref2?[[p.ref2n,p.ref2]]:[]);
+    root.querySelector('#beout').innerHTML=`<div class="kpis"><div class="kpi"><div class="t">Reusable option at ${n} ${p.u}</div><div class="v">${fmt(per)}</div><div class="u">${p.unit}</div></div><div class="kpi"><div class="t">${esc(p.refn)}</div><div class="v">${fmt(p.ref)}</div><div class="u">${p.unit}</div></div><div class="kpi"><div class="t">Break-even</div><div class="v">${be>0&&be<1e4?Math.ceil(be):'not reached'}</div><div class="u">${p.u} (climate change only)</div></div></div>`+
+    fig({title:'Climate impact per use versus number of uses', sub:'Line chart; burdens of making the reusable item are spread across its uses', body:line(xs,[{n:'Reusable option',y:ys}],'Number of '+p.u,p.unit,{refs,alt:'Per-use impact of the reusable option falls with more uses and is compared with single-use references'}), source:'Case studies 3, 5 and 10 (illustrative values)', note:'Washing or return logistics per use held constant; real behaviour varies widely.', interp: per<p.ref?`At ${n} ${p.u}, the reusable option is about ${Math.round((1-per/p.ref)*100)}% lower than the reference on climate change.`:`At ${n} ${p.u}, the reusable option is still about ${Math.round((per/p.ref-1)*100)}% higher than the reference. It needs more ${p.u} to break even.`}); };
+  sel.addEventListener('change',draw); rng.addEventListener('input',draw); draw();
+}
+
+/* ---------- limitations ---------- */
+function limitations(){
+  return `<section class="band"><div class="wrap" style="max-width:1000px"><div class="eyebrow">Data, assumptions and limitations</div><h1>What these results can and cannot tell you</h1>${DISC}
+  <h2 style="margin-top:22px">Overall status of the results</h2><p>The results of cases 1–10 are <b>demonstration values</b>. They are built from ranges reported in public literature, representative industry data and explicit assumptions, scaled to each functional unit. Case 11 (IMTA) re-uses published primary farm data and impact results from INTEGRATE deliverable PI05#3; its limitations are listed in the case study. No company-specific data has been used, and no study has been critically reviewed under ISO 14044.</p>
+  <div class="grid g2"><div class="card"><h3>Common assumptions</h3><ul><li>Climate change uses GWP100 (IPCC AR6); biogenic carbon is treated as neutral unless stored long-term or released as methane.</li><li>Electricity uses representative national or regional grid averages; renewable scenarios assume near-zero operational emissions plus infrastructure.</li><li>Transport distances and modes are typical routes, not specific logistics data.</li><li>Recycling uses the cut-off approach unless stated; the waste-system case uses system expansion with substitution factors.</li><li>Land-use change is amortised over 20 years following PAS 2050/GHG Protocol practice.</li><li>Consumer behaviour (washing, charging, reuse rates) uses typical European assumptions.</li></ul></div>
+  <div class="card"><h3>Key limitations</h3><ul><li><b>Data quality:</b> secondary data dominate; supplier-specific variation can exceed the differences between scenarios.</li><li><b>Geography:</b> results are representative of Europe or specified sourcing regions; other regions differ.</li><li><b>Allocation:</b> choices (mass, economic, cut-off, system expansion) can change results substantially, especially for recycling and co-products.</li><li><b>Impact coverage:</b> LCA does not fully capture biodiversity, plastic leakage, toxicity of specific substances or social impacts.</li><li><b>Uncertainty:</b> assessed qualitatively and through sensitivity analysis; no Monte Carlo simulation.</li><li><b>Comparability:</b> functional units differ across cases; cross-case comparison is about patterns only.</li></ul></div></div>
+  <h2 style="margin-top:26px">Main public data sources used across the portfolio</h2><div class="tw"><table><thead><tr><th>Type</th><th>Sources</th></tr></thead><tbody>
+  <tr><td>LCA databases</td><td>ecoinvent v3.x; EU Environmental Footprint (EF) 3.1 datasets; Agribalyse; USLCI; PlasticsEurope Eco-profiles; Sphera (GaBi) public documentation</td></tr>
+  <tr><td>Peer-reviewed studies</td><td>Poore &amp; Nemecek (2018), Science; Konstantas et al. (2018), Food Research International (chocolate); Dai et al. (2019) and Argonne GREET battery model; Clément et al. (2020) on smartphone LCA; Ellen MacArthur Foundation (2019) Material Circularity Indicator methodology</td></tr>
+  <tr><td>Industry reports</td><td>International Aluminium Institute; European Aluminium Environmental Profile Report; FEFCO European database for corrugated board; Textile Exchange Materials Market Report; CEFLEX design guidelines; Fairphone and manufacturer product environmental reports</td></tr>
+  <tr><td>Government and EU data</td><td>Eurostat packaging waste statistics; UNEP (2021) beverage-cup meta-analysis; JRC (2024) study on single-use and multiple-use packaging; EU Single-Use Plastics Directive (EU) 2019/904; Batteries Regulation (EU) 2023/1542; Packaging and Packaging Waste Regulation (EU) 2025/40; EUDR (EU) 2023/1115</td></tr>
+  <tr><td>Regulatory status (CSRD/ESRS)</td><td>KPMG (2026) "Revised ESRS now final"; Deloitte Heads Up (2026) on revised ESRS; Generation Impact (2026) "Simplified ESRS 2026"; HLC (2026) on publication of simplified ESRS and VESRS; King &amp; Spalding (March 2026) on Directive (EU) 2026/470</td></tr></tbody></table></div>
+  <h2 style="margin-top:26px">What a company-specific LCA would need</h2><div class="grid g3">${[['Primary activity data','Bills of materials, energy and water metering, production yields and waste records from own sites and key suppliers.'],['Supplier engagement','Supplier-specific emission factors (for example smelter, mill or farm level), traceability to origin and certification data.'],['Use and end-of-life data','Market-specific consumer behaviour, collection and recycling rates, and actual waste-treatment routes.'],['Licensed databases & software','Current ecoinvent or equivalent background data, run in openLCA, SimaPro or similar, with documented versioning.'],['Uncertainty analysis','Monte Carlo or scenario ranges, with data-quality indicators linked to uncertainty distributions.'],['Critical review','Independent review under ISO 14044 (panel review for public comparative assertions), and verification for EPDs or claims.']].map(x=>`<div class="card"><h3 style="font-size:1.02rem">${x[0]}</h3><p class="small" style="margin:0">${x[1]}</p></div>`).join('')}</div>
+  <h2 style="margin-top:26px">Language and claims policy</h2><p>The portfolio avoids describing any product as "sustainable", "green" or "eco-friendly". It does not claim that recycled, bio-based, compostable or paper-based materials are always better; each such option is tested within a defined system boundary.</p></div></section>`;
+}
+
+/* ---------- glossary ---------- */
+const GLOSS=[['Allocation','Partitioning the inputs and outputs of a process between its co-products, or between a product system and other systems (for example in recycling), using physical or economic relationships.'],['AWARE','Available WAter REmaining: a method that weights water consumption by how scarce water is in the region where it is used.'],['Circular economy','An economic model that keeps products and materials in use at their highest value for as long as possible, through reduction, reuse, repair, remanufacturing and recycling, and designs out waste.'],['Critical review','An independent check of an LCA against ISO 14044; required for comparative assertions disclosed to the public.'],['CSRD','Corporate Sustainability Reporting Directive (EU) 2022/2464, amended by Directive (EU) 2026/470: requires companies in scope to report sustainability information using the ESRS, with assurance.'],['Cut-off (recycled-content) approach','A recycling allocation rule where the product carries the burdens of recycled inputs from reprocessing onwards, and receives no credit for recycling at its own end-of-life.'],['Double materiality','The principle that a sustainability matter is material if it is significant for the company\'s impacts on people and the environment (impact materiality), for the company\'s financial position (financial materiality), or both.'],['EPD','Environmental Product Declaration: a verified, standardised LCA-based document (ISO 14025, EN 15804).'],['ESG','Environmental, social and governance: the broad framework used by investors and stakeholders to assess non-financial performance and risk.'],['ESRS','European Sustainability Reporting Standards: the standards that specify what companies under the CSRD disclose about material impacts, risks and opportunities.'],['Functional unit','The quantified performance of a product system used as the reference unit, for example "one T-shirt worn 50 times".'],['GWP100','Global warming potential over 100 years: expresses different greenhouse gases as CO₂-equivalents.'],['Hotspot','A life-cycle stage, process or flow that contributes a large share of an impact.'],['LCA','Life Cycle Assessment: compilation and evaluation of the inputs, outputs and potential environmental impacts of a product system throughout its life cycle (ISO 14040).'],['LCI','Life Cycle Inventory: the phase that quantifies inputs and outputs for each process in the product system.'],['LCIA','Life Cycle Impact Assessment: the phase that translates inventory flows into potential environmental impacts using characterisation factors.'],['Material Circularity Indicator (MCI)','An index from 0 (fully linear) to 1 (fully circular) developed by the Ellen MacArthur Foundation, based on recycled or reused inputs, recovery at end-of-life and product lifetime.'],['Reference flow','The amount of product or material needed to deliver the functional unit.'],['Scope 1','Direct GHG emissions from sources owned or controlled by the company.'],['Scope 2','Indirect GHG emissions from purchased electricity, steam, heat and cooling.'],['Scope 3','All other indirect GHG emissions in the value chain, upstream (for example purchased goods) and downstream (for example use and end-of-life of sold products).'],['Sensitivity analysis','Testing how much results change when a key assumption is varied.'],['Substitution factor','In system expansion, the share of virgin material that one unit of recyclate is assumed to replace, reflecting quality losses.'],['System boundary','The set of processes included in the assessment, for example cradle-to-gate or cradle-to-grave.'],['System expansion','Avoiding allocation by including the functions of co-products or recovered materials in the system, often by crediting avoided production.']];
+function glossary(){ return `<section class="band"><div class="wrap" style="max-width:900px"><div class="eyebrow">Glossary</div><h1>Key terms in plain language</h1><dl class="gl">${GLOSS.map(g=>`<dt>${esc(g[0])}</dt><dd>${esc(g[1])}</dd>`).join('')}</dl></div></section>`; }
+
+/* ---------- sources ---------- */
+const EL=p=>'https://eur-lex.europa.eu/eli/'+p+'/oj';
+const SRC=[
+['Standards and methods',[
+ ['ISO 14040:2006 Environmental management — Life cycle assessment — Principles and framework (incl. Amd 1:2020)','https://www.iso.org/standard/37456.html','All'],
+ ['ISO 14044:2006 Environmental management — Life cycle assessment — Requirements and guidelines (incl. Amd 1:2017, Amd 2:2020)','https://www.iso.org/standard/38498.html','All'],
+ ['ISO 14067:2018 Greenhouse gases — Carbon footprint of products','https://www.iso.org/standard/71206.html','Methodology'],
+ ['European Platform on LCA (EPLCA): Environmental Footprint (EF) 3.1 method and datasets','https://eplca.jrc.ec.europa.eu/','All'],
+ ['IPCC (2021). Climate Change 2021: The Physical Science Basis (AR6 WG I), GWP100 values','https://www.ipcc.ch/report/ar6/wg1/','All'],
+ ['WULCA: AWARE water scarcity method','https://wulca-waterlca.org/','All'],
+ ['GHG Protocol: Product Life Cycle Accounting and Reporting Standard; Corporate Value Chain (Scope 3) Standard','https://ghgprotocol.org/','All'],
+ ['Ellen MacArthur Foundation (2019). Circularity Indicators: Material Circularity Indicator methodology','',"2–10"]]],
+['Peer-reviewed studies',[
+ ['Poore, J. & Nemecek, T. (2018). Reducing food\'s environmental impacts through producers and consumers. Science 360(6392), 987–992','https://doi.org/10.1126/science.aaq0216','1'],
+ ['Konstantas, A., Jeswani, H., Stamford, L. & Azapagic, A. (2018). Environmental impacts of chocolate production and consumption in the UK. Food Research International 106, 1012–1025','https://doi.org/10.1016/j.foodres.2018.02.042','1'],
+ ['Dai, Q., Kelly, J. C., Gaines, L. & Wang, M. (2019). Life cycle analysis of lithium-ion batteries for automotive applications. Batteries 5(2), 48','https://doi.org/10.3390/batteries5020048','7'],
+ ['Hala, A. F., Chougule, K., Cunha, M. E., et al. (2024). Life cycle assessment of integrated multi-trophic aquaculture: a review on methodology and challenges for its sustainability evaluation. Aquaculture 590, 741035','https://doi.org/10.1016/j.aquaculture.2024.741035','11'],
+ ['Nair, R. R., Chougule, K. M., Gomez Trillos, J. C. & Brand-Daniels, U. (2025). A generalized schema to publish and share life cycle inventories (LCI): exemplary case of an aviation fuel supply chain. Journal of Cleaner Production 520, 146120','https://doi.org/10.1016/j.jclepro.2025.146120','LCI datasets'],
+ ['Aubin, J., Papatryphon, E., van der Werf, H. M. G. & Chatzifotis, S. (2009). Assessment of the environmental impact of carnivorous finfish production systems using life cycle assessment. Journal of Cleaner Production 17, 354–361','https://doi.org/10.1016/j.jclepro.2008.08.008','11'],
+ ['Bohnes, F. A., Hauschild, M. Z., Schlundt, J. & Laurent, A. (2019). Life cycle assessments of aquaculture systems: a critical review of reported findings with recommendations for policy and system development. Reviews in Aquaculture 11, 1061–1079','https://doi.org/10.1111/raq.12280','11'],
+ ['Clément, L.-P., Jacquemotte, Q. & Hilty, L. M. (2020). Sources of variation in life cycle assessments of smartphones and tablet computers. Environmental Impact Assessment Review 84, 106416','https://doi.org/10.1016/j.eiar.2020.106416','8']]],
+['Public reports and databases',[
+ ['INTEGRATE project (2020). LCA of aquaculture systems: comparison between semi-intensive/extensive pond IMTA and semi-intensive traditional fishpond production. Deliverable PI05#3, IPMA & CTAQUA, Interreg Atlantic Area EAPA_232/2016','https://www.integrate-imta.eu','11'],
+ ['Chougule, K. M. (2026). Life cycle assessment of fish monoculture and IMTA aquaculture: KPI tool for pond IMTA (repository, v1.0.0)','https://github.com/malleshkomal/Life-cycle-assessment-of-Integrated-Multi-Trophical-Aquaculture-','11'],
+ ['Chougule, K. M. ptl-lci-explorer: tools to read, validate and scale LCIS2024 inventories (repository; used to validate the LCI datasets)','https://github.com/malleshkomal/ptl-lci-explorer','LCI datasets'],
+ ['Cho, C. Y. & Kaushik, S. J. (1990). Nutritional energetics in fish: energy and protein utilization in rainbow trout. World Review of Nutrition and Dietetics 61, 132–172','','11'],
+ ['Wilfart, A., Aubin, J., et al. (2012). Piscentool: a tool to assess sustainability in aquaculture systems. 8th International Conference on LCA in the Agri-Food Sector, Saint-Malo','','11'],
+ ['Sinkko, T., Amadei, A., Venturelli, S. & Ardente, F. (2024). Life cycle impacts of single-use and multiple-use packaging. European Commission Joint Research Centre (JRC136771)','https://publications.jrc.ec.europa.eu/repository/handle/JRC136771','3, 5, 10'],
+ ['UNEP (2021). Single-use beverage cups and their alternatives: recommendations from Life Cycle Assessments','','10'],
+ ['Argonne National Laboratory: GREET model (battery module)','https://greet.anl.gov/','7'],
+ ['ecoinvent database (v3.x), representative background datasets','https://ecoinvent.org/','All'],
+ ['ADEME: Agribalyse food LCA database','https://agribalyse.ademe.fr/','1'],
+ ['PlasticsEurope: Eco-profiles for polymers','https://plasticseurope.org/','3, 6, 9'],
+ ['International Aluminium Institute: life cycle and GHG data','https://international-aluminium.org/','3, 4'],
+ ['European Aluminium: Environmental Profile Report','https://european-aluminium.eu/','3, 4'],
+ ['FEFCO & Cepi Containerboard: European database for corrugated board life cycle studies','https://www.fefco.org/','5'],
+ ['Textile Exchange: Materials Market Report','https://textileexchange.org/','2'],
+ ['CEFLEX: Designing for a Circular Economy (D4ACE) guidelines','https://ceflex.eu/','6'],
+ ['Eurostat: packaging waste statistics','https://ec.europa.eu/eurostat','3, 5, 9'],
+ ['Fairphone (2022). Life Cycle Assessment of the Fairphone 4; manufacturer product environmental reports','https://www.fairphone.com/','8'],
+ ['WRAP (2017). Valuing our clothes: the cost of UK fashion','','2']]],
+['EU legislation',[
+ ['Directive (EU) 2022/2464 — Corporate Sustainability Reporting Directive (CSRD)',EL('dir/2022/2464'),'CSRD/ESRS'],
+ ['Directive (EU) 2026/470 — Omnibus I (amending CSRD and CSDDD)','https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32026L0470','CSRD/ESRS'],
+ ['Delegated Regulation (EU) 2023/2772 — ESRS Set 1 (as revised by the 2026 delegated act)',EL('reg_del/2023/2772'),'CSRD/ESRS'],
+ ['Directive (EU) 2024/825 — Empowering consumers for the green transition (environmental claims)',EL('dir/2024/825'),'Methodology'],
+ ['Regulation (EU) 2023/1115 — EU Deforestation Regulation (EUDR)',EL('reg/2023/1115'),'1, 5'],
+ ['Directive (EU) 2019/904 — Single-Use Plastics Directive',EL('dir/2019/904'),'3, 10'],
+ ['Regulation (EU) 2025/40 — Packaging and Packaging Waste Regulation (PPWR)',EL('reg/2025/40'),'3, 5, 6, 9, 10'],
+ ['Regulation (EU) 2023/1542 — Batteries Regulation',EL('reg/2023/1542'),'7'],
+ ['Regulation (EU) 2023/956 — Carbon Border Adjustment Mechanism (CBAM)',EL('reg/2023/956'),'4'],
+ ['Regulation (EU) 2023/1670 — Ecodesign requirements for smartphones and tablets',EL('reg/2023/1670'),'8'],
+ ['Directive 1999/31/EC — Landfill Directive (as amended)',EL('dir/1999/31'),'9'],
+ ['Council Decision (EU, Euratom) 2020/2053 — Own resources (plastic packaging levy)',EL('dec/2020/2053'),'9']]],
+['CSRD/ESRS regulatory status (accessed November 2026)',[
+ ['KPMG Belgium (2026). Revised ESRS now final','https://kpmg.com/be/en/insights/sustainability/revised-esrs-now-final.html','CSRD/ESRS'],
+ ['Deloitte DART (2026). Heads Up: EU sustainability reporting omnibus — revised ESRS','https://dart.deloitte.com/USDART/home/publications/deloitte/heads-up/2026/eu-sustainability-reporting-omnibus-esrs-revised','CSRD/ESRS'],
+ ['Generation Impact (2026). Simplified ESRS 2026','https://generationimpact.global/blog/simplified-esrs-2026/','CSRD/ESRS'],
+ ['HLC (2026). Simplified ESRS and VESRS finally published following omnibus','https://hlc.com/en/publications/eu-corporate-sustainability-reporting-simplified-esrs-and-vesrs-finally-published-following-omnibus','CSRD/ESRS'],
+ ['King & Spalding (March 2026). Simplification of EU sustainability legislation: Omnibus package set to enter into force','https://www.kslaw.com/news-and-insights/simplification-of-eu-sustainability-legislation-omnibus-package-set-to-enter-into-force','CSRD/ESRS'],
+ ['EFRAG: Draft simplified ESRS','https://www.efrag.org/en/draft-simplified-esrs','CSRD/ESRS']]]
+];
+function sourcesPage(){
+  return `<section class="band"><div class="wrap" style="max-width:1050px"><div class="eyebrow">Sources</div><h1>References and data sources</h1>${DISC}
+  <p style="margin-top:18px">All case-study values are illustrative and were set within ranges reported in the sources below; no single source should be read as the origin of a specific number. Sources are grouped by type; the last column shows which case studies (1–10) or pages draw on each one. Links open the publisher, database or official journal page.</p>
+  ${SRC.map(([g,items])=>`<h2 style="margin-top:26px;font-size:1.35rem">${esc(g)}</h2><div class="tw"><table><thead><tr><th>Reference</th><th style="width:130px">Used in</th></tr></thead><tbody>${items.map(([t,u,w])=>`<tr><td>${esc(t)}${u?`<br><a href="${esc(u)}" target="_blank" rel="noopener" style="font-size:.82rem;word-break:break-all">${esc(u)}</a>`:'<br><span class="small">No stable link given; search by title.</span>'}</td><td class="small">${esc(w)}</td></tr>`).join('')}</tbody></table></div>`).join('')}
+  <h2 style="margin-top:26px;font-size:1.35rem">Sources by case study</h2><div class="grid g2">${CASES.map(c=>`<div class="card"><h3 style="font-size:1.02rem"><a href="#case-${c.id}">${c.n}. ${esc(c.short)}</a></h3><ul class="small" style="margin:0;padding-left:18px">${c.src.map(s=>`<li>${esc(s)}</li>`).join('')}</ul></div>`).join('')}</div></div></section>`;
+}
+
+/* ---------- downloads ---------- */
+function lciSection(){
+  return `<h2 style="margin-top:22px;font-size:1.35rem">Life cycle inventories in LCIS2024 format</h2>
+  <p>Every case study's foreground inventory is published in the LCIS2024 schema (Nair, Chougule et al., 2025), with the same folder structure as the power-to-liquid example: a Brightway-layout dataset (CSV and XLSX), a properties file, a filled LCIS2024 metadata workbook, the supply-chain network as GraphML, and an environment file. Each dataset was read and checked with the <a href="https://github.com/malleshkomal/ptl-lci-explorer" target="_blank" rel="noopener">ptl-lci-explorer</a> validator and scaled to its functional unit to confirm it reproduces the LCI tables on this site.</p>
+  <div class="tw"><table style="min-width:1250px"><thead><tr><th>#</th><th>Dataset folder</th><th>Functional unit(s)</th><th class="num">Activities</th><th class="num">Exchanges</th><th class="num">Biosphere</th><th class="num">Technosphere</th><th>Dependencies</th><th>Validation</th></tr></thead><tbody>
+  ${LCIDATA.map(d=>`<tr><td>${d.n}</td><td><code>${esc(d.slug)}/</code></td><td class="small">${esc(d.fu)}</td><td class="num">${d.acts}</td><td class="num">${d.exch}</td><td class="num">${d.bio}</td><td class="num">${d.tech}</td><td class="small">${esc(d.deps)}</td><td class="small">${esc(d.val)}${window.LCA_HOSTED?`<br><a href="downloads/lci/${esc(d.slug)}.zip" download>Download ZIP</a>`:''}</td></tr>`).join('')}</tbody></table></div>
+  <div class="grid g2"><div class="card"><h3 style="font-size:1.02rem">Files in each folder</h3><table><tbody>
+  <tr><td><code>dataset/&lt;name&gt;.csv</code> / <code>.xlsx</code></td><td class="small">Foreground inventory, Brightway2 CSV/Excel layout</td></tr>
+  <tr><td><code>dataset/&lt;name&gt;_properties.csv</code></td><td class="small">Schema version, counts, dependencies, unique identifier</td></tr>
+  <tr><td><code>metadata/metadata.xlsx</code></td><td class="small">Filled LCIS2024 metadata template: scope, assumptions, authors, background, licence, sources</td></tr>
+  <tr><td><code>network/&lt;name&gt;.graphml</code></td><td class="small">Supply-chain network (activities, products, flows)</td></tr>
+  <tr><td><code>environment.yml</code></td><td class="small">Environment used to generate the files</td></tr></tbody></table></div>
+  <div class="card"><h3 style="font-size:1.02rem">Before reuse</h3><ul class="small" style="margin:0;padding-left:18px">
+  <li>Cases 1–10 hold illustrative values; case 11 reproduces published INTEGRATE data.</li>
+  <li>Background exchanges use ecoinvent 3.10 cut-off style names but have not been linked to a licensed ecoinvent database. Check names when importing.</li>
+  <li>Waste-treatment inputs are positive, as in the power-to-liquid example; ecoinvent expects negative amounts.</li>
+  <li>Expected validator warnings: negative amounts for system-expansion credits (case 9) and net nitrogen uptake (case 11, SE-IMTA).</li>
+  <li>Licence: CC BY 4.0 (case 11: report data remain with the INTEGRATE partners).</li></ul></div></div>`;
+}
+function downloads(){
+  return `<section class="band"><div class="wrap" style="max-width:1050px"><div class="eyebrow">Downloads</div><h1>One-page summaries and suggested PDF set</h1>${DISC}
+  <p style="margin-top:18px">Each case study has a one-page executive summary view. A print-ready PDF containing all ${CASES.length} summaries accompanies this portfolio, together with the foreground inventories in LCIS2024 format (below). Suggested titles and content outlines for a full downloadable PDF set are listed further down.</p>
+  ${HOSTED?`<div style="display:flex;gap:10px;flex-wrap:wrap;margin:14px 0"><a class="btn" href="files/LCA_Portfolio_Executive_Summaries.pdf" download>Download summaries (PDF)</a><a class="btn line" href="files/LCA_Portfolio_LCIS2024_inventories.zip" download>Download LCIS2024 inventories (ZIP)</a></div>`:''}
+  ${window.LCA_HOSTED?`<div class="card" style="margin:16px 0;display:flex;gap:10px;flex-wrap:wrap;align-items:center"><b style="margin-right:6px">Download:</b><a class="btn sm" href="downloads/LCA_Portfolio_Executive_Summaries.pdf" download>One-page summaries (PDF, ${CASES.length} pages)</a><a class="btn line sm" href="downloads/LCA_Portfolio_LCIS2024_inventories.zip" download>All inventories, LCIS2024 (ZIP)</a></div>`:''}
+  ${lciSection()}
+  <h2 style="margin-top:28px;font-size:1.35rem">Suggested PDF set</h2>
+  <div class="tw"><table><thead><tr><th>#</th><th>Suggested PDF title</th><th>Content outline</th><th class="noprint">Summary</th></tr></thead><tbody>
+  ${CASES.map(c=>`<tr><td>${c.n}</td><td><b>${esc(c.pdf)}</b></td><td class="small">1. Executive summary and key takeaway · 2. Functional unit, boundary and method · 3. Life-cycle diagram and stage results · 4. Hotspots (top 3) · 5. Scenario comparison and reduction pathway · 6. Sensitivity of the key assumption · 7. Recommendations by audience · 8. LCA-to-ESRS mapping · 9. Data quality, limitations and disclaimer</td><td class="noprint"><a class="btn line sm" href="#summary-${c.id}">Open</a></td></tr>`).join('')}
+  <tr><td>11</td><td><b>LCA Portfolio — Methodology Statement (ISO 14040/14044)</b></td><td class="small">Framework · impact categories and methods · allocation and recycling rules · data-quality approach · cut-off · uncertainty · limitations of the portfolio</td><td class="noprint"><a class="btn line sm" href="#methodology">Open</a></td></tr>
+  <tr><td>12</td><td><b>From LCA to CSRD and ESRS — Practitioner Guide</b></td><td class="small">LCA, ESG, CSRD and ESRS explained · double materiality · ESRS themes and LCA links · governance and internal controls · ten mapping tables · regulatory status</td><td class="noprint"><a class="btn line sm" href="#esrs">Open</a></td></tr>
+  <tr><td>13</td><td><b>Portfolio Insights — Cross-Product Comparison and Circular Economy Lessons</b></td><td class="small">Comparability warning · comparison table · phase profiles · reduction potential · R-ladder matrix · reuse break-even analysis · six cross-cutting insights</td><td class="noprint"><a class="btn line sm" href="#compare">Open</a></td></tr></tbody></table></div></div></section>`;
+}
+function contact(){
+  return `<section class="band"><div class="wrap" style="max-width:900px"><div class="eyebrow">Contact</div><h1>Let's discuss how LCA evidence can support your sustainability work</h1>
+  <p>I help organisations turn life-cycle evidence into decisions: from screening LCAs and hotspot analysis to CSRD double materiality support, Scope 3 product footprints and circular-economy strategy.</p>
+  <div class="grid g3" style="margin:22px 0">${[['Product LCA & carbon footprints','ISO 14040/44 and ISO 14067 screening studies, hotspot and scenario analysis, ecodesign support.'],['CSRD & ESRS support','Using LCA and value-chain evidence in double materiality assessments, E1–E5 metrics and transition plans.'],['Circular economy & packaging','Reuse and recycling break-even analysis, PPWR readiness, design-for-recycling assessments.']].map(x=>`<div class="card"><h3 style="font-size:1.05rem">${x[0]}</h3><p class="small" style="margin:0">${x[1]}</p></div>`).join('')}</div>
+  <div class="card"><h3>Get in touch</h3><p><b>Komal Mallesh Chougule</b><br>LCA &amp; Sustainability Reporting Specialist<br>GitHub: <a href="https://github.com/malleshkomal" target="_blank" rel="noopener">github.com/malleshkomal</a><br>Email: [your.email@example.com]<br>LinkedIn: [linkedin.com/in/your-profile]<br>Location: [City, Country] · Open to [consulting / in-house / remote] roles</p><p class="small">Replace the bracketed placeholders with your details before sharing this portfolio.</p><a class="btn" href="#cases">Explore the case studies</a></div></div></section>`;
+}
+
+/* ---------- router ---------- */
+const ROUTES={sources:sourcesPage,home,about,methodology,cases:casesIndex,esrs:esrsPage,compare:comparePage,circular:circularPage,limitations,glossary,downloads,contact};
+function route(){
+  const h=(location.hash||'#home').slice(1); const app=$('#app'); let html, after;
+  if(h.startsWith('case-') && byId(h.slice(5))){ const c=byId(h.slice(5)); html=casePage(c); after=r=>wireCase(r,c); }
+  else if(h.startsWith('summary-') && byId(h.slice(8))){ const c=byId(h.slice(8)); html=summaryPage(c); after=r=>{ const b=r.querySelector('[data-copy]'); b&&b.addEventListener('click',async()=>{ try{ await navigator.clipboard.writeText(summaryText(c)); r.querySelector('#copymsg').textContent='Copied.'; }catch(e){ r.querySelector('#copymsg').textContent='Copy not available here; select the text manually.'; } }); }; }
+  else { const f=ROUTES[h]||home; html=f(); after = h==='esrs'?wireEsrs : h==='compare'?wireCompare : h==='circular'?wireCircular : null; }
+  app.innerHTML=html; if(after) after(app);
+  document.querySelectorAll('nav.main a').forEach(a=>{ const t=a.getAttribute('href').slice(1); a.classList.toggle('on', t===h || (t==='cases' && (h.startsWith('case-')||h.startsWith('summary-')))); });
+  $('#nav').classList.remove('open'); window.scrollTo(0,0);
+}
+window.addEventListener('hashchange',route);
+$('#menubtn').addEventListener('click',()=>{ const n=$('#nav'); n.classList.toggle('open'); $('#menubtn').setAttribute('aria-expanded',n.classList.contains('open')); });
+route();
+</script>
+</body>
+</html>

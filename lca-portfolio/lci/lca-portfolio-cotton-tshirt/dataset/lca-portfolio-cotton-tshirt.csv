@@ -1,0 +1,133 @@
+Database,lca-portfolio-cotton-tshirt
+format,Excel spreadsheet
+
+Activity,"seed cotton production, conventional, irrigated, India"
+code,39adfdd6ef6650e4a8381f7f8351924f
+comment,"Conventional cotton, 50% irrigated; lint turnout about 37%."
+location,IN
+production amount,1
+reference product,seed cotton
+unit,kilogram
+worksheet name,lca-portfolio-cotton-tshirt
+Exchanges
+name,amount,database,location,unit,categories,type,Comment,reference product
+Dinitrogen monoxide,0.000967742,biosphere3,,kilogram,air,biosphere,"IPCC Tier 1, direct + indirect (note per functional unit; exchange normalised to 1 kilogram of product)",
+"Occupation, annual crop, irrigated",2.90323,biosphere3,,square meter-year,natural resource::land,biosphere,Portfolio case 2 (illustrative); Textile Exchange; PEF apparel pilot,
+"seed cotton production, conventional, irrigated, India",1,lca-portfolio-cotton-tshirt,IN,kilogram,,production,Portfolio case 2 (illustrative); Textile Exchange; PEF apparel pilot,seed cotton
+"market for diesel, burned in agricultural machinery",2.41935,ecoinvent-3.10-cutoff,GLO,megajoule,,technosphere,Portfolio case 2 (illustrative); Textile Exchange; PEF apparel pilot,"diesel, burned in agricultural machinery"
+market for irrigation,1.90323,ecoinvent-3.10-cutoff,RoW,cubic meter,,technosphere,"1,180 L blue water per T-shirt (note per functional unit; exchange normalised to 1 kilogram of product)",irrigation
+"market for nitrogen fertiliser, as N",0.0451613,ecoinvent-3.10-cutoff,GLO,kilogram,,technosphere,Portfolio case 2 (illustrative); Textile Exchange; PEF apparel pilot,"nitrogen fertiliser, as N"
+"market for pesticide, unspecified",0.00241935,ecoinvent-3.10-cutoff,GLO,kilogram,,technosphere,active ingredient (note per functional unit; exchange normalised to 1 kilogram of product),"pesticide, unspecified"
+
+Activity,cotton ginning and ring spinning
+code,dc2272513217571684d968685f453fa0
+comment,"Ginning (cottonseed co-product allocated economically, about 85% to lint) and ring spinning."
+location,IN
+production amount,1
+reference product,"cotton yarn, ring-spun, Ne 30"
+unit,kilogram
+worksheet name,lca-portfolio-cotton-tshirt
+Exchanges
+name,amount,database,location,unit,categories,type,Comment,reference product
+cotton ginning and ring spinning,1,lca-portfolio-cotton-tshirt,IN,kilogram,,production,Portfolio case 2 (illustrative); Textile Exchange; PEF apparel pilot,"cotton yarn, ring-spun, Ne 30"
+"market for electricity, medium voltage",11.2195,ecoinvent-3.10-cutoff,IN,kilowatt hour,,technosphere,Portfolio case 2 (illustrative); Textile Exchange; PEF apparel pilot,"electricity, medium voltage"
+"market for transport, freight, lorry 16-32 metric ton, EURO4",0.897561,ecoinvent-3.10-cutoff,RoW,ton kilometer,,technosphere,"gin to spinner, 800 km (note per functional unit; exchange normalised to 1 kilogram of product)","transport, freight, lorry 16-32 metric ton, EURO4"
+"seed cotton production, conventional, irrigated, India",3.02439,lca-portfolio-cotton-tshirt,IN,kilogram,,technosphere,Portfolio case 2 (illustrative); Textile Exchange; PEF apparel pilot,seed cotton
+
+Activity,knitting of cotton single jersey
+code,8ef59a7416875c86ab755838cbf6d492
+comment,Circular knitting.
+location,BD
+production amount,1
+reference product,"cotton single jersey, greige"
+unit,kilogram
+worksheet name,lca-portfolio-cotton-tshirt
+Exchanges
+name,amount,database,location,unit,categories,type,Comment,reference product
+knitting of cotton single jersey,1,lca-portfolio-cotton-tshirt,BD,kilogram,,production,Portfolio case 2 (illustrative); Textile Exchange; PEF apparel pilot,"cotton single jersey, greige"
+cotton ginning and ring spinning,1.025,lca-portfolio-cotton-tshirt,IN,kilogram,,technosphere,Portfolio case 2 (illustrative); Textile Exchange; PEF apparel pilot,"cotton yarn, ring-spun, Ne 30"
+"market for electricity, medium voltage",4.5,ecoinvent-3.10-cutoff,BD,kilowatt hour,,technosphere,Portfolio case 2 (illustrative); Textile Exchange; PEF apparel pilot,"electricity, medium voltage"
+"market for transport, freight, sea, container ship",1.55,ecoinvent-3.10-cutoff,GLO,ton kilometer,,technosphere,"India to Bangladesh, 1,500 km (note per functional unit; exchange normalised to 1 kilogram of product)","transport, freight, sea, container ship"
+
+Activity,dyeing and finishing of cotton jersey
+code,127517aa98cd5f4aa44e0eb420c25765
+comment,"Scouring, bleaching, reactive dyeing, washing, finishing. Steam from coal and gas boilers; effluent treatment assumed."
+location,BD
+production amount,1
+reference product,"cotton single jersey, dyed and finished"
+unit,kilogram
+worksheet name,lca-portfolio-cotton-tshirt
+Exchanges
+name,amount,database,location,unit,categories,type,Comment,reference product
+dyeing and finishing of cotton jersey,1,lca-portfolio-cotton-tshirt,BD,kilogram,,production,Portfolio case 2 (illustrative); Textile Exchange; PEF apparel pilot,"cotton single jersey, dyed and finished"
+knitting of cotton single jersey,1.0,lca-portfolio-cotton-tshirt,BD,kilogram,,technosphere,Portfolio case 2 (illustrative); Textile Exchange; PEF apparel pilot,"cotton single jersey, greige"
+"market for chemical, organic",0.075,ecoinvent-3.10-cutoff,GLO,kilogram,,technosphere,proxy for dyes and auxiliaries (note per functional unit; exchange normalised to 1 kilogram of product),"chemical, organic"
+"market for electricity, medium voltage",4.0,ecoinvent-3.10-cutoff,BD,kilowatt hour,,technosphere,Portfolio case 2 (illustrative); Textile Exchange; PEF apparel pilot,"electricity, medium voltage"
+"market for heat, district or industrial, natural gas",45.0,ecoinvent-3.10-cutoff,RoW,megajoule,,technosphere,gas boiler share (note per functional unit; exchange normalised to 1 kilogram of product),"heat, district or industrial, natural gas"
+"market for heat, district or industrial, other than natural gas",45.0,ecoinvent-3.10-cutoff,RoW,megajoule,,technosphere,coal boiler share (note per functional unit; exchange normalised to 1 kilogram of product),"heat, district or industrial, other than natural gas"
+"market for sodium chloride, powder",0.15,ecoinvent-3.10-cutoff,GLO,kilogram,,technosphere,dyeing salt (note per functional unit; exchange normalised to 1 kilogram of product),"sodium chloride, powder"
+market for tap water,475.0,ecoinvent-3.10-cutoff,RoW,kilogram,,technosphere,liquor ratio about 1:8 plus rinses (note per functional unit; exchange normalised to 1 kilogram of product),tap water
+"market for wastewater, average",0.475,ecoinvent-3.10-cutoff,RoW,cubic meter,,technosphere,"waste-treatment input entered as a positive amount, as in the LCIS2024 PtL example; ecoinvent treats waste as negative - flip the sign when linking (note per functional unit; exchange normalised to 1 kilogram of product)","wastewater, average"
+
+Activity,cut-make-trim of cotton T-shirt
+code,6784e9e85c5259378897a93382b3510e
+comment,"Cutting (10% offcuts), sewing, labelling, polybag."
+location,BD
+production amount,1
+reference product,"cotton T-shirt, 180 g"
+unit,unit
+worksheet name,lca-portfolio-cotton-tshirt
+Exchanges
+name,amount,database,location,unit,categories,type,Comment,reference product
+cut-make-trim of cotton T-shirt,1,lca-portfolio-cotton-tshirt,BD,unit,,production,Portfolio case 2 (illustrative); Textile Exchange; PEF apparel pilot,"cotton T-shirt, 180 g"
+dyeing and finishing of cotton jersey,0.2,lca-portfolio-cotton-tshirt,BD,kilogram,,technosphere,Portfolio case 2 (illustrative); Textile Exchange; PEF apparel pilot,"cotton single jersey, dyed and finished"
+"market for electricity, medium voltage",0.6,ecoinvent-3.10-cutoff,BD,kilowatt hour,,technosphere,Portfolio case 2 (illustrative); Textile Exchange; PEF apparel pilot,"electricity, medium voltage"
+"market for packaging film, low density polyethylene",0.005,ecoinvent-3.10-cutoff,GLO,kilogram,,technosphere,polybag,"packaging film, low density polyethylene"
+"market for waste textile, soiled",0.02,ecoinvent-3.10-cutoff,RoW,kilogram,,technosphere,"cutting offcuts | waste-treatment input entered as a positive amount, as in the LCIS2024 PtL example; ecoinvent treats waste as negative - flip the sign when linking","waste textile, soiled"
+
+Activity,distribution and retail of T-shirt
+code,79bf17d5c9c457258ff56ded8db34b0d
+comment,"Sea freight Chittagong-Hamburg, truck to stores."
+location,DE
+production amount,1
+reference product,"cotton T-shirt, at retail"
+unit,unit
+worksheet name,lca-portfolio-cotton-tshirt
+Exchanges
+name,amount,database,location,unit,categories,type,Comment,reference product
+distribution and retail of T-shirt,1,lca-portfolio-cotton-tshirt,DE,unit,,production,Portfolio case 2 (illustrative); Textile Exchange; PEF apparel pilot,"cotton T-shirt, at retail"
+cut-make-trim of cotton T-shirt,1.0,lca-portfolio-cotton-tshirt,BD,unit,,technosphere,Portfolio case 2 (illustrative); Textile Exchange; PEF apparel pilot,"cotton T-shirt, 180 g"
+"market for electricity, low voltage",0.15,ecoinvent-3.10-cutoff,DE,kilowatt hour,,technosphere,store energy allocated by floor space,"electricity, low voltage"
+"market for transport, freight, lorry 16-32 metric ton, EURO6",0.1,ecoinvent-3.10-cutoff,RER,ton kilometer,,technosphere,500 km,"transport, freight, lorry 16-32 metric ton, EURO6"
+"market for transport, freight, sea, container ship",3.2,ecoinvent-3.10-cutoff,GLO,ton kilometer,,technosphere,"16,000 km x 0.2 kg","transport, freight, sea, container ship"
+
+Activity,"T-shirt laundry, 25 washes and 10 tumble-dry cycles"
+code,fa3e005aba3856dca697a1708b6feb98
+comment,40 C washes in shared loads; vented dryer for 10 of 25 washes; no ironing.
+location,DE
+production amount,1
+reference product,"T-shirt laundry service, 50 wears"
+unit,unit
+worksheet name,lca-portfolio-cotton-tshirt
+Exchanges
+name,amount,database,location,unit,categories,type,Comment,reference product
+"T-shirt laundry, 25 washes and 10 tumble-dry cycles",1,lca-portfolio-cotton-tshirt,DE,unit,,production,Portfolio case 2 (illustrative); Textile Exchange; PEF apparel pilot,"T-shirt laundry service, 50 wears"
+"market for electricity, low voltage",2.8,ecoinvent-3.10-cutoff,DE,kilowatt hour,,technosphere,1.0 kWh washing + 1.8 kWh drying,"electricity, low voltage"
+market for soap,0.1,ecoinvent-3.10-cutoff,GLO,kilogram,,technosphere,proxy for laundry detergent,soap
+market for tap water,52.0,ecoinvent-3.10-cutoff,Europe without Switzerland,kilogram,,technosphere,Portfolio case 2 (illustrative); Textile Exchange; PEF apparel pilot,tap water
+"market for wastewater, average",0.052,ecoinvent-3.10-cutoff,Europe without Switzerland,cubic meter,,technosphere,"waste-treatment input entered as a positive amount, as in the LCIS2024 PtL example; ecoinvent treats waste as negative - flip the sign when linking","wastewater, average"
+
+Activity,"cotton T-shirt, use and end-of-life"
+code,a9046479651155db960bc78ab75251a0
+comment,"Functional unit. 25% collected for reuse/downcycling (cut-off, leaves the system burden-free); remainder incinerated with residual waste."
+location,DE
+production amount,1
+reference product,"cotton T-shirt, worn 50 times (functional unit)"
+unit,unit
+worksheet name,lca-portfolio-cotton-tshirt
+Exchanges
+name,amount,database,location,unit,categories,type,Comment,reference product
+"cotton T-shirt, use and end-of-life",1,lca-portfolio-cotton-tshirt,DE,unit,,production,Portfolio case 2 (illustrative); Textile Exchange; PEF apparel pilot,"cotton T-shirt, worn 50 times (functional unit)"
+"T-shirt laundry, 25 washes and 10 tumble-dry cycles",1.0,lca-portfolio-cotton-tshirt,DE,unit,,technosphere,Portfolio case 2 (illustrative); Textile Exchange; PEF apparel pilot,"T-shirt laundry service, 50 wears"
+distribution and retail of T-shirt,1.0,lca-portfolio-cotton-tshirt,DE,unit,,technosphere,Portfolio case 2 (illustrative); Textile Exchange; PEF apparel pilot,"cotton T-shirt, at retail"
+market for municipal solid waste,0.12,ecoinvent-3.10-cutoff,DE,kilogram,,technosphere,"residual textiles, incinerated | waste-treatment input entered as a positive amount, as in the LCIS2024 PtL example; ecoinvent treats waste as negative - flip the sign when linking",municipal solid waste

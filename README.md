@@ -26,6 +26,23 @@ The review looks at how LCA is applied to integrated multi-trophic aquaculture (
 
 ## 🚀 Featured projects
 
+### 🌍 [Life Cycle Assessment Portfolio: product sustainability, circular economy, CSRD & ESRS](lca-portfolio) · [interactive portfolio](https://malleshkomal.github.io/malleshkomal/lca-portfolio/)
+Eleven ISO 14040/14044 life cycle assessments in one interactive website, each translated into business decisions and CSRD/ESRS reporting insights.
+- **10 product and system case studies**: cocoa and chocolate, cotton T-shirt, PET bottle, aluminium can, e-commerce cardboard, flexible food packaging, EV battery, smartphone, municipal plastic recycling and coffee cups, plus **pond IMTA aquaculture** from INTEGRATE project data
+- Same structure for every case: functional unit, system boundary, inventory with data-quality ratings, impact assessment, hotspots, scenarios, sensitivity analysis, recommendations by audience and an **LCA-to-ESRS mapping** (E1–E5, S1–S4, G1)
+- Animated life-cycle diagrams, Sankey diagrams and charts; a cross-product comparison dashboard; a reuse break-even explorer
+- Findings such as: deforestation-free cocoa cuts a chocolate bar's footprint by **30%**; a right-sized box cuts e-commerce packaging emissions by **41%**; a reusable cup pays off only after about **15 uses**
+- All 11 inventories published in the **LCIS2024** schema from my paper and validated with [ptl-lci-explorer](https://github.com/malleshkomal/ptl-lci-explorer); one-page PDF summary per case
+- Illustrative values from public literature for cases 1–10, clearly labelled; not a certified LCA or CSRD disclosure
+- `LCA` `ISO 14040/44` `CSRD` `ESRS` `Brightway` `LCIS2024` `Python` `JavaScript`
+
+<a href="lca-portfolio"><img src="lca-portfolio/docs/screenshots/01_home.png" alt="LCA portfolio home page: eleven life cycle assessments linked to CSRD and ESRS" width="720"></a>
+
+<table><tr>
+<td width="50%"><a href="lca-portfolio"><img src="lca-portfolio/docs/screenshots/04_scenarios.png" alt="Chocolate bar: climate change by life-cycle stage for four cocoa sourcing scenarios"></a></td>
+<td width="50%"><a href="lca-portfolio"><img src="lca-portfolio/docs/screenshots/07_phase_profile.png" alt="Where impacts arise: production, distribution, use and end-of-life shares across ten products"></a></td>
+</tr></table>
+
 ### 🐟 [LCA of fish monoculture and IMTA aquaculture: KPI decision tool](https://github.com/malleshkomal/Life-cycle-assessment-of-Integrated-Multi-Trophical-Aquaculture-)
 Built on the pond LCA of the EU INTEGRATE project (Interreg Atlantic Area): semi-intensive and semi-extensive pond IMTA (fish + oysters + macroalgae) against a conventional fish-only pond, per tonne of fish + oyster.
 - Inventory, nitrogen and phosphorus balance and impact results per process transcribed and shared in the LCIS2024 structure from my paper

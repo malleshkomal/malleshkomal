@@ -1,0 +1,137 @@
+Database,lca-portfolio-ev-battery
+format,Excel spreadsheet
+
+Activity,NMC811 cathode active material production
+code,7f97540aa3ac586caa30d5c66eb337eb
+comment,Co-precipitation of precursor and lithiation/calcination on a coal-heavy grid.
+location,CN
+production amount,1
+reference product,"cathode active material, NMC811"
+unit,kilogram
+worksheet name,lca-portfolio-ev-battery
+Exchanges
+name,amount,database,location,unit,categories,type,Comment,reference product
+NMC811 cathode active material production,1,lca-portfolio-ev-battery,CN,kilogram,,production,Portfolio case 7 (illustrative); Dai et al. 2019 (GREET); Batteries Regulation (EU) 2023/1542,"cathode active material, NMC811"
+"market for ammonia, anhydrous, liquid",0.0363636,ecoinvent-3.10-cutoff,RoW,kilogram,,technosphere,Portfolio case 7 (illustrative); Dai et al. 2019 (GREET); Batteries Regulation (EU) 2023/1542,"ammonia, anhydrous, liquid"
+market for cobalt sulfate,0.245455,ecoinvent-3.10-cutoff,GLO,kilogram,,technosphere,5.6 kg Co (note per functional unit; exchange normalised to 1 kilogram of product),cobalt sulfate
+"market for electricity, medium voltage",10.9091,ecoinvent-3.10-cutoff,CN,kilowatt hour,,technosphere,Portfolio case 7 (illustrative); Dai et al. 2019 (GREET); Batteries Regulation (EU) 2023/1542,"electricity, medium voltage"
+"market for heat, district or industrial, natural gas",54.5455,ecoinvent-3.10-cutoff,RoW,megajoule,,technosphere,Portfolio case 7 (illustrative); Dai et al. 2019 (GREET); Batteries Regulation (EU) 2023/1542,"heat, district or industrial, natural gas"
+"market for lithium hydroxide, battery grade",0.427273,ecoinvent-3.10-cutoff,GLO,kilogram,,technosphere,about 7.8 kg Li (note per functional unit; exchange normalised to 1 kilogram of product),"lithium hydroxide, battery grade"
+market for manganese sulfate,0.145455,ecoinvent-3.10-cutoff,GLO,kilogram,,technosphere,5.3 kg Mn (note per functional unit; exchange normalised to 1 kilogram of product),manganese sulfate
+market for nickel sulfate,1.83636,ecoinvent-3.10-cutoff,GLO,kilogram,,technosphere,45 kg Ni (note per functional unit; exchange normalised to 1 kilogram of product),nickel sulfate
+"market for sodium hydroxide, without water, in 50% solution state",0.727273,ecoinvent-3.10-cutoff,GLO,kilogram,,technosphere,Portfolio case 7 (illustrative); Dai et al. 2019 (GREET); Batteries Regulation (EU) 2023/1542,"sodium hydroxide, without water, in 50% solution state"
+
+Activity,graphite anode material production
+code,8dfc6857549a5b06895f41fb9d29938a
+comment,50% synthetic graphite.
+location,CN
+production amount,1
+reference product,"anode active material, graphite"
+unit,kilogram
+worksheet name,lca-portfolio-ev-battery
+Exchanges
+name,amount,database,location,unit,categories,type,Comment,reference product
+graphite anode material production,1,lca-portfolio-ev-battery,CN,kilogram,,production,Portfolio case 7 (illustrative); Dai et al. 2019 (GREET); Batteries Regulation (EU) 2023/1542,"anode active material, graphite"
+"market for electricity, medium voltage",2.85714,ecoinvent-3.10-cutoff,CN,kilowatt hour,,technosphere,Portfolio case 7 (illustrative); Dai et al. 2019 (GREET); Batteries Regulation (EU) 2023/1542,"electricity, medium voltage"
+"market for graphite, battery grade",1.1,ecoinvent-3.10-cutoff,GLO,kilogram,,technosphere,incl. 10% losses (note per functional unit; exchange normalised to 1 kilogram of product),"graphite, battery grade"
+
+Activity,"lithium-ion cell manufacturing, NMC811"
+code,c50005ec3df4556cbbe24dcc59dc6d4c
+comment,"Electrode coating and drying, dry-room assembly, formation; about 25 kWh electricity per kWh cell capacity."
+location,CN
+production amount,1
+reference product,"lithium-ion cell, NMC811"
+unit,kilogram
+worksheet name,lca-portfolio-ev-battery
+Exchanges
+name,amount,database,location,unit,categories,type,Comment,reference product
+"lithium-ion cell manufacturing, NMC811",1,lca-portfolio-ev-battery,CN,kilogram,,production,Portfolio case 7 (illustrative); Dai et al. 2019 (GREET); Batteries Regulation (EU) 2023/1542,"lithium-ion cell, NMC811"
+NMC811 cathode active material production,0.423077,lca-portfolio-ev-battery,CN,kilogram,,technosphere,Portfolio case 7 (illustrative); Dai et al. 2019 (GREET); Batteries Regulation (EU) 2023/1542,"cathode active material, NMC811"
+graphite anode material production,0.269231,lca-portfolio-ev-battery,CN,kilogram,,technosphere,Portfolio case 7 (illustrative); Dai et al. 2019 (GREET); Batteries Regulation (EU) 2023/1542,"anode active material, graphite"
+market for N-methyl-2-pyrrolidone,0.0115385,ecoinvent-3.10-cutoff,GLO,kilogram,,technosphere,solvent losses (note per functional unit; exchange normalised to 1 kilogram of product),N-methyl-2-pyrrolidone
+"market for aluminium, wrought alloy",0.0576923,ecoinvent-3.10-cutoff,GLO,kilogram,,technosphere,cathode foil and cell cans (note per functional unit; exchange normalised to 1 kilogram of product),"aluminium, wrought alloy"
+"market for copper, cathode",0.0769231,ecoinvent-3.10-cutoff,GLO,kilogram,,technosphere,anode foil (note per functional unit; exchange normalised to 1 kilogram of product),"copper, cathode"
+"market for electricity, medium voltage",5.76923,ecoinvent-3.10-cutoff,CN,kilowatt hour,,technosphere,Portfolio case 7 (illustrative); Dai et al. 2019 (GREET); Batteries Regulation (EU) 2023/1542,"electricity, medium voltage"
+market for ethylene carbonate,0.1,ecoinvent-3.10-cutoff,GLO,kilogram,,technosphere,electrolyte solvent proxy (note per functional unit; exchange normalised to 1 kilogram of product),ethylene carbonate
+"market for extrusion, plastic film",0.0230769,ecoinvent-3.10-cutoff,GLO,kilogram,,technosphere,separator (note per functional unit; exchange normalised to 1 kilogram of product),"extrusion, plastic film"
+"market for heat, district or industrial, natural gas",3.84615,ecoinvent-3.10-cutoff,RoW,megajoule,,technosphere,Portfolio case 7 (illustrative); Dai et al. 2019 (GREET); Batteries Regulation (EU) 2023/1542,"heat, district or industrial, natural gas"
+market for lithium hexafluorophosphate,0.0153846,ecoinvent-3.10-cutoff,GLO,kilogram,,technosphere,electrolyte salt (note per functional unit; exchange normalised to 1 kilogram of product),lithium hexafluorophosphate
+"market for polyethylene, high density, granulate",0.0230769,ecoinvent-3.10-cutoff,GLO,kilogram,,technosphere,separator (note per functional unit; exchange normalised to 1 kilogram of product),"polyethylene, high density, granulate"
+
+Activity,"battery pack assembly, 60 kWh"
+code,41e89e85973857c59938d8454ccef78b
+comment,"Modules, cooling, battery management system and aluminium housing; pack mass 400 kg."
+location,CN
+production amount,1
+reference product,"battery pack, NMC811, 60 kWh"
+unit,unit
+worksheet name,lca-portfolio-ev-battery
+Exchanges
+name,amount,database,location,unit,categories,type,Comment,reference product
+"battery pack assembly, 60 kWh",1,lca-portfolio-ev-battery,CN,unit,,production,Portfolio case 7 (illustrative); Dai et al. 2019 (GREET); Batteries Regulation (EU) 2023/1542,"battery pack, NMC811, 60 kWh"
+"lithium-ion cell manufacturing, NMC811",260.0,lca-portfolio-ev-battery,CN,kilogram,,technosphere,Portfolio case 7 (illustrative); Dai et al. 2019 (GREET); Batteries Regulation (EU) 2023/1542,"lithium-ion cell, NMC811"
+"market for aluminium, wrought alloy",80.0,ecoinvent-3.10-cutoff,GLO,kilogram,,technosphere,housing,"aluminium, wrought alloy"
+"market for copper, cathode",10.0,ecoinvent-3.10-cutoff,GLO,kilogram,,technosphere,busbars and wiring,"copper, cathode"
+"market for electricity, medium voltage",80.0,ecoinvent-3.10-cutoff,CN,kilowatt hour,,technosphere,Portfolio case 7 (illustrative); Dai et al. 2019 (GREET); Batteries Regulation (EU) 2023/1542,"electricity, medium voltage"
+"market for electronics, for control units",2.0,ecoinvent-3.10-cutoff,GLO,kilogram,,technosphere,battery management system,"electronics, for control units"
+"market for steel, low-alloyed",30.0,ecoinvent-3.10-cutoff,GLO,kilogram,,technosphere,Portfolio case 7 (illustrative); Dai et al. 2019 (GREET); Batteries Regulation (EU) 2023/1542,"steel, low-alloyed"
+
+Activity,shipping of battery pack to Europe
+code,cfebdedd21545fbba32b0815c5357d51
+comment,Sea freight and trucking.
+location,RER
+production amount,1
+reference product,"battery pack, NMC811, 60 kWh, at vehicle plant"
+unit,unit
+worksheet name,lca-portfolio-ev-battery
+Exchanges
+name,amount,database,location,unit,categories,type,Comment,reference product
+shipping of battery pack to Europe,1,lca-portfolio-ev-battery,RER,unit,,production,Portfolio case 7 (illustrative); Dai et al. 2019 (GREET); Batteries Regulation (EU) 2023/1542,"battery pack, NMC811, 60 kWh, at vehicle plant"
+"battery pack assembly, 60 kWh",1.0,lca-portfolio-ev-battery,CN,unit,,technosphere,Portfolio case 7 (illustrative); Dai et al. 2019 (GREET); Batteries Regulation (EU) 2023/1542,"battery pack, NMC811, 60 kWh"
+"market for transport, freight, lorry 16-32 metric ton, EURO6",200.0,ecoinvent-3.10-cutoff,RER,ton kilometer,,technosphere,500 km,"transport, freight, lorry 16-32 metric ton, EURO6"
+"market for transport, freight, sea, container ship",8000.0,ecoinvent-3.10-cutoff,GLO,ton kilometer,,technosphere,"20,000 km x 0.4 t","transport, freight, sea, container ship"
+
+Activity,"battery-attributable charging losses, 200,000 km"
+code,6ed3804d7bfc5506ad1ebd4c55fdb317
+comment,"About 10% of 34,000 kWh traction energy; EU grid."
+location,RER
+production amount,1
+reference product,"battery charging losses, first vehicle life"
+unit,unit
+worksheet name,lca-portfolio-ev-battery
+Exchanges
+name,amount,database,location,unit,categories,type,Comment,reference product
+"battery-attributable charging losses, 200,000 km",1,lca-portfolio-ev-battery,RER,unit,,production,Portfolio case 7 (illustrative); Dai et al. 2019 (GREET); Batteries Regulation (EU) 2023/1542,"battery charging losses, first vehicle life"
+"market group for electricity, low voltage",3400.0,ecoinvent-3.10-cutoff,RER,kilowatt hour,,technosphere,Portfolio case 7 (illustrative); Dai et al. 2019 (GREET); Batteries Regulation (EU) 2023/1542,"electricity, low voltage"
+
+Activity,battery pack collection and hydrometallurgical recycling
+code,ebb2c779058852f6894b40b7d4d2cbd5
+comment,"Collection, discharge, dismantling, black mass and leaching; recovery in line with 2031 targets; no credits (cut-off)."
+location,RER
+production amount,1
+reference product,spent battery pack recycling service
+unit,unit
+worksheet name,lca-portfolio-ev-battery
+Exchanges
+name,amount,database,location,unit,categories,type,Comment,reference product
+battery pack collection and hydrometallurgical recycling,1,lca-portfolio-ev-battery,RER,unit,,production,Portfolio case 7 (illustrative); Dai et al. 2019 (GREET); Batteries Regulation (EU) 2023/1542,spent battery pack recycling service
+"market for electricity, medium voltage",300.0,ecoinvent-3.10-cutoff,RER,kilowatt hour,,technosphere,Portfolio case 7 (illustrative); Dai et al. 2019 (GREET); Batteries Regulation (EU) 2023/1542,"electricity, medium voltage"
+"market for heat, district or industrial, natural gas",500.0,ecoinvent-3.10-cutoff,Europe without Switzerland,megajoule,,technosphere,Portfolio case 7 (illustrative); Dai et al. 2019 (GREET); Batteries Regulation (EU) 2023/1542,"heat, district or industrial, natural gas"
+"market for hydrogen peroxide, without water, in 50% solution state",25.0,ecoinvent-3.10-cutoff,RER,kilogram,,technosphere,Portfolio case 7 (illustrative); Dai et al. 2019 (GREET); Batteries Regulation (EU) 2023/1542,"hydrogen peroxide, without water, in 50% solution state"
+market for sulfuric acid,120.0,ecoinvent-3.10-cutoff,RER,kilogram,,technosphere,Portfolio case 7 (illustrative); Dai et al. 2019 (GREET); Batteries Regulation (EU) 2023/1542,sulfuric acid
+"market for transport, freight, lorry 16-32 metric ton, EURO6",200.0,ecoinvent-3.10-cutoff,RER,ton kilometer,,technosphere,500 km,"transport, freight, lorry 16-32 metric ton, EURO6"
+
+Activity,"traction battery pack, life cycle"
+code,6d02140c555651068ca5ce7342e5b81a
+comment,"Functional unit: production, use-phase losses and end-of-life of one pack."
+location,RER
+production amount,1
+reference product,"traction battery pack, 60 kWh, life cycle (functional unit)"
+unit,unit
+worksheet name,lca-portfolio-ev-battery
+Exchanges
+name,amount,database,location,unit,categories,type,Comment,reference product
+"traction battery pack, life cycle",1,lca-portfolio-ev-battery,RER,unit,,production,Portfolio case 7 (illustrative); Dai et al. 2019 (GREET); Batteries Regulation (EU) 2023/1542,"traction battery pack, 60 kWh, life cycle (functional unit)"
+battery pack collection and hydrometallurgical recycling,1.0,lca-portfolio-ev-battery,RER,unit,,technosphere,Portfolio case 7 (illustrative); Dai et al. 2019 (GREET); Batteries Regulation (EU) 2023/1542,spent battery pack recycling service
+"battery-attributable charging losses, 200,000 km",1.0,lca-portfolio-ev-battery,RER,unit,,technosphere,Portfolio case 7 (illustrative); Dai et al. 2019 (GREET); Batteries Regulation (EU) 2023/1542,"battery charging losses, first vehicle life"
+shipping of battery pack to Europe,1.0,lca-portfolio-ev-battery,RER,unit,,technosphere,Portfolio case 7 (illustrative); Dai et al. 2019 (GREET); Batteries Regulation (EU) 2023/1542,"battery pack, NMC811, 60 kWh, at vehicle plant"

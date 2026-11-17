@@ -1,0 +1,256 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d6" for="edge" attr.name="arrows" attr.type="boolean"/>
+<key id="d5" for="edge" attr.name="unit" attr.type="string"/>
+<key id="d4" for="edge" attr.name="amount" attr.type="double"/>
+<key id="d3" for="edge" attr.name="line_type" attr.type="string"/>
+<key id="d2" for="edge" attr.name="color" attr.type="string"/>
+<key id="d1" for="node" attr.name="width" attr.type="long"/>
+<key id="d0" for="node" attr.name="color" attr.type="string"/>
+<graph edgedefault="directed"><node id="Activity - aluminium production, primary, ingot, global average">
+  <data key="d0">blue</data>
+  <data key="d1">26</data>
+</node>
+<node id="Carbon dioxide, fossil"/>
+<node id="Methane, tetrafluoro-, R-14"/>
+<node id="aluminium, primary, ingot"/>
+<node id="aluminium oxide, metallurgical"/>
+<node id="anode, prebake, for aluminium electrolysis"/>
+<node id="electricity, high voltage"/>
+<node id="Activity - casting and rolling of can-body sheet">
+  <data key="d0">blue</data>
+  <data key="d1">26</data>
+</node>
+<node id="aluminium can-body sheet"/>
+<node id="electricity, medium voltage"/>
+<node id="heat, district or industrial, natural gas"/>
+<node id="Activity - beverage can production, 330 ml">
+  <data key="d0">blue</data>
+  <data key="d1">26</data>
+</node>
+<node id="aluminium beverage can, 330 ml, empty"/>
+<node id="epoxy resin, liquid"/>
+<node id="transport, freight, lorry 16-32 metric ton, EURO6"/>
+<node id="Activity - filling of beverage cans">
+  <data key="d0">blue</data>
+  <data key="d1">26</data>
+</node>
+<node id="soft drink can, filled and seamed"/>
+<node id="carbon dioxide, liquid"/>
+<node id="tap water"/>
+<node id="Activity - distribution and chilling of canned drinks">
+  <data key="d0">blue</data>
+  <data key="d1">26</data>
+</node>
+<node id="soft drink can, chilled, at retail"/>
+<node id="electricity, low voltage"/>
+<node id="Activity - canned soft drink, consumption and end-of-life">
+  <data key="d0">blue</data>
+  <data key="d1">26</data>
+</node>
+<node id="canned soft drink, 330 ml, consumed (functional unit)"/>
+<node id="municipal solid waste"/>
+<node id="scrap aluminium"/>
+<edge source="Activity - aluminium production, primary, ingot, global average" target="Carbon dioxide, fossil">
+  <data key="d2">green</data>
+  <data key="d3">Dots</data>
+  <data key="d4">1.55</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="Activity - aluminium production, primary, ingot, global average" target="Methane, tetrafluoro-, R-14">
+  <data key="d2">green</data>
+  <data key="d3">Dots</data>
+  <data key="d4">3e-05</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="Activity - aluminium production, primary, ingot, global average" target="aluminium, primary, ingot">
+  <data key="d2">black</data>
+  <data key="d3">Dash</data>
+  <data key="d4">1.0</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="aluminium, primary, ingot" target="Activity - casting and rolling of can-body sheet">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">1.015</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="aluminium oxide, metallurgical" target="Activity - aluminium production, primary, ingot, global average">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">1.93</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="anode, prebake, for aluminium electrolysis" target="Activity - aluminium production, primary, ingot, global average">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">0.42</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="electricity, high voltage" target="Activity - aluminium production, primary, ingot, global average">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">14.0</data>
+  <data key="d5">kilowatt hour</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="Activity - casting and rolling of can-body sheet" target="aluminium can-body sheet">
+  <data key="d2">black</data>
+  <data key="d3">Dash</data>
+  <data key="d4">1.0</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="aluminium can-body sheet" target="Activity - beverage can production, 330 ml">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">0.013</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="electricity, medium voltage" target="Activity - casting and rolling of can-body sheet">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">0.77</data>
+  <data key="d5">kilowatt hour</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="electricity, medium voltage" target="Activity - beverage can production, 330 ml">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">0.02</data>
+  <data key="d5">kilowatt hour</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="electricity, medium voltage" target="Activity - filling of beverage cans">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">0.005</data>
+  <data key="d5">kilowatt hour</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="heat, district or industrial, natural gas" target="Activity - casting and rolling of can-body sheet">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">9.2</data>
+  <data key="d5">megajoule</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="heat, district or industrial, natural gas" target="Activity - beverage can production, 330 ml">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">0.08</data>
+  <data key="d5">megajoule</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="Activity - beverage can production, 330 ml" target="aluminium beverage can, 330 ml, empty">
+  <data key="d2">black</data>
+  <data key="d3">Dash</data>
+  <data key="d4">1.0</data>
+  <data key="d5">unit</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="aluminium beverage can, 330 ml, empty" target="Activity - filling of beverage cans">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">1.0</data>
+  <data key="d5">unit</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="epoxy resin, liquid" target="Activity - beverage can production, 330 ml">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">0.0002</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="transport, freight, lorry 16-32 metric ton, EURO6" target="Activity - beverage can production, 330 ml">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">0.0026</data>
+  <data key="d5">ton kilometer</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="transport, freight, lorry 16-32 metric ton, EURO6" target="Activity - distribution and chilling of canned drinks">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">0.11</data>
+  <data key="d5">ton kilometer</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="Activity - filling of beverage cans" target="soft drink can, filled and seamed">
+  <data key="d2">black</data>
+  <data key="d3">Dash</data>
+  <data key="d4">1.0</data>
+  <data key="d5">unit</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="soft drink can, filled and seamed" target="Activity - distribution and chilling of canned drinks">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">1.0</data>
+  <data key="d5">unit</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="carbon dioxide, liquid" target="Activity - filling of beverage cans">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">0.002</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="tap water" target="Activity - filling of beverage cans">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">0.25</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="Activity - distribution and chilling of canned drinks" target="soft drink can, chilled, at retail">
+  <data key="d2">black</data>
+  <data key="d3">Dash</data>
+  <data key="d4">1.0</data>
+  <data key="d5">unit</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="soft drink can, chilled, at retail" target="Activity - canned soft drink, consumption and end-of-life">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">1.0</data>
+  <data key="d5">unit</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="electricity, low voltage" target="Activity - distribution and chilling of canned drinks">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">0.01</data>
+  <data key="d5">kilowatt hour</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="Activity - canned soft drink, consumption and end-of-life" target="canned soft drink, 330 ml, consumed (functional unit)">
+  <data key="d2">black</data>
+  <data key="d3">Dash</data>
+  <data key="d4">1.0</data>
+  <data key="d5">unit</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="municipal solid waste" target="Activity - canned soft drink, consumption and end-of-life">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">0.00325</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="scrap aluminium" target="Activity - canned soft drink, consumption and end-of-life">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">0.00975</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+</graph></graphml>

@@ -1,0 +1,108 @@
+Database,lca-portfolio-cocoa-chocolate
+format,Excel spreadsheet
+
+Activity,"cocoa bean production, dried, West Africa"
+code,a842092fa1235f2b91b161e12853e854
+comment,"Smallholder cocoa, Cote d'Ivoire and Ghana. Yield 500 kg/ha/yr. 10% of supply from land converted in the last 20 years, amortised over 20 years."
+location,CI
+production amount,1
+reference product,"cocoa beans, dried"
+unit,kilogram
+worksheet name,lca-portfolio-cocoa-chocolate
+Exchanges
+name,amount,database,location,unit,categories,type,Comment,reference product
+"Carbon dioxide, from soil or biomass stock",10.5556,biosphere3,,kilogram,air,biosphere,"land-use change emissions, amortised; calibrated to portfolio result (note per functional unit; exchange normalised to 1 kilogram of product)",
+Dinitrogen monoxide,0.000555556,biosphere3,,kilogram,air,biosphere,IPCC Tier 1 direct and indirect field N2O (note per functional unit; exchange normalised to 1 kilogram of product),
+"Occupation, permanent crop",20.0,biosphere3,,square meter-year,natural resource::land,biosphere,0.036 kg / 500 kg per ha per year (note per functional unit; exchange normalised to 1 kilogram of product),
+"Transformation, from tropical rain forest",0.1,biosphere3,,square meter,natural resource::land,biosphere,"10% of occupation converted, amortised over 20 years (note per functional unit; exchange normalised to 1 kilogram of product)",
+"Transformation, to permanent crop",0.1,biosphere3,,square meter,natural resource::land,biosphere,mirror of forest transformation (note per functional unit; exchange normalised to 1 kilogram of product),
+"cocoa bean production, dried, West Africa",1,lca-portfolio-cocoa-chocolate,CI,kilogram,,production,Portfolio case 1 (illustrative); Poore & Nemecek 2018; Konstantas et al. 2018,"cocoa beans, dried"
+market for irrigation,0.5,ecoinvent-3.10-cutoff,RoW,cubic meter,,technosphere,18 L supplementary irrigation per bar (note per functional unit; exchange normalised to 1 kilogram of product),irrigation
+"market for nitrogen fertiliser, as N",0.0305556,ecoinvent-3.10-cutoff,GLO,kilogram,,technosphere,"regional surveys, low-input systems (note per functional unit; exchange normalised to 1 kilogram of product)","nitrogen fertiliser, as N"
+"market for pesticide, unspecified",0.00111111,ecoinvent-3.10-cutoff,GLO,kilogram,,technosphere,illustrative assumption (note per functional unit; exchange normalised to 1 kilogram of product),"pesticide, unspecified"
+"market for phosphate fertiliser, as P2O5",0.0111111,ecoinvent-3.10-cutoff,GLO,kilogram,,technosphere,illustrative assumption (note per functional unit; exchange normalised to 1 kilogram of product),"phosphate fertiliser, as P2O5"
+"market for transport, freight, lorry 3.5-7.5 metric ton, EURO3",0.05,ecoinvent-3.10-cutoff,RoW,ton kilometer,,technosphere,"farm to collection point, 50 km (note per functional unit; exchange normalised to 1 kilogram of product)","transport, freight, lorry 3.5-7.5 metric ton, EURO3"
+
+Activity,"cocoa bean fermentation, drying and export to Europe"
+code,371145498e275444ace2e2270d459fcd
+comment,"Heap fermentation and sun drying on farm, trucking to Abidjan/Tema and container shipping to Amsterdam."
+location,RER
+production amount,1
+reference product,"cocoa beans, dried, at port of Amsterdam"
+unit,kilogram
+worksheet name,lca-portfolio-cocoa-chocolate
+Exchanges
+name,amount,database,location,unit,categories,type,Comment,reference product
+"cocoa bean fermentation, drying and export to Europe",1,lca-portfolio-cocoa-chocolate,RER,kilogram,,production,Portfolio case 1 (illustrative); Poore & Nemecek 2018; Konstantas et al. 2018,"cocoa beans, dried, at port of Amsterdam"
+"cocoa bean production, dried, West Africa",1.0,lca-portfolio-cocoa-chocolate,CI,kilogram,,technosphere,Portfolio case 1 (illustrative); Poore & Nemecek 2018; Konstantas et al. 2018,"cocoa beans, dried"
+"market for transport, freight, lorry 16-32 metric ton, EURO4",0.3,ecoinvent-3.10-cutoff,RoW,ton kilometer,,technosphere,300 km to port (note per functional unit; exchange normalised to 1 kilogram of product),"transport, freight, lorry 16-32 metric ton, EURO4"
+"market for transport, freight, sea, container ship",7.0,ecoinvent-3.10-cutoff,GLO,ton kilometer,,technosphere,"7,000 km (note per functional unit; exchange normalised to 1 kilogram of product)","transport, freight, sea, container ship"
+
+Activity,milk chocolate production
+code,349508a1ea545b65a27da0820932cf43
+comment,"Roasting, winnowing, grinding, mixing, refining, conching, tempering and moulding. Cocoa shells (0.005 kg per bar) leave as a co-product; burdens shown after economic allocation."
+location,DE
+production amount,1
+reference product,"milk chocolate, moulded"
+unit,kilogram
+worksheet name,lca-portfolio-cocoa-chocolate
+Exchanges
+name,amount,database,location,unit,categories,type,Comment,reference product
+milk chocolate production,1,lca-portfolio-cocoa-chocolate,DE,kilogram,,production,Portfolio case 1 (illustrative); Poore & Nemecek 2018; Konstantas et al. 2018,"milk chocolate, moulded"
+"cocoa bean fermentation, drying and export to Europe",0.342857,lca-portfolio-cocoa-chocolate,RER,kilogram,,technosphere,Portfolio case 1 (illustrative); Poore & Nemecek 2018; Konstantas et al. 2018,"cocoa beans, dried, at port of Amsterdam"
+"market for electricity, medium voltage",3.33333,ecoinvent-3.10-cutoff,DE,kilowatt hour,,technosphere,industry benchmark 0.25-0.5 kWh (note per functional unit; exchange normalised to 1 kilogram of product),"electricity, medium voltage"
+"market for heat, district or industrial, natural gas",5.71429,ecoinvent-3.10-cutoff,Europe without Switzerland,megajoule,,technosphere,roasting and conching (note per functional unit; exchange normalised to 1 kilogram of product),"heat, district or industrial, natural gas"
+"market for milk powder, whole",0.266667,ecoinvent-3.10-cutoff,RER,kilogram,,technosphere,proxy name: link to an available whole milk powder dataset (e.g. Agribalyse) (note per functional unit; exchange normalised to 1 kilogram of product),"milk powder, whole"
+"market for sugar, from sugar beet",0.438095,ecoinvent-3.10-cutoff,GLO,kilogram,,technosphere,Portfolio case 1 (illustrative); Poore & Nemecek 2018; Konstantas et al. 2018,"sugar, from sugar beet"
+market for tap water,11.4286,ecoinvent-3.10-cutoff,Europe without Switzerland,kilogram,,technosphere,cleaning and cooling (note per functional unit; exchange normalised to 1 kilogram of product),tap water
+"market for transport, freight, lorry 16-32 metric ton, EURO6",0.352381,ecoinvent-3.10-cutoff,RER,ton kilometer,,technosphere,"ingredients, 500 km (note per functional unit; exchange normalised to 1 kilogram of product)","transport, freight, lorry 16-32 metric ton, EURO6"
+
+Activity,chocolate bar packaging production
+code,80240ff1425551dea339f08fe6c4f332
+comment,4 g paperboard sleeve (50% recycled fibre) and 2 g aluminium-PE inner foil.
+location,RER
+production amount,1
+reference product,chocolate bar packaging set (paper sleeve + Al-PE foil)
+unit,unit
+worksheet name,lca-portfolio-cocoa-chocolate
+Exchanges
+name,amount,database,location,unit,categories,type,Comment,reference product
+chocolate bar packaging production,1,lca-portfolio-cocoa-chocolate,RER,unit,,production,Portfolio case 1 (illustrative); Poore & Nemecek 2018; Konstantas et al. 2018,chocolate bar packaging set (paper sleeve + Al-PE foil)
+"market for aluminium, wrought alloy",0.0013,ecoinvent-3.10-cutoff,GLO,kilogram,,technosphere,foil share of laminate,"aluminium, wrought alloy"
+market for folding boxboard carton,0.004,ecoinvent-3.10-cutoff,RER,kilogram,,technosphere,Portfolio case 1 (illustrative); Poore & Nemecek 2018; Konstantas et al. 2018,folding boxboard carton
+"market for packaging film, low density polyethylene",0.0007,ecoinvent-3.10-cutoff,GLO,kilogram,,technosphere,Portfolio case 1 (illustrative); Poore & Nemecek 2018; Konstantas et al. 2018,"packaging film, low density polyethylene"
+"market for sheet rolling, aluminium",0.0013,ecoinvent-3.10-cutoff,GLO,kilogram,,technosphere,Portfolio case 1 (illustrative); Poore & Nemecek 2018; Konstantas et al. 2018,"sheet rolling, aluminium"
+"market for transport, freight, lorry 16-32 metric ton, EURO6",0.0018,ecoinvent-3.10-cutoff,RER,ton kilometer,,technosphere,300 km,"transport, freight, lorry 16-32 metric ton, EURO6"
+
+Activity,distribution and retail of chocolate bars
+code,44c6bd51c3b15f6ba631c8da61199655
+comment,Truck distribution (600 km) and ambient retail. 2 g retail losses per bar to biowaste.
+location,DE
+production amount,1
+reference product,"milk chocolate, packed, sold at retail"
+unit,kilogram
+worksheet name,lca-portfolio-cocoa-chocolate
+Exchanges
+name,amount,database,location,unit,categories,type,Comment,reference product
+distribution and retail of chocolate bars,1,lca-portfolio-cocoa-chocolate,DE,kilogram,,production,Portfolio case 1 (illustrative); Poore & Nemecek 2018; Konstantas et al. 2018,"milk chocolate, packed, sold at retail"
+chocolate bar packaging production,9.70874,lca-portfolio-cocoa-chocolate,RER,unit,,technosphere,Portfolio case 1 (illustrative); Poore & Nemecek 2018; Konstantas et al. 2018,chocolate bar packaging set (paper sleeve + Al-PE foil)
+market for biowaste,0.0194175,ecoinvent-3.10-cutoff,RoW,kilogram,,technosphere,"retail losses 2% | waste-treatment input entered as a positive amount, as in the LCIS2024 PtL example; ecoinvent treats waste as negative - flip the sign when linking (note per functional unit; exchange normalised to 1 kilogram of product)",biowaste
+"market for electricity, low voltage",0.194175,ecoinvent-3.10-cutoff,DE,kilowatt hour,,technosphere,store energy allocated by shelf space (note per functional unit; exchange normalised to 1 kilogram of product),"electricity, low voltage"
+"market for transport, freight, lorry 16-32 metric ton, EURO6",0.679612,ecoinvent-3.10-cutoff,RER,ton kilometer,,technosphere,600 km x 0.112 kg incl. secondary packaging (note per functional unit; exchange normalised to 1 kilogram of product),"transport, freight, lorry 16-32 metric ton, EURO6"
+milk chocolate production,1.01942,lca-portfolio-cocoa-chocolate,DE,kilogram,,technosphere,Portfolio case 1 (illustrative); Poore & Nemecek 2018; Konstantas et al. 2018,"milk chocolate, moulded"
+
+Activity,"milk chocolate bar, consumption and end-of-life"
+code,fab40fd6fc385c21acd6db0eb6ecf5f1
+comment,"Functional unit. 3 g household food waste; paper sleeve 75% recycled (cut-off), foil laminate incinerated."
+location,DE
+production amount,1
+reference product,"milk chocolate bar, 100 g, eaten (functional unit)"
+unit,unit
+worksheet name,lca-portfolio-cocoa-chocolate
+Exchanges
+name,amount,database,location,unit,categories,type,Comment,reference product
+"milk chocolate bar, consumption and end-of-life",1,lca-portfolio-cocoa-chocolate,DE,unit,,production,Portfolio case 1 (illustrative); Poore & Nemecek 2018; Konstantas et al. 2018,"milk chocolate bar, 100 g, eaten (functional unit)"
+distribution and retail of chocolate bars,0.103,lca-portfolio-cocoa-chocolate,DE,kilogram,,technosphere,Portfolio case 1 (illustrative); Poore & Nemecek 2018; Konstantas et al. 2018,"milk chocolate, packed, sold at retail"
+market for biowaste,0.003,ecoinvent-3.10-cutoff,RoW,kilogram,,technosphere,"household food waste 3% | waste-treatment input entered as a positive amount, as in the LCIS2024 PtL example; ecoinvent treats waste as negative - flip the sign when linking",biowaste
+market for municipal solid waste,0.0033,ecoinvent-3.10-cutoff,DE,kilogram,,technosphere,"foil laminate and remaining packaging, incinerated | waste-treatment input entered as a positive amount, as in the LCIS2024 PtL example; ecoinvent treats waste as negative - flip the sign when linking",municipal solid waste
+market for waste paperboard,0.0027,ecoinvent-3.10-cutoff,DE,kilogram,,technosphere,"to recycling (cut-off: burden-free for next user) | waste-treatment input entered as a positive amount, as in the LCIS2024 PtL example; ecoinvent treats waste as negative - flip the sign when linking",waste paperboard

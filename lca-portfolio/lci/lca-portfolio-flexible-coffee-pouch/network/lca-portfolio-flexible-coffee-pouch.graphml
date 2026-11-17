@@ -1,0 +1,250 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d6" for="edge" attr.name="arrows" attr.type="boolean"/>
+<key id="d5" for="edge" attr.name="unit" attr.type="string"/>
+<key id="d4" for="edge" attr.name="amount" attr.type="double"/>
+<key id="d3" for="edge" attr.name="line_type" attr.type="string"/>
+<key id="d2" for="edge" attr.name="color" attr.type="string"/>
+<key id="d1" for="node" attr.name="width" attr.type="long"/>
+<key id="d0" for="node" attr.name="color" attr.type="string"/>
+<graph edgedefault="directed"><node id="Activity - multilayer laminate production, PET/Al/PE">
+  <data key="d0">blue</data>
+  <data key="d1">26</data>
+</node>
+<node id="printed multilayer laminate"/>
+<node id="aluminium, wrought alloy"/>
+<node id="chemical, organic"/>
+<node id="electricity, medium voltage"/>
+<node id="extrusion, plastic film"/>
+<node id="heat, district or industrial, natural gas"/>
+<node id="packaging film, low density polyethylene"/>
+<node id="polyethylene terephthalate, granulate, amorphous"/>
+<node id="sheet rolling, aluminium"/>
+<node id="Activity - stand-up pouch making with degassing valve">
+  <data key="d0">blue</data>
+  <data key="d1">26</data>
+</node>
+<node id="coffee pouch, 250 g, empty"/>
+<node id="polyethylene, low density, granulate"/>
+<node id="waste plastic, mixture"/>
+<node id="Activity - coffee filling and sealing under nitrogen">
+  <data key="d0">blue</data>
+  <data key="d1">26</data>
+</node>
+<node id="ground coffee, 250 g, packed"/>
+<node id="nitrogen, liquid"/>
+<node id="Activity - distribution of packed coffee">
+  <data key="d0">blue</data>
+  <data key="d1">26</data>
+</node>
+<node id="ground coffee, 250 g, packed, at retail"/>
+<node id="transport, freight, lorry 16-32 metric ton, EURO6"/>
+<node id="Activity - coffee lost through packaging performance">
+  <data key="d0">blue</data>
+  <data key="d1">26</data>
+</node>
+<node id="coffee loss attributable to packaging, per pack"/>
+<node id="biowaste"/>
+<node id="coffee, green bean"/>
+<node id="Activity - coffee pack, use and end-of-life">
+  <data key="d0">blue</data>
+  <data key="d1">26</data>
+</node>
+<node id="ground coffee, 250 g, packed, delivered and pack disposed (functional unit)"/>
+<node id="municipal solid waste"/>
+<edge source="Activity - multilayer laminate production, PET/Al/PE" target="printed multilayer laminate">
+  <data key="d2">black</data>
+  <data key="d3">Dash</data>
+  <data key="d4">1.0</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="printed multilayer laminate" target="Activity - stand-up pouch making with degassing valve">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">0.012</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="aluminium, wrought alloy" target="Activity - multilayer laminate production, PET/Al/PE">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">0.183333</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="chemical, organic" target="Activity - multilayer laminate production, PET/Al/PE">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">0.0416667</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="electricity, medium voltage" target="Activity - multilayer laminate production, PET/Al/PE">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">1.0</data>
+  <data key="d5">kilowatt hour</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="electricity, medium voltage" target="Activity - stand-up pouch making with degassing valve">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">0.003</data>
+  <data key="d5">kilowatt hour</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="electricity, medium voltage" target="Activity - coffee filling and sealing under nitrogen">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">0.005</data>
+  <data key="d5">kilowatt hour</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="extrusion, plastic film" target="Activity - multilayer laminate production, PET/Al/PE">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">0.275</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="heat, district or industrial, natural gas" target="Activity - multilayer laminate production, PET/Al/PE">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">1.66667</data>
+  <data key="d5">megajoule</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="packaging film, low density polyethylene" target="Activity - multilayer laminate production, PET/Al/PE">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">0.5</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="polyethylene terephthalate, granulate, amorphous" target="Activity - multilayer laminate production, PET/Al/PE">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">0.275</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="sheet rolling, aluminium" target="Activity - multilayer laminate production, PET/Al/PE">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">0.183333</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="Activity - stand-up pouch making with degassing valve" target="coffee pouch, 250 g, empty">
+  <data key="d2">black</data>
+  <data key="d3">Dash</data>
+  <data key="d4">1.0</data>
+  <data key="d5">unit</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="coffee pouch, 250 g, empty" target="Activity - coffee filling and sealing under nitrogen">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">1.0</data>
+  <data key="d5">unit</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="polyethylene, low density, granulate" target="Activity - stand-up pouch making with degassing valve">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">0.0005</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="waste plastic, mixture" target="Activity - stand-up pouch making with degassing valve">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">0.001</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="Activity - coffee filling and sealing under nitrogen" target="ground coffee, 250 g, packed">
+  <data key="d2">black</data>
+  <data key="d3">Dash</data>
+  <data key="d4">1.0</data>
+  <data key="d5">unit</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="ground coffee, 250 g, packed" target="Activity - distribution of packed coffee">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">1.0</data>
+  <data key="d5">unit</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="nitrogen, liquid" target="Activity - coffee filling and sealing under nitrogen">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">0.0015</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="Activity - distribution of packed coffee" target="ground coffee, 250 g, packed, at retail">
+  <data key="d2">black</data>
+  <data key="d3">Dash</data>
+  <data key="d4">1.0</data>
+  <data key="d5">unit</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="ground coffee, 250 g, packed, at retail" target="Activity - coffee pack, use and end-of-life">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">1.0</data>
+  <data key="d5">unit</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="transport, freight, lorry 16-32 metric ton, EURO6" target="Activity - distribution of packed coffee">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">0.108</data>
+  <data key="d5">ton kilometer</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="Activity - coffee lost through packaging performance" target="coffee loss attributable to packaging, per pack">
+  <data key="d2">black</data>
+  <data key="d3">Dash</data>
+  <data key="d4">1.0</data>
+  <data key="d5">unit</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="coffee loss attributable to packaging, per pack" target="Activity - coffee pack, use and end-of-life">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">1.0</data>
+  <data key="d5">unit</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="biowaste" target="Activity - coffee lost through packaging performance">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">0.0025</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="coffee, green bean" target="Activity - coffee lost through packaging performance">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">0.003</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="Activity - coffee pack, use and end-of-life" target="ground coffee, 250 g, packed, delivered and pack disposed (functional unit)">
+  <data key="d2">black</data>
+  <data key="d3">Dash</data>
+  <data key="d4">1.0</data>
+  <data key="d5">unit</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="municipal solid waste" target="Activity - coffee pack, use and end-of-life">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">0.011</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+</graph></graphml>

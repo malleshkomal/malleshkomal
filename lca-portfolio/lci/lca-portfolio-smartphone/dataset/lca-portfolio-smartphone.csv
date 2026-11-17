@@ -1,0 +1,109 @@
+Database,lca-portfolio-smartphone
+format,Excel spreadsheet
+
+Activity,smartphone mainboard and integrated circuits production
+code,488163c3253e53fea168a35e4a65f130
+comment,Logic and memory ICs and printed wiring board per phone.
+location,GLO
+production amount,1
+reference product,"smartphone mainboard, populated"
+unit,unit
+worksheet name,lca-portfolio-smartphone
+Exchanges
+name,amount,database,location,unit,categories,type,Comment,reference product
+smartphone mainboard and integrated circuits production,1,lca-portfolio-smartphone,GLO,unit,,production,Portfolio case 8 (illustrative); Clement et al. 2020; manufacturer environmental reports,"smartphone mainboard, populated"
+"market for integrated circuit, logic type",0.003,ecoinvent-3.10-cutoff,GLO,kilogram,,technosphere,Portfolio case 8 (illustrative); Clement et al. 2020; manufacturer environmental reports,"integrated circuit, logic type"
+"market for integrated circuit, memory type",0.002,ecoinvent-3.10-cutoff,GLO,kilogram,,technosphere,Portfolio case 8 (illustrative); Clement et al. 2020; manufacturer environmental reports,"integrated circuit, memory type"
+"market for printed wiring board, surface mounted, unspecified, Pb free",0.012,ecoinvent-3.10-cutoff,GLO,kilogram,,technosphere,Portfolio case 8 (illustrative); Clement et al. 2020; manufacturer environmental reports,"printed wiring board, surface mounted, unspecified, Pb free"
+
+Activity,smartphone display and battery production
+code,5bcaa41ba60c5a85a99faa7ba27f3ca8
+comment,"6.1 inch display and 4,000 mAh cell."
+location,GLO
+production amount,1
+reference product,smartphone display and battery set
+unit,unit
+worksheet name,lca-portfolio-smartphone
+Exchanges
+name,amount,database,location,unit,categories,type,Comment,reference product
+smartphone display and battery production,1,lca-portfolio-smartphone,GLO,unit,,production,Portfolio case 8 (illustrative); Clement et al. 2020; manufacturer environmental reports,smartphone display and battery set
+"market for battery cell, Li-ion, NMC111",0.045,ecoinvent-3.10-cutoff,GLO,kilogram,,technosphere,proxy for phone cell chemistry,"battery cell, Li-ion, NMC111"
+"market for liquid crystal display, unmounted, mobile device",0.03,ecoinvent-3.10-cutoff,GLO,kilogram,,technosphere,proxy for OLED module,"liquid crystal display, unmounted, mobile device"
+
+Activity,smartphone final assembly
+code,d9807ef2c97f5ec8a01b7f855fab69fa
+comment,"Assembly, test and software flashing."
+location,CN
+production amount,1
+reference product,"smartphone, 180 g"
+unit,unit
+worksheet name,lca-portfolio-smartphone
+Exchanges
+name,amount,database,location,unit,categories,type,Comment,reference product
+smartphone final assembly,1,lca-portfolio-smartphone,CN,unit,,production,Portfolio case 8 (illustrative); Clement et al. 2020; manufacturer environmental reports,"smartphone, 180 g"
+"market for aluminium, wrought alloy",0.025,ecoinvent-3.10-cutoff,GLO,kilogram,,technosphere,frame,"aluminium, wrought alloy"
+"market for copper, cathode",0.005,ecoinvent-3.10-cutoff,GLO,kilogram,,technosphere,Portfolio case 8 (illustrative); Clement et al. 2020; manufacturer environmental reports,"copper, cathode"
+"market for electricity, medium voltage",10.0,ecoinvent-3.10-cutoff,CN,kilowatt hour,,technosphere,Portfolio case 8 (illustrative); Clement et al. 2020; manufacturer environmental reports,"electricity, medium voltage"
+"market for flat glass, uncoated",0.04,ecoinvent-3.10-cutoff,RoW,kilogram,,technosphere,cover glass proxy,"flat glass, uncoated"
+market for gold,3.5e-05,ecoinvent-3.10-cutoff,GLO,kilogram,,technosphere,35 mg,gold
+market for polycarbonate,0.025,ecoinvent-3.10-cutoff,GLO,kilogram,,technosphere,Portfolio case 8 (illustrative); Clement et al. 2020; manufacturer environmental reports,polycarbonate
+market for tin,0.0005,ecoinvent-3.10-cutoff,GLO,kilogram,,technosphere,Portfolio case 8 (illustrative); Clement et al. 2020; manufacturer environmental reports,tin
+smartphone display and battery production,1.0,lca-portfolio-smartphone,GLO,unit,,technosphere,Portfolio case 8 (illustrative); Clement et al. 2020; manufacturer environmental reports,smartphone display and battery set
+smartphone mainboard and integrated circuits production,1.0,lca-portfolio-smartphone,GLO,unit,,technosphere,Portfolio case 8 (illustrative); Clement et al. 2020; manufacturer environmental reports,"smartphone mainboard, populated"
+
+Activity,smartphone retail packaging production
+code,3c9782ee60f85bd7bf52dfdb61ebdeeb
+comment,"Fibre-based box, no charger."
+location,CN
+production amount,1
+reference product,smartphone retail box
+unit,unit
+worksheet name,lca-portfolio-smartphone
+Exchanges
+name,amount,database,location,unit,categories,type,Comment,reference product
+smartphone retail packaging production,1,lca-portfolio-smartphone,CN,unit,,production,Portfolio case 8 (illustrative); Clement et al. 2020; manufacturer environmental reports,smartphone retail box
+market for folding boxboard carton,0.12,ecoinvent-3.10-cutoff,RER,kilogram,,technosphere,Portfolio case 8 (illustrative); Clement et al. 2020; manufacturer environmental reports,folding boxboard carton
+
+Activity,air freight and distribution of smartphone
+code,da4bb6ecdf855bf6a22d5dbf1ec9f8a2
+comment,"Air freight 9,000 km; truck 500 km."
+location,DE
+production amount,1
+reference product,"smartphone, packed, at retail, Germany"
+unit,unit
+worksheet name,lca-portfolio-smartphone
+Exchanges
+name,amount,database,location,unit,categories,type,Comment,reference product
+air freight and distribution of smartphone,1,lca-portfolio-smartphone,DE,unit,,production,Portfolio case 8 (illustrative); Clement et al. 2020; manufacturer environmental reports,"smartphone, packed, at retail, Germany"
+"market for transport, freight, aircraft, long haul",3.0,ecoinvent-3.10-cutoff,GLO,ton kilometer,,technosphere,Portfolio case 8 (illustrative); Clement et al. 2020; manufacturer environmental reports,"transport, freight, aircraft, long haul"
+"market for transport, freight, lorry 16-32 metric ton, EURO6",0.165,ecoinvent-3.10-cutoff,RER,ton kilometer,,technosphere,Portfolio case 8 (illustrative); Clement et al. 2020; manufacturer environmental reports,"transport, freight, lorry 16-32 metric ton, EURO6"
+smartphone final assembly,1.0,lca-portfolio-smartphone,CN,unit,,technosphere,Portfolio case 8 (illustrative); Clement et al. 2020; manufacturer environmental reports,"smartphone, 180 g"
+smartphone retail packaging production,1.0,lca-portfolio-smartphone,CN,unit,,technosphere,Portfolio case 8 (illustrative); Clement et al. 2020; manufacturer environmental reports,smartphone retail box
+
+Activity,"smartphone charging, one year"
+code,54ae723f509157cabba2b676fc48f39d
+comment,"Daily charging, 85% charger efficiency; network and data-centre energy excluded."
+location,DE
+production amount,1
+reference product,"smartphone charging, 1 year"
+unit,unit
+worksheet name,lca-portfolio-smartphone
+Exchanges
+name,amount,database,location,unit,categories,type,Comment,reference product
+"smartphone charging, one year",1,lca-portfolio-smartphone,DE,unit,,production,Portfolio case 8 (illustrative); Clement et al. 2020; manufacturer environmental reports,"smartphone charging, 1 year"
+"market for electricity, low voltage",4.0,ecoinvent-3.10-cutoff,DE,kilowatt hour,,technosphere,Portfolio case 8 (illustrative); Clement et al. 2020; manufacturer environmental reports,"electricity, low voltage"
+
+Activity,"smartphone service, one year"
+code,27c5df337f2e5d1c81c784819f4ad7b1
+comment,"Functional unit: one third of a phone used three years, one year of charging, one third of end-of-life."
+location,DE
+production amount,1
+reference product,"smartphone service, one user, one year (functional unit)"
+unit,unit
+worksheet name,lca-portfolio-smartphone
+Exchanges
+name,amount,database,location,unit,categories,type,Comment,reference product
+"smartphone service, one year",1,lca-portfolio-smartphone,DE,unit,,production,Portfolio case 8 (illustrative); Clement et al. 2020; manufacturer environmental reports,"smartphone service, one user, one year (functional unit)"
+air freight and distribution of smartphone,0.333333,lca-portfolio-smartphone,DE,unit,,technosphere,Portfolio case 8 (illustrative); Clement et al. 2020; manufacturer environmental reports,"smartphone, packed, at retail, Germany"
+market for used mobile phone,0.06,ecoinvent-3.10-cutoff,GLO,kilogram,,technosphere,"one third of 180 g | waste-treatment input entered as a positive amount, as in the LCIS2024 PtL example; ecoinvent treats waste as negative - flip the sign when linking",used mobile phone
+"smartphone charging, one year",1.0,lca-portfolio-smartphone,DE,unit,,technosphere,Portfolio case 8 (illustrative); Clement et al. 2020; manufacturer environmental reports,"smartphone charging, 1 year"

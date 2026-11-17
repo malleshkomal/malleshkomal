@@ -1,0 +1,205 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d6" for="edge" attr.name="arrows" attr.type="boolean"/>
+<key id="d5" for="edge" attr.name="unit" attr.type="string"/>
+<key id="d4" for="edge" attr.name="amount" attr.type="double"/>
+<key id="d3" for="edge" attr.name="line_type" attr.type="string"/>
+<key id="d2" for="edge" attr.name="color" attr.type="string"/>
+<key id="d1" for="node" attr.name="width" attr.type="long"/>
+<key id="d0" for="node" attr.name="color" attr.type="string"/>
+<graph edgedefault="directed"><node id="Activity - kerbside collection of plastic packaging waste">
+  <data key="d0">blue</data>
+  <data key="d1">26</data>
+</node>
+<node id="plastic packaging waste, collected"/>
+<node id="transport, municipal waste collection, lorry 21 metric ton"/>
+<node id="Activity - sorting of plastic packaging waste at MRF">
+  <data key="d0">blue</data>
+  <data key="d1">26</data>
+</node>
+<node id="sorted plastic bales"/>
+<node id="electricity, medium voltage"/>
+<node id="steel, low-alloyed"/>
+<node id="waste plastic, mixture"/>
+<node id="Activity - transport of plastic bales to reprocessor">
+  <data key="d0">blue</data>
+  <data key="d1">26</data>
+</node>
+<node id="sorted plastic bales, at reprocessor"/>
+<node id="transport, freight, lorry 16-32 metric ton, EURO6"/>
+<node id="Activity - mechanical recycling of plastic bales">
+  <data key="d0">blue</data>
+  <data key="d1">26</data>
+</node>
+<node id="plastic recyclate, pellets"/>
+<node id="heat, district or industrial, natural gas"/>
+<node id="sodium hydroxide, without water, in 50% solution state"/>
+<node id="tap water"/>
+<node id="wastewater, average"/>
+<node id="Activity - plastic packaging waste management, 1 t">
+  <data key="d0">blue</data>
+  <data key="d1">26</data>
+</node>
+<node id="household plastic packaging waste, 1 t, managed (functional unit)"/>
+<node id="polyethylene, high density, granulate"/>
+<edge source="Activity - kerbside collection of plastic packaging waste" target="plastic packaging waste, collected">
+  <data key="d2">black</data>
+  <data key="d3">Dash</data>
+  <data key="d4">1.0</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="plastic packaging waste, collected" target="Activity - sorting of plastic packaging waste at MRF">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">1.33333</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="transport, municipal waste collection, lorry 21 metric ton" target="Activity - kerbside collection of plastic packaging waste">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">0.03</data>
+  <data key="d5">ton kilometer</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="Activity - sorting of plastic packaging waste at MRF" target="sorted plastic bales">
+  <data key="d2">black</data>
+  <data key="d3">Dash</data>
+  <data key="d4">1.0</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="sorted plastic bales" target="Activity - transport of plastic bales to reprocessor">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">1.0</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="electricity, medium voltage" target="Activity - sorting of plastic packaging waste at MRF">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">0.08</data>
+  <data key="d5">kilowatt hour</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="electricity, medium voltage" target="Activity - mechanical recycling of plastic bales">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">1.07143</data>
+  <data key="d5">kilowatt hour</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="electricity, medium voltage" target="Activity - plastic packaging waste management, 1 t">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">-400.0</data>
+  <data key="d5">kilowatt hour</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="steel, low-alloyed" target="Activity - sorting of plastic packaging waste at MRF">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">0.000666667</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="waste plastic, mixture" target="Activity - sorting of plastic packaging waste at MRF">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">0.333333</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="waste plastic, mixture" target="Activity - mechanical recycling of plastic bales">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">0.339286</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="Activity - transport of plastic bales to reprocessor" target="sorted plastic bales, at reprocessor">
+  <data key="d2">black</data>
+  <data key="d3">Dash</data>
+  <data key="d4">1.0</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="sorted plastic bales, at reprocessor" target="Activity - mechanical recycling of plastic bales">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">1.33929</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="transport, freight, lorry 16-32 metric ton, EURO6" target="Activity - transport of plastic bales to reprocessor">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">0.3</data>
+  <data key="d5">ton kilometer</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="Activity - mechanical recycling of plastic bales" target="plastic recyclate, pellets">
+  <data key="d2">black</data>
+  <data key="d3">Dash</data>
+  <data key="d4">1.0</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="plastic recyclate, pellets" target="Activity - plastic packaging waste management, 1 t">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">560.0</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="heat, district or industrial, natural gas" target="Activity - mechanical recycling of plastic bales">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">4.17857</data>
+  <data key="d5">megajoule</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="heat, district or industrial, natural gas" target="Activity - plastic packaging waste management, 1 t">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">-2700.0</data>
+  <data key="d5">megajoule</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="sodium hydroxide, without water, in 50% solution state" target="Activity - mechanical recycling of plastic bales">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">0.00892857</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="tap water" target="Activity - mechanical recycling of plastic bales">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">6.25</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="wastewater, average" target="Activity - mechanical recycling of plastic bales">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">0.00625</data>
+  <data key="d5">cubic meter</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="Activity - plastic packaging waste management, 1 t" target="household plastic packaging waste, 1 t, managed (functional unit)">
+  <data key="d2">black</data>
+  <data key="d3">Dash</data>
+  <data key="d4">1.0</data>
+  <data key="d5">unit</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="polyethylene, high density, granulate" target="Activity - plastic packaging waste management, 1 t">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">-448.0</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+</graph></graphml>

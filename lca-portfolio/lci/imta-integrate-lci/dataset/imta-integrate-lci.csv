@@ -1,0 +1,57 @@
+Database,imta-integrate-lci
+format,Excel spreadsheet
+
+Activity,"SI-POLY, 1 t aquatic product at farm gate"
+code,ab2d87d9ff0652ecb7839154617c505b
+comment,"Semi-intensive fishpond polyculture (meagre + gilthead seabream), IPMA Olhao, May 2017-Jul 2019. Reference flow 6,137 kg fish per pond; scaling 0.163. Fish only, no co-products."
+location,PT
+production amount,1
+reference product,"SI-POLY, 1 t aquatic product at farm gate (functional unit)"
+unit,metric ton
+worksheet name,imta-integrate-lci
+Exchanges
+name,amount,database,location,unit,categories,type,Comment,reference product
+Nitrogen,95.9263,biosphere3,,kilogram,water::ocean,biosphere,net N to water from nutrient balance (Cho & Kaushik 1990); negative = net uptake,
+"Occupation, water bodies, artificial",2288.84,biosphere3,,square meter-year,natural resource::land,biosphere,farm area x pond share x cycle length (report allocation rule),
+Phosphorus,20.9712,biosphere3,,kilogram,water::ocean,biosphere,net P to water from nutrient balance; negative = net uptake,
+"Water, salt, ocean",195823.0,biosphere3,,cubic meter,natural resource::in water,biosphere,seawater pumped or tidal; matches Water consumption in Annex 1,
+"SI-POLY, 1 t aquatic product at farm gate",1,imta-integrate-lci,PT,metric ton,,production,INTEGRATE deliverable PI05#3 (IPMA & CTAQUA 2020); repository malleshkomal/Life-cycle-assessment-of-Integrated-Multi-Trophical-Aquaculture-,"SI-POLY, 1 t aquatic product at farm gate (functional unit)"
+compound fish feed,1788.33,piscentool-simapro-background,PT,kilogram,,technosphere,"42% protein, 1.4% P; INTEGRATE deliverable PI05#3 (IPMA & CTAQUA 2020), Table 4 and Table 5, scaled to 1 t",compound fish feed
+fish fry / fingerlings,14.8281,piscentool-simapro-background,PT,kilogram,,technosphere,"Piscentool used a carp-fry proxy; INTEGRATE deliverable PI05#3 (IPMA & CTAQUA 2020), Table 4 and Table 5, scaled to 1 t",fish fry / fingerlings
+
+Activity,"SI-IMTA, 1 t aquatic product at farm gate"
+code,0c8c70c0db8258339a6a566684230b33
+comment,"Semi-intensive pond IMTA (meagre, white seabream, mullet + oysters + Ulva), IPMA Olhao, May-Oct 2017. Output 894.2 kg fish + 105.8 kg oyster flesh per t; 995.9 kg macroalgae is a co-product outside the functional unit (no allocation, no credit)."
+location,PT
+production amount,1
+reference product,"SI-IMTA, 1 t aquatic product at farm gate (functional unit)"
+unit,metric ton
+worksheet name,imta-integrate-lci
+Exchanges
+name,amount,database,location,unit,categories,type,Comment,reference product
+Nitrogen,54.6786,biosphere3,,kilogram,water::ocean,biosphere,net N to water from nutrient balance (Cho & Kaushik 1990); negative = net uptake,
+"Occupation, water bodies, artificial",959.337,biosphere3,,square meter-year,natural resource::land,biosphere,farm area x pond share x cycle length (report allocation rule),
+Phosphorus,14.6461,biosphere3,,kilogram,water::ocean,biosphere,net P to water from nutrient balance; negative = net uptake,
+"Water, salt, ocean",82270.1,biosphere3,,cubic meter,natural resource::in water,biosphere,seawater pumped or tidal; matches Water consumption in Annex 1,
+"SI-IMTA, 1 t aquatic product at farm gate",1,imta-integrate-lci,PT,metric ton,,production,INTEGRATE deliverable PI05#3 (IPMA & CTAQUA 2020); repository malleshkomal/Life-cycle-assessment-of-Integrated-Multi-Trophical-Aquaculture-,"SI-IMTA, 1 t aquatic product at farm gate (functional unit)"
+compound fish feed,1536.21,piscentool-simapro-background,PT,kilogram,,technosphere,"42% protein, 1.4% P; INTEGRATE deliverable PI05#3 (IPMA & CTAQUA 2020), Table 4 and Table 5, scaled to 1 t",compound fish feed
+fish fry / fingerlings,550.854,piscentool-simapro-background,PT,kilogram,,technosphere,"Piscentool used a carp-fry proxy; INTEGRATE deliverable PI05#3 (IPMA & CTAQUA 2020), Table 4 and Table 5, scaled to 1 t",fish fry / fingerlings
+oyster spat (flesh),4.4752,piscentool-simapro-background,PT,kilogram,,technosphere,"INTEGRATE deliverable PI05#3 (IPMA & CTAQUA 2020), Table 4 and Table 5, scaled to 1 t",oyster spat
+
+Activity,"SE-IMTA, 1 t aquatic product at farm gate"
+code,22916c1f346354dfa6b4d3ae9424a000
+comment,"Semi-extensive pond IMTA (gilthead seabream + oysters, macroalgae pond), Estero Natural, Cadiz, Jan-Nov 2019, tidal exchange. Output 408.8 kg fish + 591.2 kg oyster flesh per t; 222,642 kg macroalgae co-product outside the functional unit. Net P to water is 0 and is omitted."
+location,ES
+production amount,1
+reference product,"SE-IMTA, 1 t aquatic product at farm gate (functional unit)"
+unit,metric ton
+worksheet name,imta-integrate-lci
+Exchanges
+name,amount,database,location,unit,categories,type,Comment,reference product
+Nitrogen,-3.1447,biosphere3,,kilogram,water::ocean,biosphere,net N to water from nutrient balance (Cho & Kaushik 1990); negative = net uptake,
+"Occupation, water bodies, artificial",4221.6,biosphere3,,square meter-year,natural resource::land,biosphere,farm area x pond share x cycle length (report allocation rule),
+"Water, salt, ocean",45188.7,biosphere3,,cubic meter,natural resource::in water,biosphere,seawater pumped or tidal; matches Water consumption in Annex 1,
+"SE-IMTA, 1 t aquatic product at farm gate",1,imta-integrate-lci,ES,metric ton,,production,INTEGRATE deliverable PI05#3 (IPMA & CTAQUA 2020); repository malleshkomal/Life-cycle-assessment-of-Integrated-Multi-Trophical-Aquaculture-,"SE-IMTA, 1 t aquatic product at farm gate (functional unit)"
+compound fish feed,559.748,piscentool-simapro-background,ES,kilogram,,technosphere,"40% protein, 1.3% P; INTEGRATE deliverable PI05#3 (IPMA & CTAQUA 2020), Table 4 and Table 5, scaled to 1 t",compound fish feed
+fish fry / fingerlings,283.019,piscentool-simapro-background,ES,kilogram,,technosphere,"Piscentool used a carp-fry proxy; INTEGRATE deliverable PI05#3 (IPMA & CTAQUA 2020), Table 4 and Table 5, scaled to 1 t",fish fry / fingerlings
+oyster spat (flesh),90.566,piscentool-simapro-background,ES,kilogram,,technosphere,"INTEGRATE deliverable PI05#3 (IPMA & CTAQUA 2020), Table 4 and Table 5, scaled to 1 t",oyster spat

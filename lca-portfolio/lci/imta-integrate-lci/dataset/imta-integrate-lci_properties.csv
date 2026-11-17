@@ -1,0 +1,16 @@
+Property,Value
+Dataset Name,imta-integrate-lci
+Schema Version,LCIS2024
+Dataset Version,1.0.0
+Software,Python 3.11 export script (Brightway2 CSV/Excel layout); not exported from Brightway
+Export Time,20261115-193000
+Unique Dataset Identifier,ab59a9776231560e8fce4e4acb8906b1
+Total Project Parameters,0
+Total Database Parameters,0
+Total Activity Parameters,0
+Total Activities,3
+Total Exchanges,22
+Total Biosphere flows,11
+Total Technosphere flows,8
+Total Reference products,3
+Dataset dependencies,"imta-integrate-lci, biosphere3, piscentool-simapro-background"

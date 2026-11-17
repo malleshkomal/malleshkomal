@@ -1,0 +1,234 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d6" for="edge" attr.name="arrows" attr.type="boolean"/>
+<key id="d5" for="edge" attr.name="unit" attr.type="string"/>
+<key id="d4" for="edge" attr.name="amount" attr.type="double"/>
+<key id="d3" for="edge" attr.name="line_type" attr.type="string"/>
+<key id="d2" for="edge" attr.name="color" attr.type="string"/>
+<key id="d1" for="node" attr.name="width" attr.type="long"/>
+<key id="d0" for="node" attr.name="color" attr.type="string"/>
+<graph edgedefault="directed"><node id="Activity - containerboard production, 50% recycled fibre">
+  <data key="d0">blue</data>
+  <data key="d1">26</data>
+</node>
+<node id="Occupation, forest, intensive"/>
+<node id="Water, river"/>
+<node id="containerboard, mixed furnish"/>
+<node id="electricity, medium voltage"/>
+<node id="heat, district or industrial, natural gas"/>
+<node id="heat, district or industrial, other than natural gas"/>
+<node id="waste paper, sorted"/>
+<node id="wood chips, wet, measured as dry mass"/>
+<node id="Activity - corrugated box production, single wall, printed">
+  <data key="d0">blue</data>
+  <data key="d1">26</data>
+</node>
+<node id="corrugated board box, single wall"/>
+<node id="maize starch"/>
+<node id="Activity - air-pillow void fill production">
+  <data key="d0">blue</data>
+  <data key="d1">26</data>
+</node>
+<node id="LDPE air-pillow void fill"/>
+<node id="packaging film, low density polyethylene"/>
+<node id="Activity - transport of boxes to fulfilment centre">
+  <data key="d0">blue</data>
+  <data key="d1">26</data>
+</node>
+<node id="corrugated board box, at fulfilment centre"/>
+<node id="transport, freight, lorry 16-32 metric ton, EURO6"/>
+<node id="Activity - parcel packing and delivery to household">
+  <data key="d0">blue</data>
+  <data key="d1">26</data>
+</node>
+<node id="parcel with 1 kg order, delivered"/>
+<node id="transport, freight, light commercial vehicle"/>
+<node id="Activity - e-commerce packaging, end-of-life">
+  <data key="d0">blue</data>
+  <data key="d1">26</data>
+</node>
+<node id="e-commerce order packaging, delivered and disposed (functional unit)"/>
+<node id="municipal solid waste"/>
+<node id="waste paperboard"/>
+<edge source="Activity - containerboard production, 50% recycled fibre" target="Occupation, forest, intensive">
+  <data key="d2">green</data>
+  <data key="d3">Dots</data>
+  <data key="d4">2.34043</data>
+  <data key="d5">square meter-year</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="Activity - containerboard production, 50% recycled fibre" target="Water, river">
+  <data key="d2">green</data>
+  <data key="d3">Dots</data>
+  <data key="d4">0.0191489</data>
+  <data key="d5">cubic meter</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="Activity - containerboard production, 50% recycled fibre" target="containerboard, mixed furnish">
+  <data key="d2">black</data>
+  <data key="d3">Dash</data>
+  <data key="d4">1.0</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="containerboard, mixed furnish" target="Activity - corrugated box production, single wall, printed">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">1.04444</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="electricity, medium voltage" target="Activity - containerboard production, 50% recycled fibre">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">0.382979</data>
+  <data key="d5">kilowatt hour</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="electricity, medium voltage" target="Activity - corrugated box production, single wall, printed">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">0.177778</data>
+  <data key="d5">kilowatt hour</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="heat, district or industrial, natural gas" target="Activity - containerboard production, 50% recycled fibre">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">5.53191</data>
+  <data key="d5">megajoule</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="heat, district or industrial, natural gas" target="Activity - corrugated box production, single wall, printed">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">1.33333</data>
+  <data key="d5">megajoule</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="heat, district or industrial, other than natural gas" target="Activity - containerboard production, 50% recycled fibre">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">5.53191</data>
+  <data key="d5">megajoule</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="waste paper, sorted" target="Activity - containerboard production, 50% recycled fibre">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">0.553191</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="wood chips, wet, measured as dry mass" target="Activity - containerboard production, 50% recycled fibre">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">0.510638</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="Activity - corrugated box production, single wall, printed" target="corrugated board box, single wall">
+  <data key="d2">black</data>
+  <data key="d3">Dash</data>
+  <data key="d4">1.0</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="corrugated board box, single wall" target="Activity - transport of boxes to fulfilment centre">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">1.0</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="maize starch" target="Activity - corrugated box production, single wall, printed">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">0.02</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="Activity - air-pillow void fill production" target="LDPE air-pillow void fill">
+  <data key="d2">black</data>
+  <data key="d3">Dash</data>
+  <data key="d4">1.0</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="LDPE air-pillow void fill" target="Activity - parcel packing and delivery to household">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">0.012</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="packaging film, low density polyethylene" target="Activity - air-pillow void fill production">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">1.0</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="Activity - transport of boxes to fulfilment centre" target="corrugated board box, at fulfilment centre">
+  <data key="d2">black</data>
+  <data key="d3">Dash</data>
+  <data key="d4">1.0</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="corrugated board box, at fulfilment centre" target="Activity - parcel packing and delivery to household">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">0.45</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="transport, freight, lorry 16-32 metric ton, EURO6" target="Activity - transport of boxes to fulfilment centre">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">0.25</data>
+  <data key="d5">ton kilometer</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="Activity - parcel packing and delivery to household" target="parcel with 1 kg order, delivered">
+  <data key="d2">black</data>
+  <data key="d3">Dash</data>
+  <data key="d4">1.0</data>
+  <data key="d5">unit</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="parcel with 1 kg order, delivered" target="Activity - e-commerce packaging, end-of-life">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">1.0</data>
+  <data key="d5">unit</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="transport, freight, light commercial vehicle" target="Activity - parcel packing and delivery to household">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">0.2</data>
+  <data key="d5">ton kilometer</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="Activity - e-commerce packaging, end-of-life" target="e-commerce order packaging, delivered and disposed (functional unit)">
+  <data key="d2">black</data>
+  <data key="d3">Dash</data>
+  <data key="d4">1.0</data>
+  <data key="d5">unit</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="municipal solid waste" target="Activity - e-commerce packaging, end-of-life">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">0.079</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="waste paperboard" target="Activity - e-commerce packaging, end-of-life">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">0.383</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+</graph></graphml>

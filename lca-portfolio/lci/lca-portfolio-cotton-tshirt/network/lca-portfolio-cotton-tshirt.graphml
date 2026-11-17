@@ -1,0 +1,371 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d6" for="edge" attr.name="arrows" attr.type="boolean"/>
+<key id="d5" for="edge" attr.name="unit" attr.type="string"/>
+<key id="d4" for="edge" attr.name="amount" attr.type="double"/>
+<key id="d3" for="edge" attr.name="line_type" attr.type="string"/>
+<key id="d2" for="edge" attr.name="color" attr.type="string"/>
+<key id="d1" for="node" attr.name="width" attr.type="long"/>
+<key id="d0" for="node" attr.name="color" attr.type="string"/>
+<graph edgedefault="directed"><node id="Activity - seed cotton production, conventional, irrigated, India">
+  <data key="d0">blue</data>
+  <data key="d1">26</data>
+</node>
+<node id="Dinitrogen monoxide"/>
+<node id="Occupation, annual crop, irrigated"/>
+<node id="seed cotton"/>
+<node id="diesel, burned in agricultural machinery"/>
+<node id="irrigation"/>
+<node id="nitrogen fertiliser, as N"/>
+<node id="pesticide, unspecified"/>
+<node id="Activity - cotton ginning and ring spinning">
+  <data key="d0">blue</data>
+  <data key="d1">26</data>
+</node>
+<node id="cotton yarn, ring-spun, Ne 30"/>
+<node id="electricity, medium voltage"/>
+<node id="transport, freight, lorry 16-32 metric ton, EURO4"/>
+<node id="Activity - knitting of cotton single jersey">
+  <data key="d0">blue</data>
+  <data key="d1">26</data>
+</node>
+<node id="cotton single jersey, greige"/>
+<node id="transport, freight, sea, container ship"/>
+<node id="Activity - dyeing and finishing of cotton jersey">
+  <data key="d0">blue</data>
+  <data key="d1">26</data>
+</node>
+<node id="cotton single jersey, dyed and finished"/>
+<node id="chemical, organic"/>
+<node id="heat, district or industrial, natural gas"/>
+<node id="heat, district or industrial, other than natural gas"/>
+<node id="sodium chloride, powder"/>
+<node id="tap water"/>
+<node id="wastewater, average"/>
+<node id="Activity - cut-make-trim of cotton T-shirt">
+  <data key="d0">blue</data>
+  <data key="d1">26</data>
+</node>
+<node id="cotton T-shirt, 180 g"/>
+<node id="packaging film, low density polyethylene"/>
+<node id="waste textile, soiled"/>
+<node id="Activity - distribution and retail of T-shirt">
+  <data key="d0">blue</data>
+  <data key="d1">26</data>
+</node>
+<node id="cotton T-shirt, at retail"/>
+<node id="electricity, low voltage"/>
+<node id="transport, freight, lorry 16-32 metric ton, EURO6"/>
+<node id="Activity - T-shirt laundry, 25 washes and 10 tumble-dry cycles">
+  <data key="d0">blue</data>
+  <data key="d1">26</data>
+</node>
+<node id="T-shirt laundry service, 50 wears"/>
+<node id="soap"/>
+<node id="Activity - cotton T-shirt, use and end-of-life">
+  <data key="d0">blue</data>
+  <data key="d1">26</data>
+</node>
+<node id="cotton T-shirt, worn 50 times (functional unit)"/>
+<node id="municipal solid waste"/>
+<edge source="Activity - seed cotton production, conventional, irrigated, India" target="Dinitrogen monoxide">
+  <data key="d2">green</data>
+  <data key="d3">Dots</data>
+  <data key="d4">0.000967742</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="Activity - seed cotton production, conventional, irrigated, India" target="Occupation, annual crop, irrigated">
+  <data key="d2">green</data>
+  <data key="d3">Dots</data>
+  <data key="d4">2.90323</data>
+  <data key="d5">square meter-year</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="Activity - seed cotton production, conventional, irrigated, India" target="seed cotton">
+  <data key="d2">black</data>
+  <data key="d3">Dash</data>
+  <data key="d4">1.0</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="seed cotton" target="Activity - cotton ginning and ring spinning">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">3.02439</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="diesel, burned in agricultural machinery" target="Activity - seed cotton production, conventional, irrigated, India">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">2.41935</data>
+  <data key="d5">megajoule</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="irrigation" target="Activity - seed cotton production, conventional, irrigated, India">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">1.90323</data>
+  <data key="d5">cubic meter</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="nitrogen fertiliser, as N" target="Activity - seed cotton production, conventional, irrigated, India">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">0.0451613</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="pesticide, unspecified" target="Activity - seed cotton production, conventional, irrigated, India">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">0.00241935</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="Activity - cotton ginning and ring spinning" target="cotton yarn, ring-spun, Ne 30">
+  <data key="d2">black</data>
+  <data key="d3">Dash</data>
+  <data key="d4">1.0</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="cotton yarn, ring-spun, Ne 30" target="Activity - knitting of cotton single jersey">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">1.025</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="electricity, medium voltage" target="Activity - cotton ginning and ring spinning">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">11.2195</data>
+  <data key="d5">kilowatt hour</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="electricity, medium voltage" target="Activity - knitting of cotton single jersey">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">4.5</data>
+  <data key="d5">kilowatt hour</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="electricity, medium voltage" target="Activity - dyeing and finishing of cotton jersey">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">4.0</data>
+  <data key="d5">kilowatt hour</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="electricity, medium voltage" target="Activity - cut-make-trim of cotton T-shirt">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">0.6</data>
+  <data key="d5">kilowatt hour</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="transport, freight, lorry 16-32 metric ton, EURO4" target="Activity - cotton ginning and ring spinning">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">0.897561</data>
+  <data key="d5">ton kilometer</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="Activity - knitting of cotton single jersey" target="cotton single jersey, greige">
+  <data key="d2">black</data>
+  <data key="d3">Dash</data>
+  <data key="d4">1.0</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="cotton single jersey, greige" target="Activity - dyeing and finishing of cotton jersey">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">1.0</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="transport, freight, sea, container ship" target="Activity - knitting of cotton single jersey">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">1.55</data>
+  <data key="d5">ton kilometer</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="transport, freight, sea, container ship" target="Activity - distribution and retail of T-shirt">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">3.2</data>
+  <data key="d5">ton kilometer</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="Activity - dyeing and finishing of cotton jersey" target="cotton single jersey, dyed and finished">
+  <data key="d2">black</data>
+  <data key="d3">Dash</data>
+  <data key="d4">1.0</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="cotton single jersey, dyed and finished" target="Activity - cut-make-trim of cotton T-shirt">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">0.2</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="chemical, organic" target="Activity - dyeing and finishing of cotton jersey">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">0.075</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="heat, district or industrial, natural gas" target="Activity - dyeing and finishing of cotton jersey">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">45.0</data>
+  <data key="d5">megajoule</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="heat, district or industrial, other than natural gas" target="Activity - dyeing and finishing of cotton jersey">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">45.0</data>
+  <data key="d5">megajoule</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="sodium chloride, powder" target="Activity - dyeing and finishing of cotton jersey">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">0.15</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="tap water" target="Activity - dyeing and finishing of cotton jersey">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">475.0</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="tap water" target="Activity - T-shirt laundry, 25 washes and 10 tumble-dry cycles">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">52.0</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="wastewater, average" target="Activity - dyeing and finishing of cotton jersey">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">0.475</data>
+  <data key="d5">cubic meter</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="wastewater, average" target="Activity - T-shirt laundry, 25 washes and 10 tumble-dry cycles">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">0.052</data>
+  <data key="d5">cubic meter</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="Activity - cut-make-trim of cotton T-shirt" target="cotton T-shirt, 180 g">
+  <data key="d2">black</data>
+  <data key="d3">Dash</data>
+  <data key="d4">1.0</data>
+  <data key="d5">unit</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="cotton T-shirt, 180 g" target="Activity - distribution and retail of T-shirt">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">1.0</data>
+  <data key="d5">unit</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="packaging film, low density polyethylene" target="Activity - cut-make-trim of cotton T-shirt">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">0.005</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="waste textile, soiled" target="Activity - cut-make-trim of cotton T-shirt">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">0.02</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="Activity - distribution and retail of T-shirt" target="cotton T-shirt, at retail">
+  <data key="d2">black</data>
+  <data key="d3">Dash</data>
+  <data key="d4">1.0</data>
+  <data key="d5">unit</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="cotton T-shirt, at retail" target="Activity - cotton T-shirt, use and end-of-life">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">1.0</data>
+  <data key="d5">unit</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="electricity, low voltage" target="Activity - distribution and retail of T-shirt">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">0.15</data>
+  <data key="d5">kilowatt hour</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="electricity, low voltage" target="Activity - T-shirt laundry, 25 washes and 10 tumble-dry cycles">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">2.8</data>
+  <data key="d5">kilowatt hour</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="transport, freight, lorry 16-32 metric ton, EURO6" target="Activity - distribution and retail of T-shirt">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">0.1</data>
+  <data key="d5">ton kilometer</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="Activity - T-shirt laundry, 25 washes and 10 tumble-dry cycles" target="T-shirt laundry service, 50 wears">
+  <data key="d2">black</data>
+  <data key="d3">Dash</data>
+  <data key="d4">1.0</data>
+  <data key="d5">unit</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="T-shirt laundry service, 50 wears" target="Activity - cotton T-shirt, use and end-of-life">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">1.0</data>
+  <data key="d5">unit</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="soap" target="Activity - T-shirt laundry, 25 washes and 10 tumble-dry cycles">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">0.1</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="Activity - cotton T-shirt, use and end-of-life" target="cotton T-shirt, worn 50 times (functional unit)">
+  <data key="d2">black</data>
+  <data key="d3">Dash</data>
+  <data key="d4">1.0</data>
+  <data key="d5">unit</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="municipal solid waste" target="Activity - cotton T-shirt, use and end-of-life">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">0.12</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+</graph></graphml>

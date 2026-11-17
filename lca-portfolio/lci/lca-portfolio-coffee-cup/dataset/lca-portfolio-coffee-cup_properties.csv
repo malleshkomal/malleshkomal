@@ -1,0 +1,16 @@
+Property,Value
+Dataset Name,lca-portfolio-coffee-cup
+Schema Version,LCIS2024
+Dataset Version,1.0.0
+Software,Python 3.11 export script (Brightway2 CSV/Excel layout); not exported from Brightway
+Export Time,20261115-193000
+Unique Dataset Identifier,87cff59db996509f918c96463e2bc770
+Total Project Parameters,0
+Total Database Parameters,0
+Total Activity Parameters,0
+Total Activities,7
+Total Exchanges,29
+Total Biosphere flows,0
+Total Technosphere flows,22
+Total Reference products,7
+Dataset dependencies,"lca-portfolio-coffee-cup, biosphere3, ecoinvent-3.10-cutoff"

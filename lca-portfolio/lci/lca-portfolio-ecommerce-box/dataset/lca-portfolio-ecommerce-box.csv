@@ -1,0 +1,94 @@
+Database,lca-portfolio-ecommerce-box
+format,Excel spreadsheet
+
+Activity,"containerboard production, 50% recycled fibre"
+code,d86abf776cdd5e37a5b906c18e977ca6
+comment,Kraftliner and recycled fluting; mill rejects about 6% of furnish.
+location,DE
+production amount,1
+reference product,"containerboard, mixed furnish"
+unit,kilogram
+worksheet name,lca-portfolio-ecommerce-box
+Exchanges
+name,amount,database,location,unit,categories,type,Comment,reference product
+"Occupation, forest, intensive",2.34043,biosphere3,,square meter-year,natural resource::land,biosphere,managed forest for virgin fibre (note per functional unit; exchange normalised to 1 kilogram of product),
+"Water, river",0.0191489,biosphere3,,cubic meter,natural resource::in water,biosphere,evaporation losses (note per functional unit; exchange normalised to 1 kilogram of product),
+"containerboard production, 50% recycled fibre",1,lca-portfolio-ecommerce-box,DE,kilogram,,production,Portfolio case 5 (illustrative); FEFCO/Cepi European database for corrugated board,"containerboard, mixed furnish"
+"market for electricity, medium voltage",0.382979,ecoinvent-3.10-cutoff,DE,kilowatt hour,,technosphere,Portfolio case 5 (illustrative); FEFCO/Cepi European database for corrugated board,"electricity, medium voltage"
+"market for heat, district or industrial, natural gas",5.53191,ecoinvent-3.10-cutoff,Europe without Switzerland,megajoule,,technosphere,Portfolio case 5 (illustrative); FEFCO/Cepi European database for corrugated board,"heat, district or industrial, natural gas"
+"market for heat, district or industrial, other than natural gas",5.53191,ecoinvent-3.10-cutoff,Europe without Switzerland,megajoule,,technosphere,biomass boiler share (note per functional unit; exchange normalised to 1 kilogram of product),"heat, district or industrial, other than natural gas"
+"market for waste paper, sorted",0.553191,ecoinvent-3.10-cutoff,GLO,kilogram,,technosphere,recovered paper (note per functional unit; exchange normalised to 1 kilogram of product),"waste paper, sorted"
+"market for wood chips, wet, measured as dry mass",0.510638,ecoinvent-3.10-cutoff,RER,kilogram,,technosphere,virgin fibre (note per functional unit; exchange normalised to 1 kilogram of product),"wood chips, wet, measured as dry mass"
+
+Activity,"corrugated box production, single wall, printed"
+code,e36453b0bf2d560c98b6674bb2d3dfe7
+comment,"Corrugating, die-cutting, flexo printing; trim scrap (20 g) returned to recycling."
+location,DE
+production amount,1
+reference product,"corrugated board box, single wall"
+unit,kilogram
+worksheet name,lca-portfolio-ecommerce-box
+Exchanges
+name,amount,database,location,unit,categories,type,Comment,reference product
+"corrugated box production, single wall, printed",1,lca-portfolio-ecommerce-box,DE,kilogram,,production,Portfolio case 5 (illustrative); FEFCO/Cepi European database for corrugated board,"corrugated board box, single wall"
+"containerboard production, 50% recycled fibre",1.04444,lca-portfolio-ecommerce-box,DE,kilogram,,technosphere,Portfolio case 5 (illustrative); FEFCO/Cepi European database for corrugated board,"containerboard, mixed furnish"
+"market for electricity, medium voltage",0.177778,ecoinvent-3.10-cutoff,DE,kilowatt hour,,technosphere,Portfolio case 5 (illustrative); FEFCO/Cepi European database for corrugated board,"electricity, medium voltage"
+"market for heat, district or industrial, natural gas",1.33333,ecoinvent-3.10-cutoff,Europe without Switzerland,megajoule,,technosphere,Portfolio case 5 (illustrative); FEFCO/Cepi European database for corrugated board,"heat, district or industrial, natural gas"
+market for maize starch,0.02,ecoinvent-3.10-cutoff,GLO,kilogram,,technosphere,corrugating adhesive (note per functional unit; exchange normalised to 1 kilogram of product),maize starch
+
+Activity,air-pillow void fill production
+code,29823c2101db5838991a1cd7df6c4978
+comment,Film inflated at the fulfilment centre.
+location,RER
+production amount,1
+reference product,LDPE air-pillow void fill
+unit,kilogram
+worksheet name,lca-portfolio-ecommerce-box
+Exchanges
+name,amount,database,location,unit,categories,type,Comment,reference product
+air-pillow void fill production,1,lca-portfolio-ecommerce-box,RER,kilogram,,production,Portfolio case 5 (illustrative); FEFCO/Cepi European database for corrugated board,LDPE air-pillow void fill
+"market for packaging film, low density polyethylene",1.0,ecoinvent-3.10-cutoff,GLO,kilogram,,technosphere,Portfolio case 5 (illustrative); FEFCO/Cepi European database for corrugated board,"packaging film, low density polyethylene"
+
+Activity,transport of boxes to fulfilment centre
+code,4f80d6ca9fb05ed6b1d64e4cb37edfd1
+comment,"Flat-packed boxes, 250 km."
+location,DE
+production amount,1
+reference product,"corrugated board box, at fulfilment centre"
+unit,kilogram
+worksheet name,lca-portfolio-ecommerce-box
+Exchanges
+name,amount,database,location,unit,categories,type,Comment,reference product
+transport of boxes to fulfilment centre,1,lca-portfolio-ecommerce-box,DE,kilogram,,production,Portfolio case 5 (illustrative); FEFCO/Cepi European database for corrugated board,"corrugated board box, at fulfilment centre"
+"corrugated box production, single wall, printed",1.0,lca-portfolio-ecommerce-box,DE,kilogram,,technosphere,Portfolio case 5 (illustrative); FEFCO/Cepi European database for corrugated board,"corrugated board box, single wall"
+"market for transport, freight, lorry 16-32 metric ton, EURO6",0.25,ecoinvent-3.10-cutoff,RER,ton kilometer,,technosphere,250 km per kg box,"transport, freight, lorry 16-32 metric ton, EURO6"
+
+Activity,parcel packing and delivery to household
+code,294ae2e988435c6fb5b1c073fb0c53b7
+comment,Delivery by van allocated by parcel volume: an oversized parcel occupies 50% more van space. 0.2 tkm is the volume-allocated equivalent.
+location,DE
+production amount,1
+reference product,"parcel with 1 kg order, delivered"
+unit,unit
+worksheet name,lca-portfolio-ecommerce-box
+Exchanges
+name,amount,database,location,unit,categories,type,Comment,reference product
+parcel packing and delivery to household,1,lca-portfolio-ecommerce-box,DE,unit,,production,Portfolio case 5 (illustrative); FEFCO/Cepi European database for corrugated board,"parcel with 1 kg order, delivered"
+air-pillow void fill production,0.012,lca-portfolio-ecommerce-box,RER,kilogram,,technosphere,Portfolio case 5 (illustrative); FEFCO/Cepi European database for corrugated board,LDPE air-pillow void fill
+"market for transport, freight, light commercial vehicle",0.2,ecoinvent-3.10-cutoff,Europe without Switzerland,ton kilometer,,technosphere,volume-allocated last mile and line haul (illustrative),"transport, freight, light commercial vehicle"
+transport of boxes to fulfilment centre,0.45,lca-portfolio-ecommerce-box,DE,kilogram,,technosphere,Portfolio case 5 (illustrative); FEFCO/Cepi European database for corrugated board,"corrugated board box, at fulfilment centre"
+
+Activity,"e-commerce packaging, end-of-life"
+code,8b863b5a13025f36a793f17ce8337104
+comment,Functional unit. 85% of the box recycled (cut-off); rest of box and all void fill incinerated with residual waste.
+location,DE
+production amount,1
+reference product,"e-commerce order packaging, delivered and disposed (functional unit)"
+unit,unit
+worksheet name,lca-portfolio-ecommerce-box
+Exchanges
+name,amount,database,location,unit,categories,type,Comment,reference product
+"e-commerce packaging, end-of-life",1,lca-portfolio-ecommerce-box,DE,unit,,production,Portfolio case 5 (illustrative); FEFCO/Cepi European database for corrugated board,"e-commerce order packaging, delivered and disposed (functional unit)"
+market for municipal solid waste,0.079,ecoinvent-3.10-cutoff,DE,kilogram,,technosphere,"67 g box + 12 g void fill | waste-treatment input entered as a positive amount, as in the LCIS2024 PtL example; ecoinvent treats waste as negative - flip the sign when linking",municipal solid waste
+market for waste paperboard,0.383,ecoinvent-3.10-cutoff,DE,kilogram,,technosphere,"to recycling | waste-treatment input entered as a positive amount, as in the LCIS2024 PtL example; ecoinvent treats waste as negative - flip the sign when linking",waste paperboard
+parcel packing and delivery to household,1.0,lca-portfolio-ecommerce-box,DE,unit,,technosphere,Portfolio case 5 (illustrative); FEFCO/Cepi European database for corrugated board,"parcel with 1 kg order, delivered"

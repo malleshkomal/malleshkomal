@@ -1,0 +1,97 @@
+Database,lca-portfolio-aluminium-can
+format,Excel spreadsheet
+
+Activity,"aluminium production, primary, ingot, global average"
+code,9b46d830989a535e99451ae4da3e5b8d
+comment,"Hall-Heroult smelting, about 14 kWh/kg on a global-average grid (about 0.8 kg CO2e/kWh). Bauxite residue is inside the alumina background dataset."
+location,GLO
+production amount,1
+reference product,"aluminium, primary, ingot"
+unit,kilogram
+worksheet name,lca-portfolio-aluminium-can
+Exchanges
+name,amount,database,location,unit,categories,type,Comment,reference product
+"Carbon dioxide, fossil",1.55,biosphere3,,kilogram,air,biosphere,anode oxidation,
+"Methane, tetrafluoro-, R-14",3e-05,biosphere3,,kilogram,air,biosphere,"anode effects, IAI averages (order of magnitude)",
+"aluminium production, primary, ingot, global average",1,lca-portfolio-aluminium-can,GLO,kilogram,,production,Portfolio case 4 (illustrative); International Aluminium Institute; European Aluminium,"aluminium, primary, ingot"
+"market for aluminium oxide, metallurgical",1.93,ecoinvent-3.10-cutoff,GLO,kilogram,,technosphere,Portfolio case 4 (illustrative); International Aluminium Institute; European Aluminium,"aluminium oxide, metallurgical"
+"market for anode, prebake, for aluminium electrolysis",0.42,ecoinvent-3.10-cutoff,GLO,kilogram,,technosphere,Portfolio case 4 (illustrative); International Aluminium Institute; European Aluminium,"anode, prebake, for aluminium electrolysis"
+"market group for electricity, high voltage",14.0,ecoinvent-3.10-cutoff,GLO,kilowatt hour,,technosphere,Portfolio case 4 (illustrative); International Aluminium Institute; European Aluminium,"electricity, high voltage"
+
+Activity,casting and rolling of can-body sheet
+code,10e78f4412185b85a3471382534decff
+comment,"Casting, hot and cold rolling; process scrap remelted in-house."
+location,RER
+production amount,1
+reference product,aluminium can-body sheet
+unit,kilogram
+worksheet name,lca-portfolio-aluminium-can
+Exchanges
+name,amount,database,location,unit,categories,type,Comment,reference product
+casting and rolling of can-body sheet,1,lca-portfolio-aluminium-can,RER,kilogram,,production,Portfolio case 4 (illustrative); International Aluminium Institute; European Aluminium,aluminium can-body sheet
+"aluminium production, primary, ingot, global average",1.015,lca-portfolio-aluminium-can,GLO,kilogram,,technosphere,Portfolio case 4 (illustrative); International Aluminium Institute; European Aluminium,"aluminium, primary, ingot"
+"market for electricity, medium voltage",0.77,ecoinvent-3.10-cutoff,RER,kilowatt hour,,technosphere,Portfolio case 4 (illustrative); International Aluminium Institute; European Aluminium,"electricity, medium voltage"
+"market for heat, district or industrial, natural gas",9.2,ecoinvent-3.10-cutoff,Europe without Switzerland,megajoule,,technosphere,Portfolio case 4 (illustrative); International Aluminium Institute; European Aluminium,"heat, district or industrial, natural gas"
+
+Activity,"beverage can production, 330 ml"
+code,6c9770c09cfd5c38ab757243154b5fe1
+comment,"Cupping, drawing and ironing, washing, internal coating, printing, necking; 13 g can and end."
+location,DE
+production amount,1
+reference product,"aluminium beverage can, 330 ml, empty"
+unit,unit
+worksheet name,lca-portfolio-aluminium-can
+Exchanges
+name,amount,database,location,unit,categories,type,Comment,reference product
+"beverage can production, 330 ml",1,lca-portfolio-aluminium-can,DE,unit,,production,Portfolio case 4 (illustrative); International Aluminium Institute; European Aluminium,"aluminium beverage can, 330 ml, empty"
+casting and rolling of can-body sheet,0.013,lca-portfolio-aluminium-can,RER,kilogram,,technosphere,Portfolio case 4 (illustrative); International Aluminium Institute; European Aluminium,aluminium can-body sheet
+"market for electricity, medium voltage",0.02,ecoinvent-3.10-cutoff,DE,kilowatt hour,,technosphere,Portfolio case 4 (illustrative); International Aluminium Institute; European Aluminium,"electricity, medium voltage"
+"market for epoxy resin, liquid",0.0002,ecoinvent-3.10-cutoff,RER,kilogram,,technosphere,proxy for internal coating and inks,"epoxy resin, liquid"
+"market for heat, district or industrial, natural gas",0.08,ecoinvent-3.10-cutoff,Europe without Switzerland,megajoule,,technosphere,curing ovens,"heat, district or industrial, natural gas"
+"market for transport, freight, lorry 16-32 metric ton, EURO6",0.0026,ecoinvent-3.10-cutoff,RER,ton kilometer,,technosphere,200 km to filler,"transport, freight, lorry 16-32 metric ton, EURO6"
+
+Activity,filling of beverage cans
+code,b458a79e62e85f6d8c6f2b5d9c6a7760
+comment,Beverage itself excluded.
+location,DE
+production amount,1
+reference product,"soft drink can, filled and seamed"
+unit,unit
+worksheet name,lca-portfolio-aluminium-can
+Exchanges
+name,amount,database,location,unit,categories,type,Comment,reference product
+filling of beverage cans,1,lca-portfolio-aluminium-can,DE,unit,,production,Portfolio case 4 (illustrative); International Aluminium Institute; European Aluminium,"soft drink can, filled and seamed"
+"beverage can production, 330 ml",1.0,lca-portfolio-aluminium-can,DE,unit,,technosphere,Portfolio case 4 (illustrative); International Aluminium Institute; European Aluminium,"aluminium beverage can, 330 ml, empty"
+"market for carbon dioxide, liquid",0.002,ecoinvent-3.10-cutoff,RER,kilogram,,technosphere,"carbonation share, illustrative","carbon dioxide, liquid"
+"market for electricity, medium voltage",0.005,ecoinvent-3.10-cutoff,DE,kilowatt hour,,technosphere,Portfolio case 4 (illustrative); International Aluminium Institute; European Aluminium,"electricity, medium voltage"
+market for tap water,0.25,ecoinvent-3.10-cutoff,Europe without Switzerland,kilogram,,technosphere,Portfolio case 4 (illustrative); International Aluminium Institute; European Aluminium,tap water
+
+Activity,distribution and chilling of canned drinks
+code,920874119711535aa247a8565d9baf9b
+comment,300 km truck; 50% chilled.
+location,DE
+production amount,1
+reference product,"soft drink can, chilled, at retail"
+unit,unit
+worksheet name,lca-portfolio-aluminium-can
+Exchanges
+name,amount,database,location,unit,categories,type,Comment,reference product
+distribution and chilling of canned drinks,1,lca-portfolio-aluminium-can,DE,unit,,production,Portfolio case 4 (illustrative); International Aluminium Institute; European Aluminium,"soft drink can, chilled, at retail"
+filling of beverage cans,1.0,lca-portfolio-aluminium-can,DE,unit,,technosphere,Portfolio case 4 (illustrative); International Aluminium Institute; European Aluminium,"soft drink can, filled and seamed"
+"market for electricity, low voltage",0.01,ecoinvent-3.10-cutoff,DE,kilowatt hour,,technosphere,Portfolio case 4 (illustrative); International Aluminium Institute; European Aluminium,"electricity, low voltage"
+"market for transport, freight, lorry 16-32 metric ton, EURO6",0.11,ecoinvent-3.10-cutoff,RER,ton kilometer,,technosphere,300 km x 0.36 kg,"transport, freight, lorry 16-32 metric ton, EURO6"
+
+Activity,"canned soft drink, consumption and end-of-life"
+code,c031a8c3cb3f532599a3cfff0b448709
+comment,Functional unit. 75% of cans collected for recycling (cut-off: remelting carried by the next product).
+location,DE
+production amount,1
+reference product,"canned soft drink, 330 ml, consumed (functional unit)"
+unit,unit
+worksheet name,lca-portfolio-aluminium-can
+Exchanges
+name,amount,database,location,unit,categories,type,Comment,reference product
+"canned soft drink, consumption and end-of-life",1,lca-portfolio-aluminium-can,DE,unit,,production,Portfolio case 4 (illustrative); International Aluminium Institute; European Aluminium,"canned soft drink, 330 ml, consumed (functional unit)"
+distribution and chilling of canned drinks,1.0,lca-portfolio-aluminium-can,DE,unit,,technosphere,Portfolio case 4 (illustrative); International Aluminium Institute; European Aluminium,"soft drink can, chilled, at retail"
+market for municipal solid waste,0.00325,ecoinvent-3.10-cutoff,DE,kilogram,,technosphere,"25% not collected | waste-treatment input entered as a positive amount, as in the LCIS2024 PtL example; ecoinvent treats waste as negative - flip the sign when linking",municipal solid waste
+market for scrap aluminium,0.00975,ecoinvent-3.10-cutoff,Europe without Switzerland,kilogram,,technosphere,"75% collected | waste-treatment input entered as a positive amount, as in the LCIS2024 PtL example; ecoinvent treats waste as negative - flip the sign when linking",scrap aluminium

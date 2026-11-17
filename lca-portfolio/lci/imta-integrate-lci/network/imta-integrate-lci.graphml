@@ -1,0 +1,185 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d6" for="edge" attr.name="arrows" attr.type="boolean"/>
+<key id="d5" for="edge" attr.name="unit" attr.type="string"/>
+<key id="d4" for="edge" attr.name="amount" attr.type="double"/>
+<key id="d3" for="edge" attr.name="line_type" attr.type="string"/>
+<key id="d2" for="edge" attr.name="color" attr.type="string"/>
+<key id="d1" for="node" attr.name="width" attr.type="long"/>
+<key id="d0" for="node" attr.name="color" attr.type="string"/>
+<graph edgedefault="directed"><node id="Activity - SI-POLY, 1 t aquatic product at farm gate">
+  <data key="d0">blue</data>
+  <data key="d1">26</data>
+</node>
+<node id="Nitrogen"/>
+<node id="Occupation, water bodies, artificial"/>
+<node id="Phosphorus"/>
+<node id="Water, salt, ocean"/>
+<node id="SI-POLY, 1 t aquatic product at farm gate (functional unit)"/>
+<node id="compound fish feed"/>
+<node id="fish fry / fingerlings"/>
+<node id="Activity - SI-IMTA, 1 t aquatic product at farm gate">
+  <data key="d0">blue</data>
+  <data key="d1">26</data>
+</node>
+<node id="SI-IMTA, 1 t aquatic product at farm gate (functional unit)"/>
+<node id="oyster spat"/>
+<node id="Activity - SE-IMTA, 1 t aquatic product at farm gate">
+  <data key="d0">blue</data>
+  <data key="d1">26</data>
+</node>
+<node id="SE-IMTA, 1 t aquatic product at farm gate (functional unit)"/>
+<edge source="Activity - SI-POLY, 1 t aquatic product at farm gate" target="Nitrogen">
+  <data key="d2">green</data>
+  <data key="d3">Dots</data>
+  <data key="d4">95.9263</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="Activity - SI-POLY, 1 t aquatic product at farm gate" target="Occupation, water bodies, artificial">
+  <data key="d2">green</data>
+  <data key="d3">Dots</data>
+  <data key="d4">2288.84</data>
+  <data key="d5">square meter-year</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="Activity - SI-POLY, 1 t aquatic product at farm gate" target="Phosphorus">
+  <data key="d2">green</data>
+  <data key="d3">Dots</data>
+  <data key="d4">20.9712</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="Activity - SI-POLY, 1 t aquatic product at farm gate" target="Water, salt, ocean">
+  <data key="d2">green</data>
+  <data key="d3">Dots</data>
+  <data key="d4">195823.0</data>
+  <data key="d5">cubic meter</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="Activity - SI-POLY, 1 t aquatic product at farm gate" target="SI-POLY, 1 t aquatic product at farm gate (functional unit)">
+  <data key="d2">black</data>
+  <data key="d3">Dash</data>
+  <data key="d4">1.0</data>
+  <data key="d5">metric ton</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="compound fish feed" target="Activity - SI-POLY, 1 t aquatic product at farm gate">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">1788.33</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="compound fish feed" target="Activity - SI-IMTA, 1 t aquatic product at farm gate">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">1536.21</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="compound fish feed" target="Activity - SE-IMTA, 1 t aquatic product at farm gate">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">559.748</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="fish fry / fingerlings" target="Activity - SI-POLY, 1 t aquatic product at farm gate">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">14.8281</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="fish fry / fingerlings" target="Activity - SI-IMTA, 1 t aquatic product at farm gate">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">550.854</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="fish fry / fingerlings" target="Activity - SE-IMTA, 1 t aquatic product at farm gate">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">283.019</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="Activity - SI-IMTA, 1 t aquatic product at farm gate" target="Nitrogen">
+  <data key="d2">green</data>
+  <data key="d3">Dots</data>
+  <data key="d4">54.6786</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="Activity - SI-IMTA, 1 t aquatic product at farm gate" target="Occupation, water bodies, artificial">
+  <data key="d2">green</data>
+  <data key="d3">Dots</data>
+  <data key="d4">959.337</data>
+  <data key="d5">square meter-year</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="Activity - SI-IMTA, 1 t aquatic product at farm gate" target="Phosphorus">
+  <data key="d2">green</data>
+  <data key="d3">Dots</data>
+  <data key="d4">14.6461</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="Activity - SI-IMTA, 1 t aquatic product at farm gate" target="Water, salt, ocean">
+  <data key="d2">green</data>
+  <data key="d3">Dots</data>
+  <data key="d4">82270.1</data>
+  <data key="d5">cubic meter</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="Activity - SI-IMTA, 1 t aquatic product at farm gate" target="SI-IMTA, 1 t aquatic product at farm gate (functional unit)">
+  <data key="d2">black</data>
+  <data key="d3">Dash</data>
+  <data key="d4">1.0</data>
+  <data key="d5">metric ton</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="oyster spat" target="Activity - SI-IMTA, 1 t aquatic product at farm gate">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">4.4752</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="oyster spat" target="Activity - SE-IMTA, 1 t aquatic product at farm gate">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">90.566</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="Activity - SE-IMTA, 1 t aquatic product at farm gate" target="Nitrogen">
+  <data key="d2">green</data>
+  <data key="d3">Dots</data>
+  <data key="d4">-3.1447</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="Activity - SE-IMTA, 1 t aquatic product at farm gate" target="Occupation, water bodies, artificial">
+  <data key="d2">green</data>
+  <data key="d3">Dots</data>
+  <data key="d4">4221.6</data>
+  <data key="d5">square meter-year</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="Activity - SE-IMTA, 1 t aquatic product at farm gate" target="Water, salt, ocean">
+  <data key="d2">green</data>
+  <data key="d3">Dots</data>
+  <data key="d4">45188.7</data>
+  <data key="d5">cubic meter</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="Activity - SE-IMTA, 1 t aquatic product at farm gate" target="SE-IMTA, 1 t aquatic product at farm gate (functional unit)">
+  <data key="d2">black</data>
+  <data key="d3">Dash</data>
+  <data key="d4">1.0</data>
+  <data key="d5">metric ton</data>
+  <data key="d6">True</data>
+</edge>
+</graph></graphml>

@@ -1,0 +1,885 @@
+{
+"id": "imta",
+"n": 11,
+"short": "IMTA aquaculture",
+"cat": "Food & textiles",
+"icon": "water",
+"real": true,
+"title": "LCA of Integrated Multi-Trophic Aquaculture (IMTA): Fish, Oysters and Macroalgae in Earthen Ponds",
+"sub": "A comparison of two pond IMTA systems with a conventional fish-only pond, based on published farm data from the INTEGRATE project, with a 13-KPI decision framework for environment and circularity.",
+"pdf": "Case 11 — LCA of Integrated Multi-Trophic Aquaculture (IMTA): Executive Summary",
+"repo": "https://github.com/malleshkomal/Life-cycle-assessment-of-Integrated-Multi-Trophical-Aquaculture-",
+"disc": "<b>Published project data.</b> Inventory, nutrient balance and impact results are from INTEGRATE deliverable PI05#3 (IPMA &amp; CTAQUA, 2020), based on records from experimental farm ponds and calculated with Piscentool. The scaling, data checks and KPI framework come from the author's open repository. This is not a certified LCA or a CSRD disclosure.",
+"fu": "1 tonne of aquatic product (fish + oyster flesh weight gain) at the farm gate, one production cycle",
+"fuShort": "per tonne of product",
+"wl": "Water dependence",
+"wu": "m³",
+"el": "Total cumulative energy demand",
+"ref": "Per pond and cycle: SI-POLY 6,137 kg fish; SI-IMTA 1,229 kg (1,099 kg fish + 130 kg oyster flesh); SE-IMTA 159 kg (65 kg fish + 94 kg oyster flesh). Scaling factor = 1,000 kg / reference flow",
+"boundary": "Cradle-to-farm-gate: fry and spat, feed ingredients and processing, farm energy, water use, equipment, buildings, vehicles, chemicals, transport to the farm, direct land and water occupation, and N and P emissions to water. Packaging, transport to retail, consumption and end-of-life excluded",
+"geo": "Olhão, Ria Formosa, Portugal (SI-POLY, SI-IMTA) and Cádiz, Spain (SE-IMTA)",
+"time": "SI-IMTA May–Oct 2017 (5.3 months); SE-IMTA Jan–Nov 2019 (8.5 months); SI-POLY May 2017–Jul 2019 (26 months). Report 2020; KPI layer 2026",
+"aud": [
+"Product design",
+"Circular-economy strategy",
+"Policy analysis",
+"ESG reporting support"
+],
+"method": "Piscentool (Wilfart et al., 2012) with SimaPro background data: GWP100, total cumulative energy demand, net primary production use, acidification (kg SO₂ eq), eutrophication (kg PO₄ eq), land competition and water dependence. Categories differ from the EF 3.1 set used in cases 1–10",
+"alloc": "No allocation between fish and oysters (summed by mass in the functional unit). Macroalgae are an associated downstream product outside the functional unit, with no allocation and no credit. Shared infrastructure, vehicles and electricity allocated by production-pond area / total farm pond area",
+"cutoff": "As in the report: packaging and post-farm stages excluded; all farm inputs included",
+"dq": "Primary data from daily farm records (water flow, aeration, feed, mortality, treatments) and feed-manufacturer data, as published. 37 of 39 cross-checks between report tables pass; two open issues are documented in the repository",
+"srcShort": "INTEGRATE deliverable PI05#3 (IPMA & CTAQUA, 2020), Tables 4–5 and Annex 1; scaling and KPIs from the author's IMTA repository.",
+"loop": "Nutrient loop: oysters filter particles and macroalgae take up dissolved N and P released by the fed fish",
+"lciNote": "Inventory per tonne of product for the three systems (SI-POLY / SI-IMTA / SE-IMTA). <span class=\"pill n\">Data type</span> P = primary farm data as published in the report · D = derived (recalculated in the repository). Background datasets (Piscentool/SimaPro) are not redistributed.",
+"exec": "This case study compares two integrated multi-trophic aquaculture (IMTA) systems with a conventional fish-only pond, using published farm data from the INTEGRATE project (Interreg Atlantic Area). In IMTA, fed fish are combined with oysters, which filter particles, and macroalgae, which take up dissolved nutrients. The question is whether this circular design also lowers life-cycle impacts.\nPer tonne of fish and oyster flesh, the fish-only pond emits 2,836 kg CO2e and releases 96 kg of nitrogen to water. Feed is the hotspot in every system: it causes 55–66% of global warming and almost all primary production use. In the semi-intensive ponds, uneaten feed and excretion drive 60–84% of acidification and eutrophication, and pumping drives most energy use.\nThe semi-intensive IMTA keeps global warming almost unchanged (−1%), but cuts eutrophication by 57% and water dependence by 58%. Nearly half of the feed nitrogen ends up in fish, oysters and macroalgae, compared with 20% in the fish-only pond. The semi-extensive, tidal IMTA cuts global warming by 56%, energy by 81% and eutrophication by 97%. The trade-off is land: both IMTA systems need more area per tonne.\nRecommendations focus on feed efficiency, tidal or low-energy water exchange and valorising macroalgae. For reporting, the results map to ESRS E1, E2, E3 (marine resources), E4 and E5.",
+"overview": "The three systems are earthen ponds in southern Portugal and Spain. SI-POLY is a semi-intensive polyculture of meagre and gilthead seabream with pumped seawater (the conventional baseline). SI-IMTA adds Pacific oysters and Ulva macroalgae to a similar semi-intensive pond. SE-IMTA is a semi-extensive system with gilthead seabream and oysters, a second pond with macroalgae fed by the fishpond outflow, and tidal water exchange.\nThe repository re-uses the INTEGRATE inventory and per-process impact results, recalculates the nitrogen and phosphorus balance, checks the report tables against each other and turns the results into 13 KPIs with targets.",
+"goal": "The goal is to compare the potential environmental impacts of two pond IMTA designs with a fish-only pond, identify hotspots and translate the results into KPIs that support a farm-design decision. The intended audience is project partners, researchers, farm operators and policymakers working on sustainable aquaculture. The systems differ in site, species and cycle length, so results compare real systems rather than single design variables.",
+"stages": [
+{
+"k": "Fry & oyster spat",
+"ic": "water",
+"what": "Production of fish fry or fingerlings and oyster spat stocked in the ponds.",
+"in": "Hatchery inputs (carp-fry LCA proxy in Piscentool)",
+"out": "Stocked fish and oysters",
+"ew": "Embedded in hatchery data",
+"em": "Small share of all categories",
+"wa": "Mortality",
+"tr": "Included in transports",
+"so": "Low",
+"as": "SI-IMTA stocked 677 kg fish per pond, which raises the fry share per tonne"
+},
+{
+"k": "Feeds",
+"ic": "farm",
+"what": "Production of compound feed ingredients (fishmeal, fish oil, plant proteins) and feed processing.",
+"in": "Compound feed: 1,788 / 1,536 / 560 kg per t (SI-POLY / SI-IMTA / SE-IMTA)",
+"out": "Feed delivered to the farm",
+"ew": "Energy and water embedded in crop and fish-meal production",
+"em": "GHG from crop and fishery inputs; primary production use",
+"wa": "Uneaten feed (counted under rejects)",
+"tr": "Feed transport counted under transports",
+"so": "Forage-fish sourcing and fisheries pressure",
+"as": "42% protein, 1.4% P (40%, 1.3% in SE-IMTA); implied about 1.0–1.3 kg CO2e per kg feed"
+},
+{
+"k": "Transports",
+"ic": "truck",
+"what": "Sea and land transport of feed, fry, equipment and other inputs to the farm.",
+"in": "Freight transport",
+"out": "Inputs at farm",
+"ew": "Diesel and marine fuel",
+"em": "CO2, NOx",
+"wa": "None",
+"tr": "As reported",
+"so": "Low",
+"as": "As modelled in Piscentool"
+},
+{
+"k": "Farm energy",
+"ic": "energy",
+"what": "Electricity for seawater pumping and aeration, and gasoline on the farm.",
+"in": "Electricity, gasoline",
+"out": "Water exchange and oxygenation",
+"ew": "Pumped water exchange of 20–150% of pond volume per day in the semi-intensive ponds; tidal exchange in SE-IMTA",
+"em": "CO2 from the Portuguese grid and fuel",
+"wa": "None",
+"tr": "None",
+"so": "Low",
+"as": "Station electricity allocated by pond area"
+},
+{
+"k": "Equipment, buildings & vehicles",
+"ic": "factory",
+"what": "Pond construction, buildings, pumps, aerators, nets and farm vehicles, allocated to the studied pond.",
+"in": "Steel, plastics, concrete, vehicles",
+"out": "Farm infrastructure services",
+"ew": "Embedded",
+"em": "Embedded GHG",
+"wa": "End-of-life of equipment (not detailed)",
+"tr": "Included",
+"so": "Low",
+"as": "Aggregates three report processes (building, equipment, vehicle); short cycles raise the share per tonne"
+},
+{
+"k": "Chemical products",
+"ic": "box",
+"what": "Treatments and chemicals used on the farm.",
+"in": "Chemicals",
+"out": "Treated ponds",
+"ew": "Embedded",
+"em": "Small",
+"wa": "Packaging",
+"tr": "Included",
+"so": "Low",
+"as": "Only SE-IMTA reports chemical use"
+},
+{
+"k": "Rejects (N, P to water)",
+"ic": "waste",
+"what": "Nitrogen, phosphorus and solids released from uneaten feed and excretion, from a nutrient balance.",
+"in": "Feed nutrients not retained in harvested biomass",
+"out": "N and P to coastal water",
+"ew": "None",
+"em": "N and P to water; NH3 contributes to acidification",
+"wa": "Solids in pond sediment",
+"tr": "None",
+"so": "Water quality in Ria Formosa and Bay of Cádiz",
+"as": "Cho & Kaushik (1990) balance; N = protein / 6.25"
+},
+{
+"k": "Direct activity & water use",
+"ic": "landfill",
+"what": "Direct occupation of farm land and pond water, and the seawater passing through the ponds.",
+"in": "Farm area, seawater",
+"out": "Pond production space",
+"ew": "Seawater use 195,823 / 82,270 / 45,189 m³ per t",
+"em": "None",
+"wa": "None",
+"tr": "None",
+"so": "Coastal land and saltmarsh use",
+"as": "Farm area × pond share × cycle length; the SI-POLY land value in Annex 1 does not follow this rule (open issue)"
+}
+],
+"ph": "PPDPPPPP",
+"ced": [
+12,
+25185,
+6409,
+65724,
+2567,
+0,
+0,
+0
+],
+"water": [
+4,
+44,
+3,
+54,
+1,
+0,
+0,
+392896
+],
+"lci": [
+[
+"Feed",
+"Compound fish feed",
+"kg",
+"1,788 / 1,536 / 560",
+"Table 4 × scaling factor",
+"P",
+"High"
+],
+[
+"Feed",
+"Feed protein / phosphorus content",
+"%",
+"42, 1.4 / 42, 1.4 / 40, 1.3",
+"Table 4",
+"P",
+"High"
+],
+[
+"Stocking",
+"Fish fry / fingerlings (initial biomass)",
+"kg",
+"14.8 / 551 / 283",
+"Table 4 × scaling; carp-fry proxy in Piscentool",
+"P",
+"Medium"
+],
+[
+"Stocking",
+"Oyster spat (flesh)",
+"kg",
+"0 / 4.5 / 90.6",
+"Table 4 × scaling",
+"P",
+"Medium"
+],
+[
+"Water",
+"Seawater pumped or tidal",
+"m³",
+"195,823 / 82,270 / 45,189",
+"Table 4 × scaling; matches Annex 1 water consumption within 0.2%",
+"P",
+"High"
+],
+[
+"Land",
+"Farm area allocated to the pond",
+"m²a",
+"2,289 / 959 / 4,222",
+"Report allocation rule (SI-POLY Annex 1 reports 460: open issue)",
+"D",
+"Medium"
+],
+[
+"Emissions to water",
+"Nitrogen (net)",
+"kg N",
+"95.9 / 54.7 / −3.1",
+"Table 5 nutrient balance (recalculated SE-IMTA: −3.8)",
+"D",
+"Medium"
+],
+[
+"Emissions to water",
+"Phosphorus (net)",
+"kg P",
+"21.0 / 14.6 / 0",
+"Table 5 nutrient balance",
+"D",
+"Medium"
+],
+[
+"Outputs",
+"Fish live-weight gain",
+"kg",
+"1,000 / 894 / 409",
+"Table 4 × scaling",
+"P",
+"High"
+],
+[
+"Outputs",
+"Oyster flesh gain",
+"kg",
+"0 / 106 / 591",
+"Table 4 × scaling",
+"P",
+"High"
+],
+[
+"Outputs",
+"Macroalgae (co-product, outside FU)",
+"kg",
+"0 / 996 / 222,642",
+"Table 4 × scaling; basis of weight to be checked",
+"P",
+"Low"
+],
+[
+"Performance",
+"Fish feed conversion ratio",
+"kg/kg",
+"1.79 / 1.72 / 1.37",
+"Feed / fish gain (report gives 0.56 for SE-IMTA using fish + oyster gain)",
+"D",
+"Medium"
+],
+[
+"Performance",
+"Cycle length",
+"months",
+"26 / 5.3 / 8.5",
+"Table 4",
+"P",
+"High"
+]
+],
+"ind": [
+[
+"Net primary production use",
+"kg C",
+12358
+],
+[
+"Acidification",
+"kg SO₂ eq",
+45
+],
+[
+"Eutrophication",
+"kg PO₄ eq",
+61
+],
+[
+"Land competition",
+"m²a",
+2379
+],
+[
+"Net N released to water",
+"kg N",
+95.9
+],
+[
+"Net P released to water",
+"kg P",
+21.0
+],
+[
+"Nitrogen use efficiency",
+"%",
+20
+],
+[
+"Phosphorus use efficiency",
+"%",
+16
+],
+[
+"Fish feed conversion ratio",
+"kg/kg",
+1.79
+],
+[
+"Share of non-fed (extractive) biomass",
+"%",
+0
+],
+[
+"Feed share of global warming",
+"%",
+66
+]
+],
+"sankey": {
+"u": "kg",
+"nodes": [
+[
+"N in feed",
+0
+],
+[
+"P in feed",
+0
+],
+[
+"N in fish & oysters",
+1
+],
+[
+"N in macroalgae (co-product)",
+1
+],
+[
+"N released to water",
+1
+],
+[
+"P in fish & oysters",
+1
+],
+[
+"P in macroalgae",
+1
+],
+[
+"P released to water",
+1
+]
+],
+"links": [
+[
+0,
+2,
+23.6
+],
+[
+0,
+3,
+24.9
+],
+[
+0,
+4,
+54.7
+],
+[
+1,
+5,
+4.8
+],
+[
+1,
+6,
+2.1
+],
+[
+1,
+7,
+14.6
+]
+],
+"t": "Nutrient flows: semi-intensive IMTA",
+"sub": "Sankey diagram, nitrogen and phosphorus fate in kg per tonne of product (SI-IMTA)"
+},
+"heat": [
+[
+0,
+0,
+0,
+0,
+0,
+0
+],
+[
+3,
+2,
+0,
+3,
+2,
+3
+],
+[
+1,
+1,
+0,
+0,
+0,
+0
+],
+[
+2,
+3,
+0,
+0,
+1,
+0
+],
+[
+0,
+0,
+0,
+0,
+0,
+0
+],
+[
+0,
+0,
+0,
+0,
+0,
+0
+],
+[
+0,
+0,
+0,
+0,
+3,
+0
+],
+[
+0,
+0,
+3,
+2,
+0,
+0
+]
+],
+"rad": {
+"axes": [
+"Global warming",
+"Energy demand",
+"Primary production use",
+"Acidification",
+"Eutrophication",
+"Land competition",
+"Water dependence"
+],
+"s": [
+[
+100,
+100,
+100,
+100,
+100,
+48.7,
+100
+],
+[
+98.8,
+90.2,
+84.8,
+93.3,
+42.6,
+60.3,
+41.7
+],
+[
+44.3,
+19.1,
+35.6,
+13.3,
+3.3,
+100,
+29.4
+]
+]
+},
+"hot": [
+{
+"t": "Compound feed",
+"s": "Feeds",
+"why": "Feed causes 55–66% of global warming and over 99% of net primary production use in every system, and most land competition in the semi-intensive ponds (66–80%). Feed efficiency is the main lever."
+},
+{
+"t": "Uneaten feed and excretion (rejects)",
+"s": "Rejects (N, P to water)",
+"why": "Nitrogen and phosphorus released from the semi-intensive ponds cause 60–84% of acidification and eutrophication. Extractive species reduce this directly."
+},
+{
+"t": "Pumped water exchange",
+"s": "Farm energy",
+"why": "Pumping and aeration cause 66% of energy demand in the fish-only pond and 51% in the semi-intensive IMTA, but almost nothing with tidal exchange."
+},
+{
+"t": "Land occupation",
+"s": "Direct activity & water use",
+"why": "IMTA needs more pond area per tonne: direct land occupation is 32% of land competition in SI-IMTA and 86% in SE-IMTA."
+},
+{
+"t": "Equipment and buildings in short cycles",
+"s": "Equipment, buildings & vehicles",
+"why": "Short experimental cycles (5.3 and 8.5 months) spread infrastructure over little output, giving about 19% of global warming in both IMTA systems."
+}
+],
+"scen": {
+"names": [
+"Fish-only pond, SI-POLY (baseline)",
+"Semi-intensive IMTA (SI-IMTA)",
+"Semi-extensive IMTA (SE-IMTA)"
+],
+"desc": [
+"Meagre + gilthead seabream, pumped seawater, Olhão, 26-month cycle",
+"Meagre, white seabream, mullet + oysters + Ulva, pumped seawater, Olhão, 5.3-month cycle",
+"Gilthead seabream + oysters, macroalgae pond, tidal exchange, Cádiz, 8.5-month cycle"
+],
+"base": 0,
+"xl": "Δ net N released",
+"g": [
+[
+1,
+1873,
+379,
+474,
+108,
+0,
+0,
+0
+],
+[
+43,
+1549,
+325,
+330,
+555,
+0,
+0,
+0
+],
+[
+29,
+733,
+208,
+6,
+248,
+30,
+0,
+0
+]
+],
+"e": [
+99897,
+90127,
+19097
+],
+"w": [
+393002,
+163840,
+115691
+],
+"x": [
+95.9,
+54.7,
+-3.8
+],
+"l": [
+2379,
+2946,
+4885
+],
+"u": [
+61,
+26,
+2
+]
+},
+"sens": {
+"t": "Sensitivity: fish feed conversion ratio (repository-derived)",
+"xl": "Fish feed conversion ratio (kg feed per kg fish gain)",
+"yl": "kg CO₂e per tonne of product",
+"x": [
+1.2,
+1.4,
+1.6,
+1.8,
+2.0
+],
+"s": [
+{
+"n": "Fish-only pond (SI-POLY)",
+"y": [
+2218,
+2428,
+2637,
+2847,
+3056
+]
+},
+{
+"n": "Semi-intensive IMTA (SI-IMTA)",
+"y": [
+2334,
+2514,
+2695,
+2875,
+3055
+]
+}
+],
+"note": "Not in the report: the Feeds process is scaled linearly with feed amount using the report's implied factor (about 1.05 kg CO2e per kg feed for SI-POLY and 1.01 for SI-IMTA). All other processes held at reported values. Reported FCRs are 1.79 and 1.72.",
+"interp": "Each 0.1 improvement in feed conversion saves about 90–105 kg CO2e per tonne. Feed efficiency matters more for global warming than adding extractive species to a semi-intensive pond."
+},
+"wf": [
+[
+"Fish-only pond (SI-POLY)",
+2835
+],
+[
+"Less feed per tonne",
+-1140
+],
+[
+"Tidal exchange instead of pumping",
+-468
+],
+[
+"Fewer transports",
+-171
+],
+[
+"Fry and oyster spat",
+28
+],
+[
+"Equipment, buildings & vehicles",
+140
+],
+[
+"Chemical products",
+30
+]
+],
+"wfEnd": "Semi-extensive IMTA",
+"ci": {
+"stage": "Feed dominates global warming in the fish-only pond; farm energy and transports follow. Process values are rounded in the report, so the sum (2,835) differs by 1 from the reported total (2,836).",
+"stage_e": "Pumping and aeration energy causes two thirds of energy demand in the fish-only pond.",
+"stage_w": "Water dependence is almost entirely the seawater passing through the ponds and direct pond occupation.",
+"donut": "Feed alone accounts for about two thirds of the climate result, so feed formulation and feed efficiency are the first levers.",
+"sankey": "In the semi-intensive IMTA, 47% of feed nitrogen is retained in fish, oysters and macroalgae; 53% is released to water. In the fish-only pond, 80% is released.",
+"heat": "Feed is a hotspot across climate, land and primary production use; rejects for eutrophication and acidification; pumping for energy; direct activity for water and land.",
+"scen": "Global warming falls mainly where less feed and no pumping are needed (semi-extensive IMTA). Adding oysters and macroalgae to a semi-intensive pond barely changes global warming.",
+"scenNote": "The three systems differ in site, species and cycle length; they are real systems, not single-variable scenarios.",
+"radar": "Both IMTA systems shrink on six of seven axes; land competition is the one category where the fish-only pond is better.",
+"wf": "Lower feed per tonne and tidal water exchange explain most of the difference between the fish-only pond and the semi-extensive IMTA; infrastructure in the short cycle adds some impact back."
+},
+"interp": {
+"m": "IMTA keeps nutrients in the system: oysters and macroalgae turn released nitrogen and phosphorus into products, which sharply reduces eutrophication. Large climate and energy savings come from lower-input, tidal designs rather than from extractive species alone.",
+"a": "Feed amount and composition; water-exchange method; cycle length and stocking density; allocation of shared infrastructure by pond area; macroalgae outside the functional unit.",
+"u": "Experimental ponds with short and different cycle lengths; rounded Annex 1 values; land competition of SI-POLY does not follow the report's rule; basis of macroalgae weights unclear; fry modelled with a carp-fry proxy.",
+"can": "Feed and nutrient release are the main hotspots; IMTA lowers eutrophication and water dependence; tidal semi-extensive systems have much lower climate and energy impacts per tonne, with more land use.",
+"cannot": "Results cannot be generalised to commercial-scale farms without longer cycles and more data, and they do not value the macroalgae co-product or biodiversity effects on the coastal ecosystem.",
+"d": "Farm design (species mix, water exchange), feed procurement and formulation, nutrient-management targets, site planning that weighs land use against nutrient benefits."
+},
+"recs": [
+[
+"Product designers",
+"For farm designers: combine fed species with extractive species sized to the nutrient load, and prefer gravity or tidal water exchange where the site allows."
+],
+[
+"Procurement teams",
+"Buy feed with lower fishmeal and fish-oil inclusion and verified responsible sourcing; track feed conversion per batch."
+],
+[
+"Manufacturers",
+"For feed producers: publish product carbon footprints and improve digestibility to reduce nitrogen excretion."
+],
+[
+"Retailers",
+"Develop markets for oysters and macroalgae so that extractive co-products earn revenue."
+],
+[
+"Waste-management companies",
+"Not directly relevant; for sediment and sludge, explore nutrient recovery."
+],
+[
+"Sustainability & ESG teams",
+"Track nitrogen and phosphorus use efficiency, net nutrient release and feed share of emissions as KPIs alongside GHG per tonne."
+],
+[
+"Policymakers",
+"Recognise nutrient extraction by IMTA in water-quality and licensing frameworks; support marketing standards for macroalgae."
+]
+],
+"csrd": [
+[
+"Relevant ESRS topics",
+"E1 Climate change; E2 Pollution (N, P to water); E3 Water and marine resources; E4 Biodiversity and ecosystems (coastal land, saltmarsh); E5 Resource use (feed, nutrient circularity)"
+],
+[
+"Relevant disclosure requirements",
+"E1-6 Scope 3 Cat. 1 (feed); E2-4 pollution of water; E3 marine resources; E4 impacts on ecosystems; E5 resource inflows (Set 1 numbering)"
+],
+[
+"Material impacts",
+"Nutrient release to coastal waters; feed-related emissions; land and water occupation"
+],
+[
+"Material risks",
+"Water-quality permits; feed price volatility and fishmeal supply; coastal climate risks"
+],
+[
+"Material opportunities",
+"Additional revenue from oysters and macroalgae; nutrient credits; lower feed costs per tonne"
+],
+[
+"Value-chain relevance",
+"Feed (upstream) causes most climate and primary production impacts"
+],
+[
+"Scope 1, 2 and 3",
+"Scope 1: farm fuel. Scope 2: pumping and aeration electricity (17% in SI-POLY). Scope 3: feed (55–66%), fry and transport"
+],
+[
+"Climate transition risks",
+"Carbon costs on feed ingredients and energy; customer expectations for low-carbon seafood"
+],
+[
+"Physical climate risks",
+"Heat waves, storm surges and sea-level rise affecting coastal ponds"
+],
+[
+"Circular-economy indicators",
+"Nitrogen and phosphorus use efficiency, share of non-fed biomass, feed conversion ratio"
+],
+[
+"Pollution indicators",
+"Net N and P released per tonne"
+],
+[
+"Water indicators",
+"Seawater use and water dependence per tonne"
+],
+[
+"Biodiversity indicators",
+"Land occupation per tonne; habitat effects of ponds (outside LCA)"
+],
+[
+"Social risks",
+"Forage-fish sourcing for feed; local employment"
+],
+[
+"Governance & internal controls",
+"Farm record-keeping, documented nutrient-balance method, data checks between tables (as in the repository). Many aquaculture SMEs are below CSRD thresholds and may use the voluntary standards (VESRS)"
+]
+],
+"esrs": [
+[
+"Feed causes 55–66% of global warming",
+"GHG emissions from feed",
+"E1 Climate change",
+"Scope 3 Cat. 1; reduction targets",
+"Are feed emissions a material share of the farm's footprint?",
+"Feed purchases, supplier footprints, FCR per batch",
+"Feed efficiency programme, low-impact feed formulations"
+],
+[
+"Fish-only pond releases 96 kg N per tonne",
+"Nutrient pollution of coastal water",
+"E2 Pollution",
+"Pollution of water",
+"Does nutrient release affect receiving waters materially?",
+"Nutrient balance per cycle, water-quality monitoring",
+"Add extractive species, adjust feeding, monitor discharge"
+],
+[
+"Water dependence of 393,000 m³ per tonne in the fish-only pond",
+"Use of marine water resources",
+"E3 Water and marine resources",
+"Marine resources use (where material)",
+"Is seawater use and discharge material for the site?",
+"Water exchange volumes, permit conditions",
+"Tidal or recirculating exchange, pumping efficiency"
+],
+[
+"IMTA needs 24–105% more land per tonne",
+"Coastal land and habitat occupation",
+"E4 Biodiversity and ecosystems",
+"Impacts on land use and ecosystems",
+"Does pond area affect sensitive coastal habitats?",
+"Farm area, habitat mapping, protected-area status",
+"Site selection, habitat management"
+],
+[
+"IMTA turns released nutrients into products",
+"Nutrient circularity",
+"E5 Resource use and circular economy",
+"Resource use and circular economy actions",
+"Is nutrient circularity a material opportunity?",
+"N and P use efficiency, co-product volumes",
+"Markets for oysters and macroalgae, KPI targets"
+]
+],
+"src": [
+"INTEGRATE project (2020). LCA of aquaculture systems: comparison between semi-intensive/extensive pond IMTA and semi-intensive traditional fishpond production. Deliverable PI05#3, IPMA & CTAQUA, Interreg Atlantic Area EAPA_232/2016",
+"Chougule, K. M. (2026). Life cycle assessment of fish monoculture and IMTA aquaculture: KPI tool for pond IMTA (GitHub repository)",
+"Hala, A. F., Chougule, K., et al. (2024). Life cycle assessment of integrated multi-trophic aquaculture: a review on methodology and challenges. Aquaculture 590, 741035",
+"Cho, C. Y. & Kaushik, S. J. (1990). Nutritional energetics in fish. World Review of Nutrition and Dietetics 61, 132–172",
+"Wilfart, A., Aubin, J., et al. (2012). Piscentool: a tool to assess sustainability in aquaculture systems. LCA Food 2012",
+"Aubin, J. et al. (2009). Assessment of the environmental impact of carnivorous finfish production systems using LCA. Journal of Cleaner Production 17, 354–361"
+],
+"lim": [
+[
+"Missing data",
+"Raw farm records, background datasets (not redistributed), macroalgae weight basis"
+],
+[
+"Geographic limitations",
+"Two coastal sites in southern Portugal and Spain; experimental ponds"
+],
+[
+"Allocation choices",
+"Macroalgae outside the functional unit; fish and oysters summed by mass; infrastructure by pond area"
+],
+[
+"Uncertainty",
+"Short and unequal cycles; rounded process values; two documented inconsistencies (SE-IMTA FCR basis; SI-POLY land competition)"
+],
+[
+"Needed for a company-specific LCA",
+"Full commercial cycles, metered energy, feed supplier footprints, sediment and water-quality data, and a decision on how to treat macroalgae (allocation or system expansion)"
+]
+],
+"take": "IMTA keeps nutrients in the system rather than in coastal water: adding oysters and macroalgae cuts eutrophication by more than half, while the large climate savings come from low-input, tidal designs and better feed efficiency.",
+"biz": "Design ponds around feed efficiency and low-energy water exchange, size extractive species to the nutrient load, build markets for oysters and macroalgae, and track nutrient-use efficiency alongside GHG per tonne.",
+"assume": "Real farm data from experimental ponds as reported in INTEGRATE PI05#3; functional unit 1 t fish + oyster flesh; macroalgae outside the functional unit; infrastructure allocated by pond area; impact categories from Piscentool (not EF 3.1), so results are not directly comparable with cases 1–10.",
+"cmp": {
+"recyc": "n/a (nutrient circularity: 47% N use efficiency in SI-IMTA)",
+"rc": "n/a",
+"rr": "n/a",
+"hot": "Feed; N and P release",
+"ce": "Extractive species recycle nutrients",
+"esrs": "E1, E2, E3, E4, E5",
+"gap": "Commercial-scale cycles; macroalgae basis"
+},
+"radNote": "Index of the reported Annex 1 totals; the highest system on each axis = 100."
+}

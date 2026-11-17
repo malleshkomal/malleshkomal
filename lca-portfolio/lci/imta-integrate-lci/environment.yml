@@ -1,0 +1,11 @@
+name: lca-portfolio-lci
+# Environment used to generate these LCIS2024 files (export script, not Brightway).
+# The CSV/XLSX follow the Brightway2 Excel layout; to import, link the background
+# exchanges against your licensed ecoinvent 3.10 cut-off database (e.g. bw2io ExcelImporter).
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pandas
+  - openpyxl
+  - networkx

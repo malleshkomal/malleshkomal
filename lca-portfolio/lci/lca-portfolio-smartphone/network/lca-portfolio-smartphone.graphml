@@ -1,0 +1,271 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d6" for="edge" attr.name="arrows" attr.type="boolean"/>
+<key id="d5" for="edge" attr.name="unit" attr.type="string"/>
+<key id="d4" for="edge" attr.name="amount" attr.type="double"/>
+<key id="d3" for="edge" attr.name="line_type" attr.type="string"/>
+<key id="d2" for="edge" attr.name="color" attr.type="string"/>
+<key id="d1" for="node" attr.name="width" attr.type="long"/>
+<key id="d0" for="node" attr.name="color" attr.type="string"/>
+<graph edgedefault="directed"><node id="Activity - smartphone mainboard and integrated circuits production">
+  <data key="d0">blue</data>
+  <data key="d1">26</data>
+</node>
+<node id="smartphone mainboard, populated"/>
+<node id="integrated circuit, logic type"/>
+<node id="integrated circuit, memory type"/>
+<node id="printed wiring board, surface mounted, unspecified, Pb free"/>
+<node id="Activity - smartphone display and battery production">
+  <data key="d0">blue</data>
+  <data key="d1">26</data>
+</node>
+<node id="smartphone display and battery set"/>
+<node id="battery cell, Li-ion, NMC111"/>
+<node id="liquid crystal display, unmounted, mobile device"/>
+<node id="Activity - smartphone final assembly">
+  <data key="d0">blue</data>
+  <data key="d1">26</data>
+</node>
+<node id="smartphone, 180 g"/>
+<node id="aluminium, wrought alloy"/>
+<node id="copper, cathode"/>
+<node id="electricity, medium voltage"/>
+<node id="flat glass, uncoated"/>
+<node id="gold"/>
+<node id="polycarbonate"/>
+<node id="tin"/>
+<node id="Activity - smartphone retail packaging production">
+  <data key="d0">blue</data>
+  <data key="d1">26</data>
+</node>
+<node id="smartphone retail box"/>
+<node id="folding boxboard carton"/>
+<node id="Activity - air freight and distribution of smartphone">
+  <data key="d0">blue</data>
+  <data key="d1">26</data>
+</node>
+<node id="smartphone, packed, at retail, Germany"/>
+<node id="transport, freight, aircraft, long haul"/>
+<node id="transport, freight, lorry 16-32 metric ton, EURO6"/>
+<node id="Activity - smartphone charging, one year">
+  <data key="d0">blue</data>
+  <data key="d1">26</data>
+</node>
+<node id="smartphone charging, 1 year"/>
+<node id="electricity, low voltage"/>
+<node id="Activity - smartphone service, one year">
+  <data key="d0">blue</data>
+  <data key="d1">26</data>
+</node>
+<node id="smartphone service, one user, one year (functional unit)"/>
+<node id="used mobile phone"/>
+<edge source="Activity - smartphone mainboard and integrated circuits production" target="smartphone mainboard, populated">
+  <data key="d2">black</data>
+  <data key="d3">Dash</data>
+  <data key="d4">1.0</data>
+  <data key="d5">unit</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="smartphone mainboard, populated" target="Activity - smartphone final assembly">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">1.0</data>
+  <data key="d5">unit</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="integrated circuit, logic type" target="Activity - smartphone mainboard and integrated circuits production">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">0.003</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="integrated circuit, memory type" target="Activity - smartphone mainboard and integrated circuits production">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">0.002</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="printed wiring board, surface mounted, unspecified, Pb free" target="Activity - smartphone mainboard and integrated circuits production">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">0.012</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="Activity - smartphone display and battery production" target="smartphone display and battery set">
+  <data key="d2">black</data>
+  <data key="d3">Dash</data>
+  <data key="d4">1.0</data>
+  <data key="d5">unit</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="smartphone display and battery set" target="Activity - smartphone final assembly">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">1.0</data>
+  <data key="d5">unit</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="battery cell, Li-ion, NMC111" target="Activity - smartphone display and battery production">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">0.045</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="liquid crystal display, unmounted, mobile device" target="Activity - smartphone display and battery production">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">0.03</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="Activity - smartphone final assembly" target="smartphone, 180 g">
+  <data key="d2">black</data>
+  <data key="d3">Dash</data>
+  <data key="d4">1.0</data>
+  <data key="d5">unit</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="smartphone, 180 g" target="Activity - air freight and distribution of smartphone">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">1.0</data>
+  <data key="d5">unit</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="aluminium, wrought alloy" target="Activity - smartphone final assembly">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">0.025</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="copper, cathode" target="Activity - smartphone final assembly">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">0.005</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="electricity, medium voltage" target="Activity - smartphone final assembly">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">10.0</data>
+  <data key="d5">kilowatt hour</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="flat glass, uncoated" target="Activity - smartphone final assembly">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">0.04</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="gold" target="Activity - smartphone final assembly">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">3.5e-05</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="polycarbonate" target="Activity - smartphone final assembly">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">0.025</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="tin" target="Activity - smartphone final assembly">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">0.0005</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="Activity - smartphone retail packaging production" target="smartphone retail box">
+  <data key="d2">black</data>
+  <data key="d3">Dash</data>
+  <data key="d4">1.0</data>
+  <data key="d5">unit</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="smartphone retail box" target="Activity - air freight and distribution of smartphone">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">1.0</data>
+  <data key="d5">unit</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="folding boxboard carton" target="Activity - smartphone retail packaging production">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">0.12</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="Activity - air freight and distribution of smartphone" target="smartphone, packed, at retail, Germany">
+  <data key="d2">black</data>
+  <data key="d3">Dash</data>
+  <data key="d4">1.0</data>
+  <data key="d5">unit</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="smartphone, packed, at retail, Germany" target="Activity - smartphone service, one year">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">0.333333</data>
+  <data key="d5">unit</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="transport, freight, aircraft, long haul" target="Activity - air freight and distribution of smartphone">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">3.0</data>
+  <data key="d5">ton kilometer</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="transport, freight, lorry 16-32 metric ton, EURO6" target="Activity - air freight and distribution of smartphone">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">0.165</data>
+  <data key="d5">ton kilometer</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="Activity - smartphone charging, one year" target="smartphone charging, 1 year">
+  <data key="d2">black</data>
+  <data key="d3">Dash</data>
+  <data key="d4">1.0</data>
+  <data key="d5">unit</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="smartphone charging, 1 year" target="Activity - smartphone service, one year">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">1.0</data>
+  <data key="d5">unit</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="electricity, low voltage" target="Activity - smartphone charging, one year">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">4.0</data>
+  <data key="d5">kilowatt hour</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="Activity - smartphone service, one year" target="smartphone service, one user, one year (functional unit)">
+  <data key="d2">black</data>
+  <data key="d3">Dash</data>
+  <data key="d4">1.0</data>
+  <data key="d5">unit</data>
+  <data key="d6">True</data>
+</edge>
+<edge source="used mobile phone" target="Activity - smartphone service, one year">
+  <data key="d2">purple</data>
+  <data key="d3">Solid</data>
+  <data key="d4">0.06</data>
+  <data key="d5">kilogram</data>
+  <data key="d6">True</data>
+</edge>
+</graph></graphml>
